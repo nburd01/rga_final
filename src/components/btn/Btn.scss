@@ -1,0 +1,18 @@
+
+    .btnContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: var(--primary);
+            border-radius: 20px;
+            border: none;
+            padding: 1em 5em;
+            width: 60%;
+            margin: 4em auto;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }

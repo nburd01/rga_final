@@ -1,0 +1,13 @@
+
+    footer{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--secondary);
+        .iconsFontAwesome{
+            padding: 0.5em;
+            color: white;
+        }
+
+    }

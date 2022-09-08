@@ -1,0 +1,98 @@
+
+    
+    .MainNav{
+        height: auto;
+        // background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        flex-direction: column;
+        transition: all 0.3s ease-in 0s;
+        padding: 1em 0;
+            .logoDiv{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 1em 0;
+            
+
+                .logo{
+                    height: 7em;
+                    
+                }
+            }
+            .navbar-links{
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: var(--primary);
+                transition: all 0.3s ease-in 0s;
+                
+                ul{
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    flex-direction: column;
+                    transition: all 0.3s ease-in 0s;
+
+
+                    li{
+                       padding: 1em;
+                       transition: all 0.3s ease-in 0s;
+                       font-size: 1.5em;
+                       text-decoration: none;
+
+                       a{
+                       text-decoration: none;
+                       color: var(--secondary);
+                       font-weight: bold;
+                       }
+                    }
+                }
+            }
+
+            .navbar-links.active{
+                display: flex;
+            }
+            .animate {
+                transition: transform .35s ease-in-out;
+              }
+              .animate.grow {
+                transform: scale(1.5);
+              }
+
+            .toggleBtn{
+                position:absolute;
+                top: 5em;
+                right:2em;
+                cursor: pointer;
+
+                span{
+                    display: block;
+                    position: sticky;
+                    width: 1.2em;
+                    height: 0.3em;
+                    border-radius: 1.1em;
+                    background-color: var(--primary);
+                    margin: 0.2em 0;   
+                }
+            }
+    }
+
+    @media (min-width: 768px) { 
+        .MainNav{
+                background-color: var(--primary);
+            
+            .toggleBtn{
+
+                span{
+                    background-color: var(--secondary);       
+                }
+            }
+        }
+    }

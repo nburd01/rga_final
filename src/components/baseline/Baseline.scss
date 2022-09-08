@@ -1,0 +1,25 @@
+
+    .baselineDiv{
+        opacity: 30%;
+        flex-direction: column;
+        display: inline-block;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        .__title{   
+            display: float;
+            flex-wrap: nowrap; 
+            word-break: keep-all;
+            overflow: hidden;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .__subTitle{
+            display: flex;
+            flex-wrap: nowrap; 
+            overflow: hidden;
+            width: 150%;
+            padding: 0;
+            margin: 0;
+        }
+    }
