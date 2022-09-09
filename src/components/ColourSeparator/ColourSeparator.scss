@@ -1,7 +1,8 @@
 
 
     .ColourSeparator{
-        display: flex;
+        position: absolute;
+        right: -20px;
         height: 15vh;
         background: var(--primary);
         rotate: -5deg;
@@ -13,4 +14,22 @@
         overflow: hidden;
         
     }
+    @media only screen and (min-width: 996px) {
+       .ColourSeparator{
+           height: 10vh;
+           margin-top: 0;
+           rotate: -3deg;
+       }
+
+    }
+
+    @media only screen and (min-width: 1200px){ 
+        .ColourSeparator{
+            height: 20vh;
+            margin-top: 0;
+
+        }   
+
+    }
+
 

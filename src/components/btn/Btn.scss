@@ -8,11 +8,26 @@
             border-radius: 20px;
             border: none;
             padding: 1em 5em;
-            width: 60%;
+            width: 80%;
             margin: 4em auto;
             cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    @media only screen and (min-width: 480px){
+        .btnContainer{
+            button{
+                width: 50%;
+            }
+        }
+    }
+    @media only screen and (min-width: 996px){
+        .btnContainer{
+            button{
+                width: 80%;
+            }
         }
     }
