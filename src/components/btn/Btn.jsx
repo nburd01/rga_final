@@ -5,7 +5,7 @@ export const ButtonCTA = () => {
   return (
     <div className="btnContainer">
         <button className="btnText">
-            <span>Accéder</span>
+            <span>Je m'inscris</span>
         </button>
     </div>
   )
