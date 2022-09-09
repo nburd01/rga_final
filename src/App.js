@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import "./style/dark.scss";
+// import "./style/dark.scss";
 import { useContext } from "react";
-import { DarkModeContext } from "./context/darkModeContext";
+// import { DarkModeContext } from "./context/darkModeContext";
 import { Home } from "./pages/Home/Home";
 import { Inscriptions } from "./pages/Inscriptions/Inscriptions";
 import { RGA } from "./pages/RGA/RGA";
@@ -9,7 +9,7 @@ import { Seances } from "./pages/Seances/Seances";
 import { Multimedia } from "./pages/Multimedia/Multimedia";
 import { Contact } from "./pages/Contact/Contact";
 import { MainNav } from "./components/MainNav/MainNav";
-import AdminHome from "./adminPages/home/adminHome";
+// import AdminHome from "./adminPages/home/adminHome";
 import { AuthModeContext } from "./context/AuthContext";
 import "./index.scss";
 import { Footer } from "./components/Footer/Footer";
@@ -20,7 +20,7 @@ import { faTwitter, faFacebook, faLinkedin, faFontAwesome } from '@fortawesome/f
 library.add(fas, faTwitter, faFacebook, faLinkedin, faFontAwesome)
 
 function App() {
-  const { darkMode } = useContext(DarkModeContext);
+
 
   const {currentUser} = useContext(AuthModeContext);
 
@@ -31,7 +31,7 @@ function App() {
   console.log("currentUser",currentUser);
 
   return (
-    <div className={darkMode ? "app dark" : "app"}>
+    <div className="app">
       <BrowserRouter>
       <MainNav/>
         <Routes>
@@ -43,11 +43,11 @@ function App() {
             <Route path="multimedia" element={<Multimedia />} />
             <Route path="contact" element={<Contact />} />
             {/* <Route path="login" element={<Login />} /> */}
-            <Route path="admin" element={
+            {/* <Route path="admin" element={
             <RequireAuth>
               <AdminHome/>
             </RequireAuth>
-            } />
+            } /> */}
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}

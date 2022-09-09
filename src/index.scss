@@ -1,0 +1,159 @@
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    --primary: #fee140;
+    --secondary:#242B2E; 
+    --third:##e8eef2; 
+    --fourth: #ffffff;
+    overflow-x: hidden;
+}
+
+body{
+    line-height: 1,625;
+    // background: #FFF;
+    margin: 0;
+    // font-family: 'Open Sans', 'sans-serif' ;
+    // color: #6F6F6F
+}
+
+
+
+    h1{
+        font-size: 2.6em;
+        color: var(--secondary) ;
+        line-height: 1.5em;
+        margin: 1em;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 2.1em;
+        color:var(--secondary) ;
+        line-height: 1.4em;
+        padding: 1em;
+        margin: 1em;
+    }
+    h3{
+        font-size: 1.75em ;
+        color:var(--secondary) ;
+        line-height: 1.3em;
+        opacity: 75%;
+        margin: 1em;
+    }
+    h4{
+        font-size: 1.5em ;
+        color: var(--secondary);
+        line-height: 1.2em;
+        padding: 1em;
+        margin:1em ;
+    }
+    h5{
+        font-size:1.25em ;
+        color:var(--third);
+        line-height: 1.1em;
+        padding: 1em;
+        margin:1em ;
+    }
+    h6{
+        font-size:5.25em ;
+        font-weight: 900;
+        color:var(--third);
+        opacity: 0.5;
+        line-height: 1.1em;
+        padding: 1em;
+        margin:1em ;
+    }
+
+    .btnText{
+        font-size:1.5em ;
+        font-weight: 800;
+        color:var(--secondary);
+        line-height: 1.1em;
+        padding: 1em;
+        margin:1em ;
+    }
+    p{
+        font-size:1em;
+        color: var(--secondary);
+        opacity: 75%;
+        padding: 1em;
+        margin:1em ;
+    }
+
+    ._BgTitle{
+        display: flex;
+        opacity: 0.1;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 1em;
+        font-size: 10em;
+        overflow: hidden;
+
+    }
+
+    ._divRelative{
+        position: relative;
+    }
+
+    ._BgSubTitle{
+        display: flex;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        padding: 0 1.5em;
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+
+    }
+    ._BgSubTitle::after{
+        content: "";
+        position: absolute;
+        height: 2em;
+        width: 2em;
+        background-color: var(--primary);
+        top: 2em;
+        z-index: -1;
+    }
+
+    .Left{
+        align-items: start;
+        justify-content: start;
+    }
+    .Right{
+        align-items: end;
+        justify-content: end;
+    }
+
+    .HeroImage{
+        display: flex;
+        // width: 100%;
+        height: 25em;
+        z-index: 1;
+        transition: 0.5s ease-in-out;
+
+    }
+    ._HeroImage{
+        object-fit: cover;
+    }
+    @media only screen and (max-width: 480px) {
+
+
+        .container{
+            overflow: hidden;
+        }
+
+}
+
+@media only screen and (min-width: 1200px){ 
+    
+    .container{
+        margin: 1.875em auto;
+        padding: 1.875em 1.25em;
+        max-width: 1150px;
+    }
+}
