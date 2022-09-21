@@ -1,4 +1,7 @@
 import React from 'react'
+import { Photos } from '../../components/Multimedia/Photos'
+import { Presse } from '../../components/Multimedia/Presse'
+import { Videos } from '../../components/Multimedia/Videos'
 
 export const Multimedia = () => {
   return (
@@ -10,16 +13,13 @@ export const Multimedia = () => {
         <img src={require('../../assets/img/galerie/home2.jpg')} className="_HeroImage Left" alt="img"/>
       </div>
     <div className="styledUnderlignComp">
-      <h6 className="_BgTitle Left">Photos</h6>
-      <h3 className="_BgSubTitle Left">Photos</h3>
+      <Photos/>
     </div>
     <div className="styledUnderlignComp">
-      <h6 className="_BgTitle Right">Vidéos</h6>
-      <h3 className="_BgSubTitle Right">Vidéos</h3>
+      <Videos/>
     </div>
     <div className="styledUnderlignComp">
-      <h6 className="_BgTitle Left">Presse</h6>
-      <h3 className="_BgSubTitle Left">Presse</h3>
+      <Presse/>
     </div>
 
   </div>
