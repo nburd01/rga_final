@@ -6,7 +6,9 @@ import { Contact } from '../../components/Contact/Contact'
 import { Horaires } from '../../components/Horaires/Horaires'
 import { Lieu } from '../../components/Lieu/Lieu'
 import { PhotoSelf } from '../../components/PhotoSelf/PhotoSelf'
+import { Presentation } from '../../components/Presentation/Presentation'
 import '../../index.scss'
+
 
 export const Home = () => {
   return (
@@ -25,13 +27,10 @@ export const Home = () => {
       </section>
       <section className="__info">
         <div className="_divRelative">
-          <Horaires/>
+          <Presentation/>
         </div>
         <div>
           <Lieu/>
-        </div>
-        <div>
-          <Contact/>
         </div>
       </section>
     </div>
