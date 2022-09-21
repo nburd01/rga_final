@@ -22,7 +22,8 @@ export const MainNav = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/rga">La RGA</Link></li>
             <li><Link to="/inscriptions">Inscriptions</Link></li>
-            <li><Link to="/seances">Seances</Link></li>
+            <li><Link to="/seances">Séances</Link></li>
+            <li><Link to="/horaires">Horaires</Link></li>
             <li><Link to="/multimedia">Multimédia</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>

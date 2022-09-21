@@ -16,6 +16,8 @@ import { Footer } from "./components/Footer/Footer";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+import { Horaires } from "./components/Horaires/HorairesComp";
+import { HorairesPage } from "./pages/Horaires/HorairesPage";
 
 library.add(fas, faTwitter, faFacebook, faLinkedin, faFontAwesome)
 
@@ -40,6 +42,7 @@ function App() {
             <Route path="rga" element={<RGA />} />
             <Route path="inscriptions" element={<Inscriptions />} />
             <Route path="seances" element={<Seances />} />
+            <Route path="horaires" element={<HorairesPage />} />
             <Route path="multimedia" element={<Multimedia />} />
             <Route path="contact" element={<Contact />} />
             {/* <Route path="login" element={<Login />} /> */}

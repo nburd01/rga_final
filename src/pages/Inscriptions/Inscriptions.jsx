@@ -1,7 +1,7 @@
 import React from 'react'
 import { Abonnements } from '../../components/Abonnements/Abonnements'
 import { InscriptionsComp } from '../../components/Inscriptions/InscriptionsComp'
-import { Renseignements } from '../../components/Renseignements/Renseignements'
+// import { Renseignements } from '../../components/Renseignements/Renseignements'
 
 export const Inscriptions = () => {
   return (
@@ -18,9 +18,9 @@ export const Inscriptions = () => {
       <div className="styledUnderlignComp">
         <InscriptionsComp/>
       </div>
-      <div className="styledUnderlignComp">
+      {/* <div className="styledUnderlignComp">
         <Renseignements/>
-      </div>
+      </div> */}
       
     </div>
 
