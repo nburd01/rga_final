@@ -1,5 +1,6 @@
 import React from 'react'
 import { Materiel } from '../../components/Materiel/Materiel'
+import { ReglesDeVie } from '../../components/ReglesDeVie/ReglesDeVie'
 import { SeanceType } from '../../components/SeanceType/SeanceType'
 
 export const Seances = () => {
@@ -16,6 +17,9 @@ export const Seances = () => {
       </div>
       <div className="styledUnderlignComp">
         <Materiel/>
+      </div>
+      <div className="styledUnderlignComp">
+        <ReglesDeVie/>
       </div>
   </div>
   )

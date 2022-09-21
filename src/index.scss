@@ -90,7 +90,7 @@ code {
         width: 100%;
         padding: 0 0 0.1em 0;
         margin: 0;
-        margin-top: 1em;
+        // margin-top: 1em;
         font-size: 10em;
         // overflow-x: hidden;
 
@@ -143,11 +143,16 @@ code {
         flex-direction: column;
     }
     .Right{
-        align-items: end;
+        align-items:center;
         justify-content: end;
         display: flex;
         flex-direction: column;
     }
+
+    ._right{
+        margin-bottom: 6em;
+    }
+
     .__intro{   
         display: block;
         justify-content: center;
@@ -197,7 +202,7 @@ code {
                 align-items: flex-start;
             }
             ._right{
-
+                margin-bottom: 1em;
             }
             ._BgTitle{
                 display: flex;
