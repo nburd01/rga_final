@@ -21,10 +21,10 @@ export const RGA = () => {
         <Stagiaires/>
       </div>
       <div className="styledUnderlignComp">
-        <Infrastructures/>
+        <Staff/>
       </div>
       <div className="styledUnderlignComp">
-        <Staff/>
+        <Infrastructures/>
       </div>
       <div className="styledUnderlignComp">
         <ReglesDeVie/>
