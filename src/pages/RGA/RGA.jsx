@@ -1,7 +1,6 @@
 import React from 'react'
 import { Infrastructures } from '../../components/Infrastructures/Infrastructures'
 import { Objectifs } from '../../components/Objectifs/Objectifs'
-import { ReglesDeVie } from '../../components/ReglesDeVie/ReglesDeVie'
 import { Staff } from '../../components/Staff/Staff'
 import { Stagiaires } from '../../components/Stagiaires/Stagiaires'
 
@@ -26,10 +25,6 @@ export const RGA = () => {
       <div className="styledUnderlignComp">
         <Infrastructures/>
       </div>
-      <div className="styledUnderlignComp">
-        <ReglesDeVie/>
-      </div>
-    
     </div>
 
   )
