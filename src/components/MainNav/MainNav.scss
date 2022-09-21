@@ -31,7 +31,8 @@
                 width: 100%;
                 background-color: var(--primary);
                 transition: all 0.3s ease-in 0s;
-                
+                height: 80vh;
+                overflow: hidden;
                 ul{
                     display: flex;
                     margin: 0;
@@ -58,6 +59,11 @@
 
             .navbar-links.active{
                 display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                li{
+                    margin: 0.2em;
+                }
             }
             .animate {
                 transition: transform .35s ease-in-out;
