@@ -25,7 +25,6 @@ export const MainNav = () => {
             <li><Link to="/seances">Seances</Link></li>
             <li><Link to="/multimedia">Multimédia</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/login">Login</Link></li>
           </ul>
         </div>
 
