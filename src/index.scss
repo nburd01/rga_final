@@ -162,7 +162,10 @@ body{
         .container{
             overflow: hidden;
             display: flex;
-        flex-direction: column;
+            flex-direction: column;
+            ul{
+                padding: 1em 0.5em
+            }
 
         }
 }
