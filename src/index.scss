@@ -93,6 +93,13 @@ body{
     ul {
         list-style-type: none;
       }
+    li{
+        font-size: 1em;
+        color: var(--secondary);
+        opacity: 75%;
+        padding: 0 1em;
+        margin: 1em;
+    }
 
     ._divRelative{
         position: relative;
