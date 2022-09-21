@@ -3,25 +3,55 @@ import React from 'react'
 export const InscriptionsComp = () => {
   return (
 
-    <div className="container">
-<h6 className="_BgTitle Left">Inscriptions</h6>
-<h3 className="_BgSubTitle Left">Inscriptions</h3>
-<ul>
-  <li>Premier abonnement = 70 euros
-Abonnement annuel à la Roazhon Goal Academy + 1 paire de gants Uhlsport
-+ livret pédagogique illustré "je suis goal" + 1 ensemble Uhlsport (maillot,
-short, chaussettes)</li>
-  <li>Ré-abonnement = 50 euros</li>
-  <li>Abonnement annuel à la Roazhon Goal Academy + 1 paire de gants Uhlsport
-+ 1 ensemble Uhlsport (maillot, short, chaussettes)
-- 5 euros : participation à chaque séance spécifique.</li>
-  <li>Exemple :</li>
-    <ul>
-      <li>Cycle 1 = 1er Abonnement + 2 spécifiques : 70 + 10 = 70 euros</li>
-      <li></li>
-    </ul>
-  <li>Cycle 2 = 2 spécifiques : 10 euros</li>
-</ul>
+<div className="container">
+
+
+  <div className='Left'>
+    <h4>Premier abonnement</h4>
+      <h5>70 euros</h5>
+      <p>5 euros : participation à chaque séance spécifique.</p>
+
+
+    <li>
+      Abonnement annuel à la Roazhon Goal Academy 
+      <li>1 paire de gants Uhlsport</li>
+      <li>1 livret pédagogique illustré "je suis goal"</li>
+      <li>1 ensemble Uhlsport
+        <ul>
+        <li>maillot</li>
+        <li>short</li>
+        <li>chaussettes</li>
+          </ul> 
+      </li>
+    </li>
+  </div>
+
+  <div className='Right'>
+    <h4>Ré-abonnement</h4>
+      <h5>50 euros</h5>
+      <p>5 euros : participation à chaque séance spécifique.</p>
+    <li>Abonnement annuel à la Roazhon Goal Academy
+      <li>1 paire de gants Uhlsport</li>
+      <li>1 ensemble Uhlsport</li>
+      <ul>
+        <li>maillot</li>
+        <li>short</li>
+        <li>chaussettes</li>
+      </ul>
+    </li>
+  </div>
+
+
+  <div className='Left'>
+
+  <h4>Exemple</h4>
+      <ul>
+        <li>Cycle 1 = 1er Abonnement + 2 spécifiques : 70 + 10 = 70 euros</li>
+        <li>Cycle 2 = 2 spécifiques : 10 euros</li>
+      </ul>
+  </div>
+
+
 </div>
 
   )

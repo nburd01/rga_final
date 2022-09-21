@@ -129,10 +129,14 @@ body{
     .Left{
         align-items: start;
         justify-content: start;
+        display: flex;
+        flex-direction: column;
     }
     .Right{
         align-items: end;
         justify-content: end;
+        display: flex;
+        flex-direction: column;
     }
     .__intro{   
         display: block;
@@ -156,12 +160,19 @@ body{
 
         .container{
             overflow: hidden;
+            display: flex;
+        flex-direction: column;
+
         }
 }
     @media only screen and (min-width: 996px) {
 
         .container{
             overflow: hidden;
+            display: flex;
+        flex-direction: column;
+
+
         }
         .__intro{
             display: flex;
@@ -196,6 +207,9 @@ body{
         margin: 1.875em auto;
         padding: 1.875em 1.25em;
         max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+
     }
 
 }
