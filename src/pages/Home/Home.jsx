@@ -3,7 +3,7 @@ import { Baseline } from '../../components/baseline/Baseline'
 import { ButtonCTA } from '../../components/btn/Btn'
 import { ColourSeparator } from '../../components/ColourSeparator/ColourSeparator'
 import { Contact } from '../../components/Contact/Contact'
-import { Horaires } from '../../components/Horaires/Horaires'
+import { Horaires } from '../../components/Horaires/HorairesComp'
 import { Lieu } from '../../components/Lieu/Lieu'
 import { PhotoSelf } from '../../components/PhotoSelf/PhotoSelf'
 import { Presentation } from '../../components/Presentation/Presentation'
@@ -26,9 +26,7 @@ export const Home = () => {
         </div>
       </section>
       <section className="__info">
-        <div className="_divRelative">
           <Presentation/>
-        </div>
         <div>
           <Lieu/>
         </div>
