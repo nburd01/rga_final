@@ -234,7 +234,7 @@ code {
 
 @media only screen and (min-width: 535px) {
     .HeroImage{
-        margin: 5em 1em;
+        margin: 1em;
     }
     ._HeroImage{
         object-fit: contain;
@@ -325,6 +325,9 @@ code {
     .__secondary{
         border: 2px solid var(--primary);
         box-shadow:15px 15px 0px 5px var(--primary);
+    }
+        .HeroImage{
+        margin: 0;
     }
 
 }
