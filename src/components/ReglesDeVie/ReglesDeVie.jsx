@@ -2,10 +2,10 @@ import React from 'react'
 
 export const ReglesDeVie = () => {
   return (
-    <div className="container">
-
+<div className="container">
     <h6 className="_BgTitle Left">Règles de vie</h6>
     <h3 className="_BgSubTitle Left">Règles de vie</h3>
+    <div className='Card'>
       <ul>
         <li>Chaque goal devra arriver en tenue « civil » et se changer ensuite en
 tenue de football. (sous réserve des conditions sanitaires Covid).</li>
@@ -18,5 +18,6 @@ casquette, crème solaire...Gants !).</li>
         <li>Être motivé et de bonne humeur</li>
       </ul>
     </div>
+</div>
   )
 }
