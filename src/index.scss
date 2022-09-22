@@ -236,7 +236,12 @@ code {
         }
         .Card{
             flex-direction:row;
+            border: 2px solid #242B2E;
+            box-shadow:15px 15px 0px 5px #242B2E;
+            margin: 4em 0;
         }
+
+
         .illustration__{
             display: flex;
             width: 50%;
@@ -256,7 +261,12 @@ code {
         max-width: 1150px;
         display: flex;
         flex-direction: column;
-
     }
+            .Card{
+            border-radius: 1em;
+            ._Title{
+                display: inline-block;
+            }
+        }
 
 }
