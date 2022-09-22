@@ -11,10 +11,10 @@ export const Inscriptions = () => {
       <div className="HeroImage">
         <img src={require('../../assets/img/galerie/home1.jpg')} className="_HeroImage Left" alt="img"/>
       </div>
-      <div className="styledUnderlignComp">
+      <div className="">
        <Abonnements/>
       </div>
-      <div className="styledUnderlignComp">
+      <div className="">
         <InscriptionsComp/>
       </div>
     </div>

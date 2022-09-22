@@ -8,10 +8,10 @@ export const HorairesPage = () => {
              <div className="HeroImage">
         <img src={require('../../assets/img/galerie/home5.jpg')} className="_HeroImage Left" alt="img"/>
       </div>
-        <div className="styledUnderlignComp">
+        <div className="">
           <Planification/>
       </div>
-        <div className="styledUnderlignComp">
+        <div className="">
           <HorairesComp/>
       </div>
     </div>

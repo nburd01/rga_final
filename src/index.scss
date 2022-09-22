@@ -169,9 +169,7 @@ code {
         object-fit: cover;
     }
 
-    .styledUnderlignComp{
-        display: flex;
-    }
+
     .Card{
         display: flex;
         flex-direction: column;
@@ -235,6 +233,9 @@ code {
                 font-size: 10em;
                 overflow-x: hidden;
             }
+        }
+        .Card{
+            flex-direction:row;
         }
         .illustration__{
             display: flex;
