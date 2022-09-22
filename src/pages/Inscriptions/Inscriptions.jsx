@@ -1,7 +1,6 @@
 import React from 'react'
 import { Abonnements } from '../../components/Abonnements/Abonnements'
 import { InscriptionsComp } from '../../components/Inscriptions/InscriptionsComp'
-import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
 
 export const Inscriptions = () => {
   return (
@@ -14,9 +13,6 @@ export const Inscriptions = () => {
       </div>
       <div className="styledUnderlignComp">
        <Abonnements/>
-       <div>
-          <img src={SoccerPlayer} alt="SVG logo image"/>
-       </div>
       </div>
       <div className="styledUnderlignComp">
         <InscriptionsComp/>

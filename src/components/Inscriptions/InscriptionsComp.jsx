@@ -1,12 +1,11 @@
 import React from 'react'
+import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
 
 export const InscriptionsComp = () => {
   return (
 
 <div className="container">
-
-
-  <div className='Left'>
+  <div className='Card'>
     <h4>Premier abonnement</h4>
       <h5>70 euros</h5>
       <p>5 euros : participation à chaque séance spécifique.</p>
@@ -25,8 +24,10 @@ export const InscriptionsComp = () => {
       </li>
     </li>
   </div>
-
-  <div className='Right'>
+  <div>
+    <img src={SoccerPlayer} alt="SVG logo image"/>
+  </div>
+  <div className='Card'>
     <h4>Ré-abonnement</h4>
       <h5>50 euros</h5>
       <p>5 euros : participation à chaque séance spécifique.</p>
