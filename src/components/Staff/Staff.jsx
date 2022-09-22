@@ -3,8 +3,8 @@ import React from 'react'
 export const Staff = () => {
   return (
     <div className="container">
-    <h6 className="_BgTitle Right">Le staff</h6>
-    <h3 className="_BgSubTitle Right">Le staff</h3>
+    <h6 className="_BgTitle Left">Le staff</h6>
+    <h3 className="_BgSubTitle Left">Le staff</h3>
     <div className='Card __primary'>
     <ul>
       <li>Séances préparées et encadrées par des gardiens de but, anciens gardiens,
