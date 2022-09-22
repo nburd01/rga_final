@@ -1,5 +1,7 @@
 import React from 'react'
 import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Check } from '../Check/Check'
 
 export const InscriptionsComp = () => {
   return (
@@ -9,6 +11,7 @@ export const InscriptionsComp = () => {
     <div className='_Title'>
     <h4>Premier abonnement</h4>
       <h5>70 euros</h5>
+      <Check/>
     </div>
       <p>5 euros : participation à chaque séance spécifique.</p>
 
@@ -33,6 +36,7 @@ export const InscriptionsComp = () => {
   <div className='_Title'>
     <h4>Ré-abonnement</h4>
       <h5>50 euros</h5>
+      <Check/>
     </div>
 
       <p>5 euros : participation à chaque séance spécifique.</p>
