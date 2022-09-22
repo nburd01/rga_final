@@ -6,6 +6,7 @@ export const Objectifs = () => {
 
     <h6 className="_BgTitle Left">Objectifs</h6>
     <h3 className="_BgSubTitle Left">Objectifs</h3>
+    <div className='Card'>
     <ul>
       <li>Faire découvrir ou conforter le poste de gardien de but au travers des
 spécifiques techniques et ludiques.</li>
@@ -18,6 +19,7 @@ gardiens et gardiennes de but.</li>
       <li>Faire de la Roazhon Goal Academy un lieu de rassemblement pour les
 gardiens de but.</li>
     </ul>
+    </div>
 </div>
 
   )

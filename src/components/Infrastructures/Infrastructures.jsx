@@ -2,10 +2,11 @@ import React from 'react'
 
 export const Infrastructures = () => {
   return (
-    <div className="container">
+<div className="container">
 
     <h6 className="_BgTitle Left">Infrastructures</h6>
     <h3 className="_BgSubTitle Left">Infrastructures</h3>
+    <div className='Card'>
     <ul>
       <li>Complexe footballistique du SC LE RHEU FOOTBALL, </li>
       <li>Route de LORIENT sortie LE RHEU</li>
@@ -15,6 +16,7 @@ export const Infrastructures = () => {
 avec tv, wifi, jeux et collation.</li>
       <li>Vestiaires capables d'accueillir filles et garçons</li>
     </ul>
+  </div>
 </div>
   )
 }
