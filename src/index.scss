@@ -179,6 +179,18 @@ code {
         justify-content: center;
         align-items: center;
     }
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0
+
+    }
 
 @media only screen and (max-width: 480px) {
 
@@ -249,7 +261,6 @@ code {
         .Abonnement{
             width: 50%;
             border-radius: 1em;
-
         }
 }
 
