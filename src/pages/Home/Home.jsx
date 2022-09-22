@@ -1,6 +1,7 @@
 import React from 'react'
 import { Baseline } from '../../components/baseline/Baseline'
 import { ButtonCTA } from '../../components/btn/Btn'
+import { Carte } from '../../components/Carte/Carte'
 import { ColourSeparator } from '../../components/ColourSeparator/ColourSeparator'
 import { Contact } from '../../components/Contact/Contact'
 import { Horaires } from '../../components/Horaires/HorairesComp'
@@ -29,6 +30,9 @@ export const Home = () => {
           <Presentation/>
         <div>
           <Lieu/>
+        </div>
+        <div>
+          <Carte/>
         </div>
       </section>
     </div>
