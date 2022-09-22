@@ -9,13 +9,13 @@ html{
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body{
     line-height: 1,625;
     margin: 0;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -272,21 +272,21 @@ code {
                 margin: 0;
                 margin-top: 1em;
                 font-size: 10em;
-                // overflow-x: hidden;
+                overflow-x: hidden;
             }
         }
         .Card {
             flex-direction:row;
-            margin: 4em auto;
+            margin: 4em 0;
         }
-        .__primary{
-            border: 2px solid var(--secondary);
-            box-shadow:15px 15px 0px 5px var(--secondary);
-        }
-        .__secondary{
-            border: 2px solid var(--primary);
-            box-shadow:15px 15px 0px 5px var(--primary);
-        }
+            .__primary{
+        border: 2px solid var(--secondary);
+        box-shadow:15px 15px 0px 5px var(--secondary);
+    }
+    .__secondary{
+        border: 2px solid var(--primary);
+        box-shadow:15px 15px 0px 5px var(--primary);
+    }
 
 
         .illustration__{
