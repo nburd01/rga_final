@@ -5,7 +5,7 @@ export const Staff = () => {
     <div className="container">
     <h6 className="_BgTitle Right">Le staff</h6>
     <h3 className="_BgSubTitle Right">Le staff</h3>
-    <div className='Card'>
+    <div className='Card __primary'>
     <ul>
       <li>Séances préparées et encadrées par des gardiens de but, anciens gardiens,
 éducateurs confirmés aux spécifiques.</li>

@@ -5,7 +5,7 @@ export const ReglesDeVie = () => {
 <div className="container">
     <h6 className="_BgTitle Left">Règles de vie</h6>
     <h3 className="_BgSubTitle Left">Règles de vie</h3>
-    <div className='Card'>
+    <div className='Card __primary'>
       <ul>
         <li>Chaque goal devra arriver en tenue « civil » et se changer ensuite en
 tenue de football. (sous réserve des conditions sanitaires Covid).</li>

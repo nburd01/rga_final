@@ -6,7 +6,7 @@ export const Objectifs = () => {
 
     <h6 className="_BgTitle Left">Objectifs</h6>
     <h3 className="_BgSubTitle Left">Objectifs</h3>
-    <div className='Card'>
+    <div className='Card __primary'>
     <ul>
       <li>Faire découvrir ou conforter le poste de gardien de but au travers des
 spécifiques techniques et ludiques.</li>

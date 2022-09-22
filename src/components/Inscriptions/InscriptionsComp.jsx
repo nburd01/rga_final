@@ -7,7 +7,7 @@ export const InscriptionsComp = () => {
   return (
 
 <div className="container">
-  <div className='Card'>
+  <div className='Card __primary __primary'>
     <div className='_Title'>
     <h4>Premier abonnement</h4>
       <h5>70 euros</h5>
@@ -32,7 +32,7 @@ export const InscriptionsComp = () => {
   <div>
     <img src={SoccerPlayer} alt="SVG logo image"/>
   </div>
-  <div className='Card'>
+  <div className='Card __primary'>
   <div className='_Title'>
     <h4>Ré-abonnement</h4>
       <h5>50 euros</h5>
@@ -52,12 +52,13 @@ export const InscriptionsComp = () => {
     </li>
   </div>
   <div className='Left'>
-
-  <h4>Exemple</h4>
-      <ul>
-        <li>Cycle 1 = 1er Abonnement + 2 spécifiques : 70 + 10 = 70 euros</li>
-        <li>Cycle 2 = 2 spécifiques : 10 euros</li>
-      </ul>
+    <div className='Card __secondary '>
+    <h4>Exemple</h4>
+        <ul>
+          <li>Cycle 1 = 1er Abonnement + 2 spécifiques : 70 + 10 = 70 euros</li>
+          <li>Cycle 2 = 2 spécifiques : 10 euros</li>
+        </ul>
+    </div>
   </div>
 
 

@@ -5,7 +5,7 @@ export const Planification = () => {
 <div>
   <h6 className="_BgTitle Left">Planification</h6>
   <h3 className="_BgSubTitle Left">Planification</h3>
-  <div className='Card'>
+  <div className='Card __primary'>
   <ul>
     <li>Cycles d'entraînements calés sur le rythme scolaire.</li>
     <li>Pas de séances pendant les vacances. Il sera nécessaire de télécharger

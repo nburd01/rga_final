@@ -174,10 +174,22 @@ code {
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: #fee140;
         padding: 1em;
         justify-content: center;
         align-items: center;
+    }
+
+    .__primary{
+        background-color: var(--primary);
+        border: none;
+        box-shadow:none;
+        color: var(--secondary);
+    }
+    .__secondary{
+        background-color: var(--secondary);
+        border: none;
+        box-shadow:none;
+        color: var(--primary);
     }
     .map-responsive{
         overflow:hidden;
@@ -246,10 +258,8 @@ code {
                 overflow-x: hidden;
             }
         }
-        .Card{
+        .Card {
             flex-direction:row;
-            border: 2px solid #242B2E;
-            box-shadow:15px 15px 0px 5px #242B2E;
             margin: 4em 0;
         }
 
@@ -273,11 +283,19 @@ code {
         display: flex;
         flex-direction: column;
     }
-            .Card{
-            border-radius: 1em;
-            ._Title{
-                display: inline-block;
-            }
+    .Card {
+    border-radius: 1em;
+    ._Title{
+        display: inline-block;
         }
+    }
+    .__primary{
+        border: 2px solid var(--secondary);
+        box-shadow:15px 15px 0px 5px var(--secondary);
+    }
+    .__secondary{
+        border: 2px solid var(--primary);
+        box-shadow:15px 15px 0px 5px var(--primary);
+    }
 
 }

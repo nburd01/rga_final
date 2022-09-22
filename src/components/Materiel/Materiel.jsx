@@ -5,7 +5,7 @@ export const Materiel = () => {
     <div>
     <h6 className="_BgTitle Right">Matériel</h6>
     <h3 className="_BgSubTitle Right">Le matériel</h3>
-    <div className='Card'>
+    <div className='Card __primary'>
       <ul>
         <li>Partenariat avec la marque UHLSPORT pour les équipements (Paires
 offertes à l'inscription + réduction sur les achats boutiques).</li>
