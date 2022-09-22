@@ -74,6 +74,7 @@
 
             .toggleBtn{
                 position:absolute;
+                padding: 2em;
                 top: 5em;
                 right:2em;
                 cursor: pointer;
@@ -95,9 +96,9 @@
                 background-color: var(--primary);
             
             .toggleBtn{
-
+                padding: 1em;
                 span{
-                    background-color: var(--secondary);       
+                    background-color: var(--secondary);      
                 }
             }
         }
