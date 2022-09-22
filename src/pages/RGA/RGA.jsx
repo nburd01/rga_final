@@ -13,16 +13,16 @@ export const RGA = () => {
       <div className="HeroImage">
         <img src={require('../../assets/img/galerie/home3.jpg')} className="_HeroImage Left" alt="img"/>
       </div>
-      <div className="styledUnderlignComp">
+      <div className="">
         <Objectifs/>
       </div>
-        <div className="styledUnderlignComp">
+        <div className="">
         <Stagiaires/>
       </div>
-      <div className="styledUnderlignComp">
+      <div className="">
         <Staff/>
       </div>
-      <div className="styledUnderlignComp">
+      <div className="">
         <Infrastructures/>
       </div>
     </div>

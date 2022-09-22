@@ -3,7 +3,7 @@ import './Contact.scss'
 
 export const ContactComp = () => {
   return (
-    <div className="styledUnderlignComp">
+    <div className="">
         <h6 className="_BgTitle Right">Contact</h6>
         <h3 className="_BgSubTitle Right">Contact</h3>
     </div>

@@ -41,8 +41,6 @@ export const InscriptionsComp = () => {
       </ul>
     </li>
   </div>
-
-
   <div className='Left'>
 
   <h4>Exemple</h4>
