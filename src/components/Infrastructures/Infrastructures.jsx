@@ -4,8 +4,8 @@ export const Infrastructures = () => {
   return (
 <div className="container">
 
-    <h6 className="_BgTitle Left">Infrastructures</h6>
-    <h3 className="_BgSubTitle Left">Infrastructures</h3>
+    <h6 className="_BgTitle Right">Infrastructures</h6>
+    <h3 className="_BgSubTitle Right">Infrastructures</h3>
     <div className='Card __primary'>
     <ul>
       <li>Complexe footballistique du SC LE RHEU FOOTBALL, </li>
