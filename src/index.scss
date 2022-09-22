@@ -153,7 +153,6 @@ code {
         display: block;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10em;
     }
     
 
@@ -299,7 +298,14 @@ code {
         ._HeroImage{
             margin: 0 2em;
             height: 25em;
-
+        }
+        ._divRelative{
+            ._BgTitle{
+                margin: 0.5em 0 0 0;
+            }
+        }
+        .btnContainer{
+            margin-bottom:4em;
         }
 }
 
@@ -329,5 +335,12 @@ code {
         .HeroImage{
         margin: 0;
     }
-
+    .__intro{
+        margin-bottom: 10em;
+    }
+    ._divRelative{
+        ._BgTitle{
+            margin: 0;
+        }
+    }
 }
