@@ -3,6 +3,7 @@ import { Infrastructures } from '../../components/Infrastructures/Infrastructure
 import { Objectifs } from '../../components/Objectifs/Objectifs'
 import { Staff } from '../../components/Staff/Staff'
 import { Stagiaires } from '../../components/Stagiaires/Stagiaires'
+import GoalKeeper from '../../assets/Illustrations/Goalkeeper.svg'
 
 export const RGA = () => {
   return (
@@ -15,6 +16,9 @@ export const RGA = () => {
       </div>
       <div className="">
         <Objectifs/>
+      </div>
+      <div>
+        <img src={GoalKeeper} alt="Goalkeeper"/>
       </div>
         <div className="">
         <Stagiaires/>
