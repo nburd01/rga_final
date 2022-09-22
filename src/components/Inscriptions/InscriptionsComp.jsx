@@ -6,8 +6,10 @@ export const InscriptionsComp = () => {
 
 <div className="container">
   <div className='Card'>
+    <div className='_Title'>
     <h4>Premier abonnement</h4>
       <h5>70 euros</h5>
+    </div>
       <p>5 euros : participation à chaque séance spécifique.</p>
 
 
@@ -28,17 +30,21 @@ export const InscriptionsComp = () => {
     <img src={SoccerPlayer} alt="SVG logo image"/>
   </div>
   <div className='Card'>
+  <div className='_Title'>
     <h4>Ré-abonnement</h4>
       <h5>50 euros</h5>
+    </div>
+
       <p>5 euros : participation à chaque séance spécifique.</p>
     <li>Abonnement annuel à la Roazhon Goal Academy
       <li>1 paire de gants Uhlsport</li>
-      <li>1 ensemble Uhlsport</li>
-      <ul>
-        <li>maillot</li>
-        <li>short</li>
-        <li>chaussettes</li>
-      </ul>
+      <li>1 ensemble Uhlsport
+        <ul>
+          <li>maillot</li>
+          <li>short</li>
+          <li>chaussettes</li>
+        </ul>
+      </li>
     </li>
   </div>
   <div className='Left'>
