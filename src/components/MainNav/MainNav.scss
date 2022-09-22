@@ -52,6 +52,10 @@
                        text-decoration: none;
                        color: var(--secondary);
                        font-weight: bold;
+                       padding: 1em;
+                       p{
+                       padding: 1em;
+                       }
                        }
                     }
                 }
@@ -75,7 +79,7 @@
             .toggleBtn{
                 position:absolute;
                 padding: 2em;
-                top: 5em;
+                top: 3em;
                 right:2em;
                 cursor: pointer;
 
