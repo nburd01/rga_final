@@ -5,7 +5,7 @@ export const Stagiaires = () => {
 <div className="container">
 <h6 className="_BgTitle Right">Les stagiaires</h6>
         <h3 className="_BgSubTitle Right">Les stagiaires</h3>
-  <div className='Card'>
+  <div className='Card __primary'>
   <ul>
     <li>Structure spécifique GARDIENS DE BUT ouverte aux garçons et aux filles.</li>
     <li>Accueil de licenciés internes et externes au SC Le Rheu.
