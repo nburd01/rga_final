@@ -167,7 +167,6 @@ code {
         border: none;
         border-radius: none;
         height: 25em;
-
     }
 
 
@@ -207,6 +206,29 @@ code {
     }
     .PicTitle{
         display: block;
+    }
+    .illustration{
+        margin: 2em auto;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+    }
+    ._illustration{
+        margin: 2em auto;
+        height: 10em;
+        object-fit: contain;
+    }
+    .HeroImage{
+    display: flex;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    }
+    ._HeroImage{
+        object-fit: contain;
+        box-shadow:none;
+        border: none;
+        border-radius: none;
+        height: 25em;
     }
 
 @media only screen and (max-width: 480px) {
@@ -293,6 +315,10 @@ code {
         .illustration__{
             display: flex;
             width: 50%;
+        }
+        .illustration{
+            display: flex; 
+            object-fit: contain;
         }
         .Abonnement{
             width: 50%;

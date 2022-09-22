@@ -7,7 +7,7 @@ export const InscriptionsComp = () => {
   return (
 
 <div className="container">
-  <div className='Card __primary __primary'>
+  <div className='Card __primary'>
     <div className='_Title'>
     <h4>Premier abonnement</h4>
       <h5>70 euros</h5>
@@ -29,8 +29,8 @@ export const InscriptionsComp = () => {
       </li>
     </li>
   </div>
-  <div>
-    <img src={SoccerPlayer} alt="SVG logo image"/>
+  <div className='illustration'>
+    <img className='_illustration' src={SoccerPlayer} alt="SVG logo image"/>
   </div>
   <div className='Card __primary'>
   <div className='_Title'>
@@ -60,8 +60,6 @@ export const InscriptionsComp = () => {
         </ul>
     </div>
   </div>
-
-
 </div>
 
   )

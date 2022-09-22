@@ -8,10 +8,10 @@ export const HorairesComp = () => {
     <div>
     <h6 className="_BgTitle Left">Horaires</h6>
     <h3 className="_BgSubTitle Left">Horaires</h3>
-    <div className='Card __primary __primary'>
+    <div className='Card __primary'>
       <LunMar/>
     </div>
-    <div className='Card __primary __primary'>
+    <div className='Card __primary'>
       <Dim/>
     </div>
   </div>
