@@ -16,14 +16,9 @@ export const InscriptionsComp = () => {
     <li>
       Abonnement annuel à la Roazhon Goal Academy 
       <li>1 paire de gants Uhlsport</li>
-      <li>1 livret pédagogique illustré "je suis goal"</li>
-      <li>1 ensemble Uhlsport
-        <ul>
-        <li>maillot</li>
-        <li>short</li>
-        <li>chaussettes</li>
-          </ul> 
-      </li>
+      <li>1 ensemble Uhlsport</li>
+      <li>1 livret pédagogique illustré "Je suis goal"</li>
+      <img src={require('../../assets/img/Livre/jesuisgoal-couverture-shop_1000x1500.webp')} alt="photoLivre"></img>
     </li>
   </div>
   <div className='Card __primary'>
@@ -36,11 +31,6 @@ export const InscriptionsComp = () => {
     <li>Abonnement annuel à la Roazhon Goal Academy
       <li>1 paire de gants Uhlsport</li>
       <li>1 ensemble Uhlsport
-        <ul>
-          <li>maillot</li>
-          <li>short</li>
-          <li>chaussettes</li>
-        </ul>
       </li>
     </li>
   </div>
