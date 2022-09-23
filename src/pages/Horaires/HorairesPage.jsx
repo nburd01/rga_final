@@ -14,10 +14,10 @@ export const HorairesPage = () => {
         <img src={require('../../assets/img/galerie/home5.jpg')} className="_HeroImage" alt="img"/>
       </div>
     </div>
-        <div className="">
+        <div >
           <Planification/>
       </div>
-        <div className="">
+        <div >
           <HorairesComp/>
       </div>
     </div>

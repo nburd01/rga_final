@@ -15,13 +15,13 @@ export const Seances = () => {
       <img src={require('../../assets/img/galerie/home4.jpg')} className="_HeroImage" alt="img"/>
     </div>
   </div>
-      <div className="">
+      <div >
         <SeanceType/>
       </div>
-      <div className="">
+      <div >
         <Materiel/>
       </div>
-      <div className="">
+      <div >
         <ReglesDeVie/>
       </div>
   </div>

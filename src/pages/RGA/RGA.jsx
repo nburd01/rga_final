@@ -17,17 +17,17 @@ export const RGA = () => {
         <img src={require('../../assets/img/galerie/home3.jpg')} className="_HeroImage" alt="img"/>
       </div>
     </div>
-      <div className="">
+      <div >
         <Objectifs/>
       </div>
         <img classname='_illustration' src={GoalKeeper} alt="Goalkeeper"/>
-        <div className="">
+        <div >
         <Stagiaires/>
       </div>
-      <div className="">
+      <div >
         <Staff/>
       </div>
-      <div className="">
+      <div >
         <Infrastructures/>
       </div>
     </div>
