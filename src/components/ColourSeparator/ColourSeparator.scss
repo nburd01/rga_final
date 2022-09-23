@@ -7,14 +7,14 @@
         height: 15vh;
         background: var(--primary);
         rotate: 0deg;
-        width: 120%;
         margin-top: -40px;
-        width: 200%;
+        width: 100%;
         overflow: hidden;
         
     }
     @media only screen and (min-width: 996px) {
        .ColourSeparator{
+           width: 120%;
            height: 10vh;
            margin-top: 0;
            rotate: -3deg;
