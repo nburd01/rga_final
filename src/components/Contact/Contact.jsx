@@ -3,9 +3,11 @@ import './Contact.scss'
 
 export const ContactComp = () => {
   return (
-    <div >
-        <h6 className="_BgTitle Right">Contact</h6>
-        <h3 className="_BgSubTitle Right">Contact</h3>
+    <div className='Card __primary'>
+      <h3>mail</h3>
+      <p>roazhongoalacademy@gmail.com</p>
+      <h3>Téléphone</h3>
+      <p>06-88-35-04-98</p>
     </div>
   )
 }
