@@ -282,6 +282,12 @@ code {
         align-items: center;
         justify-content: center;
     }
+    .horaires{
+        display: flex;
+        span{
+            font-weight: bold;
+        }
+    }
 
 
 @media only screen and (min-width: 480px) {
