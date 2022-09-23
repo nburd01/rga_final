@@ -105,10 +105,24 @@
 }
 @media (min-width: 1200px) { 
     .MainNav{
-    flex-direction: row;
+        padding: auto 3em;
+        flex-direction: row;
+    .logoDiv{
+        width: 25%;
+    }
     .desktop{
         display:flex;
         flex-direction: row;
+        width: auto;
+        margin: 1em auto;
+        li{
+            width: auto;
+            text-align: center;
+            text-justify: inter-word;
+            a{
+            width: 100%;
+            }
+        }
     }
         .toggleBtn{
             display: none;
