@@ -362,6 +362,8 @@ code {
         display: flex;
             .Card {
                 margin:2em;
+                justify-content: flex-start;
+                align-items: center;
             }
     }
     .Card {
