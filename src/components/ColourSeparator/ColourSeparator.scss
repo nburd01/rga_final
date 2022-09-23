@@ -1,11 +1,12 @@
 
 
     .ColourSeparator{
+        display: flex;
         position: absolute;
         right: -20px;
         height: 15vh;
         background: var(--primary);
-        rotate: -5deg;
+        rotate: 0deg;
         width: 120%;
         margin-top: -40px;
         width: 200%;
