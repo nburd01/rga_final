@@ -4,17 +4,17 @@ export const LunMar = () => {
   return (
     <div className="Left">
     <h3>LUNDI / MARDI</h3>
-      <ul>
+      <ul className='horaires'>
           <ul>
-            <li>17h15</li>
+            <span>17h15</span>
             <li>Accueil au terrain et mise en tenue dans les vestiaires</li>
           </ul>
           <ul>
-            <li>17h45</li>
+            <span>17h45</span>
             <li>Début de séance</li>
           </ul>
           <ul>
-            <li>19h15</li>
+            <span>19h15</span>
             <li>Fin de séance</li>
           </ul>
       </ul>
