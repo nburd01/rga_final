@@ -13,7 +13,7 @@ export const Inscriptions = () => {
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
       </div>
       <div className="HeroImage">
-        <img src={require('../../assets/img/galerie/home1.jpg')} className="_HeroImage" alt="img"/>
+        <img src={require('../../assets/img/galerie/webp/home1.webp')} className="_HeroImage" alt="img"/>
       </div>
     </div>
        <Abonnements/>

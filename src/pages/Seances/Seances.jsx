@@ -12,7 +12,7 @@ export const Seances = () => {
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
     </div>
     <div className="HeroImage">
-      <img src={require('../../assets/img/galerie/home4.jpg')} className="_HeroImage" alt="img"/>
+      <img src={require('../../assets/img/galerie/webp/home4.webp')} className="_HeroImage" alt="img"/>
     </div>
   </div>
       <div >
