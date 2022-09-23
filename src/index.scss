@@ -2,9 +2,6 @@
 *, *::before, *::after{
     box-sizing: border-box;
 }
-body, html {
-    overflow-x: hidden;
-    }
 
 html{
     font-size: 16px;
@@ -12,13 +9,12 @@ html{
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body{
     line-height: 1,625;
     margin: 0;
-    overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -30,13 +26,23 @@ code {
       monospace;
   }
 
+
+  //SECTIONS
+
+    .home{
+    padding-top: 9px ;
+    }
+    .pageBody{
+
+    }
+
     .container{
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1150px;
         .animated{
-            .fadeIn{}
-        }
+        //     .fadeIn{}
+        // }
         ul{
             padding: 1em 0.5em
         }
@@ -142,8 +148,8 @@ code {
     ._BgSubTitle{
         display: flex;
         position: absolute;
-        flex-direction: column;
-        overflow: hidden;
+        // flex-direction: column;
+        // overflow: hidden;
         width: 100%;
         padding: 0 1.5em;
         width: 100%;
@@ -177,7 +183,7 @@ code {
         align-items: start;
         justify-content: start;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
     }
     .Right{
         align-items: end;
@@ -228,36 +234,39 @@ code {
             align-items: center;
         }
         ul{
-            margin: auto 2em;
+            // margin: auto 2em;
         }
     }
     .__primary{
         background-color: var(--primary);
         border: 2px solid var(--secondary);
         box-shadow:15px 15px 0px 5px var(--secondary);
-        margin: 4em 1em;
+        flex-direction: column;
         }
     .__secondary{
         background-color: var(--secondary);
         border: 2px solid var(--primary);
         box-shadow:15px 15px 0px 5px var(--primary);
-        margin: 4em 1em;
     }
     .map-responsive{
-        overflow:hidden;
-        padding-bottom:56.25%;
+        // overflow:hidden;
+        // padding-bottom:56.25%;
         margin-bottom: 1em;
-        position:relative;
-        height:0;
+        display: block;
+        height:30vh;
+        width: auto;
     }
     
     .map-responsive iframe{
         left:0;
         top:0;
+        height:30vh;
+
         width: 100%;
     }
     .PicTitle{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .illustration{
         margin: 2em auto;
@@ -291,11 +300,16 @@ code {
     }
     .horaires{
         display: flex;
+        flex-direction: column;
         ul{
             span{
                 font-weight: bold;
             }
         }
+    }
+    .pdf{
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -305,17 +319,17 @@ code {
         align-items: start;
         justify-content: center;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
     }
     .Right{
         align-items: end;
         justify-content: center;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
     }
     .Abonnement{
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
     }
 }
 
@@ -334,9 +348,9 @@ code {
     @media only screen and (min-width: 996px) {
 
         .container{
-            overflow: hidden;
+            // overflow: hidden;
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
         }
         .__intro{
             display: flex;
@@ -359,7 +373,6 @@ code {
                 margin: 0;
                 margin-top: 1em;
                 font-size: 10em;
-                overflow-x: hidden;
             }
         }
         .Card {
@@ -391,6 +404,7 @@ code {
         }
         .PicTitle{
             display: flex;
+        flex-direction: row;
             margin-top: 5em;
             justify-content: start;
             align-items: center;
@@ -417,7 +431,6 @@ code {
         padding: 1.875em 1.25em;
         max-width: 1150px;
         display: flex;
-        flex-direction: column;
     }
     .PriceCards{
         display: flex;
@@ -425,14 +438,16 @@ code {
                 margin:2em;
                 justify-content: flex-start;
                 align-items: center;
+            flex-direction: column;
+
             }
     }
     .Card {
     border-radius: 1em;
-    flex-direction: column;
+    // flex-direction: column;
     width: 50%;
         ._Title{
-            flex-direction: column;
+            // flex-direction: column;
             justify-content:center;
             align-items:center;
         }
@@ -456,4 +471,5 @@ code {
             margin: 0;
         }
     }
+}
 }

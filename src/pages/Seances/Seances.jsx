@@ -15,15 +15,15 @@ export const Seances = () => {
       <img src={require('../../assets/img/galerie/webp/home4.webp')} className="_HeroImage" alt="img"/>
     </div>
   </div>
-      <div >
+      
         <SeanceType/>
-      </div>
-      <div >
+
+      
         <Materiel/>
-      </div>
-      <div >
+
+      
         <ReglesDeVie/>
-      </div>
+
   </div>
   )
 }

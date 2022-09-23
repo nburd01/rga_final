@@ -2,9 +2,8 @@ import React from 'react'
 
 export const LunMar = () => {
   return (
-    <div className="Left">
-    <h3>LUNDI / MARDI</h3>
-      <ul className='container Left horaires'>
+      <div className='container Left horaires'>
+      <div><h3>LUNDI / MARDI</h3></div>
           <ul>
             <span>17h15</span>
             <li>Accueil au terrain et mise en tenue dans les vestiaires</li>
@@ -17,7 +16,6 @@ export const LunMar = () => {
             <span>19h15</span>
             <li>Fin de séance</li>
           </ul>
-      </ul>
-    </div>
+      </div>
   )
 }

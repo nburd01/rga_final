@@ -10,28 +10,33 @@ import '../../index.scss'
 
 export const Home = () => {
   return (
+  <page className='home'>
+    <section className='home'>
+      <div className="container">
+        <div className="__intro">
+          <div className="_left">
+            <h1>Bienvenue à la Roazhon Goal Academy !</h1>
+            <h3>Entraînements spécifiques de gardiens de but au travers des séances techniques et ludiques basées au Rheu pour les 9 - 12 ans.</h3>
+            <ButtonCTA/>
+          </div>
+          <div className="_right">
+            <PhotoSelf/>
+            <ColourSeparator/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="pageBody">
     <div className="container">
-      <section className="__intro">
-        <div className="_left">
-          <h1>Bienvenue à la Roazhon Goal Academy !</h1>
-          <h3>Entraînements spécifiques de gardiens de but au travers des séances techniques et ludiques basées au Rheu pour les 9 - 12 ans.</h3>
-          <ButtonCTA/>
-          {/* <Baseline/> */}
-        </div>
-        <div className="_right">
-          <PhotoSelf/>
-          <ColourSeparator/>
-        </div>
-      </section>
-      <section className="__info">
-          <Presentation/>
-        <div>
-          <Lieu/>
-        </div>
-        <div>
-          <Carte/>
-        </div>
-      </section>
+        <Presentation/>
+      <div>
+        <Lieu/>
+      </div>
+      <div>
+        <Carte/>
+      </div>
     </div>
+    </section>
+  </page>
   )
 }
