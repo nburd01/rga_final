@@ -132,7 +132,6 @@ code {
         width: 100%;
         margin-top: 0;
         position: relative;
-
     }
 
     .Left{
@@ -178,8 +177,15 @@ code {
         flex-direction: column;
         width: 100%;
         padding: 1em;
+        margin:4em 0;
         justify-content: center;
         align-items: center;
+        ._Title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .__primary{
@@ -234,10 +240,7 @@ code {
         height: 25em;
     }
 
-@media only screen and (max-width: 480px) {
 
-
-}
 @media only screen and (min-width: 480px) {
 
     .Left{
@@ -308,18 +311,16 @@ code {
             .__primary{
         border: 2px solid var(--secondary);
         box-shadow:15px 15px 0px 5px var(--secondary);
-    }
-    .__secondary{
-        border: 2px solid var(--primary);
-        box-shadow:15px 15px 0px 5px var(--primary);
-    }
-
-
-        .illustration__{
+        }
+        .__secondary{
+            border: 2px solid var(--primary);
+            box-shadow:15px 15px 0px 5px var(--primary);
+        }
+        .illustration{
             display: flex;
             width: 50%;
         }
-        .illustration{
+        ._illustration{
             display: flex; 
             object-fit: contain;
         }
@@ -357,14 +358,32 @@ code {
         display: flex;
         flex-direction: column;
     }
+    .PriceCards{
+        display: flex;
+            .Card {
+                margin:2em;
+            }
+    }
     .Card {
     border-radius: 1em;
-    ._Title{
-        display: inline-block;
+    flex-direction: column;
+    width: 50%;
+        ._Title{
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:flex-start;
         }
     }
-        .HeroImage{
-        margin: 0;
+    .illustration{
+        display: block;
+        width: 100%;
+    }
+    ._illustration{
+        display: block;
+        width: 100%;
+    }
+    .HeroImage{
+    margin: 0;
     }
     .__intro{
         margin-bottom: 10em;

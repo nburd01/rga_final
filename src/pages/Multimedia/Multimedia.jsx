@@ -15,13 +15,13 @@ export const Multimedia = () => {
         <img src={require('../../assets/img/galerie/home2.jpg')} className="_HeroImage" alt="img"/>
       </div>
     </div>
-    <div className="">
+    <div >
       <Photos/>
     </div>
-    <div className="">
+    <div >
       <Videos/>
     </div>
-    <div className="">
+    <div >
       <Presse/>
     </div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Abonnements } from '../../components/Abonnements/Abonnements'
 import { InscriptionsComp } from '../../components/Inscriptions/InscriptionsComp'
+import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
 
 export const Inscriptions = () => {
   return (
@@ -14,12 +15,11 @@ export const Inscriptions = () => {
         <img src={require('../../assets/img/galerie/home1.jpg')} className="_HeroImage" alt="img"/>
       </div>
     </div>
-      <div className="">
        <Abonnements/>
-      </div>
-      <div className="">
         <InscriptionsComp/>
-      </div>
+        <div className='illustration'>
+          <img className='_illustration' src={SoccerPlayer} alt="SVG logo image"/>
+        </div>
     </div>
 
 
