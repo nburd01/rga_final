@@ -5,11 +5,9 @@ import { Link } from 'react-router-dom';
 export const ButtonCTA = () => {
   return (
     <div className="btnContainer">
-        <button className="btnText">
-            <span>
-            <Link to="/inscriptions">Nous rejoindre</Link>  
-            </span>
-        </button>
+       <Link to="/inscriptions">
+          <button className="btnText">Nous rejoindre</button>
+        </Link>
     </div>
   )
 }
