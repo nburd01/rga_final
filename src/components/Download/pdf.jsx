@@ -18,13 +18,15 @@ const PDF = () => {
     }
     return (
         <>
-            <center>
+            <div className="container small">
                 <h1>Le dossier d'inscription à nous renvoyer</h1>
                 <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous</h3>
+                <div className="btn_container">
                 <button onClick={onButtonClick}>
                     Télécharger le dossier
                 </button>
-            </center>
+                </div>
+            </div>
         </>
     );
 };

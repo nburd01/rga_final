@@ -37,6 +37,39 @@ code {
         ul{
             padding: 1em 0.5em
         }
+        .small{
+            width: 80%;
+            justify-content: center;
+            align-self: center;
+            margin: 1em auto;
+            .btn_container{
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                button{
+                    width: 100%;
+                    box-shadow:0.3em 0.3em 0px 0px var(--secondary);
+                    background:linear-gradient(to bottom, var(--primary) 5%, var(--primary) 100%);
+                    background-color:var(--primary);
+                    border-radius:11px;
+                    border:2px solid var(--primary);
+                    display:inline-block;
+                    cursor:pointer;
+                    color: var(--secondary);
+                    // font-weight:bold;
+                    padding:8px 18px;
+                    margin: 2em 0;
+                }
+                button:hover{
+                    background:linear-gradient(to bottom, var(--primary) 5%, var(--primary) 100%);
+                    background-color:var(--primary);
+                }
+                button:active{
+                    position:relative;
+                    top:1px;
+                }
+            }
+        }
     }
 
     h1{
