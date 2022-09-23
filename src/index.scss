@@ -284,8 +284,10 @@ code {
     }
     .horaires{
         display: flex;
-        span{
-            font-weight: bold;
+        ul{
+            span{
+                font-weight: bold;
+            }
         }
     }
 

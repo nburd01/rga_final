@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Materiel = () => {
   return (
-    <div>
+    <div className='container Right'>
     <h6 className="_BgTitle Right">Matériel</h6>
     <h3 className="_BgSubTitle Right">Le matériel</h3>
-    <div className='Card __primary'>
+    <div className='Card __primary '>
       <ul>
         <li>Partenariat avec la marque UHLSPORT pour les équipements (Paires
 offertes à l'inscription + réduction sur les achats boutiques).</li>
