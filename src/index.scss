@@ -235,28 +235,14 @@ code {
         background-color: var(--primary);
         border: 2px solid var(--secondary);
         box-shadow:15px 15px 0px 5px var(--secondary);
-        margin: 4em 4em;
+        margin: 4em 1em;
         }
     .__secondary{
         background-color: var(--secondary);
         border: 2px solid var(--primary);
         box-shadow:15px 15px 0px 5px var(--primary);
-        margin: 4em 4em;
+        margin: 4em 1em;
     }
-
-
-    // .__primary{
-    //     background-color: var(--primary);
-    //     border: none;
-    //     box-shadow:none;
-    //     color: var(--secondary);
-    // }
-    // .__secondary{
-    //     background-color: var(--secondary);
-    //     border: none;
-    //     box-shadow:none;
-    //     color: var(--primary);
-    // }
     .map-responsive{
         overflow:hidden;
         padding-bottom:56.25%;
@@ -384,6 +370,8 @@ code {
             .__primary{
         border: 2px solid var(--secondary);
         box-shadow:15px 15px 0px 5px var(--secondary);
+        // margin: auto 2em;
+
         }
         .__secondary{
             border: 2px solid var(--primary);
