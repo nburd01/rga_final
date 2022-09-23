@@ -34,6 +34,9 @@ code {
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        .animated{
+            .fadeIn{}
+        }
         ul{
             padding: 1em 0.5em
         }
@@ -206,7 +209,6 @@ code {
         border-radius: none;
         height: 25em;
     }
-
 
     .Card{
         display: flex;
