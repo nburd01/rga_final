@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Stagiaires = () => {
   return (
-<div className="container">
-<h6 className="_BgTitle Right">Les stagiaires</h6>
+<div className="container Right">
+<h6 className="_BgTitle Right">Stagiaires</h6>
         <h3 className="_BgSubTitle Right">Les stagiaires</h3>
   <div className='Card __primary'>
   <ul>

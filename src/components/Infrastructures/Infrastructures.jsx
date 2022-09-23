@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Infrastructures = () => {
   return (
-<div className="container">
+<div className="container Right">
 
     <h6 className="_BgTitle Right">Infrastructures</h6>
     <h3 className="_BgSubTitle Right">Infrastructures</h3>
