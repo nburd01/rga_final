@@ -17,7 +17,7 @@ const PDF = () => {
         })
     }
     return (
-        <>
+        <section>
             <div className="container small">
                 <h1>Le dossier d'inscription à nous renvoyer</h1>
                 <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous</h3>
@@ -27,7 +27,7 @@ const PDF = () => {
                 </button>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
   

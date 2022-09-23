@@ -5,7 +5,8 @@ export const Planification = () => {
 <div>
   <h6 className="_BgTitle Left">Planification</h6>
   <h3 className="_BgSubTitle Left">Planification</h3>
-  <div className='Card __primary'>
+  <div className='container'>
+    <div className='Card __primary'>
   <ul>
     <li>Cycles d'entraînements calés sur le rythme scolaire.</li>
     <li>Pas de séances pendant les vacances. Il sera nécessaire de télécharger
@@ -18,6 +19,7 @@ export const Planification = () => {
     <li>2009/2010 : 11h – 12h15</li>
     <li>OU Tous à 11h en fonction du nombre de participants</li>
   </ul>
+  </div>
   </div>
 </div>
   )
