@@ -2,8 +2,9 @@ import React from 'react'
 
 export const Planification = () => {
   return (
-<div>
-<div className="_TitleSubTitle">
+<div className="container">
+  <div className="block">
+  <div className="_TitleSubTitle">
 
   <h6 className="_BgTitle Left">Planification</h6>
   <h3 className="_BgSubTitle Left">Planification</h3>
@@ -22,6 +23,7 @@ export const Planification = () => {
     <li>2009/2010 : 11h – 12h15</li>
     <li>OU Tous à 11h en fonction du nombre de participants</li>
   </ul>
+  </div>
   </div>
   </div>
 </div>
