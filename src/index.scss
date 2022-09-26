@@ -37,8 +37,22 @@ code {
 
     // }
     .pdf{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         justify-content: center;
         align-items: center;
+        .btn_container{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:30%;
+            }
+        }
     }
     .block{
         max-width: 100%;
@@ -312,10 +326,6 @@ code {
                 font-weight: bold;
             }
         }
-    }
-    .pdf{
-        display: flex;
-        flex-direction: column;
     }
     footer{
         display: flex;
