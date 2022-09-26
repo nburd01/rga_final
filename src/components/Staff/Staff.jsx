@@ -6,8 +6,8 @@ export const Staff = () => {
     <div className="block">
     <div className="_TitleSubTitle">
 
-      <h6 className="_BgTitle Right">Le staff</h6>
-      <h3 className="_BgSubTitle Right">Le staff</h3>
+      <h6 className="_BgTitle Left">Le staff</h6>
+      <h3 className="_BgSubTitle Left">Le staff</h3>
       </div>
       <div className="container">
         <div className='Card __primary'>
