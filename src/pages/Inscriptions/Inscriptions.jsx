@@ -7,6 +7,7 @@ import PDF from '../../components/Download/pdf'
 export const Inscriptions = () => {
   return (
     <page className='inscriptions'>
+      <div className="container-large">
       <section className="PicTitle">
           <div className="_TitleSubTitle">
           <h1>S'inscrire à la RGA</h1>
@@ -16,6 +17,7 @@ export const Inscriptions = () => {
             <img src={require('../../assets/img/galerie/webp/home1.webp')} className="_HeroImage" alt="img"/>
           </div>
       </section>
+          </div>
       <section className="pageBody">
         <Abonnements/>
         <div className='illustration'>

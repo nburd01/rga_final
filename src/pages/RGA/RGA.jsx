@@ -8,6 +8,7 @@ import GoalKeeper from '../../assets/Illustrations/Goalkeeper.svg'
 export const RGA = () => {
   return (
     <page className='RGA'>
+      <div className="container-large">
       <section className="PicTitle">
       <div className="_TitleSubTitle">
             <h1>A propos de la Roazhon Goal Academy</h1>
@@ -17,6 +18,7 @@ export const RGA = () => {
             <img src={require('../../assets/img/galerie/webp/home5.webp')} className="_HeroImage" alt="img"/>
           </div>
       </section>
+      </div>
       <section className="pageBody">
           <Objectifs/>
           <img classname='_illustration' src={GoalKeeper} alt="Goalkeeper"/>
