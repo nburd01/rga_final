@@ -2,10 +2,13 @@ import React from 'react'
 
 export const Materiel = () => {
   return (
-<div className='container '>
+<div className='container'>
   <div className="block">
+  <div className="_TitleSubTitle">
+
     <h6 className="_BgTitle Right">Matériel</h6>
     <h3 className="_BgSubTitle Right">Le matériel</h3>
+    </div>
     <div className="container">
     <div className='Card __primary '>
       <ul>

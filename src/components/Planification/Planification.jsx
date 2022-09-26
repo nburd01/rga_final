@@ -3,8 +3,11 @@ import React from 'react'
 export const Planification = () => {
   return (
 <div>
+<div className="_TitleSubTitle">
+
   <h6 className="_BgTitle Left">Planification</h6>
   <h3 className="_BgSubTitle Left">Planification</h3>
+  </div>
   <div className='container'>
     <div className='Card __primary'>
   <ul>

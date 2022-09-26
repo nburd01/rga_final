@@ -18,16 +18,20 @@ const PDF = () => {
     }
     return (
         <section>
-            <div className="block">
-            <div className="container small">
-                <h1>Le dossier d'inscription à nous renvoyer</h1>
-                <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous</h3>
-                <div className="btn_container">
-                <button onClick={onButtonClick}>
-                    Télécharger le dossier
-                </button>
+            <div className="container">
+                <div className="pdf">
+                <div className="_TitleSubTitle">
+                    <h1>Le dossier d'inscription à nous renvoyer</h1>
+                    <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous</h3>
+                    <div className="container">
                 </div>
-            </div>
+                        <div className="btn_container">
+                            <button onClick={onButtonClick}>
+                                Télécharger le dossier
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

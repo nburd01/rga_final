@@ -3,8 +3,11 @@ import React from 'react'
 export const Presentation = () => {
   return (
 <div className='_divRelative'>
+<div className="_TitleSubTitle">
+
     <h6 className="_BgTitle Left">Présentation</h6>
     <h3 className="_BgSubTitle Left">Présentation</h3>
+    </div>
     <div className="container">
       <div className='Card __primary'>
           <p>La ROAZHON GOAL ACADEMY est la première structure spécifique dédiée

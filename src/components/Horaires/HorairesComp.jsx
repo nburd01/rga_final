@@ -6,8 +6,11 @@ import { LunMar } from './LunMar'
 export const HorairesComp = () => {
   return (
     <div className='container PriceCards Right'>
+          <div className="_TitleSubTitle">
+
       <h6 className="_BgTitle Right">Horaires</h6>
       <h3 className="_BgSubTitle Right">Horaires</h3>
+      </div>
       <div className='Card __primary'>
         <LunMar/>
       </div>
