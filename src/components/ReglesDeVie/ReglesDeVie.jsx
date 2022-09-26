@@ -17,8 +17,8 @@ tenue de football. (sous réserve des conditions sanitaires Covid).</li>
         <li>Prévenir les éducateurs de votre arrivée et départ.</li>
         <li>Selon le temps, prévoir l’équipement adapté (veste, pantalon,
 casquette, crème solaire...Gants !).</li>
-        <li>Chaque goal devra être muni d’une gourde ou bouteille d’eau.
-- Respecter les infrastructures.</li>
+        <li>Chaque goal devra être muni d’une gourde ou bouteille d’eau.</li>
+        <li>Respecter les infrastructures.</li>
         <li>Être motivé et de bonne humeur</li>
       </ul>
     </div>
