@@ -5,7 +5,6 @@ export const Staff = () => {
   <div className="container">
     <div className="block">
     <div className="_TitleSubTitle">
-
       <h6 className="_BgTitle Left">Le staff</h6>
       <h3 className="_BgSubTitle Left">Le staff</h3>
       </div>
@@ -18,7 +17,7 @@ export const Staff = () => {
     formation). 2 éducateurs minimum par séance.</li>
         </ul>
         </div>
-    </div>
+      </div>
     </div>
   </div>
   )

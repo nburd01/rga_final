@@ -39,6 +39,9 @@ code {
         justify-content: center;
         align-items: center;
     }
+    .block{
+        max-width: 100%;
+    }
 
     .container{
         margin: 0 auto;
@@ -153,10 +156,8 @@ code {
 
     ._BgSubTitle{
         display: flex;
-        position: absolute;
-        width: 100%;
+        width: auto;
         padding: 0 1.5em;
-        width: 100%;
         margin-top: 0;
         position: relative;
     }
@@ -327,9 +328,8 @@ code {
         // flex-direction: column;
     }
     .Right{
-        align-items: end;
-        justify-content: center;
-        display: flex;
+        // justify-content: center;
+        // display: flex;
         // flex-direction: column;
     }
     .Abonnement{
@@ -362,8 +362,7 @@ code {
                     margin:2em;
                     justify-content: flex-start;
                     align-items: center;
-                flex-direction: column;
-    
+                    flex-direction: column;
                 }
         }
         .__intro{
@@ -387,14 +386,15 @@ code {
                 margin: 0;
                 margin-top: 1em;
                 font-size: 10em;
+                overflow-x: hidden;
             }
         }
         .Card {
-            flex-direction:row;
+            // flex-direction:row;
             margin: 4em 0;
-
+            width: 80%;
         }
-            .__primary{
+        .__primary{
         border: 2px solid var(--secondary);
         // margin: auto 2em;
 
@@ -443,7 +443,7 @@ code {
                 margin:2em;
                 justify-content: flex-start;
                 align-items: center;
-            flex-direction: column;
+                flex-direction: column;
 
             }
     }
@@ -459,7 +459,7 @@ code {
     }
     .Card {
     border-radius: 1em;
-    // flex-direction: column;
+    width: 100%;
     width: 50%;
         ._Title{
             // flex-direction: column;
