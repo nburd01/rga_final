@@ -289,15 +289,16 @@ code {
         flex-direction: column;
     }
     .illustration{
-        margin: 2em auto;
+        display: flex;
         align-items: center;
         justify-content: center;
-        object-fit: contain;
+        width: 100%;
     }
     ._illustration{
-        margin: 2em auto;
-        height: 10em;
-        object-fit: contain;
+
+        // max-width: 10vh;
+        height: 30vh;
+        object-fit: cover;
     }
     .HeroImage{
     display: flex;
@@ -413,14 +414,7 @@ code {
         .__secondary{
             border: 2px solid var(--primary);
         }
-        .illustration{
-            display: flex;
-            width: 50%;
-        }
-        ._illustration{
-            display: flex; 
-            object-fit: contain;
-        }
+
         .Abonnement{
             width: 50%;
             border-radius: 1em;
@@ -480,14 +474,6 @@ code {
             justify-content:center;
             align-items:center;
         }
-    }
-    .illustration{
-        display: block;
-        width: 100%;
-    }
-    ._illustration{
-        display: block;
-        width: 100%;
     }
     .HeroImage{
     margin: 0;
