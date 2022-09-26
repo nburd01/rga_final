@@ -8,7 +8,7 @@ export const Infrastructures = () => {
         <h6 className="_BgTitle Right">Infrastructures</h6>
         <h3 className="_BgSubTitle Right">Infrastructures</h3>
       </div>
-      <div className="container">
+      <div className="container Right">
         <div className='Card __primary'>
           <ul>
               <li>Complexe footballistique du SC LE RHEU FOOTBALL, </li>
@@ -19,8 +19,8 @@ export const Infrastructures = () => {
         avec tv, wifi, jeux et collation.</li>
               <li>Vestiaires capables d'accueillir filles et garçons</li>
           </ul>
+        </div>
       </div>
-    </div>
     </div>
   </div>
   )
