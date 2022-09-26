@@ -211,7 +211,28 @@ code {
     }
 
     ._right{
-        margin-bottom: 6em;
+        display: none;
+
+    }
+    ._left{
+        max-width: 100%;
+        position:relative;
+        display: block;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+
+    }
+    .separator{
+        display: flex;
+        position: absolute;
+        height: 15vh;
+        width: 200%;
+        left:-50%;
+        background: var(--primary);
+        rotate: 0deg;
+        top:100%;
+        rotate: -2deg;
     }
 
     .__intro{   
@@ -391,6 +412,7 @@ code {
                 ._right{
                     display: flex;
                     position: absolute;
+                    margin-bottom: 0;
                     right: 0px;
                     width: auto;
                     height: 100%;
@@ -405,7 +427,6 @@ code {
                     rotate: 0deg;
                     top:90%;
                     rotate: -2deg;
-
                 }
             }
             ._BgTitle{
