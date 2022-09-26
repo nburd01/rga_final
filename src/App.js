@@ -17,6 +17,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCheck, fas } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
+import { BackToTop } from "./components/BackToTop/BackToTop";
 
 library.add(fas, faTwitter, faFacebook, faLinkedin, faFontAwesome, faCheck)
 
@@ -56,6 +57,7 @@ function App() {
            
 
         </Routes>
+      {/* <BackToTop/> */}
       <Footer/>
       </BrowserRouter>
     </div>
