@@ -9,7 +9,7 @@ html{
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body{
@@ -248,6 +248,8 @@ code {
         background-color: var(--secondary);
         border: 2px solid var(--primary);
         box-shadow:0.3em 0.3em 0px 5px var(--primary);
+        flex-direction: column;
+        border-radius: 1em;
     }
     .map-responsive{
         // overflow:hidden;
@@ -351,7 +353,6 @@ code {
     @media only screen and (min-width: 996px) {
 
         .container{
-            // overflow: hidden;
             display: flex;
         }
         .PriceCards{
