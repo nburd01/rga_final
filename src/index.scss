@@ -59,7 +59,7 @@ code {
     }
 
     .container{
-        margin: 0 auto;
+        margin: 0 0;
         padding: 0 20px;
         max-width: 1150px;
         .animated{
@@ -142,7 +142,7 @@ code {
         display: flex;
         opacity: 0.1;
         width: 100%;
-        padding: 0 0 0.1em 0;
+        padding: 0;
         margin: 0;
         font-size: 10em;
     }
@@ -171,7 +171,7 @@ code {
     ._BgSubTitle{
         display: flex;
         width: auto;
-        padding: 0 1.5em;
+        padding: 0 2em;
         margin-top: 0;
         position: relative;
     }
@@ -242,7 +242,7 @@ code {
         flex-direction: column;
         width: 100%;
         padding: 1em;
-        margin:4em 0;
+        margin:0 0 2em 0;
         justify-content: center;
         align-items: center;
         box-shadow: 0 10px 40px -2px var(--secondary);
@@ -293,10 +293,11 @@ code {
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin: 3em auto;
+
     }
     ._illustration{
 
-        // max-width: 10vh;
         height: 30vh;
         object-fit: cover;
     }
@@ -335,15 +336,15 @@ code {
 
 @media only screen and (min-width: 480px) {
 
-    .Left{
-        align-items: start;
-        justify-content: center;
-        display: flex;
-        // flex-direction: column;
-    }
-    .Right{
-// width: 100%;
-    }
+//     .Left{
+//         align-items: start;
+//         justify-content: center;
+//         display: flex;
+//         // flex-direction: column;
+//     }
+//     .Right{
+// // width: 100%;
+//     }
     .Abonnement{
         display: flex;
         // flex-direction: column;
@@ -387,15 +388,12 @@ code {
                 justify-content: center;
                 align-items: flex-start;
             }
-            ._right{
-                margin-bottom: 1em;
-            }
             ._BgTitle{
                 display: flex;
                 opacity: 0.1;
                 width: 100%;
                 padding: 0 0 0.1em 0;
-                margin: 0;
+                margin: 1em 0 0 0;
                 margin-top: 1em;
                 font-size: 10em;
                 overflow-x: hidden;
@@ -403,7 +401,7 @@ code {
         }
         .Card {
             // flex-direction:row;
-            margin: 4em 0;
+            margin: 1em 0;
             width: 80%;
         }
         .__primary{
@@ -439,6 +437,10 @@ code {
         .btnContainer{
             margin-bottom:4em;
         }
+        ._BgTitle{
+        padding: 0;
+
+        }
 }
 
 @media only screen and (min-width: 1100px){ 
@@ -456,8 +458,8 @@ code {
 @media only screen and (min-width: 1200px){ 
     
     .container{
-        margin: 1.875em auto;
-        padding: 1.875em 1.25em;
+        margin: 1em auto;
+        padding: 1em 1.25em;
         max-width: 1150px;
         display: flex;
 
