@@ -55,7 +55,7 @@ code {
         }
     }
     .block{
-        max-width: 100%;
+        width: 100%;
     }
 
     .container{
@@ -270,20 +270,13 @@ code {
         border-radius: 1em;
     }
     .map-responsive{
-        // overflow:hidden;
-        // padding-bottom:56.25%;
+        display: flex;
         margin-bottom: 1em;
         display: block;
-        height:30vh;
-        width: auto;
-    }
-    
-    .map-responsive iframe{
-        left:0;
-        top:0;
-        height:30vh;
+        height:auto;
         width: 100%;
     }
+
     .PicTitle{
         display: flex;
         flex-direction: column;
@@ -378,17 +371,42 @@ code {
                     flex-direction: column;
                 }
         }
+
         .__intro{
             display: flex;
+            flex-direction: column;
             justify-content:center;
             align-items: flex-start;
             margin-bottom: 1em;
             ._left{
-                max-width: 50%;
+                max-width: 100%;
+                position:relative;
                 display: flex;
                 flex-direction: column;
                 justify-content:center;
                 align-items: flex-start;
+                ._TitleSubTitle{
+                    width:66%;   
+                }
+                ._right{
+                    display: flex;
+                    position: absolute;
+                    right: 0px;
+                    width: auto;
+                    height: 100%;
+                }
+                .separator{
+                    display: flex;
+                    position: absolute;
+                    height: 15vh;
+                    width: 200%;
+                    left:-50%;
+                    background: var(--primary);
+                    rotate: 0deg;
+                    top:90%;
+                    rotate: -2deg;
+
+                }
             }
             ._BgTitle{
                 display: flex;
@@ -438,6 +456,7 @@ code {
         }
         .btnContainer{
             margin-bottom:4em;
+            margin-top:0;
         }
         ._BgTitle{
         padding: 0;
@@ -445,6 +464,13 @@ code {
         }
         ._BgSubTitle{
             padding-top: 0.5em;
+    }
+    button{
+
+        .btnText{
+            padding: 0;
+            margin-top: 0;
+        }
     }
 }
 
