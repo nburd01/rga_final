@@ -6,7 +6,7 @@ export const HorairesPage = () => {
     return (
       <page className='horaires'>
       <div className="PicTitle">
-      <div>
+      <div className="_TitleSubTitle">
         <h1>Planning et horaires</h1>
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
       </div>

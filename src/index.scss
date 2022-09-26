@@ -9,7 +9,7 @@ html{
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -32,11 +32,12 @@ code {
     .home{
     padding-top: 9px ;
     }
-    .pageBody{
+    // .pageBody{
 
-    }
-    .block{
-        
+    // }
+    .pdf{
+        justify-content: center;
+        align-items: center;
     }
 
     .container{
@@ -46,6 +47,7 @@ code {
         .animated{
         .small{
             width: 80%;
+            flex-direction: column;
             justify-content: center;
             align-self: center;
             margin: 1em auto;
