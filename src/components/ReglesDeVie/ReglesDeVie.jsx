@@ -2,7 +2,9 @@ import React from 'react'
 
 export const ReglesDeVie = () => {
   return (
-<div className="container Left">
+<div className="container">
+<div className="block">
+
     <h6 className="_BgTitle Left">Règles de vie</h6>
     <h3 className="_BgSubTitle Left">Règles de vie</h3>
     <div className='Card __primary'>
@@ -18,6 +20,7 @@ casquette, crème solaire...Gants !).</li>
         <li>Être motivé et de bonne humeur</li>
       </ul>
     </div>
+</div>
 </div>
   )
 }
