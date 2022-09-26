@@ -67,8 +67,7 @@ code {
 }
 .container-large{
     margin: 0 0;
-    padding: 0 0px;
-    width: 100%;
+    padding: auto 5em;
 }
 
     h1{
@@ -210,8 +209,11 @@ code {
 
     .HeroImage{
         display: flex;
+        align-items: center;
+        justify-content: center;
         z-index: 1;
         transition: 0.5s ease-in-out;
+        width: auto;
     }
     ._HeroImage{
         object-fit: contain;
@@ -329,9 +331,7 @@ code {
         // flex-direction: column;
     }
     .Right{
-        // justify-content: center;
-        // display: flex;
-        // flex-direction: column;
+// width: 100%;
     }
     .Abonnement{
         display: flex;
@@ -458,6 +458,10 @@ code {
         display: flex;
 
     }
+    .container-large{
+        margin: auto 8em;
+        padding: auto 5em;
+    }
     .Card {
     border-radius: 1em;
     width: 100%;
@@ -489,9 +493,16 @@ code {
     }
     .__primary{
         box-shadow:15px 15px 0px 5px var(--secondary);
-
         }
-        .__secondary{
-            box-shadow:15px 15px 0px 5px var(--primary);
-        }
+    .__secondary{
+        box-shadow:15px 15px 0px 5px var(--primary);
+    }
+    ._TitleSubTitle{
+       width: 100%;
+    }
+    .HeroImage{
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
 }

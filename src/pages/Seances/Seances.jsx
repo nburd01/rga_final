@@ -6,6 +6,8 @@ import { SeanceType } from '../../components/SeanceType/SeanceType'
 export const Seances = () => {
   return (
     <page className='seances'>
+      <div className="container-large">
+
     <div className="PicTitle">
     <div className="_TitleSubTitle">
       <h1>Les séances</h1>
@@ -13,6 +15,7 @@ export const Seances = () => {
     </div>
     <div className="HeroImage">
       <img src={require('../../assets/img/galerie/webp/home4.webp')} className="_HeroImage" alt="img"/>
+    </div>
     </div>
   </div>
       

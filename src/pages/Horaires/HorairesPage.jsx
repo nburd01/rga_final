@@ -5,6 +5,8 @@ import { Planification } from '../../components/Planification/Planification'
 export const HorairesPage = () => {
     return (
       <page className='horaires'>
+      <div className="container-large">
+
       <div className="PicTitle">
       <div className="_TitleSubTitle">
         <h1>Planning et horaires</h1>
@@ -12,6 +14,7 @@ export const HorairesPage = () => {
       </div>
       <div className="HeroImage">
         <img src={require('../../assets/img/galerie/webp/home5.webp')} className="_HeroImage" alt="img"/>
+      </div>
       </div>
     </div>
         <div >

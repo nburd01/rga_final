@@ -5,7 +5,6 @@ export const Stagiaires = () => {
 <div className="container">
   <div className="block">
   <div className="_TitleSubTitle">
-
     <h6 className="_BgTitle Right">Stagiaires</h6>
     <h3 className="_BgSubTitle Right">Les stagiaires</h3>
     </div>

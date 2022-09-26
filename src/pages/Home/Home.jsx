@@ -11,6 +11,7 @@ import '../../index.scss'
 export const Home = () => {
   return (
   <page className='home'>
+    
     <section className='home'>
       <div className="container">
         <div className="__intro">

@@ -6,6 +6,7 @@ import { Videos } from '../../components/Multimedia/Videos'
 export const Multimedia = () => {
   return (
     <page className='multimedia'>
+      <div className="container-large">
       <div className="PicTitle">
       <div className="_TitleSubTitle">
         <h1>Le coin multimédia</h1>
@@ -13,6 +14,7 @@ export const Multimedia = () => {
       </div>
       <div className="HeroImage">
         <img src={require('../../assets/img/galerie/webp/home2.webp')} className="_HeroImage" alt="img"/>
+      </div>
       </div>
     </div>
     <div >
