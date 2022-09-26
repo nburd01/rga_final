@@ -3,6 +3,7 @@ import React from 'react'
 export const Staff = () => {
   return (
   <div className="container">
+    <div className="block">
       <h6 className="_BgTitle Right">Le staff</h6>
       <h3 className="_BgSubTitle Right">Le staff</h3>
       <div className="container">
@@ -14,6 +15,7 @@ export const Staff = () => {
     formation). 2 éducateurs minimum par séance.</li>
         </ul>
         </div>
+    </div>
     </div>
   </div>
   )

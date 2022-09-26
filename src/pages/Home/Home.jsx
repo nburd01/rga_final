@@ -27,15 +27,16 @@ export const Home = () => {
       </div>
     </section>
     <section className="pageBody">
-    <div className="container">
-        <Presentation/>
-      <div>
-        <Lieu/>
+      <div className="container">
+          <Presentation/>
       </div>
-      <div>
-        <Carte/>
+      <div className="container">
+          <Lieu/>
       </div>
-    </div>
+      <div className="container">
+          <Carte/>
+      </div>
+      
     </section>
   </page>
   )

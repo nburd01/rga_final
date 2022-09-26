@@ -35,17 +35,15 @@ code {
     .pageBody{
 
     }
+    .block{
+        
+    }
 
     .container{
         margin: 0 auto;
         padding: 0 20px;
         max-width: 1150px;
         .animated{
-        //     .fadeIn{}
-        // }
-        ul{
-            // padding: 1em 0.5em
-        }
         .small{
             width: 80%;
             justify-content: center;
@@ -187,7 +185,7 @@ code {
         align-items: start;
         justify-content: start;
         display: flex;
-        // flex-direction: column;
+        flex-direction: column;
     }
     .Right{
         align-items: end;
@@ -312,6 +310,9 @@ code {
         display: flex;
         flex-direction: column;
     }
+    .PriceCards{
+
+    }
 
 
 @media only screen and (min-width: 480px) {
@@ -351,6 +352,17 @@ code {
         .container{
             // overflow: hidden;
             display: flex;
+        }
+        .PriceCards{
+            display: block;
+            margin: auto;
+                .Card {
+                    margin:2em;
+                    justify-content: flex-start;
+                    align-items: center;
+                flex-direction: column;
+    
+                }
         }
         .__intro{
             display: flex;
@@ -422,15 +434,7 @@ code {
         }
 }
 
-@media only screen and (min-width: 1200px){ 
-    
-    .container{
-        margin: 1.875em auto;
-        padding: 1.875em 1.25em;
-        max-width: 1150px;
-        display: flex;
-
-    }
+@media only screen and (min-width: 1100px){ 
     .PriceCards{
         display: flex;
             .Card {
@@ -440,6 +444,16 @@ code {
             flex-direction: column;
 
             }
+    }
+}
+@media only screen and (min-width: 1200px){ 
+    
+    .container{
+        margin: 1.875em auto;
+        padding: 1.875em 1.25em;
+        max-width: 1150px;
+        display: flex;
+
     }
     .Card {
     border-radius: 1em;

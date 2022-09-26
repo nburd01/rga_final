@@ -17,7 +17,6 @@ export const Inscriptions = () => {
       </section>
       <section className="pageBody">
         <Abonnements/>
-        <InscriptionsComp/>
         <div className='illustration'>
           <img className='_illustration' src={SoccerPlayer} alt="SVG logo image"/>
         </div>

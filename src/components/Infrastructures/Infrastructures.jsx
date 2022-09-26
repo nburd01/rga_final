@@ -3,6 +3,7 @@ import React from 'react'
 export const Infrastructures = () => {
   return (
     <div className="container">
+      <div className="block">
       <h6 className="_BgTitle Right">Infrastructures</h6>
       <h3 className="_BgSubTitle Right">Infrastructures</h3>
       <div className="container">
@@ -17,6 +18,7 @@ export const Infrastructures = () => {
               <li>Vestiaires capables d'accueillir filles et garçons</li>
           </ul>
       </div>
+    </div>
     </div>
   </div>
   )
