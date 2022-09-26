@@ -20,8 +20,10 @@ export const Inscriptions = () => {
           </div>
       <section className="pageBody">
         <Abonnements/>
+        <div className="illustration">
         <div className='illustration'>
           <img className='_illustration' src={SoccerPlayer} alt="SVG logo image"/>
+        </div>
         </div>
         <PDF/>
       </section>
