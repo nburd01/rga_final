@@ -44,7 +44,7 @@ code {
         //     .fadeIn{}
         // }
         ul{
-            padding: 1em 0.5em
+            // padding: 1em 0.5em
         }
         .small{
             width: 80%;
@@ -60,6 +60,13 @@ code {
             }
         }
     }
+}
+.container-large{
+    margin: 0 0;
+    padding: 0 0px;
+    width: 100%;
+
+}
 
     h1{
         font-size: 2.6em;
@@ -148,8 +155,6 @@ code {
     ._BgSubTitle{
         display: flex;
         position: absolute;
-        // flex-direction: column;
-        // overflow: hidden;
         width: 100%;
         padding: 0 1.5em;
         width: 100%;
@@ -166,7 +171,6 @@ code {
         display:inline-block;
         cursor:pointer;
         color: var(--secondary);
-        // font-weight:bold;
         padding:8px 18px;
         margin: 2em 0;
     }
@@ -233,20 +237,18 @@ code {
             justify-content: center;
             align-items: center;
         }
-        ul{
-            // margin: auto 2em;
-        }
     }
     .__primary{
         background-color: var(--primary);
         border: 2px solid var(--secondary);
-        box-shadow:15px 15px 0px 5px var(--secondary);
+        box-shadow:0.3em 0.3em 0px 5px var(--secondary);
         flex-direction: column;
+        border-radius: 1em;
         }
     .__secondary{
         background-color: var(--secondary);
         border: 2px solid var(--primary);
-        box-shadow:15px 15px 0px 5px var(--primary);
+        box-shadow:0.3em 0.3em 0px 5px var(--primary);
     }
     .map-responsive{
         // overflow:hidden;
@@ -261,7 +263,6 @@ code {
         left:0;
         top:0;
         height:30vh;
-
         width: 100%;
     }
     .PicTitle{
@@ -335,12 +336,12 @@ code {
 
 @media only screen and (min-width: 535px) {
     .HeroImage{
-        margin: 1em;
+        margin: 1em 0;
     }
     ._HeroImage{
         object-fit: contain;
         margin: 0 auto;
-        box-shadow:15px 15px 0px 5px var(--primary);
+        box-shadow:5px 5px 0px 5px var(--primary);
         border: 2px solid var(--secondary);
         border-radius: 1em;
     }
@@ -350,7 +351,6 @@ code {
         .container{
             // overflow: hidden;
             display: flex;
-            // flex-direction: column;
         }
         .__intro{
             display: flex;
@@ -382,13 +382,11 @@ code {
         }
             .__primary{
         border: 2px solid var(--secondary);
-        box-shadow:15px 15px 0px 5px var(--secondary);
         // margin: auto 2em;
 
         }
         .__secondary{
             border: 2px solid var(--primary);
-            box-shadow:15px 15px 0px 5px var(--primary);
         }
         .illustration{
             display: flex;
@@ -404,7 +402,7 @@ code {
         }
         .PicTitle{
             display: flex;
-        flex-direction: row;
+            flex-direction: row;
             margin-top: 5em;
             justify-content: start;
             align-items: center;
@@ -431,6 +429,7 @@ code {
         padding: 1.875em 1.25em;
         max-width: 1150px;
         display: flex;
+
     }
     .PriceCards{
         display: flex;
@@ -471,5 +470,11 @@ code {
             margin: 0;
         }
     }
-}
+    .__primary{
+        box-shadow:15px 15px 0px 5px var(--secondary);
+
+        }
+        .__secondary{
+            box-shadow:15px 15px 0px 5px var(--primary);
+        }
 }

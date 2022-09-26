@@ -5,7 +5,7 @@ import { SeanceType } from '../../components/SeanceType/SeanceType'
 
 export const Seances = () => {
   return (
-    <div className="container">
+    <page className='seances'>
     <div className="PicTitle">
     <div>
       <h1>Les séances</h1>
@@ -24,6 +24,6 @@ export const Seances = () => {
       
         <ReglesDeVie/>
 
-  </div>
+  </page>
   )
 }

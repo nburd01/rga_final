@@ -8,13 +8,12 @@ export const Inscriptions = () => {
   return (
     <page className='inscriptions'>
       <section className="PicTitle">
-        <div className="container">
+
           <h1>S'inscrire à la RGA</h1>
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
-        <div className="HeroImage">
-          <img src={require('../../assets/img/galerie/webp/home1.webp')} className="_HeroImage" alt="img"/>
+          <div className="HeroImage">
+            <img src={require('../../assets/img/galerie/webp/home1.webp')} className="_HeroImage" alt="img"/>
           </div>
-        </div>
       </section>
       <section className="pageBody">
         <Abonnements/>
