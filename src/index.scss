@@ -221,7 +221,6 @@ code {
         flex-direction: column;
         justify-content:center;
         align-items: flex-start;
-
     }
     .separator{
         display: flex;
@@ -554,5 +553,12 @@ code {
         align-items: center;
         justify-content: center;
     }
-
+    .pdf{
+        .block{
+            ._TitleSubTitle{
+                text-align: center;
+            }
+        }
+    }
+        
 }
