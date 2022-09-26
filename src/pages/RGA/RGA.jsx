@@ -21,7 +21,11 @@ export const RGA = () => {
       </div>
       <section className="pageBody">
           <Objectifs/>
-          <img classname='_illustration' src={GoalKeeper} alt="Goalkeeper"/>
+          <div className="container">
+            <div className="illustration">
+             <img classname='_illustration' src={GoalKeeper} alt="Goalkeeper"/>
+          </div>
+          </div>
           <Stagiaires/>
           <Staff/>
           <Infrastructures/>
