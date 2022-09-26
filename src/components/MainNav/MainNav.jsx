@@ -14,7 +14,7 @@ export const MainNav = () => {
   return (
     <div className="MainNav">
       <Link to="/" className="logoDiv">
-        <img className="logo" src={require('../../assets/img/logo/logo.jpg')} alt="logo" />
+        <img className="logo" src={require('../../assets/img/logo/logo.jpg')} alt="logo" loading="lazy" />
       </Link>
       <ul className="desktop">
         <li><Link to="/">Home</Link></li>

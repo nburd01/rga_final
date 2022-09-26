@@ -14,14 +14,14 @@ export const Inscriptions = () => {
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
           </div>
           <div className="HeroImage">
-            <img src={require('../../assets/img/galerie/webp/home1.webp')} className="_HeroImage" alt="img"/>
+            <img src={require('../../assets/img/galerie/webp/home1.webp')} className="_HeroImage" alt="img" loading="lazy"/>
           </div>
       </section>
           </div>
       <section className="pageBody">
         <Abonnements/>
         <div className="illustration">
-            <img className='_illustration' src={SoccerPlayer} alt="SVG logo image" />
+            <img className='_illustration' src={SoccerPlayer} alt="SVG logo image" loading="lazy"/>
           </div>
         <PDF/>
       </section>

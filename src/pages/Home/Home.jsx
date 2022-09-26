@@ -16,14 +16,15 @@ export const Home = () => {
       <div className="container">
         <div className="__intro">
           <div className="_left">
-            <h1>Bienvenue à la Roazhon Goal Academy !</h1>
-            <h3>Entraînements spécifiques de gardiens de but au travers des séances techniques et ludiques basées au Rheu pour les 9 - 12 ans.</h3>
+            <div className="_TitleSubTitle">
+              <h1>Bienvenue à la Roazhon Goal Academy !</h1>
+              <h3>Entraînements spécifiques de gardiens de but au travers des séances techniques et ludiques basées au Rheu pour les 10 - 13 ans.</h3>
+            </div>
             <ButtonCTA/>
-          </div>
-          <div className="_right">
-            <PhotoSelf/>
-            <ColourSeparator/>
-          </div>
+            <img className="_right" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
+            <div class="separator"></div>
+        </div>
+
         </div>
       </div>
     </section>
@@ -31,9 +32,9 @@ export const Home = () => {
       <div className="container">
           <Presentation/>
       </div>
-      <div className="container">
+      {/* <div className="container"> */}
           <Lieu/>
-      </div>
+      {/* </div> */}
       <div className="container">
           <Carte/>
       </div>
