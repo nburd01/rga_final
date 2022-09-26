@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Dim = () => {
   return (
-    <div className="container Right horaires">
+    <div className="container  horaires">
     <h3>DIMANCHE</h3>
     <ul>
       <li>En fonction du nombre de participants, séance pour tous à 11h sinon :</li>

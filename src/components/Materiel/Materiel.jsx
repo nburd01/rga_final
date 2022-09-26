@@ -2,9 +2,11 @@ import React from 'react'
 
 export const Materiel = () => {
   return (
-<div className='container Right'>
+<div className='container '>
     <h6 className="_BgTitle Right">Matériel</h6>
     <h3 className="_BgSubTitle Right">Le matériel</h3>
+    <div className="container">
+
     <div className='Card __primary '>
       <ul>
         <li>Partenariat avec la marque UHLSPORT pour les équipements (Paires
@@ -17,6 +19,7 @@ faire en club et à la maison !).</li>
 Création d'une tenue logotée.</li>
       </ul>
    </div>
+</div>
 </div>
   )
 }

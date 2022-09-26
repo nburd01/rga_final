@@ -3,9 +3,9 @@ import React from 'react'
 export const Objectifs = () => {
   return (
 <div className="container">
-
     <h6 className="_BgTitle Left">Objectifs</h6>
     <h3 className="_BgSubTitle Left">Objectifs</h3>
+    <div className="container">
     <div className='Card __primary'>
     <ul>
       <li>Faire découvrir ou conforter le poste de gardien de but au travers des
@@ -20,6 +20,7 @@ gardiens et gardiennes de but.</li>
 gardiens de but.</li>
     </ul>
     </div>
+</div>
 </div>
 
   )

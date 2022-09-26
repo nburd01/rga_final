@@ -2,9 +2,11 @@ import React from 'react'
 
 export const Stagiaires = () => {
   return (
-<div className="container Right">
+<div className="container ">
 <h6 className="_BgTitle Right">Stagiaires</h6>
         <h3 className="_BgSubTitle Right">Les stagiaires</h3>
+      <div className="container">
+
   <div className='Card __primary'>
   <ul>
     <li>Structure spécifique GARDIENS DE BUT ouverte aux garçons et aux filles.</li>
@@ -18,6 +20,7 @@ export const Stagiaires = () => {
   Pour les enfants non-licencié[e]s, l’autorisation médicale de
   pratique est à compléter par le médecin traitant.</li>
   </ul>
+  </div>
   </div>
 </div>
   )

@@ -6,6 +6,8 @@ export const InscriptionsComp = () => {
   return (
   <div className='container'>
     <div className="PriceCards">
+    <div className="container">
+
       <div className='Card __primary'>
         <div className='_Title'>
         <h4>Premier abonnement</h4>
@@ -44,6 +46,7 @@ export const InscriptionsComp = () => {
             </ul>
         </div>
       </div> */}
+    </div>
     </div>
 </div>
 
