@@ -169,7 +169,7 @@ code {
 
     ._divRelative{
         position: relative;
-        margin-top: 1em;
+        margin-top: 10em;
     }
 
     ._BgSubTitle{
@@ -307,6 +307,7 @@ code {
     }
     .map-responsive{
         display: flex;
+        position: relative;
         margin-bottom: 1em;
         display: block;
         height:auto;
@@ -562,8 +563,10 @@ code {
             height: 25em;
         }
         ._divRelative{
+            margin-top: 5em;
+
             ._BgTitle{
-                margin: 0.5em 0 0 0;
+                margin:0;
             }
         }
         .btnContainer{
@@ -583,6 +586,14 @@ code {
             padding: 0;
             margin-top: 0;
         }
+    }
+    .map-responsive{
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin-bottom: 1em;
+        display: block;
+        height:auto;
     }
 }
 
@@ -626,6 +637,7 @@ code {
         margin-bottom: 10em;
     }
     ._divRelative{
+        margin-top: -5em;
         ._BgTitle{
             margin: 0;
         }

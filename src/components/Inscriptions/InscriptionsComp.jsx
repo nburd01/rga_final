@@ -33,12 +33,6 @@ export const InscriptionsComp = () => {
               </tr>
             </tbody>
         </table>
-        {/* <li>Abonnement annuel à la Roazhon Goal Academy</li>
-        
-          <li>1 paire de gants Uhlsport</li>
-          <li>1 ensemble Uhlsport</li>
-          <li>1 livret pédagogique illustré "Je suis goal"</li>
-          <img src={require('../../assets/img/Livre/jesuisgoal-couverture-shop_1000x1500.webp')} alt="photoLivre"></img> */}
       </div>
      
 
@@ -63,7 +57,8 @@ export const InscriptionsComp = () => {
                 <td><Check/></td>
               </tr>
               <tr>
-                <td>1 livret pédagogique illustré "Je suis goal"</td>
+              <td>1 livret pédagogique illustré "Je suis goal"</td>
+
                 <td><Xmark/></td>
               </tr>
             </tbody>
