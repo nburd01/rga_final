@@ -13,11 +13,13 @@ export const Lieu = () => {
       </div>
       <div className="container Right">
         <div className='Card __primary'>
-        <ul>
+          <div className='location'>
           <span><FontAwesomeIcon icon="fa-solid fa-location-dot" /></span>
-          <li>Complexe de football du SC LE RHEU FOOTBALL, </li>
-          <li>Route de LORIENT sortie LE RHEU</li>
-        </ul>
+          <ul>
+            <li>Complexe de football du SC LE RHEU FOOTBALL, </li>
+            <li>Route de LORIENT sortie LE RHEU</li>
+          </ul>
+        </div>
         </div>
       </div>
     </div>
