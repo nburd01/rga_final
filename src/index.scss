@@ -5,7 +5,7 @@
 
 html{
     font-size: 16px;
-    --primary: #fee140;
+    --primary: #FFD401;
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
@@ -380,7 +380,13 @@ code {
     }
     .Xmark{
         background-color: var(--fifth);
-
+    }
+    .Caret{
+        span{
+         color: var(--secondary);
+         background-color: var(--primary);
+         box-shadow:0.1em 0.1em 0px 0px var(--secondary);
+        }
     }
     .horaires{
         display: flex;
@@ -423,6 +429,14 @@ code {
                 margin: 1em;
             }
         }
+    }
+    ._planification{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: inherit  ;
+        list-style: circle;
+        margin-left: 5em;
     }
 
 

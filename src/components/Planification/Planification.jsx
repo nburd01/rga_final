@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Planification = () => {
   return (
@@ -45,17 +46,18 @@ export const Planification = () => {
         </table>
         <p>*Ou à 11h en fonction du nombre de participants</p>
       </div>
-    </div>
-    <div className="container">
-    <div>
-        <ul>
-          <li>Cycles d'entraînements calés sur le rythme scolaire.</li>
-          <li>Pas de séances pendant les vacances. Il sera nécessaire de télécharger
-        l’application <a href="https://www.teampulseapp.fr/fr">« Team Pulse »</a> pour faciliter la transmission des informations en cliquant <a href="https://www.teampulseapp.fr/fr">içi</a>.</li>
-          <li>Premier spécifique lundi 13/09/2020.</li>
-          <li>2 séances semaine + 1 dimanche matin sur deux</li>
-        </ul> 
-      </div>
+
+      {/* <div className="container">
+        <div className='_planification'>
+            <ul class="fa-ul Caret">
+            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Cycles d'entraînements calés sur le rythme scolaire.</li>
+            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Pas de séances pendant les vacances. Il sera nécessaire de télécharger
+            l’application <a href="https://www.teampulseapp.fr/fr">« Team Pulse »</a> pour faciliter la transmission des informations en cliquant <a href="https://www.teampulseapp.fr/fr">içi</a>.</li>
+            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Premier spécifique lundi 13/09/2020.</li>
+            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Deux séances semaine + 1 dimanche matin sur deux</li>
+            </ul> 
+        </div>
+      </div> */}
     </div>
   </div>
 </div>
