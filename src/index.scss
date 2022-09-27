@@ -9,6 +9,7 @@ html{
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
+    --fifth: #fc6620;
     overflow-x: hidden;
 }
 
@@ -326,13 +327,15 @@ code {
         border-radius: none;
         height: 25em;
     }
-    .Check{
+    .Check, .Xmark{
         display: flex;
-        margin: 1em;
-        width: 100%;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: var(--primary);
+        width: 1.5em;
+        height: 1.5em;
+        background-color: var(--fifth);
+        border-radius: 100%;
     }
     .horaires{
         display: flex;
@@ -352,33 +355,52 @@ code {
             }
         }
     }
+    .quote-wrapper {
+        display:flex;
+        flex-direction:row;
+        justify-content:center; 
+        align-items:center;
+        }
     table{
         padding: 1em;
         width: 90%;
-        overflow-x:auto
+        overflow-x:auto;
         tr{
-        padding: 1em;
-        }
-        td{
-            text-align: center;
+         padding: 1em;
         }
     }
-    .quote-wrapper {
-        height: 1.5em;
-        width: 1.5em;
-        position: relative;
-        right: 1em;
-        margin: 1em auto;
-      }
-      .Check {
-        background: radial-gradient(
-          ellipse at center,
-          var(--secondary) 0%,
-          var(--secondary) 70%,
-          rgba(0, 128, 172, 0) 70.3%
-        );
-        height: 100%;
-        width: 100%;
+    .planification{
+        table{
+            td{
+                text-align: center;
+            }
+        }
+    }
+
+
+      .abonnements{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        tr{
+            display: flex;
+            flex-direction: row;  
+            td{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: center;
+            }
+            td:nth-of-type(1){
+                width: 75%;
+            }
+            td:nth-of-type(2){
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items:flex-end;
+            }
+        }
       }
     footer{
         display: flex;

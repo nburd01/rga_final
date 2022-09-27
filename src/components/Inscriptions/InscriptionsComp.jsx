@@ -1,6 +1,7 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Check } from '../Check/Check'
+import { Xmark } from '../Check/Xmark'
+
 
 export const InscriptionsComp = () => {
   return (
@@ -10,34 +11,63 @@ export const InscriptionsComp = () => {
         <div className='_Title'>
         <h4>Premier abonnement</h4>
           <h5>70 euros</h5>     
-          <div class="quote-wrapper">
-            <Check/>
-          </div>
         </div>
-          <p>5 euros : participation à chaque séance spécifique.</p>
-        <li>
-          Abonnement annuel à la Roazhon Goal Academy 
+          <p>+ 5 euros par séance.</p>
+          <table className='abonnements'>
+            <tbody>
+              <tr>
+                <td>Abonnement annuel à la Roazhon Goal Academy</td>
+                <td><Check/></td>                
+              </tr>
+              <tr>
+                <td>1 paire de gants Uhlsport</td>
+                <td><Check/></td>                
+              </tr>
+              <tr>
+                <td>1 ensemble Uhlsport</td>
+                <td><Check/></td>
+              </tr>
+              <tr>
+                <td>1 livret pédagogique illustré "Je suis goal"</td>
+                <td><Check/></td>
+              </tr>
+            </tbody>
+        </table>
+        {/* <li>Abonnement annuel à la Roazhon Goal Academy</li>
+        
           <li>1 paire de gants Uhlsport</li>
           <li>1 ensemble Uhlsport</li>
           <li>1 livret pédagogique illustré "Je suis goal"</li>
-          <img src={require('../../assets/img/Livre/jesuisgoal-couverture-shop_1000x1500.webp')} alt="photoLivre"></img>
-        </li>
+          <img src={require('../../assets/img/Livre/jesuisgoal-couverture-shop_1000x1500.webp')} alt="photoLivre"></img> */}
       </div>
+     
+
       <div className='Card __primary'>
-      <div className='_Title'>
+        <div className='_Title'>
         <h4>Ré-abonnement</h4>
-          <h5>50 euros</h5>
-          <div class="quote-wrapper">
-            <Check/>
-          </div>
+          <h5>50 euros</h5>     
         </div>
-          <p>5 euros : participation à chaque séance spécifique.</p>
-        <li>Abonnement annuel à la Roazhon Goal Academy
-          <li>1 paire de gants Uhlsport</li>
-          <li>1 ensemble Uhlsport
-          </li>
-        </li>
-      </div>
+          <p>+ 5 euros par séance.</p>
+          <table className='abonnements'>
+            <tbody>
+              <tr>
+                <td>Abonnement annuel à la Roazhon Goal Academy</td>
+                <td><Check/></td>                
+              </tr>
+              <tr>
+                <td>1 paire de gants Uhlsport</td>
+                <td><Check/></td>                
+              </tr>
+              <tr>
+                <td>1 ensemble Uhlsport</td>
+                <td><Check/></td>
+              </tr>
+              <tr>
+                <td>1 livret pédagogique illustré "Je suis goal"</td>
+                <td><Xmark/></td>
+              </tr>
+            </tbody>
+        </table>
 
       {/* <div className='Left'>
         <div className='Card __secondary '>
@@ -49,6 +79,7 @@ export const InscriptionsComp = () => {
         </div>
       </div> */}
     </div>
+</div>
 </div>
 
   )

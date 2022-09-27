@@ -14,7 +14,6 @@ export const LunMar = () => {
       </ul>
       <ul>
       <div>
-
         <span>17h45</span>
         <li>Début de séance</li>
         </div>
