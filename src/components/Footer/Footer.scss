@@ -4,6 +4,9 @@
         align-items: center;
         justify-content: center;
         background-color: var(--secondary);
+        overflow-y: hidden;
+        margin-top: 5em;
+
         .iconsFontAwesome{
             padding: 0.5em;
             color: white;
