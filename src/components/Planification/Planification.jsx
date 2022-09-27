@@ -28,7 +28,7 @@ export const Planification = () => {
             <th>Groupes</th>
             <th>Lundi</th>
             <th>Mardi</th>
-            <th>Dimanche</th>
+            <th>Dimanche*</th>
           </tr>
           <tr>
             <td>2012/2013</td>

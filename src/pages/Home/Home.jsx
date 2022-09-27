@@ -35,9 +35,7 @@ export const Home = () => {
       {/* <div className="container"> */}
           <Lieu/>
       {/* </div> */}
-      <div className="container">
           <Carte/>
-      </div>
       
     </section>
   </page>
