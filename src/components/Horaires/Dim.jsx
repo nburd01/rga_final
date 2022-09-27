@@ -44,7 +44,7 @@ export const Dim = () => {
           <li>Fin de séance</li>
           </div>
         </ul>
-        <p>*En fonction du nombre de participants, séance pour tous à 11h</p>
+        <p>*En fonction du nombre de participants, sinon séance pour tous à 11h.</p>
     </ul>
   </div>
   )

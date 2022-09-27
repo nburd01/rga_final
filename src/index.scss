@@ -351,6 +351,17 @@ code {
             }
         }
     }
+    table{
+        padding: 1em;
+        width: 90%;
+        overflow-x:auto
+        tr{
+        padding: 1em;
+        }
+        td{
+            text-align: center;
+        }
+    }
     footer{
         display: flex;
     }
