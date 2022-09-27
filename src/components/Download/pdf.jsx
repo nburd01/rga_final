@@ -23,7 +23,7 @@ const PDF = () => {
                     <div className="block">
                 <div className="_TitleSubTitle">
                     <h1>Le dossier d'inscription à nous renvoyer</h1>
-                    <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous</h3>
+                    <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous :</h3>
                 </div>
                         <div className="btn_container">
                             <button onClick={onButtonClick}>
