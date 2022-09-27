@@ -337,8 +337,16 @@ code {
         display: flex;
         flex-direction: column;
         ul{
-            span{
-                font-weight: bold;
+            div{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                span{
+                    font-weight: bold;
+                }
+                li{
+                    list-style: none;
+                }
             }
         }
     }
