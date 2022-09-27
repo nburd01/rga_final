@@ -46,13 +46,13 @@ export const Planification = () => {
             <td>11/12</td>
             <td></td>
             <td></td>
-            <td>9h30</td>
+            <td>9h30–10h45</td>
           </tr>
           <tr>
             <td>09/10</td>
             <td></td>
             <td></td>
-            <td>11h00</td>
+            <td>11h00-12h15</td>
           </tr>
         </table>
       </div>
