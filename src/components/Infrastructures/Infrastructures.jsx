@@ -15,7 +15,7 @@ export const Infrastructures = () => {
               <li>Terrain herbe, synthétique, beach et futsal extérieur.</li>
               <li><span>Club house</span> permettant aux parents ou accompagnants de rester sur place
         avec tv, wifi, jeux et collation.</li>
-              <li><span>Vestiaires</span> capables d'accueillir filles et garçons</li>
+              <li><span>Vestiaires</span> capables d'accueillir filles et garçons.</li>
           </ul>
         </div>
       </div>
