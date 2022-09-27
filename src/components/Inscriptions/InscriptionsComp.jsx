@@ -1,6 +1,6 @@
 import React from 'react'
-import { Check } from '../Check/Check'
-import { Xmark } from '../Check/Xmark'
+import { Check } from '../Fontawesome/Check'
+import { Xmark } from '../Fontawesome/Xmark'
 
 
 export const InscriptionsComp = () => {
