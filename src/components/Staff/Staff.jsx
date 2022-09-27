@@ -11,9 +11,9 @@ export const Staff = () => {
       <div className="container">
         <div className='Card __primary'>
         <ul>
-          <li>Séances préparées et encadrées par des gardiens de but, anciens gardiens,
+          <li>Séances <span>préparées et encadrées</span> par des gardiens de but, anciens gardiens,
     éducateurs confirmés aux spécifiques.</li>
-          <li>Educateurs et gardiens de but séniors du club SC Le Rheu (diplômés ou en
+          <li><span>Educateurs et gardiens de but séniors</span> du club SC Le Rheu (diplômés ou en
     formation). 2 éducateurs minimum par séance.</li>
         </ul>
         </div>

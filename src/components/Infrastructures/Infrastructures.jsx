@@ -11,13 +11,11 @@ export const Infrastructures = () => {
       <div className="container Right">
         <div className='Card __primary'>
           <ul>
-              <li>Complexe footballistique du SC LE RHEU FOOTBALL, </li>
-              <li>Route de LORIENT sortie LE RHEU</li>
-              <li>Variété des surfaces de jeux, initiations à "d'autres" football.</li>
+              <li><span>Variété des surfaces de jeux</span>, initiations à "d'autres" football.</li>
               <li>Terrain herbe, synthétique, beach et futsal extérieur.</li>
-              <li>Club house permettant aux parents ou accompagnants de rester sur place
+              <li><span>Club house</span> permettant aux parents ou accompagnants de rester sur place
         avec tv, wifi, jeux et collation.</li>
-              <li>Vestiaires capables d'accueillir filles et garçons</li>
+              <li><span>Vestiaires</span> capables d'accueillir filles et garçons</li>
           </ul>
         </div>
       </div>
