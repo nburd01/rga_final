@@ -8,7 +8,7 @@
     position:relative;
     flex-direction: column;
     transition: all 0.3s ease-in 0s;
-    padding: 1em 0;
+    padding: 0 0 1em 0;
     .container{
         display: flex;
         flex-direction: column;
@@ -71,16 +71,11 @@
             display: flex;
             justify-content:flex-start;
             align-items: center;
+            height: calc(100vh - 250px);
             li{
                 margin: 0;
             }
         }
-        .animate {
-            transition: transform .35s ease-in-out;
-            }
-            .animate.grow {
-            transform: scale(1.5);
-            }
 
         .toggleBtn{
             position:absolute;
