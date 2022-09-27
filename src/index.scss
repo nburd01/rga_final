@@ -157,15 +157,14 @@ code {
         font-weight: bold;
         cursor: pointer;
     }
-    ul {
-        // list-style-type: none;
-      }
     li{
         font-size: 1em;
         color: var(--secondary);
         opacity: 75%;
         padding: 0 1em;
         margin: 1em;
+        list-style: none;
+        margin-left: -1em;
     }
 
     ._divRelative{
