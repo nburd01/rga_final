@@ -25,38 +25,38 @@ export const Planification = () => {
         </ul> */}
         <table>
           <tr>
-            <th>Génération</th>
+            <th>Groupes</th>
             <th>Lundi</th>
             <th>Mardi</th>
             <th>Dimanche</th>
           </tr>
           <tr>
-            <td>12/13</td>
+            <td>2012/2013</td>
             <td>17h45-19h15</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>10/11</td>
+            <td>2010/2011</td>
             <td></td>
             <td>17h45-19h15</td>
             <td></td>
           </tr>
           <tr>
-            <td>11/12</td>
+            <td>2011/2012</td>
             <td></td>
             <td></td>
             <td>9h30–10h45</td>
           </tr>
           <tr>
-            <td>09/10</td>
+            <td>2009/2010</td>
             <td></td>
             <td></td>
             <td>11h00-12h15</td>
           </tr>
         </table>
+        <p>*Ou à 11h en fonction du nombre de participants</p>
       </div>
-        <p>*Ou tous à 11h en fonction du nombre de participants</p>
     </div>
   </div>
 </div>
