@@ -1,0 +1,12 @@
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span{
+        width: 25%;
+    }
+    ul{
+        width: auto;
+    }
+}
