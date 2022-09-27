@@ -14,7 +14,7 @@ export const Materiel = () => {
       <ul>
         <li><span>Partenariat avec la marque UHLSPORT</span> pour les équipements (Paires
 offertes à l'inscription + réduction sur les achats boutiques).</li>
-        <li>  Livret (<a href='http://jesuisgoal.fr/'>"je suis goal"</a>) offert à l'inscription (Support pédagogique : devoirs à
+        <li>  Livret (<a href='http://jesuisgoal.fr/'>"Je suis goal"</a>) offert à l'inscription (Support pédagogique : devoirs à
 faire en club et à la maison !).</li>
         <li><span>Ballons neufs</span> et réservés à la RGA pour effectuer la saison.</li>
         <li><span>Matériel classique</span> de séance terrain mis à disposition par le SC Le Rheu.</li>

@@ -16,7 +16,7 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: auto;
             padding: 1em 0;
             .logo{
                 height: 7em;
@@ -31,7 +31,7 @@
             width: 100%;
             background-color: var(--primary);
             transition: all 0.3s ease-in 0s;
-            height: 80vh;
+            height: 90vh;
             overflow: hidden;
             ul{
                 display: flex;
@@ -101,6 +101,10 @@
                 background-color: var(--secondary);      
             }
         }
+        .container{
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 @media (min-width: 1200px) { 
@@ -108,13 +112,16 @@
         padding: auto 3em;
         flex-direction: row;
     .logoDiv{
-        width: 25%;
+        width: auto;
+        margin: auto 2em;
     }
     .desktop{
         display:flex;
         flex-direction: row;
         width: auto;
         margin: 1em auto;
+        justify-content: center;
+        align-items: center;
         li{
             list-style: none;
             width: auto;
