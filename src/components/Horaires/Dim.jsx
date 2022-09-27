@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Dim = () => {
   return (
-    <div className="container  horaires">
-    <h3>DIMANCHE</h3>
+    <div className="container horaires">
+    <h3>DIMANCHE*</h3>
     <ul>
-      <li>En fonction du nombre de participants, séance pour tous à 11h sinon :</li>
+
       <h4>Groupe 2012/2013 :</h4>
       <ul>
         <div>
@@ -34,7 +34,7 @@ export const Dim = () => {
         </ul>
         <ul>
           <div>
-          <span>11h</span>
+          <span>11h00</span>
           <li>Début de séance</li>
           </div>
         </ul>
@@ -44,6 +44,7 @@ export const Dim = () => {
           <li>Fin de séance</li>
           </div>
         </ul>
+        <p>*En fonction du nombre de participants, séance pour tous à 11h</p>
     </ul>
   </div>
   )
