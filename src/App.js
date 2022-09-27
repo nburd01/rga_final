@@ -14,12 +14,12 @@ import { AuthModeContext } from "./context/AuthContext";
 import "./index.scss";
 import { Footer } from "./components/Footer/Footer";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheck, fas } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, fas, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import { BackToTop } from "./components/BackToTop/BackToTop";
 
-library.add(fas, faTwitter, faFacebook, faLinkedin, faFontAwesome, faCheck)
+library.add(fas, faTwitter, faFacebook, faLinkedin, faFontAwesome, faCheck, faXmark)
 
 function App() {
 

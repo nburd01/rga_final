@@ -10,7 +10,7 @@ export const Planification = () => {
   <h3 className="_BgSubTitle Left">Planification</h3>
   </div>
     <div className='container'>
-      <div className='Card __primary' style={{overflow:"auto"}}>
+      <div className='Card __primary planification' style={{overflow:"auto"}}>
         {/* <ul>
           <li>Cycles d'entraînements calés sur le rythme scolaire.</li>
           <li>Pas de séances pendant les vacances. Il sera nécessaire de télécharger
