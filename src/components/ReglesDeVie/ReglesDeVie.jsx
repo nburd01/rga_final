@@ -11,15 +11,15 @@ export const ReglesDeVie = () => {
     </div>
     <div className='Card __primary'>
       <ul>
-        <li>Chaque goal devra arriver en tenue « civil » et se changer ensuite en
+        <li>Chaque goal devra arriver en <span>tenue « civil »</span> et se changer ensuite en
 tenue de football. (sous réserve des conditions sanitaires Covid).</li>
-        <li>On dit "bonjour" et "au revoir" par politesse.</li>
-        <li>Prévenir les éducateurs de votre arrivée et départ.</li>
-        <li>Selon le temps, prévoir l’équipement adapté (veste, pantalon,
+        <li>On dit "bonjour" et "au revoir"par <span>politesse</span> .</li>
+        <li><span>Prévenir</span> les éducateurs de votre arrivée et départ.</li>
+        <li>Selon le temps, <span>prévoir l’équipement adapté</span> (veste, pantalon,
 casquette, crème solaire...Gants !).</li>
-        <li>Chaque goal devra être muni d’une gourde ou bouteille d’eau.</li>
-        <li>Respecter les infrastructures.</li>
-        <li>Être motivé et de bonne humeur</li>
+        <li>Chaque goal devra être muni d’une <span>gourde ou bouteille d’eau</span>.</li>
+        <li><span>Respecter</span> les infrastructures.</li>
+        <li>Être <span>motivé et de bonne humeur</span> !</li>
       </ul>
     </div>
 </div>
