@@ -275,6 +275,19 @@ code {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            h4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+            }
+            h5{
+                padding: 1em;
+                background-color: var(--secondary);
+                border-radius: 1em;
+                color: var(--primary);
+            }
         }
     }
     .__primary{
@@ -600,15 +613,8 @@ code {
     border-radius: 1em;
     width: 66%;
         ._Title{
-            // flex-direction: column;
             justify-content:center;
             align-items:center;
-            h5{
-                padding: 1em;
-                background-color: var(--secondary);
-                border-radius: 1em;
-                color: var(--primary);
-            }
         }
     }
     .HeroImage{
