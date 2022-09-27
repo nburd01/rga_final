@@ -9,6 +9,7 @@ html{
     --secondary:#242B2E; 
     --third:##e8eef2; 
     --fourth: #ffffff;
+    --valid: #3cc72f;
     --fifth: #fc6620;
     overflow-x: hidden;
 }
@@ -327,6 +328,16 @@ code {
         border-radius: none;
         height: 25em;
     }
+    .Check{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+    }
+
     .Check, .Xmark{
         display: flex;
         flex-direction: column;
@@ -334,8 +345,14 @@ code {
         justify-content: center;
         width: 1.5em;
         height: 1.5em;
-        background-color: var(--fifth);
         border-radius: 100%;
+    }
+    .Check{
+        background-color: var(--valid);
+    }
+    .Xmark{
+        background-color: var(--fifth);
+
     }
     .horaires{
         display: flex;
@@ -586,6 +603,12 @@ code {
             // flex-direction: column;
             justify-content:center;
             align-items:center;
+            h5{
+                padding: 1em;
+                background-color: var(--secondary);
+                border-radius: 1em;
+                color: var(--primary);
+            }
         }
     }
     .HeroImage{
