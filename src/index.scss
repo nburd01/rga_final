@@ -133,8 +133,8 @@ code {
         font-size:1em;
         color: var(--secondary);
         opacity: 75%;
-        padding: 1em;
-        margin:1em;
+        // padding: 1em;
+        // margin:1em;
         line-height: 1.5em;
     }
 
@@ -332,6 +332,7 @@ code {
         width: 100%;
         align-items: center;
         justify-content: center;
+        color: var(--primary);
     }
     .horaires{
         display: flex;
@@ -362,6 +363,23 @@ code {
             text-align: center;
         }
     }
+    .quote-wrapper {
+        height: 1.5em;
+        width: 1.5em;
+        position: relative;
+        right: 1em;
+        margin: 1em auto;
+      }
+      .Check {
+        background: radial-gradient(
+          ellipse at center,
+          var(--secondary) 0%,
+          var(--secondary) 70%,
+          rgba(0, 128, 172, 0) 70.3%
+        );
+        height: 100%;
+        width: 100%;
+      }
     footer{
         display: flex;
     }

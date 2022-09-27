@@ -10,11 +10,11 @@ export const Presentation = () => {
     </div>
     <div className="container">
       <div className='Card __primary'>
-          <p>La ROAZHON GOAL ACADEMY est la première structure spécifique dédiée
-  aux gardiennes et gardiens de but d'Ille et Vilaine. Créée en septembre 2019
-  par Christophe REVEL, elle répond à une problématique d'entrainement
-  rencontrée dans les clubs du district et par les goals du 35.
-  La ROAZHON GOAL ACADEMY est au service des passionnés du poste et
+          <p>La Roazhon Goal Academy est la première structure spécifique dédiée
+  aux gardiennes et gardiens de but d'Ille et Vilaine.</p>
+  <p>Créée en septembre 2019 par Christophe REVEL, elle répond à une problématique d'entrainement
+  rencontrée dans les clubs du district et par les goals du 35.</p>
+  <p>La Roazhon Goal Academy est au service des passionnés du poste et
   des clubs qui lui font confiance... L’année dernière 22 gardiens de but de 14
   clubs différents !</p>
       </div>
