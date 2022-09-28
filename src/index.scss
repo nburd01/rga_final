@@ -44,7 +44,6 @@ code {
         width: 100%;
 
         .block{
-
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -450,11 +449,6 @@ code {
     ul{
         margin: 0;
     }
-    .seance{
-        display: flex;  
-        width: 100%;
-        justify-content: center;
-    }
     footer{
         display: flex;
     }
@@ -614,7 +608,7 @@ code {
         display: flex;
 
     }
-    .inscriptions{
+    .inscriptions, .RGA, .seances, .horaires, .multimedia, .contact{
         display: flex;
         flex-direction: column;
         justify-content:center;
