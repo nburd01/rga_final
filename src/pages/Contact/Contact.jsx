@@ -1,16 +1,24 @@
 import React from 'react'
-import { ContactComp } from '../../components/Contact/Contact'
+import { ContactComp } from '../../components/Contact/ContactComp'
+
 
 export const Contact = () => {
   return (
     <page className='contact'>
-      <div className="container Right">
-          <div className="_TitleSubTitle">
-        <h6 className="_BgTitle Right">Contact</h6>
-        <h3 className="_BgSubTitle Right">Contact</h3>
-        </div>
-      <ContactComp/>
+      <div className="container-large">
+      <div className="PicTitle">
+      <div className="_TitleSubTitle">
+        <h1>Contact</h1>
+        <h3>Pour tout renseignement, merci de nous contacter par e-mail ou bien par téléphone.</h3>
       </div>
-    </page>
+      <div className="HeroImage">
+        <img src={require('../../assets/img/galerie/webp/home8.webp')} className="_HeroImage" alt="img" loading="lazy"/>
+      </div>
+      </div>
+    </div>
+    <div >
+      <ContactComp/>
+    </div>
+  </page>
   )
 }
