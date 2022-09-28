@@ -18,7 +18,7 @@ html{
 
 body{
     overflow: hidden;
-    min-height: 100vh;
+    height: 100%;
     min-height: -webkit-fill-available;
     line-height: 1,625;
     margin: 0;
@@ -57,7 +57,16 @@ code {
         padding: 0 20px;
         max-width: 1150px;
 }
+.RGA, .inscriptions, .seances, .horaires, .multimedia, .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
 .container-large{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 0;
     padding: auto 5em;
 }
@@ -142,7 +151,7 @@ code {
 
     ._divRelative{
         position: relative;
-        margin-top: 5vh;
+        margin-top: 5em;
     }
 
     ._BgSubTitle{
@@ -534,7 +543,7 @@ code {
 
         }
         .separator{
-            height: 15vh;
+            height: 15em;
             width: 200vw;
             margin-top: -5vh;
         }
@@ -565,11 +574,6 @@ code {
         ._HeroImage{
             margin: 0 2em;
             height: 25em;
-        }
-        ._divRelative{
-            ._BgTitle{
-                margin:0;
-            }
         }
         ._BgTitle{
         padding: 0;
@@ -612,6 +616,8 @@ code {
     .container-large{
         margin: auto 8em;
         padding: auto 5em;
+        max-width: 2000px;
+        justify-content: center;
     }
     .Card {
     border-radius: 1em;
@@ -626,11 +632,6 @@ code {
     }
     .__intro{
         margin-bottom: 0;
-    }
-    ._divRelative{
-        ._BgTitle{
-            margin: 0;
-        }
     }
     .__primary{
         box-shadow:15px 15px 0px 5px var(--secondary);

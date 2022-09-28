@@ -6,7 +6,7 @@ import { Telephone } from '../../components/Contact/telephone'
 export const Contact = () => {
   return (
     <page className='contact'>
-      <div className="block">
+      <div className="container-large">
         <div className="PicTitle">
           <div className="_TitleSubTitle">
             <h1>Contact</h1>
