@@ -10,8 +10,7 @@ import '../../index.scss'
 
 export const Home = () => {
   return (
-  <page className='home'>
-    
+  <page className='homepage'>
     <section className='home'>
       <div className="container">
         <div className="__intro">
@@ -22,21 +21,19 @@ export const Home = () => {
             </div>
             <ButtonCTA/>
             <img className="_right" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
-            <div class="separator"></div>
         </div>
-
         </div>
+      </div>
+      <div class="separator">
+        <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
       </div>
     </section>
     <section className="pageBody">
       <div className="container">
           <Presentation/>
       </div>
-      {/* <div className="container"> */}
           <Lieu/>
-      {/* </div> */}
-          <Carte/>
-      
+          <Carte/>  
     </section>
   </page>
   )

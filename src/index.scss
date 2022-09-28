@@ -38,6 +38,7 @@ code {
 
     .home{
     padding-top: 9px ;
+    position: relative;
     }
     // .pageBody{
 
@@ -175,7 +176,7 @@ code {
 
     ._divRelative{
         position: relative;
-        margin-top: 10em;
+        margin-top: 5vh;
     }
 
     ._BgSubTitle{
@@ -222,7 +223,13 @@ code {
 
     ._right{
         display: none;
-
+    }
+    ._rightmob{
+        position: absolute;
+        max-height: 50vh;
+        left: 40%;
+        bottom: 0;
+        z-index: -1;
     }
     ._left{
         max-width: 100%;
@@ -234,13 +241,12 @@ code {
     }
     .separator{
         display: flex;
-        position: absolute;
-        height: 15vh;
-        width: 200vw;
-        left:-50%;
+        position: relative;
+        height: 40vh;
+        margin-top: 5vh;
         background-image: linear-gradient(45deg, var(--gradient-colors));
-        rotate: 0deg;
-        top:100%;
+        left:-50vw;
+        width: 200vw;
         rotate: -2deg;
     }
     span{
@@ -484,20 +490,12 @@ code {
     }
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
 
-//     .Left{
-//         align-items: start;
-//         justify-content: center;
-//         display: flex;
-//         // flex-direction: column;
-//     }
-//     .Right{
-// // width: 100%;
-//     }
+}
+@media only screen and (min-width: 480px) {
     .Abonnement{
         display: flex;
-        // flex-direction: column;
     }
 }
 
@@ -528,6 +526,9 @@ code {
                     flex-direction: column;
                 }
         }
+        ._rightmob{
+            display: none;
+        }
 
         .__intro{
             display: flex;
@@ -553,17 +554,7 @@ code {
                     width: auto;
                     height: 100%;
                 }
-                .separator{
-                    display: flex;
-                    position: absolute;
-                    height: 15vh;
-                    width: 200vw;
-                    left:-50%;
-                    background: var(--primary);
-                    rotate: 0deg;
-                    top:90%;
-                    rotate: -2deg;
-                }
+
             }
             ._BgTitle{
                 display: flex;
@@ -575,6 +566,12 @@ code {
                 font-size: 10em;
                 overflow-x: hidden;
             }
+
+        }
+        .separator{
+            height: 15vh;
+            width: 200vw;
+            margin-top: -5vh;
         }
         .Card {
             // flex-direction:row;
@@ -607,8 +604,6 @@ code {
             height: 25em;
         }
         ._divRelative{
-            margin-top: 5em;
-
             ._BgTitle{
                 margin:0;
             }
@@ -683,10 +678,9 @@ code {
     margin: 0;
     }
     .__intro{
-        margin-bottom: 10em;
+        margin-bottom: 0;
     }
     ._divRelative{
-        margin-top: -5em;
         ._BgTitle{
             margin: 0;
         }
