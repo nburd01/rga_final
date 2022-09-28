@@ -8,7 +8,7 @@
             border-radius: 20px;
             border: none;
             padding: 0;
-            width: 40vw;
+            width: 20vw;
             height: 4vh;
             margin: 5em 5em;
             cursor: pointer;
@@ -19,17 +19,4 @@
         }
     }
 
-    @media only screen and (min-width: 480px){
-        .btnContainer{
-            button{
-                width: 50%;
-            }
-        }
-    }
-    @media only screen and (min-width: 996px){
-        .btnContainer{
-            button{
-                width: 80%;
-            }
-        }
-    }
+    

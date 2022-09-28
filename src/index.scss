@@ -50,19 +50,6 @@ code {
         justify-content: center;
         align-items: center;
         text-align: center;
-        .btn_container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            button{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width:30%;
-                font-size: 1em;
-
-            }
-        }
     }
     .block{
         width: 100%;
@@ -81,11 +68,6 @@ code {
             margin: 1em auto;
             text-align: center;
             text-justify: inter-word;
-            .btn_container{
-                display: flex;
-                justify-content: center;
-                align-self: center;
-            }
         }
     }
 }
@@ -608,28 +590,12 @@ code {
                 margin:0;
             }
         }
-        .btnContainer{
-            margin-bottom:4em;
-            margin-top:0;
-            a{
-                padding: 0;
-                margin: 0;
-            }
-        }
         ._BgTitle{
         padding: 0;
 
         }
         ._BgSubTitle{
             padding-top: 0.5em;
-    }
-    button, a{
-        padding: 0;
-        margin: 0;
-        .btnText{
-            padding: 0;
-            margin-top: 0;
-        }
     }
     .map-responsive{
         display: flex;
