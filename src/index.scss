@@ -595,6 +595,7 @@ code {
         flex-direction: column;
         justify-content:center;
     }
+
     .container-large{
         align-items: center;
         display: flex;
@@ -603,6 +604,9 @@ code {
         max-width: 2000px;
         padding: auto 5em;
         ._TitleSubTitle{
+        max-width: 30vw;
+        margin-right: auto;
+
             h3{
                 margin-right: 5em;
                 width: 80%;
