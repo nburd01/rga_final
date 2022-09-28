@@ -364,25 +364,6 @@ code {
          color: var(--secondary);
         }
     }
-    .horaires{
-        display: flex;
-        flex-direction: column;
-        // ul{
-        //     div{
-        //         align-items: center;
-        //         display: flex;
-        //         justify-content: start;
-        //         span{
-        //             font-weight: bold;
-        //             margin-right: 1em;
-        //         }
-        //         li{
-        //             list-style: none;
-        //             text-align: left;
-        //         }
-        //     }
-        // }
-    }
     .quote-wrapper { 
         align-items:center;
         display:flex;
@@ -603,7 +584,7 @@ code {
 
     }
     .inscriptions, .RGA, .seances, .horaires, .multimedia, .contact{
-        align-items: start;
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: start;
