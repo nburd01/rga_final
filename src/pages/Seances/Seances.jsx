@@ -11,7 +11,7 @@ export const Seances = () => {
     <div className="PicTitle">
     <div className="_TitleSubTitle">
       <h1>Les séances</h1>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
+      <h3>Tout savoir à propos des séances d'entraînement, du matériel ainsi que des règles de vie de l'Academy.</h3>
     </div>
     <div className="HeroImage">
       <img src={require('../../assets/img/galerie/webp/home4.webp')} className="_HeroImage" alt="img" loading="lazy"/>
