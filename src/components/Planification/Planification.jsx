@@ -27,7 +27,7 @@ export const Planification = () => {
           <tr>
             <td><p>2010/2011</p></td>
             <td></td>
-            <td><p>17h45-19h15</p></td>
+            <td><p>17h45-19h00</p></td>
             <td></td>
           </tr>
           <tr>
@@ -45,18 +45,6 @@ export const Planification = () => {
         </table>
         <p>*Ou à 11h en fonction du nombre de participants</p>
       </div>
-
-      {/* <div className="container">
-        <div className='_planification'>
-            <ul class="fa-ul Caret">
-            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Cycles d'entraînements calés sur le rythme scolaire.</li>
-            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Pas de séances pendant les vacances. Il sera nécessaire de télécharger
-            l’application <a href="https://www.teampulseapp.fr/fr">« Team Pulse »</a> pour faciliter la transmission des informations en cliquant <a href="https://www.teampulseapp.fr/fr">içi</a>.</li>
-            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Premier spécifique lundi 13/09/2020.</li>
-            <li><span class="fa-li"><FontAwesomeIcon icon="fa-solid fa-caret-right" /></span>Deux séances semaine + 1 dimanche matin sur deux</li>
-            </ul> 
-        </div>
-      </div> */}
     </div>
   </div>
 </div>

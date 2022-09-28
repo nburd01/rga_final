@@ -34,15 +34,12 @@ code {
   }
 
 
-  //SECTIONS
 
     .home{
     padding-top: 9px ;
     position: relative;
     }
-    // .pageBody{
 
-    // }
     .pdf{
         display: flex;
         flex-direction: column;
@@ -59,17 +56,6 @@ code {
         margin: 0 0;
         padding: 0 20px;
         max-width: 1150px;
-        .animated{
-        .small{
-            width: 80%;
-            flex-direction: column;
-            justify-content: center;
-            align-self: center;
-            margin: 1em auto;
-            text-align: center;
-            text-justify: inter-word;
-        }
-    }
 }
 .container-large{
     margin: 0 0;
@@ -125,8 +111,6 @@ code {
         font-size:1em;
         color: var(--secondary);
         opacity: 75%;
-        // padding: 1em;
-        // margin:1em;
         line-height: 1.5em;
     }
 
@@ -289,7 +273,6 @@ code {
         }
     }
     .contact{
-        // display: flex;
         width: 100%;
         .Card{
             width: auto;
@@ -556,13 +539,11 @@ code {
             margin-top: -5vh;
         }
         .Card {
-            // flex-direction:row;
             margin: 1em 0;
             width: 80%;
         }
         .__primary{
         border: 2px solid var(--secondary);
-        // margin: auto 2em;
 
         }
         .__secondary{

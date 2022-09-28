@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import {Link } from 'react-router-dom';
 import './MainNav.scss'
-// import logo from '../../assets/img/logo/logo.jpg'
 
 export const MainNav = () => {
 
