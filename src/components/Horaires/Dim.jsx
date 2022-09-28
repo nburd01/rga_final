@@ -2,8 +2,10 @@ import React from 'react'
 
 export const Dim = () => {
   return (
-    <div className="container horaires">
+    <div className="container horaires Right">
+    <div>
     <h3>DIMANCHE*</h3>
+    </div>
     <ul>
       <h4>Groupe 2012/2013 :</h4>
       <ul>
