@@ -2,10 +2,8 @@ import React from 'react'
 
 export const Materiel = () => {
   return (
-<div className='container'>
-  <div className="block">
+<div className='container Right'>
   <div className="_TitleSubTitle">
-
     <h6 className="_BgTitle Right">Matériel</h6>
     <h3 className="_BgSubTitle Right">Le matériel</h3>
     </div>
@@ -24,6 +22,6 @@ faire en club et à la maison !).</li>
      </div>
     </div>
   </div>
-</div>
+
   )
 }

@@ -2,13 +2,12 @@ import React from 'react'
 
 export const Staff = () => {
   return (
-  <div className="container">
-    <div className="block">
+  <div className="container Left">
     <div className="_TitleSubTitle">
       <h6 className="_BgTitle Left">Le staff</h6>
       <h3 className="_BgSubTitle Left">Le staff</h3>
       </div>
-      <div className="container">
+      <div className="container Left">
         <div className='Card __primary'>
         <ul>
           <li>Séances <span>préparées et encadrées</span> par des gardiens de but, anciens gardiens,
@@ -19,6 +18,5 @@ export const Staff = () => {
         </div>
       </div>
     </div>
-  </div>
   )
 }
