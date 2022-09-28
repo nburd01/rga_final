@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactComp, Email } from '../../components/Contact/Email'
+import { Email } from '../../components/Contact/Email'
 import { Telephone } from '../../components/Contact/telephone'
 
 
@@ -17,8 +17,10 @@ export const Contact = () => {
           </div>
         </div>
       </div>
+      <section className="pageBody">
       <Email/>
       <Telephone/>
+      </section>
     </page>
   )
 }

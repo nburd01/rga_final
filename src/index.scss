@@ -5,6 +5,7 @@
 
 html{
     font-size: 16px;
+    overflow-x: hidden;
     --primary:  #FFE14D;
     --secondary:#242B2E; 
     --third:#242B2E; 
@@ -13,28 +14,24 @@ html{
     --valid: #3cc72f;
     --fifth: #fc6620;
     --gradient-colors: #FFD401,#FFDA25,#FFE049;
-    overflow-x: hidden;
 }
 
 body{
-    overflow: hidden;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    line-height: 1,625;
-    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1,625;
+    margin: 0;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-
-
-
     .home{
     padding-top: 9px ;
     position: relative;
@@ -44,12 +41,12 @@ code {
         width: 100%;
 
         .block{
+            align-items: center;
             display: flex;
             flex-direction: column;
-            width: 100%;
             justify-content: center;
-            align-items: center;
             text-align: center;
+            width: 100%;
         }
     }
     .block{
@@ -58,8 +55,8 @@ code {
 
     .container{
         margin: 0 0;
-        padding: 0 20px;
         max-width: 1150px;
+        padding: 0 20px;
     }
     .container-large{
         margin: 0 0;
@@ -67,107 +64,107 @@ code {
     }
 
     h1{
-        font-size: 2.6em;
         color: var(--secondary) ;
+        font-size: 2.6em;
+        font-weight: bold;
         line-height: 1.5em;
         margin: 1em;
-        font-weight: bold;
     }
     h2{
-        font-size: 2.1em;
         color:var(--secondary) ;
+        font-size: 2.1em;
         line-height: 1.4em;
-        padding: 1em;
         margin: 1em;
+        padding: 1em;
     }
     h3{
-        font-size: 1.75em ;
         color:var(--secondary) ;
+        font-size: 1.75em ;
         line-height: 1.3em;
-        opacity: 75%;
         margin: 1em;
+        opacity: 75%;
     }
     h4{
-        font-size: 1.5em ;
         color: var(--secondary);
+        font-size: 1.5em ;
         line-height: 1.2em;
         padding: 0 1em;
     }
     h5{
-        font-size:1.25em ;
         color:var(--third);
+        font-size:1.25em ;
         line-height: 1.1em;
-        padding: 0 1em;
         margin:0 1em ;
+        padding: 0 1em;
     }
     h6{
+        color:var(--third);
         font-size:5.25em ;
         font-weight: 900;
-        color:var(--third);
-        opacity: 0.5;
         line-height: 1.1em;
-        padding: 1em;
         margin:1em ;
+        opacity: 0.5;
+        padding: 1em;
     }
 
 
     p{
-        font-size:1em;
         color: var(--secondary);
-        opacity: 75%;
+        font-size:1em;
         line-height: 1.5em;
+        opacity: 75%;
     }
 
     ._BgTitle{
         display: flex;
-        opacity: 0.1;
-        width: 100%;
-        padding: 0;
-        margin: 0;
         font-size: 10em;
+        margin: 0;
+        opacity: 0.1;
+        padding: 0;
+        width: 100%;
     }
 
     a{
         all: unset;
-        font-weight: bold;
         cursor: pointer;
+        font-weight: bold;
         margin: 0;
         padding: 0;
     }
     li{
-        font-size: 1em;
         color: var(--secondary);
+        font-size: 1em;
+        list-style: none;
+        margin: 1em;
+        margin-left: -1em;
         opacity: 75%;
         padding: 0 1em;
-        margin: 1em;
-        list-style: none;
-        margin-left: -1em;
     }
 
     ._divRelative{
-        position: relative;
         margin-top: 5vh;
+        position: relative;
     }
 
     ._BgSubTitle{
         display: flex;
-        width: auto;
-        padding: 0 1em;
         margin-top: 0;
+        padding: 0 1em;
         position: relative;
+        width: auto;
     }
     button{
-        width: 100%;
-        box-shadow:0.3em 0.3em 0px 0px var(--secondary);
-        background-image: linear-gradient(45deg, var(--gradient-colors));
         background-color:var(--primary);
-        border-radius:11px;
+        background-image: linear-gradient(45deg, var(--gradient-colors));
         border:2px solid var(--primary);
-        display:inline-block;
-        cursor:pointer;
+        border-radius:11px;
+        box-shadow:0.3em 0.3em 0px 0px var(--secondary);
         color: var(--secondary);
-        padding:0;
+        cursor:pointer;
+        display:inline-block;
         margin: 0;
+        padding:0;
+        width: 100%;
     }
     button:hover{
         background:linear-gradient(to bottom, var(--primary) 5%, var(--primary) 100%);
@@ -180,127 +177,116 @@ code {
 
     .Left{
         align-items: start;
-        justify-content: start;
         display: flex;
         flex-direction: column;
+        justify-content: start;
     }
     .Right{
         align-items: end;
-        justify-content: end;
         display: flex;
         flex-direction: column;
+        justify-content: end;
     }
 
     ._right{
         display: none;
     }
     ._rightmob{
-        position: absolute;
-        max-height: 50vh;
-        left: 40%;
         bottom: 0;
+        left: 40%;
+        max-height: 50vh;
+        position: absolute;
         z-index: -1;
     }
     ._left{
-        max-width: 100%;
-        position:relative;
+        align-items: flex-start;
         display: block;
         flex-direction: column;
         justify-content:center;
-        align-items: flex-start;
+        max-width: 100%;
+        position:relative;
     }
     .separator{
-        display: flex;
-        position: relative;
-        height: 40vh;
-        margin-top: 5vh;
         background-image: linear-gradient(45deg, var(--gradient-colors));
+        display: flex;
+        height: 40vh;
         left:-50vw;
-        width: 200vw;
+        margin-top: 5vh;
+        position: relative;
         rotate: -2deg;
+        width: 200vw;
     }
     span{
         font-weight: bold;
     }
 
-    .__intro{   
+    .__intro{
+        align-items: center;   
         display: block;
         justify-content: center;
-        align-items: center;
     }
     
 
     .HeroImage{
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center;
-        z-index: 1;
         transition: 0.5s ease-in-out;
         width: auto;
+        z-index: 1;
     }
     ._HeroImage{
-        object-fit: contain;
-        box-shadow:none;
         border: none;
         border-radius: none;
+        box-shadow:none;
         height: 25em;
+        object-fit: contain;
     }
 
     .Card{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1em;
-        margin:0 0 2em 0;
-        justify-content: center;
         align-items: center;
         box-shadow: 0 10px 40px -2px var(--secondary);
         -moz-box-shadow: 0 4px 4px -2px var(--secondary);
         -webkit-box-shadow: 0 4px 4px -2px var(--secondary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 0 2em 0;
+        padding: 1em;
+        width: 100%;
         ._Title{
+            align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
             h4{
+                align-items: center;
                 display: flex;
                 justify-content: center;
-                align-items: center;
                 text-align: center;
             }
             h5{
-                padding: 1em;
                 background-color: var(--secondary);
                 border-radius: 1em;
                 color: var(--primary);
+                padding: 1em;
             }
         }
     }
-    .contact{
-        width: 100%;
-        .Card{
-            width: auto;
-            div{
-                width: 100%;
-                p{
-                    margin-left: 2em;
-                }
-            }
-        }
-    }
+
     .__primary{
         background-image: linear-gradient(45deg, var(--gradient-colors));
         border: 2px solid var(--secondary);
+        border-radius: 1em;
         box-shadow:0.3em 0.3em 0px 5px var(--secondary);
         flex-direction: column;
-        border-radius: 1em;
         }
     .__secondary{
         background-color: var(--secondary);
         border: 2px solid var(--primary);
+        border-radius: 1em;
         box-shadow:0.3em 0.3em 0px 5px var(--primary);
         flex-direction: column;
-        border-radius: 1em;
     }
     .map-responsive{
         margin: 1em auto;
@@ -311,48 +297,47 @@ code {
         flex-direction: column;
     }
     .illustration{
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center;
-        width: 100%;
         margin: 3em auto;
+        width: 100%;
 
     }
     ._illustration{
-
         height: 30vh;
         object-fit: cover;
     }
     .HeroImage{
     display: flex;
-    z-index: 1;
     transition: 0.5s ease-in-out;
+    z-index: 1;
     }
     ._HeroImage{
-        object-fit: contain;
-        box-shadow:none;
         border: none;
         border-radius: none;
+        box-shadow:none;
         height: 25em;
+        object-fit: contain;
     }
     .Check{
+        align-items: center;
+        border-radius: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        height: 1.5em;
         justify-content: center;
         width: 1.5em;
-        height: 1.5em;
-        border-radius: 100%;
     }
 
     .Check, .Xmark{
+        align-items: center;
+        border-radius: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        height: 1.5em;
         justify-content: center;
         width: 1.5em;
-        height: 1.5em;
-        border-radius: 100%;
     }
     .Check{
         background-color: var(--valid);
@@ -362,9 +347,9 @@ code {
     }
     .Caret{
         span{
-         color: var(--secondary);
-  background-image: linear-gradient(45deg, var(--gradient-colors));
+        background-image: linear-gradient(45deg, var(--gradient-colors));
          box-shadow:0.1em 0.1em 0px 0px var(--secondary);
+         color: var(--secondary);
         }
     }
     .horaires{
@@ -372,9 +357,9 @@ code {
         flex-direction: column;
         ul{
             div{
+                align-items: center;
                 display: flex;
                 justify-content: start;
-                align-items: center;
                 span{
                     font-weight: bold;
                     margin-right: 1em;
@@ -386,16 +371,16 @@ code {
             }
         }
     }
-    .quote-wrapper {
+    .quote-wrapper { 
+        align-items:center;
         display:flex;
         flex-direction:row;
-        justify-content:center; 
-        align-items:center;
+        justify-content:center;
         }
     table{
+        overflow-x:auto;
         padding: 1em;
         width: 90%;
-        overflow-x:auto;
         tr{
          padding: 1em;
         }
@@ -404,18 +389,18 @@ code {
         display: flex;
         table{
             td{
-                text-align: center;
                 margin: 1em;
+                text-align: center;
             }
         }
     }
     ._planification{
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center;
-        width: inherit  ;
         list-style: circle;
         margin-left: 5em;
+        width: inherit  ;
     }
 
 
@@ -427,9 +412,9 @@ code {
         display: flex;
         flex-direction: row;  
         td{
+        align-items:flex-start;
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
         justify-content: center;
         p{
             margin:1em;
@@ -439,10 +424,10 @@ code {
             width: 75%;
         }
         td:nth-of-type(2){
-            width: 25%;
+            align-items:flex-end;
             display: flex;
             justify-content: center;
-            align-items:flex-end;
+            width: 25%;
         }
     }
     }
@@ -452,11 +437,6 @@ code {
     footer{
         display: flex;
     }
-
-
-@media only screen and (max-width: 480px) {
-
-}
 @media only screen and (min-width: 480px) {
     .Abonnement{
         display: flex;
@@ -468,11 +448,11 @@ code {
         margin: 1em 0;
     }
     ._HeroImage{
-        object-fit: contain;
-        margin: 0 auto;
-        box-shadow:5px 5px 0px 5px var(--primary);
         border: 2px solid var(--yellow2);
         border-radius: 1em;
+        box-shadow:5px 5px 0px 5px var(--primary);
+        margin: 0 auto;
+        object-fit: contain;
     }
 }
     @media only screen and (min-width: 996px) {
@@ -484,10 +464,10 @@ code {
             display: block;
             margin: auto;
                 .Card {
-                    margin:2em;
-                    justify-content: flex-start;
                     align-items: center;
                     flex-direction: column;
+                    justify-content: flex-start;
+                    margin:2em;
                 }
         }
         ._rightmob{
@@ -495,47 +475,48 @@ code {
         }
 
         .__intro{
+            align-items: flex-start;
             display: flex;
             flex-direction: column;
             justify-content:center;
-            align-items: flex-start;
             margin-bottom: 1em;
             ._left{
-                max-width: 100%;
-                position:relative;
+                align-items: flex-start;
                 display: flex;
                 flex-direction: column;
                 justify-content:center;
-                align-items: flex-start;
+                max-width: 100%;
+                position:relative;
                 ._TitleSubTitle{
                     width:66%;   
                 }
                 ._right{
                     display: flex;
-                    position: absolute;
+                    height: 100%;
                     margin-bottom: 0;
+                    position: absolute;
                     right: 0px;
                     width: auto;
-                    height: 100%;
                 }
 
             }
+
             ._BgTitle{
                 display: flex;
-                opacity: 0.1;
-                width: 100%;
-                padding: 0 0 0.1em 0;
+                font-size: 10em;
                 margin: 1em 0 0 0;
                 margin-top: 1em;
-                font-size: 10em;
+                opacity: 0.1;
                 overflow-x: hidden;
+                padding: 0 0 0.1em 0;
+                width: 100%;
             }
 
         }
         .separator{
-            height: 15em;
-            width: 200vw;
+            height: 7em;
             margin-top: -2em;
+            width: 200vw;
         }
         .Card {
             margin: 1em 0;
@@ -550,20 +531,20 @@ code {
         }
 
         .Abonnement{
-            width: 50%;
             border-radius: 1em;
+            width: 50%;
         }
         .PicTitle{
+            align-items: center;
             display: flex;
             flex-direction: row;
-            margin-top: 5em;
             justify-content: start;
-            align-items: center;
+            margin-top: 5em;
             width: 100%;
         }
         ._HeroImage{
-            margin: 0 2em;
             height: 25em;
+            margin: 0 2em;
         }
         ._divRelative{
             ._BgTitle{
@@ -579,11 +560,11 @@ code {
     }
     .map-responsive{
         display: flex;
-        position: relative;
-        width: 100%;
-        margin-bottom: 1em;
         display: block;
         height:auto;
+        margin-bottom: 1em;
+        position: relative;
+        width: 100%;
     }
 }
 
@@ -591,10 +572,10 @@ code {
     .PriceCards{
         display: flex;
             .Card {
-                margin:2em;
-                justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
+                justify-content: flex-start;
+                margin:2em;
 
             }
     }
@@ -602,32 +583,38 @@ code {
 @media only screen and (min-width: 1200px){ 
     
     .container{
-        margin: 1em auto;
-        padding: 1em 1.25em;
-        max-width: 1150px;
         display: flex;
+        margin: 1em auto;
+        max-width: 1150px;
+        padding: 1em 1.25em;
 
     }
     .inscriptions, .RGA, .seances, .horaires, .multimedia, .contact{
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content:center;
-        align-items: center;
     }
     .container-large{
-        display: flex;
-        max-width: 2000px;
-        justify-content:center;
         align-items: center;
+        display: flex;
+        justify-content:center;
         margin: auto 8em;
+        max-width: 2000px;
         padding: auto 5em;
+        ._TitleSubTitle{
+            h3{
+                margin-right: 5em;
+                width: 80%;
+            }
+        }
     }
     .Card {
     border-radius: 1em;
-    width: 66%;
+    width: 650px;
         ._Title{
-            justify-content:center;
             align-items:center;
+            justify-content:center;
         }
     }
     .HeroImage{
@@ -651,9 +638,15 @@ code {
        width: 80%;
     }
     .HeroImage{
-        width: 50%;
         align-items: center;
         justify-content: center;
+        width: 50%;
+    }
+    .test{
+        width: 50%;
+    }
+    .Not{
+        margin: auto;
     }
         
 }

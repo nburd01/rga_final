@@ -11,7 +11,7 @@ export const Email = () => {
     </div>
     <div className="container Left">
     <div className='Card __primary '>
-      <p>roazhongoalacademy@gmail.com</p>
+    <p>roazhongoalacademy@gmail.com</p>
      </div>
     </div>
   </div>
