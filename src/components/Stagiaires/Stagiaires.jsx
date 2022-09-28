@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Stagiaires = () => {
   return (
-<div className="container">
-  <div className="block">
+<div className="container Right">
   <div className="_TitleSubTitle">
     <h6 className="_BgTitle Right">Stagiaires</h6>
     <h3 className="_BgSubTitle Right">Les stagiaires</h3>
@@ -26,6 +25,5 @@ export const Stagiaires = () => {
       </div>
     </div>
   </div>
-</div>
   )
 }

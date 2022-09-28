@@ -3,8 +3,7 @@ import './Contact.scss'
 
 export const Telephone = () => {
   return (
-<div className='container'>
-  <div className="block">
+<div className='container Right'>
     <div className="_TitleSubTitle">
       <h6 className="_BgTitle Right">Téléphone</h6>
       <h3 className="_BgSubTitle Right">Téléphone</h3>
@@ -15,6 +14,5 @@ export const Telephone = () => {
      </div>
     </div>
   </div>
-</div>
   )
 }

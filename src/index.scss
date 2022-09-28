@@ -51,6 +51,9 @@ code {
     }
     .block{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;  
     }
 
     .container{
@@ -176,16 +179,25 @@ code {
     }
 
     .Left{
-        align-items: start;
         display: flex;
         flex-direction: column;
+        align-items: start;
         justify-content: start;
+        width: 100%;
     }
     .Right{
-        align-items: end;
         display: flex;
         flex-direction: column;
+        align-items: end;
         justify-content: end;
+        width: 100%;
+    }
+    .Center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     ._right{
@@ -461,8 +473,9 @@ code {
             display: flex;
         }
         .PriceCards{
-            display: block;
-            margin: auto;
+            // display: block;
+            // margin: auto;
+            // width: auto;
                 .Card {
                     align-items: center;
                     flex-direction: column;
@@ -572,11 +585,11 @@ code {
     .PriceCards{
         display: flex;
             .Card {
+                width: auto;
                 align-items: center;
                 flex-direction: column;
                 justify-content: flex-start;
                 margin:2em;
-
             }
     }
 }
@@ -595,6 +608,7 @@ code {
         flex-direction: column;
         justify-content:center;
     }
+
     .container-large{
         align-items: center;
         display: flex;
@@ -603,6 +617,9 @@ code {
         max-width: 2000px;
         padding: auto 5em;
         ._TitleSubTitle{
+        max-width: 30vw;
+        margin-right: auto;
+
             h3{
                 margin-right: 5em;
                 width: 80%;
