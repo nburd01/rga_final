@@ -16,6 +16,9 @@ export const Footer = () => {
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/roazhon-goal-academy-30482b251/">
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" className="iconsFontAwesome"/>
             </a>
+            <a target="_blank" rel="noreferrer" href="https://www.secure.instagram.com/roazhongoalacademy/">
+                <FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" className="iconsFontAwesome"/>
+            </a>
           </div>
         </div>
     </footer>
