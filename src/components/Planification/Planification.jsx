@@ -6,7 +6,6 @@ export const Planification = () => {
 <div className="container">
   <div className="block">
   <div className="_TitleSubTitle">
-
   <h6 className="_BgTitle Left">Planification</h6>
   <h3 className="_BgSubTitle Left">Planification</h3>
   </div>

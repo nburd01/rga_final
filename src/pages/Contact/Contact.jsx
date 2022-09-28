@@ -5,7 +5,7 @@ import { ContactComp } from '../../components/Contact/ContactComp'
 export const Contact = () => {
   return (
     <page className='contact'>
-      <div className="container-large">
+      <div className="block">
       <div className="PicTitle">
       <div className="_TitleSubTitle">
         <h1>Contact</h1>
