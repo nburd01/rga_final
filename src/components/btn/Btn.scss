@@ -8,15 +8,23 @@
             border-radius: 20px;
             border: none;
             padding: 0;
-            width: 20vw;
-            height: 4vh;
+            width: 40%;
+            height: 4em;
             margin: 5em 5em;
             cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: inherit;    
+            font-family: inherit;  
+            font-size: inherit;  
+            padding: 1em;
+            h5 {
+                font-size: 1.25em;
+                color: var(--third);
+                line-height: 1.1em;
+                padding: 0 1em;
+                margin: 0 1em;
+              }
         }
     }
 
-    

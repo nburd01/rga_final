@@ -5,7 +5,6 @@ export const Dim = () => {
     <div className="container horaires">
     <h3>DIMANCHE*</h3>
     <ul>
-
       <h4>Groupe 2012/2013 :</h4>
       <ul>
         <div>
@@ -44,7 +43,7 @@ export const Dim = () => {
           <li>Fin de séance</li>
           </div>
         </ul>
-        <p>*En fonction du nombre de participants, sinon séance pour tous à 11h.</p>
+        <p>*Ou à 11h en fonction du nombre de participants.</p>
     </ul>
   </div>
   )

@@ -6,7 +6,7 @@ export const ButtonCTA = () => {
   return (
     <div className="btnContainer">
        <Link to="/inscriptions">
-          <button className="btnText">Nous rejoindre</button>
+          <button className="btnText"><h5>Nous rejoindre</h5></button>
         </Link>
     </div>
   )

@@ -43,7 +43,7 @@ export const Planification = () => {
             <td><p>11h00-12h15</p></td>
           </tr>
         </table>
-        <p>*Ou à 11h en fonction du nombre de participants</p>
+        <p>*Ou à 11h en fonction du nombre de participants.</p>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@ export const LunMar = () => {
       <ul>
       <div>
 
-        <span>19h15</span>
+        <span>19h10</span>
         <li>Fin de séance</li>
         </div>
 
