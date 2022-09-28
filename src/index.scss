@@ -367,21 +367,21 @@ code {
     .horaires{
         display: flex;
         flex-direction: column;
-        ul{
-            div{
-                align-items: center;
-                display: flex;
-                justify-content: start;
-                span{
-                    font-weight: bold;
-                    margin-right: 1em;
-                }
-                li{
-                    list-style: none;
-                    text-align: left;
-                }
-            }
-        }
+        // ul{
+        //     div{
+        //         align-items: center;
+        //         display: flex;
+        //         justify-content: start;
+        //         span{
+        //             font-weight: bold;
+        //             margin-right: 1em;
+        //         }
+        //         li{
+        //             list-style: none;
+        //             text-align: left;
+        //         }
+        //     }
+        // }
     }
     .quote-wrapper { 
         align-items:center;
@@ -603,10 +603,10 @@ code {
 
     }
     .inscriptions, .RGA, .seances, .horaires, .multimedia, .contact{
-        align-items: center;
+        align-items: start;
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: start;
     }
 
     .container-large{
