@@ -7,9 +7,6 @@ export const Footer = () => {
     <footer>
         <div class="container">
             <div className="block">
-            {/* <a target="_blank" rel="noreferrer" href="https://twitter.com">
-                <FontAwesomeIcon icon="fa-brands fa-twitter" size="xl" className="iconsFontAwesome"/>
-            </a> */}
             <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Roazhongoalacademy/">
                 <FontAwesomeIcon icon="fa-brands fa-facebook" size="xl" className="iconsFontAwesome"/>
             </a>

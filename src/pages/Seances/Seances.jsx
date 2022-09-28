@@ -1,7 +1,7 @@
 import React from 'react'
 import { Materiel } from '../../components/Materiel/Materiel'
 import { ReglesDeVie } from '../../components/ReglesDeVie/ReglesDeVie'
-import { SeanceType } from '../../components/SeanceType/SeanceType'
+
 
 export const Seances = () => {
   return (
@@ -16,8 +16,7 @@ export const Seances = () => {
           <img src={require('../../assets/img/galerie/webp/home4.webp')} className="_HeroImage" alt="img" loading="lazy"/>
         </div>
         </div>
-      </div>      
-        <SeanceType/>      
+      </div>       
         <Materiel/>     
         <ReglesDeVie/>
   </page>

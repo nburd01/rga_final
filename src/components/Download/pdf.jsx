@@ -25,7 +25,7 @@ const PDF = () => {
                     <h1>Le dossier d'inscription à nous renvoyer</h1>
                     <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous :</h3>
                 </div>
-                        <div className="btn_container">
+                        <div className="btnContainer">
                             <button onClick={onButtonClick}>
                                 Télécharger le dossier
                             </button>
