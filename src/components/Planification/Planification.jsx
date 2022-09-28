@@ -21,7 +21,7 @@ export const Planification = () => {
           </tr>
           <tr>
             <td><p>2012/2013</p></td>
-            <td><p>17h45-19h15</p></td>
+            <td><p>17h45-19h00</p></td>
             <td></td>
             <td></td>
           </tr>
