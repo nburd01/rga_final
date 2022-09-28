@@ -41,12 +41,17 @@ code {
     }
 
     .pdf{
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+
+        .block{
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
     .block{
         width: 100%;
@@ -649,7 +654,7 @@ code {
         box-shadow:15px 15px 0px 5px var(--primary);
     }
     ._TitleSubTitle{
-       width: 100%;
+       width: 80%;
     }
     .HeroImage{
         width: 50%;
