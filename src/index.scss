@@ -609,6 +609,12 @@ code {
         display: flex;
 
     }
+    .inscriptions{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
     .container-large{
         display: flex;
         max-width: 2000px;
