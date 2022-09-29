@@ -10,14 +10,14 @@ export const HorairesComp = () => {
         <h6 className="_BgTitle Right">Horaires</h6>
         <h3 className="_BgSubTitle Right">Horaires</h3>
       </div>
-      <div className="container Right">
-        <div className='Card __primary'>
+      <div className="container Center">
+        {/* <div className='Card __primary'> */}
         <LunMar/>
         </div>
-        <div className='Card __primary'>
+        {/* <div className='Card __primary'> */}
         <Dim/>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </div>
   )
 }
