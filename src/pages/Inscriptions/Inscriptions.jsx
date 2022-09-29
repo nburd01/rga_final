@@ -7,6 +7,8 @@ export const Inscriptions = () => {
   return (
     <div className='inscriptions'>
       <div className="container-large">
+      <div className="__intro">
+
       <section className="PicTitle">
           <div className="_TitleSubTitle">
           <h1>S'inscrire à la RGA</h1>
@@ -16,6 +18,7 @@ export const Inscriptions = () => {
             <img src={require('../../assets/img/galerie/webp/home7.webp')} className="_HeroImage" alt="img" loading="lazy"/>
           </div>
       </section>
+      </div>
       </div>
       <section className="pageBody">
         <Abonnements/>

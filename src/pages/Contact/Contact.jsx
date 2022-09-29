@@ -7,6 +7,8 @@ export const Contact = () => {
   return (
     <div className='contact'>
       <div className="container-large">
+      <div className="__intro">
+
         <div className="PicTitle">
           <div className="_TitleSubTitle">
             <h1>Contact</h1>
@@ -17,6 +19,8 @@ export const Contact = () => {
           </div>
         </div>
       </div>
+      </div>
+
       <section className="pageBody">
       <Email/>
       <Telephone/>

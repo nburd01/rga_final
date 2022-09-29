@@ -24,7 +24,7 @@ export const Home = () => {
         </div>
         </div>
       </div>
-      <div className="separator">
+      <div className="separatorHome">
         <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
         <div className='numbers'>
           <div className='num_card'>
@@ -41,9 +41,8 @@ export const Home = () => {
           </div>
         </div> 
       </div>
-      
     </section>
-    <section className="pageBody">
+    <section>
     <div className="container Center">
       <div className='socials'>
         <h4>Suivez-nous sur nos réseaux sociaux :</h4>

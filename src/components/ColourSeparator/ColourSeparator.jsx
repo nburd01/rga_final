@@ -1,10 +1,10 @@
 import React from 'react'
-import './ColourSeparator.scss'
+import './ColourseparatorHome.scss'
 
-export const ColourSeparator = () => {
+export const ColourseparatorHome = () => {
   return (
 <section className='hidden'>
-  <div className="ColourSeparator"></div>
+  <div className="ColourseparatorHome"></div>
 </section>
   )
 }
