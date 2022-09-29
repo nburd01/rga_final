@@ -5,7 +5,7 @@ import { Videos } from '../../components/Multimedia/Videos'
 
 export const Multimedia = () => {
   return (
-    <page className='multimedia'>
+    <div className='multimedia'>
       <div className="container-large">
       <div className="PicTitle">
       <div className="_TitleSubTitle">
@@ -26,6 +26,6 @@ export const Multimedia = () => {
     <div >
       <Presse/>
     </div>
-  </page>
+  </div>
   )
 }

@@ -5,7 +5,7 @@ import { ReglesDeVie } from '../../components/ReglesDeVie/ReglesDeVie'
 
 export const Seances = () => {
   return (
-    <page className='seances'>
+    <div className='seances'>
       <div className="container-large">
         <div className="PicTitle">
         <div className="_TitleSubTitle">
@@ -19,6 +19,6 @@ export const Seances = () => {
       </div>
         <Materiel/>     
         <ReglesDeVie/>
-    </page>
+    </div>
   )
 }

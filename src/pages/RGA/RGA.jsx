@@ -7,7 +7,7 @@ import GoalKeeperSave from '../../assets/Illustrations/result.svg'
 
 export const RGA = () => {
   return (
-    <page className='RGA'>
+    <div className='RGA'>
       <div className="container-large">
       <section className="PicTitle">
       <div className="_TitleSubTitle">
@@ -23,13 +23,13 @@ export const RGA = () => {
           <Objectifs/>
           <div className="container">
             <div className="illustration">
-              <img classname='_illustration' src={GoalKeeperSave} alt="GoalKeeperSave" width="600" height="400" loading="lazy"/>
+              <img src={GoalKeeperSave} alt="GoalKeeperSave" width="600" height="400" loading="lazy"/>
             </div>
           </div>
           <Stagiaires/>
           <Staff/>
           <Infrastructures/>
       </section>
-    </page>
+    </div>
   )
 }

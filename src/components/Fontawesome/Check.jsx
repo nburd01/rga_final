@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Check = () => {
   return (
-    <div class="quote-wrapper">
+    <div className="quote-wrapper">
       <div className="Check">
           <FontAwesomeIcon icon="fa-solid fa-check" />
       </div>

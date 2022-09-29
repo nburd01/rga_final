@@ -7,10 +7,9 @@ import { PhotoSelf } from '../../components/PhotoSelf/PhotoSelf'
 import { Presentation } from '../../components/Presentation/Presentation'
 import '../../index.scss'
 
-
 export const Home = () => {
   return (
-  <page className='homepage'>
+  <div className='homepage'>
     <section className='home'>
       <div className="container">
         <div className="__intro">
@@ -24,7 +23,7 @@ export const Home = () => {
         </div>
         </div>
       </div>
-      <div class="separator">
+      <div className="separator">
         <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
       </div>
     </section>
@@ -35,6 +34,6 @@ export const Home = () => {
           <Lieu/>
           <Carte/>  
     </section>
-  </page>
+  </div>
   )
 }

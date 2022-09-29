@@ -14,6 +14,7 @@ html{
     --valid: #3cc72f;
     --fifth: #fc6620;
     --gradient-colors: #FFD401,#FFDA25,#FFE049;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -155,6 +156,9 @@ code {
         padding: 0.5em 0 0 0;
         position: relative;
         width: auto;
+    }
+    .Right ._BgSubTitle{
+        padding-right:1em  ;
     }
     button{
         background-color:var(--primary);
@@ -321,11 +325,7 @@ code {
         justify-content: center;
         margin: 3em auto;
         width: 100%;
-
-    }
-    ._illustration{
-        height: 30vh;
-        object-fit: cover;
+        max-height: 40vh;
     }
     .HeroImage{
     display: flex;
@@ -432,6 +432,13 @@ code {
     ul{
         margin: 0;
         padding: 1em;
+    }
+    .hidden{
+        opacity: 0;
+    }
+    .show{
+        opacity: 1;
+        transition: all 2s;
     }
     footer{
         display: flex;

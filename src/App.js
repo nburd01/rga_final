@@ -1,7 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// import "./style/dark.scss";
-import { useContext } from "react";
-// import { DarkModeContext } from "./context/darkModeContext";
+import { useContext, useEffect } from "react";
 import { Home } from "./pages/Home/Home";
 import { Inscriptions } from "./pages/Inscriptions/Inscriptions";
 import { RGA } from "./pages/RGA/RGA";
@@ -9,7 +7,6 @@ import { Seances } from "./pages/Seances/Seances";
 import { Multimedia } from "./pages/Multimedia/Multimedia";
 import { Contact } from "./pages/Contact/Contact";
 import { MainNav } from "./components/MainNav/MainNav";
-// import AdminHome from "./adminPages/home/adminHome";
 import { AuthModeContext } from "./context/AuthContext";
 import "./index.scss";
 import { Footer } from "./components/Footer/Footer";
@@ -18,6 +15,7 @@ import { faCaretRight, faCheck, faEnvelope, faLocationDot, faPhone, fas, faXmark
 import { faTwitter, faFacebook, faLinkedin, faFontAwesome, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import { BackToTop } from "./components/BackToTop/BackToTop";
+import { useRef } from 'react';
 
 library.add(fas, faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone )
 
@@ -32,6 +30,32 @@ function App() {
 
   console.log("currentUser",currentUser);
 
+
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry)  =>{
+  //   console.log("entry", entry)
+  //   if (entry.isIntersecting){
+  //     entry.target.classList.add('show');
+  //     } else {
+  //       entry.target.classList.remove('show');
+  //     }
+  //   });
+  // });
+
+  // const hiddenElements = document.querySelectorAll('.hidden'); 
+  // hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+
+
+
+//   const myRef = useRef();
+//   useEffect(() =>  {
+// console.log("myRef",myRef.current)
+//   }, [])
+
+  
   return (
     <div className="app">
       <BrowserRouter>

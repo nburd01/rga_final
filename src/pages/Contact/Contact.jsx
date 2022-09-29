@@ -5,7 +5,7 @@ import { Telephone } from '../../components/Contact/telephone'
 
 export const Contact = () => {
   return (
-    <page className='contact'>
+    <div className='contact'>
       <div className="container-large">
         <div className="PicTitle">
           <div className="_TitleSubTitle">
@@ -21,6 +21,6 @@ export const Contact = () => {
       <Email/>
       <Telephone/>
       </section>
-    </page>
+    </div>
   )
 }

@@ -4,7 +4,7 @@ import { Planification } from '../../components/Planification/Planification'
 
 export const HorairesPage = () => {
     return (
-      <page className='horaires'>
+      <div className='horaires'>
         <div className="container-large">
           <div className="PicTitle">
           <div className="_TitleSubTitle">
@@ -20,7 +20,7 @@ export const HorairesPage = () => {
           <Planification/>
           <HorairesComp/>
         </section>
-    </page>
+    </div>
     )
 }
 
