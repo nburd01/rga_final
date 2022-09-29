@@ -10,6 +10,7 @@ export const Objectifs = () => {
     <div className="container Left">
       <div className='Card __primary'>
             <ul>
+            <h4>Quels sont les objectifs de la RGA</h4>
                   <li> <span>Faire découvrir ou conforter le poste</span> de gardien de but au travers des
             spécifiques techniques et ludiques.</li>
                   <li><span>Proposer sur le bassin rennais des spécifiques complémentaires</span> aux

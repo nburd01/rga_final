@@ -10,6 +10,7 @@ export const ReglesDeVie = () => {
     <div className="container Left">
     <div className='Card __primary'>
       <ul>
+      <h4>Veiller au bien être de chacun.e</h4>
         <li>Chaque goal devra arriver en <span>tenue « civil »</span> et se changer ensuite en
 tenue de football. (sous réserve des conditions sanitaires Covid).</li>
         <li>On dit "bonjour" et "au revoir"par <span>politesse</span> .</li>

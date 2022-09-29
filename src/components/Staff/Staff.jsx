@@ -10,6 +10,7 @@ export const Staff = () => {
       <div className="container Left">
         <div className='Card __primary'>
         <ul>
+          <h4>Le staff diplômé</h4>
           <li>Séances <span>préparées et encadrées</span> par des gardiens de but, anciens gardiens,
     éducateurs confirmés aux spécifiques.</li>
           <li><span>Educateurs et gardiens de but séniors</span> du club SC Le Rheu (diplômés ou en

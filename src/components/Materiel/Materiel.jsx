@@ -10,6 +10,7 @@ export const Materiel = () => {
     <div className="container Right">
     <div className='Card __primary '>
       <ul>
+        <h4>Une panoplie complète</h4>
         <li><span>Partenariat avec la marque UHLSPORT</span> pour les équipements (Paires
 offertes à l'inscription + réduction sur les achats boutiques).</li>
         <li>  Livret (<a href='http://jesuisgoal.fr/'>"Je suis goal"</a>) offert à l'inscription (Support pédagogique : devoirs à

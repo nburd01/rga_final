@@ -10,6 +10,7 @@ export const Planification = () => {
     <div className='container Left'>
       <div className='Card __primary planification' style={{overflow:"auto"}}>
         <table>
+          
           <tr>
             <th>Groupes</th>
             <th>Lundi</th>

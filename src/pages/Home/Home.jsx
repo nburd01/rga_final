@@ -5,6 +5,7 @@ import { Lieu } from '../../components/Lieu/Lieu'
 import { Presentation } from '../../components/Presentation/Presentation'
 import '../../index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Temoignage } from '../../components/Temoignage/Temoignage'
 
 export const Home = () => {
   return (
@@ -43,7 +44,9 @@ export const Home = () => {
     </section>
     <section className="pageBody">
     <div className="container Center">
+      <div className='socials'>
         <h4>Suivez-nous sur nos réseaux sociaux :</h4>
+      </div>
           <div className='socials'>
             <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Roazhongoalacademy/">
                 <FontAwesomeIcon icon="fa-brands fa-facebook" size="xl" className="iconsFontAwesome"/>
@@ -59,6 +62,7 @@ export const Home = () => {
       <div className="container">
           <Presentation/>
       </div>
+          <Temoignage/>
           <Lieu/>
           <Carte/>  
     </section>
