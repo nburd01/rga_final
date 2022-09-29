@@ -6,6 +6,7 @@ import { Presentation } from '../../components/Presentation/Presentation'
 import '../../index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Temoignage } from '../../components/Temoignage/Temoignage'
+import GoalKeeperSave from '../../assets/Illustrations/result.svg'
 
 export const Home = () => {
   return (
@@ -62,6 +63,11 @@ export const Home = () => {
       <div className="container">
           <Presentation/>
       </div>
+          <div className="container">
+            <div className="illustration">
+              <img src={GoalKeeperSave} alt="GoalKeeperSave" width="600" height="400" loading="lazy"/>
+            </div>
+          </div>
           <Temoignage/>
           <Lieu/>
           <Carte/>  

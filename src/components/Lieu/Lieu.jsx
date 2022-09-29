@@ -12,14 +12,14 @@ export const Lieu = () => {
       </div>
       <div className="container Left">
         <div className='Card __primary'>
-          <div className='location'>
-           <span><FontAwesomeIcon icon="fa-solid fa-map" /></span>
+          {/* <div className='location'> */}
+           {/* <span><FontAwesomeIcon icon="fa-solid fa-map" /></span> */}
             <ul>
             <h4>Où nous trouver</h4>
               <li>Retrouvez-nous au Complexe de football du S.C. Le Rheu Football, accessible depuis la Route de LORIENT à la sortie Le Rheu.</li>
               <li>Avenue du stade 35650 Le Rheu</li>
             </ul>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>
