@@ -4,7 +4,7 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 15px;
     overflow-x: hidden;
     --primary:  #FFE14D;
     --secondary:#242B2E; 
@@ -135,6 +135,15 @@ code {
         margin: 0;
         padding: 0;
     }
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a{
+            margin: auto 1em;
+        }
+    }  
     li{
         color: var(--secondary);
         font-size: 1em;
@@ -531,7 +540,7 @@ code {
             .numbers{
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items:baseline;
                 rotate: 2deg;
                 .num_card{
                     display: flex;
@@ -540,12 +549,11 @@ code {
                     align-items: center;
                     width: 100%;
                     height: auto;
-                    top: 50px;
-                    left: 50px;
                     text-align: center;
                 }
             }
         }
+  
         .Card {
             width: 80%;
         }

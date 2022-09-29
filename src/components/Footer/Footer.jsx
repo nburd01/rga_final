@@ -16,8 +16,8 @@ export const Footer = () => {
             <a target="_blank" rel="noreferrer" href="https://www.secure.instagram.com/roazhongoalacademy/">
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" className="iconsFontAwesome"/>
             </a>
-          </div>
-          </div>
+        </div>
+      </div>
     </footer>
   )
 }
