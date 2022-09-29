@@ -11,13 +11,13 @@ import { AuthModeContext } from "./context/AuthContext";
 import "./index.scss";
 import { Footer } from "./components/Footer/Footer";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCaretRight, faCheck, faEnvelope, faLocationDot, faPhone, fas, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faCaretRight, faCheck, faEnvelope, faLocationDot, faMap, faPhone, fas, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faFontAwesome, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import { BackToTop } from "./components/BackToTop/BackToTop";
 import { useRef } from 'react';
 
-library.add(fas, faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone )
+library.add(fas, faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
 function App() {
 

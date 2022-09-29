@@ -25,6 +25,20 @@ export const Home = () => {
       </div>
       <div className="separator">
         <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
+        <div className='numbers'>
+          <div className='num_card'>
+            <span>22</span>
+            <h5>gardiens</h5>
+          </div>
+          <div className='num_card'>
+            <span>14</span>
+            <h5>clubs différents</h5>
+          </div>
+          <div className='num_card'>
+            <span>3</span>
+            <h5>éducateurs diplômés</h5>
+          </div>
+        </div> 
       </div>
     </section>
     <section className="pageBody">
