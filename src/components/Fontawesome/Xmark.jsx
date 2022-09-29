@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Xmark = () => {
   return (
-    <div class="quote-wrapper">
+    <div className="quote-wrapper">
       <div className="Xmark">
         <FontAwesomeIcon icon="fa-solid fa-xmark"/>
       </div>

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Caret = () => {
   return (
-    <div class="quote-wrapper">
+    <div className="quote-wrapper">
       <div className="Caret">
           <FontAwesomeIcon icon="fa-solid fa-caret" />
       </div>

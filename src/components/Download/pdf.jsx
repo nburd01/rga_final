@@ -1,6 +1,22 @@
-import React from "react";
+import { useState, useEffect, useRef } from "react";
   
 const PDF = () => {
+
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach((entry)  => {
+    //     console.log("entry", entry)
+    //     if (entry.isIntersecting){
+    //       entry.target.classList.add('show');
+    //       } else {
+    //         entry.target.classList.remove('show');
+    //       }
+    //     });
+    //   });
+    
+    //   const hiddenElements = document.querySelectorAll('.hidden'); 
+    //   hiddenElements.forEach((el) => observer.observe(el));
+
+
     // Function will execute on click of button
     const onButtonClick = () => {
         // using Java Script method to get PDF file
@@ -17,9 +33,9 @@ const PDF = () => {
         })
     }
     return (
-        <section>
+        <section className=''>
             <div className="container">
-                <div className="pdf">
+                <div className="pdf ">
                     <div className="block">
                 <div className="_TitleSubTitle">
                     <h1>Le dossier d'inscription à nous renvoyer</h1>

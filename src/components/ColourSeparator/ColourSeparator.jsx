@@ -3,8 +3,8 @@ import './ColourSeparator.scss'
 
 export const ColourSeparator = () => {
   return (
-<section>
-  <div class="ColourSeparator"></div>
+<section className='hidden'>
+  <div className="ColourSeparator"></div>
 </section>
   )
 }

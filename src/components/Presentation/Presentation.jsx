@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Presentation = () => {
   return (
+<section className=''>
 <div className='_divRelative'>
 <div className="_TitleSubTitle">
-
     <h6 className="_BgTitle Left">Présentation</h6>
     <h3 className="_BgSubTitle Left">Présentation</h3>
     </div>
@@ -20,5 +20,6 @@ export const Presentation = () => {
       </div>
   </div>
 </div>
+</section>
   )
 }

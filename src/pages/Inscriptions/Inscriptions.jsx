@@ -1,12 +1,11 @@
 import React from 'react'
 import { Abonnements } from '../../components/Abonnements/Abonnements'
-import { InscriptionsComp } from '../../components/Inscriptions/InscriptionsComp'
 import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
 import PDF from '../../components/Download/pdf'
 
 export const Inscriptions = () => {
   return (
-    <page className='inscriptions'>
+    <div className='inscriptions'>
       <div className="container-large">
       <section className="PicTitle">
           <div className="_TitleSubTitle">
@@ -21,10 +20,10 @@ export const Inscriptions = () => {
       <section className="pageBody">
         <Abonnements/>
         <div className="illustration">
-          <img className='_illustration' src={SoccerPlayer} alt="SVG logo image" loading="lazy"/>
+          <img  src={SoccerPlayer} alt="Soccer player" loading="lazy"/>
         </div>
         <PDF/>
       </section>
-    </page>
+    </div>
     )
   }
