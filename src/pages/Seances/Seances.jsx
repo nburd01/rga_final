@@ -16,9 +16,9 @@ export const Seances = () => {
           <img src={require('../../assets/img/galerie/webp/home4.webp')} className="_HeroImage" alt="img" loading="lazy"/>
         </div>
         </div>
-      </div>       
+      </div>
         <Materiel/>     
         <ReglesDeVie/>
-  </page>
+    </page>
   )
 }

@@ -17,12 +17,12 @@ export const Inscriptions = () => {
             <img src={require('../../assets/img/galerie/webp/home7.webp')} className="_HeroImage" alt="img" loading="lazy"/>
           </div>
       </section>
-          </div>
+      </div>
       <section className="pageBody">
         <Abonnements/>
         <div className="illustration">
-            <img className='_illustration' src={SoccerPlayer} alt="SVG logo image" loading="lazy"/>
-          </div>
+          <img className='_illustration' src={SoccerPlayer} alt="SVG logo image" loading="lazy"/>
+        </div>
         <PDF/>
       </section>
     </page>
