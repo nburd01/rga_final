@@ -7,7 +7,10 @@ import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
 
 export const RGA = () => {
   return (
-    <div className='RGA'>
+    <div className='home'>
+    <section className='home'>
+
+     <div className="__intro">
       <div className="container-large">
       <section className="PicTitle">
       <div className="_TitleSubTitle">
@@ -19,6 +22,8 @@ export const RGA = () => {
           </div>
       </section>
       </div>
+      </div>
+    </section>
       <section className="pageBody">
           <Objectifs/>
           <div className="container">

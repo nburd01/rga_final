@@ -7,6 +7,8 @@ export const Multimedia = () => {
   return (
     <div className='multimedia'>
       <div className="container-large">
+      <div className="__intro">
+
       <div className="PicTitle">
       <div className="_TitleSubTitle">
         <h1>Le coin multimédia</h1>
@@ -16,6 +18,7 @@ export const Multimedia = () => {
         <img src={require('../../assets/img/galerie/webp/home2.webp')} className="_HeroImage" alt="img" loading="lazy"/>
       </div>
       </div>
+    </div>
     </div>
     <div >
       <Photos/>

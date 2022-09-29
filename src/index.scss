@@ -16,6 +16,7 @@ html{
     --gradient-colors: #FFD401,#FFDA25,#FFE049;
     --gradient-colors2:  #ffb56b, #ffba67, #ffc062, #ffc65d, #ffcd59, #ffd355, #ffda51, #ffe14d;
     scroll-behavior: smooth;
+
 }
 
 body{
@@ -71,7 +72,10 @@ code {
         margin: 0 0;
         padding: auto 5em;
     }
-
+.pageBody{
+    background-image: linear-gradient(45deg, var(--gradient-colors2));
+    width: 100%;;
+}
     h1{
         color: var(--secondary) ;
         font-size: 2.6em;
@@ -241,11 +245,25 @@ code {
         max-width: 100%;
         position:relative;
     }
-    .separator{
+    .separatorHome{
         background-image: linear-gradient(45deg, var(--gradient-colors));
         display: flex;
         height: 40vh;
         left:-50vw;
+        margin-top: 5vh;
+        position: relative;
+        rotate: -2deg;
+        width: 200vw;
+        .numbers{
+            display:none;
+        }
+    }
+    .separator{
+        background: var(--secondary);
+        display: flex;
+        height: 40vh;
+        left:-50vw;
+        top: -4em;
         margin-top: 5vh;
         position: relative;
         rotate: -2deg;
@@ -262,6 +280,8 @@ code {
         align-items: center;   
         display: block;
         justify-content: center;
+        background-color: white;
+        width  :100%;
     }
     
 
@@ -360,6 +380,9 @@ code {
         height: 25em;
         object-fit: contain;
     }
+    .horaires{
+        background-image: linear-gradient(45deg, var(--gradient-colors2));
+    }
     .Check{
         align-items: center;
         border-radius: 100%;
@@ -448,7 +471,10 @@ code {
             justify-content: center;
             width: 25%;
         }
+        }
     }
+    .inscriptions, .RGA, .seances, .horaires, .multimedia, .contact{
+        // background-image: linear-gradient(45deg, var(--gradient-colors2));
     }
     ul{
         margin: 0;
@@ -461,9 +487,6 @@ code {
         opacity: 1;
         transition: all 2s;
     }
-    footer{
-        display: flex;
-    }
 @media only screen and (min-width: 480px) {
     .Abonnement{
         display: flex;
@@ -475,9 +498,9 @@ code {
         margin: 1em 0;
     }
     ._HeroImage{
-        border: 2px solid var(--yellow2);
+        border: 2px solid var(--secondary);
         border-radius: 1em;
-        box-shadow:5px 5px 0px 5px var(--primary);
+        box-shadow:5px 5px 0px 5px var(--secondary);
         margin: 0 auto;
         object-fit: contain;
     }
@@ -539,7 +562,7 @@ code {
             }
 
         }
-        .separator{
+        .separatorHome{
             display: flex;
             justify-content: center;
             align-items: center;

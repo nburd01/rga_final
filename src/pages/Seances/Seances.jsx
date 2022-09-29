@@ -7,6 +7,8 @@ export const Seances = () => {
   return (
     <div className='seances'>
       <div className="container-large">
+      <div className="__intro">
+
         <div className="PicTitle">
         <div className="_TitleSubTitle">
           <h1>Les séances</h1>
@@ -17,8 +19,12 @@ export const Seances = () => {
         </div>
         </div>
       </div>
+      </div>
+      <section className="pageBody">
         <Materiel/>     
         <ReglesDeVie/>
+        </section>
+
     </div>
   )
 }

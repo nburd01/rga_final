@@ -1,6 +1,6 @@
 
 
-    .ColourSeparator{
+    .ColourseparatorHome{
         display: flex;
         position: absolute;
         height: 15vh;
@@ -15,7 +15,7 @@
         -webkit-box-shadow: 0 4px 4px -2px var(--secondary);
     }
     @media only screen and (min-width: 996px) {
-       .ColourSeparator{
+       .ColourseparatorHome{
            right: -20px;
            width: 120%;
            height: 10vh;
@@ -26,7 +26,7 @@
     }
 
     @media only screen and (min-width: 1200px){ 
-        .ColourSeparator{
+        .ColourseparatorHome{
             height: 20vh;
             margin-top: 0;
         }   
