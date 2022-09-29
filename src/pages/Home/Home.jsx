@@ -3,9 +3,8 @@ import { ButtonCTA } from '../../components/btn/Btn'
 import { Carte } from '../../components/Carte/Carte'
 import { Lieu } from '../../components/Lieu/Lieu'
 import { Presentation } from '../../components/Presentation/Presentation'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import '../../index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Home = () => {
   return (
@@ -40,9 +39,10 @@ export const Home = () => {
           </div>
         </div> 
       </div>
+      
     </section>
-
-      <div className="container Center">
+    <section className="pageBody">
+    <div className="container Center">
         <h4>Suivez-nous sur nos réseaux sociaux :</h4>
           <div className='socials'>
             <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Roazhongoalacademy/">
@@ -55,7 +55,7 @@ export const Home = () => {
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" className="iconsFontAwesome"/>
             </a>
           </div>
-    <section className="pageBody">
+      </div>
       <div className="container">
           <Presentation/>
       </div>
@@ -63,6 +63,6 @@ export const Home = () => {
           <Carte/>  
     </section>
   </div>
-  </div>
   )
 }
+
