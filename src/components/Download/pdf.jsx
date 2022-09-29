@@ -27,7 +27,7 @@ const PDF = () => {
                 </div>
                         <div className="btnContainer">
                             <button onClick={onButtonClick}>
-                                <h5>Télécharger le dossier</h5>
+                                <p>Télécharger le dossier</p>
                             </button>
                         </div>
                     </div>
