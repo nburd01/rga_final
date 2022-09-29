@@ -1,10 +1,10 @@
 import React from 'react'
 import { ButtonCTA } from '../../components/btn/Btn'
 import { Carte } from '../../components/Carte/Carte'
-import { ColourSeparator } from '../../components/ColourSeparator/ColourSeparator'
 import { Lieu } from '../../components/Lieu/Lieu'
-import { PhotoSelf } from '../../components/PhotoSelf/PhotoSelf'
 import { Presentation } from '../../components/Presentation/Presentation'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import '../../index.scss'
 
 export const Home = () => {
@@ -27,20 +27,34 @@ export const Home = () => {
         <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
         <div className='numbers'>
           <div className='num_card'>
-            <span>22</span>
-            <h5>gardiens</h5>
+            <h4>22</h4>
+            <span>gardiens</span>
           </div>
           <div className='num_card'>
-            <span>14</span>
-            <h5>clubs différents</h5>
+            <h4>14</h4>
+            <span>clubs différents</span>
           </div>
           <div className='num_card'>
-            <span>3</span>
-            <h5>éducateurs diplômés</h5>
+            <h4>3</h4>
+            <span>éducateurs diplômés</span>
           </div>
         </div> 
       </div>
     </section>
+
+      <div className="container Center">
+        <h4>Suivez-nous sur nos réseaux sociaux :</h4>
+          <div className='socials'>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Roazhongoalacademy/">
+                <FontAwesomeIcon icon="fa-brands fa-facebook" size="xl" className="iconsFontAwesome"/>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/roazhon-goal-academy-30482b251/">
+                <FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" className="iconsFontAwesome"/>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.secure.instagram.com/roazhongoalacademy/">
+                <FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" className="iconsFontAwesome"/>
+            </a>
+          </div>
     <section className="pageBody">
       <div className="container">
           <Presentation/>
@@ -48,6 +62,7 @@ export const Home = () => {
           <Lieu/>
           <Carte/>  
     </section>
+  </div>
   </div>
   )
 }
