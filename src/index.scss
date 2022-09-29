@@ -56,7 +56,11 @@ code {
         flex-direction: column;
         width: 100%;  
     }
-
+    .location{
+        h4{
+            text-align: justify;
+        }
+    }
     .container{
         margin: 0 0;
         max-width: 1150px;
@@ -144,6 +148,11 @@ code {
             margin: auto 1em;
         }
     }  
+    p{
+        span{
+            line-break: normal;
+        }
+    }
     li{
         color: var(--secondary);
         font-size: 1em;
