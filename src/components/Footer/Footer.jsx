@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Footer = () => {
   return (
     <footer>
-        <div class="container">
+        <div class="container Center">
+          <div>
             <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Roazhongoalacademy/">
                 <FontAwesomeIcon icon="fa-brands fa-facebook" size="xl" className="iconsFontAwesome"/>
             </a>
@@ -15,6 +16,7 @@ export const Footer = () => {
             <a target="_blank" rel="noreferrer" href="https://www.secure.instagram.com/roazhongoalacademy/">
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" className="iconsFontAwesome"/>
             </a>
+          </div>
           </div>
     </footer>
   )

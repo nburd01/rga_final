@@ -2,7 +2,7 @@ import React from 'react'
 
 export const LunMar = () => {
   return (
-    <div className='container horaires'>
+    <div className='container Left'>
       <div>
         <h3>LUNDI / MARDI</h3>
       </div>

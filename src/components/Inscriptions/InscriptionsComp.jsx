@@ -5,7 +5,7 @@ import { Xmark } from '../Fontawesome/Xmark'
 
 export const InscriptionsComp = () => {
   return (
-    <div className="PriceCards">
+    <div className='PriceCards'>
       <div className='Card __primary'>
         <div className='_Title'>
         <h4>Premier abonnement</h4>

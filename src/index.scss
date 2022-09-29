@@ -308,6 +308,13 @@ code {
         display: flex;
         flex-direction: column;
     }
+    .PriceCards{
+        display:block;
+        .Card{
+            display: flex;
+            width: auto;
+        }
+    }
     .illustration{
         align-items: center;
         display: flex;
@@ -395,8 +402,6 @@ code {
         margin-left: 5em;
         width: inherit  ;
     }
-
-
     .abonnements{
     display: flex;
     flex-direction: column;
@@ -454,9 +459,7 @@ code {
             display: flex;
         }
         .PriceCards{
-            // display: block;
-            // margin: auto;
-            // width: auto;
+            display: flex;
                 .Card {
                     align-items: center;
                     flex-direction: column;
@@ -513,7 +516,6 @@ code {
             width: 200vw;
         }
         .Card {
-            margin: 1em 0;
             width: 80%;
         }
         .__primary{
@@ -579,7 +581,14 @@ code {
     .container{
         display: flex;
         margin: 1em auto;
-        max-width: 1150px;
+        width: 1150px;
+        padding: 1em 1.25em;
+
+    }
+    .container_card{
+        display: flex;
+        margin: 1em auto;
+        width: 100%;
         padding: 1em 1.25em;
 
     }
