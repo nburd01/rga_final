@@ -13,10 +13,10 @@ export const Lieu = () => {
       <div className="container Right">
         <div className='Card __primary'>
           <div className='location'>
-          <span><FontAwesomeIcon icon="fa-solid fa-location-dot" /></span>
+          <span><FontAwesomeIcon icon="fa-solid fa-map" /></span>
           <ul>
-            <li>Complexe de football du SC LE RHEU FOOTBALL, </li>
-            <li>Route de LORIENT sortie LE RHEU</li>
+            <li>Retrouvez-nous au Complexe de football du S.C. Le Rheu Football, accessible depuis la Route de LORIENT à la sortie Le Rheu.</li>
+            <li>Avenue du stade 35650 Le Rheu</li>
           </ul>
         </div>
         </div>
