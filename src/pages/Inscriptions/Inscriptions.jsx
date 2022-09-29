@@ -1,6 +1,6 @@
 import React from 'react'
 import { Abonnements } from '../../components/Abonnements/Abonnements'
-import SoccerPlayer from '../../assets/Illustrations/SoccerPlayer.svg'
+import SoccerPlayer from '../../assets/Illustrations/Fans.svg'
 import PDF from '../../components/Download/pdf'
 
 export const Inscriptions = () => {
