@@ -148,7 +148,7 @@ code {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 2em auto;
+        margin: 0 auto 2em auto;
         a{
             margin: auto 1em;
         }
@@ -163,6 +163,7 @@ code {
         width: auto;
         padding: auto;
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
