@@ -15,7 +15,7 @@ export const Inscriptions = () => {
           <h3>Découvrez les différentes offres pour vous abonner à la Roazhon Goal Academy dès maintenant. </h3>
           </div>
           <div className="HeroImage">
-            <img src={require('../../assets/img/galerie/webp/home7.webp')} className="_HeroImage" alt="img" loading="lazy"/>
+            <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_flexibilite.jpg')} className="_HeroImage" alt="img" loading="lazy"/>
           </div>
       </section>
       </div>
