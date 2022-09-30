@@ -12,8 +12,8 @@ export const HorairesComp = () => {
       </div>
       <div className="Container Center">
         <LunMar/>
-        </div>
         <Dim/>
+        </div>
     </div>
   )
 }

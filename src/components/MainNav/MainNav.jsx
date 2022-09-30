@@ -23,7 +23,7 @@ export const MainNav = () => {
         <li><Link to="/inscriptions">Inscriptions</Link></li>
         <li><Link to="/seances">Séances</Link></li>
         <li><Link to="/horaires">Planning & Horaires</Link></li>
-        <li><Link to="/multimedia">Multimédia</Link></li>
+        {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><Link to="/contact">Contact</Link></li>
       </ul>
       
@@ -35,7 +35,7 @@ export const MainNav = () => {
         <li><Link to="/inscriptions">Inscriptions</Link></li>
         <li><Link to="/seances">Séances</Link></li>
         <li><Link to="/horaires">Planning & Horaires</Link></li>
-        <li><Link to="/multimedia">Multimédia</Link></li>
+        {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
