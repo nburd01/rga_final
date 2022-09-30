@@ -148,9 +148,16 @@ code {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin: 2em auto;
         a{
             margin: auto 1em;
         }
+    }  
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }  
     p{
         span{

@@ -43,8 +43,8 @@ export const Home = () => {
       </div>
     </section>
     <section>
-    <div className="container Center">
-      <div className='socials'>
+    <div className="container Center socials">
+      <div className='social'>
         <h4>Suivez-nous sur nos réseaux sociaux :</h4>
       </div>
           <div className='socials'>
