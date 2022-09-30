@@ -12,7 +12,7 @@ export const Telephone = () => {
     <div className="container Right">
     <div className='Card __primary '>
     <div className="quote-wrapper">
-      <div className="Check">
+      <div className="contactIcon">
           <FontAwesomeIcon icon="fa-solid fa-phone" />
       </div>
     </div>

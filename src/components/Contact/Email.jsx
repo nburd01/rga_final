@@ -13,7 +13,7 @@ export const Email = () => {
     <div className='Card __primary'>
     <p>roazhongoalacademy@gmail.com</p>
     <div className="quote-wrapper">
-      <div className="Check">
+      <div className="contactIcon">
       <a href="mailto:roazhongoalacademy@gmail.com?subject=Demande d'informations RGA">
           <FontAwesomeIcon icon="fa-solid fa-envelope" />
       </a>
