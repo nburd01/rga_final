@@ -18,7 +18,7 @@ export const RGA = () => {
             <h3>Tout savoir à propos des objectifs, des informations concernant les stagiaires, le staff et les infrastructures.</h3>
             </div>
           <div className="HeroImage">
-            <img src={require('../../assets/img/galerie/webp/home5.webp')} className="_HeroImage" alt="img"/>
+            <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__coach_entraineur.jpg')} className="_HeroImage" alt="img"/>
           </div>
       </section>
       </div>

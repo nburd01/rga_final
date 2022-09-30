@@ -14,7 +14,7 @@ export const HorairesPage = () => {
             <h3>Accédez aux créneaux horaires ainsi qu'aux différentes disponibilités selon les catégories d'âge des gardiens et gardiennes. </h3>
           </div>
             <div className="HeroImage">
-              <img src={require('../../assets/img/galerie/webp/home5.webp')} className="_HeroImage" alt="img" loading="lazy"/>
+              <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__plongeon_entrainement_dima.jpg')} className="_HeroImage" alt="img" loading="lazy"/>
             </div>
           </div>
           </div>

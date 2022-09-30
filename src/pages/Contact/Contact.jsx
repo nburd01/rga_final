@@ -15,7 +15,7 @@ export const Contact = () => {
             <h3>Pour tout renseignement, merci de nous contacter par e-mail ou bien par téléphone.</h3>
           </div>
           <div className="HeroImage">
-            <img src={require('../../assets/img/galerie/webp/home8.webp')} className="_HeroImage" alt="img" loading="lazy"/>
+            <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_proprioception.jpg')} className="_HeroImage" alt="img" loading="lazy"/>
           </div>
         </div>
       </div>
