@@ -409,7 +409,7 @@ code {
         width: 1.5em;
     }
 
-    .Check, .Xmark{
+    .Check, .Xmark, .contactIcon{
         align-items: center;
         border-radius: 100%;
         display: flex;
@@ -430,6 +430,9 @@ code {
          box-shadow:0.1em 0.1em 0px 0px var(--secondary);
          color: var(--secondary);
         }
+    }
+    .contactIcon{
+        background-image: linear-gradient(45deg, var(--gradient-colors));
     }
     .quote-wrapper { 
         align-items:center;
