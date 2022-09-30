@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Dim = () => {
   return (
-    <div className="container Left">
+    <div>
     <div>
     <h3>DIMANCHE*</h3>
     </div>

@@ -7,7 +7,7 @@ export const HorairesPage = () => {
       <div className='horaires'>
         <div className="container-large">
         <div className="__intro">
-
+          
           <div className="PicTitle">
           <div className="_TitleSubTitle">
             <h1>Planning et horaires</h1>
