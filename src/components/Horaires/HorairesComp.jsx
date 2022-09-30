@@ -5,12 +5,11 @@ import { LunMar } from './LunMar'
 
 export const HorairesComp = () => {
   return (
-    <div className="container Center">
+    <div className="container align_center">
       <div className="_TitleSubTitle">
         <h6 className="_BgTitle Right">Horaires</h6>
         <h3 className="_BgSubTitle Right">Horaires</h3>
-      </div>
-      <div className="container">
+        <div className='horaires_comp'>
       <div className='horaire'>
       <div>
         <h3>LUNDI / MARDI</h3>
@@ -81,6 +80,7 @@ export const HorairesComp = () => {
         </ul>
         <p>*Ou à 11h en fonction du nombre de participants.</p>
     </ul>
+  </div>
   </div>
         </div>
     </div>
