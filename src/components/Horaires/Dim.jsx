@@ -3,6 +3,7 @@ import React from 'react'
 export const Dim = () => {
   return (
     <div className='Card __primary'>
+      <div className='horaire'>
     <div>
     <h3>DIMANCHE*</h3>
     </div>
@@ -47,6 +48,7 @@ export const Dim = () => {
         </ul>
         <p>*Ou à 11h en fonction du nombre de participants.</p>
     </ul>
+  </div>
   </div>
   )
 }

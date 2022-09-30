@@ -3,6 +3,7 @@ import React from 'react'
 export const LunMar = () => {
   return (
     <div className='Card __primary'>
+      <div className='horaire'>
       <div>
         <h3>LUNDI / MARDI</h3>
       </div>
@@ -25,8 +26,8 @@ export const LunMar = () => {
         <span>19h10</span>
         <li>Fin de séance</li>
         </div>
-
       </ul>
+      </div>
     </div>
   )
 }

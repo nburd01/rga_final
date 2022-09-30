@@ -159,6 +159,17 @@ code {
         align-items: center;
         text-align: center;
     }  
+    .horaire{
+        width: auto;
+        padding: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        ul{
+            width: 80%;
+        }
+    }
     p{
         span{
             line-break: normal;
