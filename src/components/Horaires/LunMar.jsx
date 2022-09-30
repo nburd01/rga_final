@@ -2,7 +2,7 @@ import React from 'react'
 
 export const LunMar = () => {
   return (
-    <div>
+    <div className='Card __primary'>
       <div>
         <h3>LUNDI / MARDI</h3>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Dim = () => {
   return (
-    <div>
+    <div className='Card __primary'>
     <div>
     <h3>DIMANCHE*</h3>
     </div>
