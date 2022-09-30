@@ -14,7 +14,7 @@ html{
     --valid: #3cc72f;
     --fifth: #fc6620;
     --gradient-colors: #FFD401,#FFDA25,#FFE049;
-    --gradient-colors2:  #ffb56b, #ffba67, #ffc062, #ffc65d, #ffcd59, #ffd355, #ffda51, #ffe14d;
+    --gradient-colors2:  #FF7800,#FF9700, #FFB500, #FFD401, #FFF200;
     scroll-behavior: smooth;
 
 }
@@ -36,7 +36,6 @@ code {
       monospace;
   }
     .home{
-    padding-top: 9px ;
     position: relative;
     }
 
@@ -282,6 +281,7 @@ code {
         justify-content: center;
         background-color: white;
         width  :100%;
+        margin: 0;
     }
     
 
@@ -491,6 +491,9 @@ code {
     .Abonnement{
         display: flex;
     }
+    ._intro{
+        margin-bottom: 5em;
+    }
 }
 
 @media only screen and (min-width: 535px) {
@@ -528,7 +531,7 @@ code {
             display: flex;
             flex-direction: column;
             justify-content:center;
-            margin-bottom: 1em;
+            
             ._left{
                 align-items: flex-start;
                 display: flex;
@@ -712,9 +715,6 @@ code {
     }
     .HeroImage{
     margin: 0;
-    }
-    .__intro{
-        margin-bottom: 0;
     }
     ._divRelative{
         ._BgTitle{
