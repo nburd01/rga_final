@@ -67,7 +67,7 @@ export const Home = () => {
               <img src={GoalKeeperSave} alt="GoalKeeperSave" width="600" height="400" loading="lazy"/>
             </div>
           </div>
-          <Temoignage/>
+          {/* <Temoignage/> */}
           <Lieu/>
           <Carte/>  
     </section>

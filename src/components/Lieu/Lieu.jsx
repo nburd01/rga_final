@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Lieu = () => {
   return (
-    <div className="container Left">
+    <div className="container Right">
     <div className="_TitleSubTitle" data-aos="fade-up">
-      <h6 className="_BgTitle Left">Accès</h6>
-      <h3 className="_BgSubTitle Left">Accès</h3>
+      <h6 className="_BgTitle Right">Accès</h6>
+      <h3 className="_BgSubTitle Right">Accès</h3>
       </div>
-      <div className="container Left">
+      <div className="container Right">
         <div className='Card __primary' data-aos="fade-up">
           {/* <div className='location'> */}
            {/* <span><FontAwesomeIcon icon="fa-solid fa-map" /></span> */}
