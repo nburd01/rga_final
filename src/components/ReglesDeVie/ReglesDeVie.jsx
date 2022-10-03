@@ -13,7 +13,7 @@ export const ReglesDeVie = () => {
       <h4>Veiller au bien être de chacun.e</h4>
         <li>Chaque goal devra arriver en <span>tenue « civil »</span> et se changer ensuite en
 tenue de football. (sous réserve des conditions sanitaires Covid).</li>
-        <li>On dit "bonjour" et "au revoir"par <span>politesse</span> .</li>
+        <li>Dire "bonjour" et "au revoir"par <span>politesse</span> .</li>
         <li><span>Prévenir</span> les éducateurs de votre arrivée et départ.</li>
         <li>Selon le temps, <span>prévoir l’équipement adapté</span> (veste, pantalon,
 casquette, crème solaire...Gants !).</li>

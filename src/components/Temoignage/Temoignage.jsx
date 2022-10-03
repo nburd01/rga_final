@@ -6,8 +6,8 @@ export const Temoignage = () => {
   return (
     <div className="container Right">
     <div className="_TitleSubTitle" data-aos="fade-up">
-      <h6 className="_BgTitle Right">Temoignage</h6>
-      <h3 className="_BgSubTitle Right">Temoignage</h3>
+      <h6 className="_BgTitle Right">Témoignages</h6>
+      <h3 className="_BgSubTitle Right">Témoignages</h3>
       </div>
       <div className="container Right">
         <div className='Card __primary' data-aos="fade-up">
