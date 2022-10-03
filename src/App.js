@@ -14,6 +14,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCaretRight, faCheck, faComment, faEnvelope, faLocationDot, faMagnifyingGlass, faMap, faPhone, fas, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faFontAwesome, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
+import CookieConsent from "react-cookie-consent";
+import CookiesPage from "./pages/cookies/cookies";
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
@@ -67,6 +69,7 @@ function App() {
             <Route path="horaires" element={<HorairesPage />} />
             <Route path="multimedia" element={<Multimedia />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="cookies" element={<CookiesPage/>} />
             {/* <Route path="login" element={<Login />} /> */}
             {/* <Route path="admin" element={
             <RequireAuth>
@@ -82,6 +85,17 @@ function App() {
       {/* <BackToTop/> */}
       <Footer/>
       </BrowserRouter>
+      <CookieConsent
+        location="bottom"
+        buttonText="J'accepte, fermer."
+        cookieName="RGPD cookies"
+        style={{ background: "var(--primary)", color: "var(--secondary)" }}
+        buttonStyle={{ color: "var(--primary)", background: "var(--secondary)", fontSize: "16px", height: "auto" }}
+        expires={150}
+        DeclineButton={{background: "var(--secondary)"}}
+        >  
+        Sur roazhongoalacademy.fr, nous employons des cookies destinés à améliorer votre expérience de navigation et à vous offrir un service plus personnalisé. En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de ces cookies. Vous pouvez changer votre configuration ou obtenir de plus amples informations en consultant notre <a href="/cookies">politique d'utilisation des cookies</a>.{" "}
+</CookieConsent>
     </div>
   );
 }
