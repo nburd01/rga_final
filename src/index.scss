@@ -530,6 +530,16 @@ code {
         .container{
             display: flex;
         }
+        .align_center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .horaires_comp{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+        }
         .PriceCards{
             display: flex;
                 .Card {
