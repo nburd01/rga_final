@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Stagiaires = () => {
   return (
 <div className="container Right">
-  <div className="_TitleSubTitle">
+  <div className="_TitleSubTitle" data-aos="fade-up">
     <h6 className="_BgTitle Right">Stagiaires</h6>
     <h3 className="_BgSubTitle Right">Les stagiaires</h3>
     </div>

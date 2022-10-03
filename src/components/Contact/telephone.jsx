@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Telephone = () => {
   return (
 <div className='container Right'>
-    <div className="_TitleSubTitle">
+    <div className="_TitleSubTitle" data-aos="fade-up">
       <h6 className="_BgTitle Right">Téléphone</h6>
       <h3 className="_BgSubTitle Right">Téléphone</h3>
     </div>

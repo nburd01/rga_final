@@ -3,7 +3,7 @@ import React from 'react'
 export const Infrastructures = () => {
   return (
     <div className="container Right">
-      <div className="_TitleSubTitle">
+      <div className="_TitleSubTitle" data-aos="fade-up">
         <h6 className="_BgTitle Right">Infrastructures</h6>
         <h3 className="_BgSubTitle Right">Infrastructures</h3>
       </div>

@@ -37,7 +37,7 @@ const PDF = () => {
             <div className="container">
                 <div className="pdf ">
                     <div className="block">
-                <div className="_TitleSubTitle">
+                <div className="_TitleSubTitle" data-aos="fade-up">
                     <h1>Le dossier d'inscription à nous renvoyer</h1>
                     <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous :</h3>
                 </div>

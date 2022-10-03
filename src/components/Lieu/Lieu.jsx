@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Lieu = () => {
   return (
     <div className="container Left">
-    <div className="_TitleSubTitle">
+    <div className="_TitleSubTitle" data-aos="fade-up">
       <h6 className="_BgTitle Left">Accès</h6>
       <h3 className="_BgSubTitle Left">Accès</h3>
       </div>

@@ -9,7 +9,7 @@ export const HorairesPage = () => {
         <div className="__intro">
           
           <div className="PicTitle">
-          <div className="_TitleSubTitle">
+          <div className="_TitleSubTitle" data-aos="fade-up">
             <h1>Planning et horaires</h1>
             <h3>Accédez aux créneaux horaires ainsi qu'aux différentes disponibilités selon les catégories d'âge des gardiens et gardiennes. </h3>
           </div>

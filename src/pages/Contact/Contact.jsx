@@ -10,7 +10,7 @@ export const Contact = () => {
       <div className="__intro">
 
         <div className="PicTitle">
-          <div className="_TitleSubTitle">
+          <div className="_TitleSubTitle" data-aos="fade-up">
             <h1>Contact</h1>
             <h3>Pour tout renseignement, merci de nous contacter par e-mail ou bien par téléphone.</h3>
           </div>
