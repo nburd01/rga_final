@@ -4,7 +4,7 @@ export default function CookiesPage() {
     return (
 
 
-        <div class="container" role="main">
+        <div class="container Center" role="main">
             <h2 class="element-invisible">Cookies</h2>         
 
         <div class="panel-pane pane-news-social-single">
@@ -21,31 +21,42 @@ export default function CookiesPage() {
 
                             <p>
                                 <strong>Sous Microsoft Internet Explorer</strong>
-                                1. Choisissez le menu "Outils », puis "Options Internet"
-                                    2. Cliquez sur l’onglet "Confidentialité"
-                                        3. Sélectionnez le niveau souhaité à l’aide du curseur
+                                <ol>
+                                    <li>Choisissez le menu "Outils », puis "Options Internet"</li>
+                                    <li>Cliquez sur l’onglet "Confidentialité"</li>
+                                    <li>Sélectionnez le niveau souhaité à l’aide du curseur</li>
+                                </ol>
                             </p>
 
                             <p><strong>Sous Mozilla Firefox</strong>
-                                1. Choisissez le menu « Outils » puis « Options »
-                                    2. Cliquez sur l’onglet « Vie privée »
-                                        3. Dans la liste déroulante « Règles de conservation » sélectionnez le niveau souhaité</p>
+                            <ol>
+                                <li>Choisissez le menu « Outils » puis « Options »</li>
+                                <li>Cliquez sur l’onglet « Vie privée »</li>
+                                <li>Dans la liste déroulante « Règles de conservation » sélectionnez le niveau souhaité</li>
+                                
+                            </ol>
+                        </p>
 
                             <p><strong>Sous Google Chrome</strong>
-                                1. Cliquez sur l’icône permettant d’afficher le menu des paramètres
-                                    2. Cliquez sur « Options »
-                                        3. Dans la zone "Historique", sélectionnez "utiliser les paramètres personnalisés pour l’historique"
-                                            4. Choisissez le niveau souhaité</p>
+                            <ol>
+                                <li>Cliquez sur l’icône permettant d’afficher le menu des paramètres</li>
+                                <li>Cliquez sur « Options »</li>
+                                <li>Dans la zone "Historique", sélectionnez "utiliser les paramètres personnalisés pour l’historique"</li>
+                                <li>Choisissez le niveau souhaité</li>
+                            </ol>
+                        </p>
 
                             <p><strong>Sous Safari</strong>
-                                1. Cliquez dans le menu « Safari »
-                                    2. Cliquez sur « Préférences »
-                                        3. Dans l’onglet « Sécurité » sélectionnez le niveau souhaité</p>
-                        </div>
+                            <ol>
+                                <li>Cliquez dans le menu « Safari »</li>
+                                <li>Cliquez sur « Préférences »</li>
+                                <li>Dans l’onglet « Sécurité » sélectionnez le niveau souhaité</li>
+                                <li></li>
+                            </ol>
+                         </p>
                     </div>
                 </div>
-
-
+            </div>
         </div>
     </div>
 </div>
