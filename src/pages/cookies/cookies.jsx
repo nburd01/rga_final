@@ -12,7 +12,7 @@ export default function CookiesPage() {
                 <div class="field field--name-body field--type-text-with-summary field--label-hidden">
                     <div class="field__items">
                         <div class="field__item even">
-                            <p><strong>Qu’est- ce qu’un cookie ?</strong>
+                            <p><strong>Qu’est- ce qu’un cookie ? </strong>
                             Un cookie est un simple fichier texte envoyé à votre navigateur. Il&nbsp;nous permet pas de vous identifier,&nbsp;en revanche, il enregistre des informations relatives à votre&nbsp;navigation sur notre site.</p>
                         </div>
 
