@@ -10,7 +10,7 @@ export const Email = () => {
       <h3 className="_BgSubTitle Left">Email</h3>
     </div>
     <div className="container Left">
-    <div className='Card __primary'>
+    <div className='Card __primary' data-aos="fade-up">
     <p>roazhongoalacademy@gmail.com</p>
     <div className="quote-wrapper">
       <div className="contactIcon">

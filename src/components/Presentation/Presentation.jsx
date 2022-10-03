@@ -9,7 +9,7 @@ export const Presentation = () => {
       <h3 className="_BgSubTitle Left">Présentation</h3>
       </div>
       <div className="container Left">
-        <div className='Card __primary'>
+        <div className='Card __primary' data-aos="fade-up">
               <ul>
               <h4>À propos de la RGA</h4>
             <li>La Roazhon Goal Academy est la <span>première structure spécifique</span> dédiée

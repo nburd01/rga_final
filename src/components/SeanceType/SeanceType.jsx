@@ -9,7 +9,7 @@ export const SeanceType = () => {
       <h3 className="_BgSubTitle Left">Séance type</h3>
       </div>
       <div className="container">
-      <div className='Card __primary'>
+      <div className='Card __primary' data-aos="fade-up">
       </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export const Telephone = () => {
       <h3 className="_BgSubTitle Right">Téléphone</h3>
     </div>
     <div className="container Right">
-    <div className='Card __primary '>
+    <div className='Card __primary' data-aos="fade-up">
     <div className="quote-wrapper">
       <div className="contactIcon">
           <FontAwesomeIcon icon="fa-solid fa-phone" />

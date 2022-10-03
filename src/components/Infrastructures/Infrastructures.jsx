@@ -8,7 +8,7 @@ export const Infrastructures = () => {
         <h3 className="_BgSubTitle Right">Infrastructures</h3>
       </div>
       <div className="container Right">
-        <div className='Card __primary'>
+        <div className='Card __primary' data-aos="fade-up">
           <ul>
           <h4>Des infrastructures de qualité</h4>
               <li><span>Variété des surfaces de jeux</span>, initiations à "d'autres" football.</li>
