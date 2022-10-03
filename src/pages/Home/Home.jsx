@@ -15,7 +15,7 @@ export const Home = () => {
       <div className="container">
         <div className="__intro">
           <div className="_left">
-            <div className="_TitleSubTitle">
+            <div className="_TitleSubTitle" data-aos="fade-up">
               <h1>Bienvenue à la Roazhon Goal Academy !</h1>
               <h3>Entraînements spécifiques de gardiens de but au travers des séances techniques et ludiques basées au Rheu pour les 10 - 13 ans.</h3>
             </div>
