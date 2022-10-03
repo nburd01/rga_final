@@ -6,7 +6,7 @@ import { LunMar } from './LunMar'
 export const HorairesComp = () => {
   return (
     <div className="container align_center">
-      <div className="_TitleSubTitle">
+      <div className="_TitleSubTitle" data-aos="fade-up">
         <h6 className="_BgTitle Right">Horaires</h6>
         <h3 className="_BgSubTitle Right">Horaires</h3>
         <div className='horaires_comp'>

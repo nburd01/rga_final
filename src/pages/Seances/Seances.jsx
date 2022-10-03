@@ -10,7 +10,7 @@ export const Seances = () => {
       <div className="__intro">
 
         <div className="PicTitle">
-        <div className="_TitleSubTitle">
+        <div className="_TitleSubTitle" data-aos="fade-up">
           <h1>Les séances</h1>
           <h3>Tout savoir à propos des séances d'entraînement, du matériel ainsi que des règles de vie de l'Academy.</h3>
         </div>

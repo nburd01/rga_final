@@ -10,7 +10,7 @@ export const Inscriptions = () => {
       <div className="__intro">
 
       <section className="PicTitle">
-          <div className="_TitleSubTitle">
+          <div className="_TitleSubTitle" data-aos="fade-up">
           <h1>S'inscrire à la RGA</h1>
           <h3>Découvrez les différentes offres pour vous abonner à la Roazhon Goal Academy dès maintenant. </h3>
           </div>

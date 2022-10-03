@@ -13,7 +13,7 @@ export const RGA = () => {
      <div className="__intro">
       <div className="container-large">
       <section className="PicTitle">
-      <div className="_TitleSubTitle">
+      <div className="_TitleSubTitle" data-aos="fade-up">
             <h1>À propos de la Roazhon Goal Academy</h1>
             <h3>Tout savoir à propos des objectifs, des informations concernant les stagiaires, le staff et les infrastructures.</h3>
             </div>

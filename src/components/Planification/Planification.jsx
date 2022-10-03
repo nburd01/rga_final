@@ -3,7 +3,7 @@ import React from 'react'
 export const Planification = () => {
   return (
 <div className="container Left">
-  <div className="_TitleSubTitle">
+  <div className="_TitleSubTitle" data-aos="fade-up">
   <h6 className="_BgTitle Left">Planification</h6>
   <h3 className="_BgSubTitle Left">Planification</h3>
   </div>

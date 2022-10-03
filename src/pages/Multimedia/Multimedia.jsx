@@ -10,7 +10,7 @@ export const Multimedia = () => {
       <div className="__intro">
 
       <div className="PicTitle">
-      <div className="_TitleSubTitle">
+      <div className="_TitleSubTitle" data-aos="fade-up">
         <h1>Le coin multimédia</h1>
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
       </div>

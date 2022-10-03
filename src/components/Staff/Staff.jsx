@@ -3,7 +3,7 @@ import React from 'react'
 export const Staff = () => {
   return (
   <div className="container Left">
-    <div className="_TitleSubTitle">
+    <div className="_TitleSubTitle" data-aos="fade-up">
       <h6 className="_BgTitle Left">Le staff</h6>
       <h3 className="_BgSubTitle Left">Le staff</h3>
       </div>
