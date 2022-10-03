@@ -8,7 +8,7 @@ export const Planification = () => {
   <h3 className="_BgSubTitle Left">Planification</h3>
   </div>
     <div className='container Left'>
-      <div className='Card __primary planification' style={{overflow:"auto"}}>
+      <div className='Card __primary planification' style={{overflow:"auto"}} data-aos="fade-up">
         <table>
           
           <tr>

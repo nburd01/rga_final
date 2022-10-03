@@ -8,7 +8,7 @@ export const Staff = () => {
       <h3 className="_BgSubTitle Left">Le staff</h3>
       </div>
       <div className="container Left">
-        <div className='Card __primary'>
+        <div className='Card __primary' data-aos="fade-up">
         <ul>
           <h4>Le staff diplômé</h4>
           <li>Séances <span>préparées et encadrées</span> par des gardiens de but, anciens gardiens,

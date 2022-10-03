@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Dim = () => {
   return (
-    <div className='Card __primary'>
+    <div className='Card __primary' data-aos="fade-up">
       <div className='horaire'>
     <div>
     <h3>DIMANCHE*</h3>

@@ -6,7 +6,7 @@ import { Xmark } from '../Fontawesome/Xmark'
 export const InscriptionsComp = () => {
   return (
     <div className='PriceCards'>
-      <div className='Card __primary'>
+      <div className='Card __primary' data-aos="fade-up">
         <div className='_Title'>
         <h4>Premier abonnement</h4>
           <h5>70 €</h5>     
@@ -33,7 +33,7 @@ export const InscriptionsComp = () => {
             </tbody>
         </table>
       </div>
-      <div className='Card __primary'>
+      <div className='Card __primary' data-aos="fade-up">
         <div className='_Title'>
         <h4>Ré-abonnement</h4>
           <h5>50 €</h5>     

@@ -8,7 +8,7 @@ export const ReglesDeVie = () => {
     <h3 className="_BgSubTitle Left">Règles de vie</h3>
     </div>
     <div className="container Left">
-    <div className='Card __primary'>
+    <div className='Card __primary' data-aos="fade-up">
       <ul>
       <h4>Veiller au bien être de chacun.e</h4>
         <li>Chaque goal devra arriver en <span>tenue « civil »</span> et se changer ensuite en

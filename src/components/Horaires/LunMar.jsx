@@ -2,7 +2,7 @@ import React from 'react'
 
 export const LunMar = () => {
   return (
-    <div className='Card __primary'>
+    <div className='Card __primary' data-aos="fade-up">
       <div className='horaire'>
       <div>
         <h3>LUNDI / MARDI</h3>

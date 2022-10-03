@@ -10,7 +10,7 @@ export const Temoignage = () => {
       <h3 className="_BgSubTitle Right">Temoignage</h3>
       </div>
       <div className="container Right">
-        <div className='Card __primary'>
+        <div className='Card __primary' data-aos="fade-up">
           {/* <div className='location'> */}
            {/* <span><FontAwesomeIcon icon="fa-solid fa-comment" /></span> */}
             <ul>

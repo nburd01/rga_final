@@ -8,7 +8,7 @@ export const Objectifs = () => {
     <h3 className="_BgSubTitle Left">Objectifs</h3>
     </div>
     <div className="container Left">
-      <div className='Card __primary'>
+      <div className='Card __primary' data-aos="fade-up">
             <ul>
             <h4>Quels sont les objectifs de la RGA</h4>
                   <li> <span>Faire découvrir ou conforter le poste</span> de gardien de but au travers des

@@ -11,7 +11,7 @@ export const Lieu = () => {
       <h3 className="_BgSubTitle Left">Accès</h3>
       </div>
       <div className="container Left">
-        <div className='Card __primary'>
+        <div className='Card __primary' data-aos="fade-up">
           {/* <div className='location'> */}
            {/* <span><FontAwesomeIcon icon="fa-solid fa-map" /></span> */}
             <ul>

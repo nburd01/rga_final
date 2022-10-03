@@ -9,7 +9,7 @@ export const Stagiaires = () => {
     <h3 className="_BgSubTitle Right">Les stagiaires</h3>
     </div>
     <div className="container Right">
-      <div className='Card __primary'>
+      <div className='Card __primary' data-aos="fade-up">
         <ul>
         <h4>Quel est le profil des stagiaires</h4>
           <li><span>Structure spécifique GARDIENS DE BUT</span> ouverte aux garçons et aux filles.</li>

@@ -8,7 +8,7 @@ export const Materiel = () => {
     <h3 className="_BgSubTitle Right">Le matériel</h3>
     </div>
     <div className="container Right">
-    <div className='Card __primary '>
+    <div className='Card __primary' data-aos="fade-up">
       <ul>
         <h4>Une panoplie complète</h4>
         <li><span>Partenariat avec la marque UHLSPORT</span> pour les équipements (Paires
