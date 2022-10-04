@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import {Link } from 'react-router-dom';
+import {Link, NavLink  } from 'react-router-dom';
 import './MainNav.scss'
 
 export const MainNav = () => {
@@ -18,13 +18,13 @@ export const MainNav = () => {
         </Link>
 
       <ul className="desktop">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/rga">La RGA</Link></li>
-        <li><Link to="/inscriptions">Inscriptions</Link></li>
-        <li><Link to="/seances">Séances</Link></li>
-        <li><Link to="/horaires">Planning & Horaires</Link></li>
+        <li><NavLink to="/" activeClassName="active" activeStyle={{color: "red"}}>Home</NavLink></li>
+        <li><NavLink to="/rga" activeStyle={{color: "red"}}>La RGA</NavLink></li>
+        <li><NavLink to="/inscriptions" activeStyle={{color: "red"}}>Inscriptions</NavLink></li>
+        <li><NavLink to="/seances" activeStyle={{color: "red"}}>Séances</NavLink></li>
+        <li><NavLink to="/horaires" activeStyle={{color: "red"}}>Planning & Horaires</NavLink></li>
         {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
-        <li><Link to="/contact">Contact</Link></li>
+        <li><NavLink to="/contact" activeStyle={{color: "red"}}>Contact</NavLink></li>
       </ul>
       
 
