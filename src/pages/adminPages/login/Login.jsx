@@ -1,9 +1,9 @@
 import {useState, useContext} from 'react';
 import "./login.scss"
 import {signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../../firebase";
 import { useNavigate } from 'react-router-dom';
-import { AuthModeContext } from '../../context/AuthContext';
+// import { AuthModeContext } from '../../context/AuthContext';
 
 const Login = () => {
 
@@ -13,7 +13,7 @@ const Login = () => {
 
   const navigate = useNavigate()
 
-  const {dispatch} = useContext(AuthModeContext)
+  // const {dispatch} = useContext(AuthModeContext)
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ const Login = () => {
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      dispatch({type:"LOGIN", payload:user})
+      // dispatch({type:"LOGIN", payload:user})
       navigate("/")
       // ...
     })
@@ -36,7 +36,7 @@ const Login = () => {
     <div className="login">
       <form onSubmit={handleLogin}>
         <input type="email" placeholder="email"onChange={e => setEmail(e.target.value)}/>
-        <input type="password" placeholder="password" onChange={ e => setPassword(e.target.value)}/>
+        <input type="password" placeholder="mot de passe" onChange={ e => setPassword(e.target.value)}/>
         <button type="submit">Login</button>
         {error && <span>Mauvaise adresse ou mot de passe</span>}
       </form>

@@ -1,6 +1,6 @@
 
     .login{
-        height: 100vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,7 +21,7 @@
                 width: 200px;
                 height: 30px;
                 border: none;
-                background-color: aquamarine;
+                background-color: var(--primary);
                 font-weight: bold;
                 cursor: pointer;
             }
