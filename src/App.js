@@ -16,6 +16,7 @@ import { faTwitter, faFacebook, faLinkedin, faFontAwesome, faInstagram } from '@
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
+import Login from "./pages/adminPages/login/Login";
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
@@ -70,7 +71,7 @@ function App() {
             <Route path="multimedia" element={<Multimedia />} />
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
-            {/* <Route path="login" element={<Login />} /> */}
+            <Route path="login" element={<Login />} />
             {/* <Route path="admin" element={
             <RequireAuth>
               <AdminHome/>

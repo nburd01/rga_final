@@ -18,13 +18,13 @@ export const MainNav = () => {
         </Link>
 
       <ul className="desktop">
-        <li><NavLink to="/" activeClassName="active" activeStyle={{color: "red"}}>Home</NavLink></li>
-        <li><NavLink to="/rga" activeStyle={{color: "red"}}>La RGA</NavLink></li>
-        <li><NavLink to="/inscriptions" activeStyle={{color: "red"}}>Inscriptions</NavLink></li>
-        <li><NavLink to="/seances" activeStyle={{color: "red"}}>Séances</NavLink></li>
-        <li><NavLink to="/horaires" activeStyle={{color: "red"}}>Planning & Horaires</NavLink></li>
+        <li><NavLink to="/" >Home</NavLink></li>
+        <li><NavLink to="/rga">La RGA</NavLink></li>
+        <li><NavLink to="/inscriptions">Inscriptions</NavLink></li>
+        <li><NavLink to="/seances">Séances</NavLink></li>
+        <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
         {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
-        <li><NavLink to="/contact" activeStyle={{color: "red"}}>Contact</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
       
 
