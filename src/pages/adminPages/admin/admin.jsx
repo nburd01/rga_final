@@ -1,11 +1,11 @@
 import React from 'react'
 import Sidebar from "../../../adminComponents/sidebar/Sidebar";
 import Widget from "../../../adminComponents/widget/Widget";
-
+import './admin.scss'
 
 export const Admin = () => {
     return (
-        <div className="home">
+        <div className="adminHome">
           <Sidebar />
           <div className="homeContainer">
             <div className="widgets">
