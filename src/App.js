@@ -18,6 +18,9 @@ import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
 import Login from "./pages/adminPages/login/Login";
 import { Admin } from "./pages/adminPages/admin/admin";
+import { AdmPages } from "./pages/adminPages/Categories/AdmPages";
+import { AdmLinks } from "./pages/adminPages/Categories/AdmLinks";
+import { AdmMultimedia } from "./pages/adminPages/Categories/AdmMultimedia";
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
@@ -53,6 +56,12 @@ function App() {
               <Admin/>
             </RequireAuth>
             } />
+          </Route>
+
+          <Route path="/admin">
+          <Route path="pages" element={<AdmPages />} />
+          <Route path="liens" element={<AdmLinks />} />
+          <Route path="multimedia" element={<AdmMultimedia />} />
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}
