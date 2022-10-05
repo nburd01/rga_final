@@ -3,7 +3,7 @@ import "./login.scss"
 import {signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase";
 import { useNavigate } from 'react-router-dom';
-// import { AuthModeContext } from '../../context/AuthContext';
+import { AuthModeContext } from '../../../context/AuthContext';
 
 const Login = () => {
 
@@ -13,7 +13,7 @@ const Login = () => {
 
   const navigate = useNavigate()
 
-  // const {dispatch} = useContext(AuthModeContext)
+  const {dispatch} = useContext(AuthModeContext)
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -23,8 +23,8 @@ const Login = () => {
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      // dispatch({type:"LOGIN", payload:user})
-      navigate("/")
+      dispatch({type:"LOGIN", payload:user})
+      navigate("/admin")
       // ...
     })
     .catch((error) => {
