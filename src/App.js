@@ -17,13 +17,15 @@ import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
 import Login from "./pages/adminPages/login/Login";
+import { Admin } from "./pages/adminPages/admin/admin";
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
 function App() {
 
 
-  const {currentUser} = useContext(AuthModeContext);
+  const {currentUser} = false;
+  // const {currentUser} = useContext(AuthModeContext);
 
   const RequireAuth= ({children}) => {
     return currentUser ? (children) : <Navigate to="/login"/>
@@ -31,32 +33,6 @@ function App() {
 
   console.log("currentUser",currentUser);
 
-
-  // const observer = new IntersectionObserver((entries) => {
-  //   entries.forEach((entry)  =>{
-  //   console.log("entry", entry)
-  //   if (entry.isIntersecting){
-  //     entry.target.classList.add('show');
-  //     } else {
-  //       entry.target.classList.remove('show');
-  //     }
-  //   });
-  // });
-
-  // const hiddenElements = document.querySelectorAll('.hidden'); 
-  // hiddenElements.forEach((el) => observer.observe(el));
-
-
-
-
-
-
-//   const myRef = useRef();
-//   useEffect(() =>  {
-// console.log("myRef",myRef.current)
-//   }, [])
-
-  
   return (
     <div className="app">
       <BrowserRouter>
@@ -72,11 +48,11 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
-            {/* <Route path="admin" element={
+            <Route path="admin" element={
             <RequireAuth>
-              <AdminHome/>
+              <Admin/>
             </RequireAuth>
-            } /> */}
+            } />
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}

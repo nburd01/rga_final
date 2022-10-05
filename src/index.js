@@ -8,9 +8,15 @@ import { hydrate, render } from "react-dom";
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+  hydrate(
+    <AuthModeContextProvider>
+        <App /> 
+    </AuthModeContextProvider>, rootElement);
 } else {
-  render(<App />, rootElement);
+  render(
+    <AuthModeContextProvider>
+     <App /> 
+    </AuthModeContextProvider>, rootElement);
 }
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
