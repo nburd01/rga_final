@@ -24,8 +24,8 @@ library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, 
 function App() {
 
 
-  const {currentUser} = false;
-  // const {currentUser} = useContext(AuthModeContext);
+  // const {currentUser} = false;
+  const {currentUser} = useContext(AuthModeContext);
 
   const RequireAuth= ({children}) => {
     return currentUser ? (children) : <Navigate to="/login"/>
