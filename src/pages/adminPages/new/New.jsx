@@ -7,6 +7,10 @@ import { useState } from "react";
 const New = ({ inputs, title }) => {
   const [file, setFile] = useState("");
 
+  const handleAdd = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div className="new">
       <Sidebar />
@@ -27,7 +31,7 @@ const New = ({ inputs, title }) => {
             />
           </div>
           <div className="right">
-            <form>
+            <form onSubmit={handleAdd}>
               <div className="formInput">
                 <label htmlFor="file">
                   Image: <DriveFolderUploadOutlinedIcon className="icon" />
@@ -46,7 +50,7 @@ const New = ({ inputs, title }) => {
                   <input type={input.type} placeholder={input.placeholder} />
                 </div>
               ))}
-              <button>Send</button>
+              <button type="submit">Send</button>
             </form>
           </div>
         </div>
