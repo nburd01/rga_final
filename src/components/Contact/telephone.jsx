@@ -16,7 +16,7 @@ export const Telephone = () => {
           <FontAwesomeIcon icon="fa-solid fa-phone" />
       </div>
     </div>
-     <a href="tel:123-456-7890">06-88-35-04-9</a>
+     <a href="tel:06-88-35-04-98">06-88-35-04-98</a>
      </div>
     </div>
   </div>
