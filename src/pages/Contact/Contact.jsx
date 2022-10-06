@@ -1,9 +1,27 @@
 import React from 'react'
 import { Email } from '../../components/Contact/Email'
 import { Telephone } from '../../components/Contact/telephone'
-
+import {db} from '../../firebase.js'
+import { collection, getDocs } from 'firebase/firestore';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export const Contact = () => {
+
+  const [boutiques, setBoutiques] = useState([]);
+  const boutiquesCollectionRef = collection(db, "boutiques");
+
+  useEffect(() => {
+
+    const getBoutiques = async () => {
+      const data = await getDocs(boutiquesCollectionRef);
+      console.log("data",data)
+      setBoutiques(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+    }
+    getBoutiques()
+  }, [])
+
+
   return (
     <div className='contact'>
       <div className="container-large">
