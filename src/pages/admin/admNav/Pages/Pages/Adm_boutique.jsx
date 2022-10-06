@@ -1,10 +1,11 @@
 import React from 'react'
+import { BoutiqueUrl} from '../../../../../props/boutiqueUrl'
 
 export const Adm_boutique = () => {
   return (
     <div>
       <h3>Boutique</h3>
-        <p>Lien actuel : https://maboutiqueclub.fr/content/131-roazhon-goal-academy</p>
+        <BoutiqueUrl/>
       <form>
         <p>Nouveau Lien</p>
         <input type="text" />
