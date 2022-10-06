@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Adm_rga = () => {
   return (
-    <div>Adm_rga</div>
+    <div>
+      <h3>RGA</h3>
+    </div>
   )
 }

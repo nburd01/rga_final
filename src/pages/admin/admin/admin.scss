@@ -1,7 +1,8 @@
 .admin{
-  display: flex;
+  display: block;
   .category{
-    display: flex;
-    background-color: aquamarine  ;
+    display: block;
+    width: 100%;
+    background-color: aquamarine;
   }
 }
