@@ -16,11 +16,19 @@ import { faTwitter, faFacebook, faLinkedin, faFontAwesome, faInstagram } from '@
 import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
-import Login from "./pages/adminPages/login/Login";
-import { Admin } from "./pages/adminPages/admin/admin";
-import { AdmPages } from "./pages/adminPages/Categories/AdmPages";
-import { AdmLinks } from "./pages/adminPages/Categories/AdmLinks";
-import { AdmMultimedia } from "./pages/adminPages/Categories/AdmMultimedia";
+import Login from "./pages/admin/login/Login";
+import { Admin } from "./pages/admin/admin/admin";
+import { AdmPages } from "./pages/admin/admNav/Pages/AdmPages";
+import { AdmLinks } from "./pages/admin/admNav/Links/AdmLinks";
+import { AdmMultimedia } from "./pages/admin/admNav/Multimedia/AdmMultimedia";
+import { Adm_home } from "./pages/admin/admNav/Pages/Pages/Adm_home";
+import { Adm_inscriptions } from "./pages/admin/admNav/Pages/Pages/Adm_inscriptions";
+import { Adm_rga } from "./pages/admin/admNav/Pages/Pages/Adm_rga";
+import { Adm_seances } from "./pages/admin/admNav/Pages/Pages/Adm_seances";
+import { Adm_planning } from "./pages/admin/admNav/Pages/Pages/Adm_planning";
+import { Adm_boutique } from "./pages/admin/admNav/Pages/Pages/Adm_boutique";
+import { Adm_contact } from "./pages/admin/admNav/Pages/Pages/Adm_contact";
+
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
@@ -58,10 +66,20 @@ function App() {
             } />
           </Route>
 
-          <Route path="/admin">
-          <Route path="pages" element={<AdmPages />} />
-          <Route path="liens" element={<AdmLinks />} />
-          <Route path="multimedia" element={<AdmMultimedia />} />
+          <Route path="admin" element={<Admin />}>
+            
+            <Route path="pages" element={<AdmPages/>}>
+              <Route path="home" element={<Adm_home />} />
+              <Route path="rga" element={<Adm_rga />} />
+              <Route path="inscriptions" element={<Adm_inscriptions />} />
+              <Route path="seances" element={<Adm_seances />} />
+              <Route path="planning" element={<Adm_planning />} />
+              <Route path="boutique" element={<Adm_boutique />} />
+              <Route path="contact" element={<Adm_contact />} />
+            </Route>
+
+            <Route path="liens" element={<AdmLinks />} />
+            <Route path="multimedia" element={< AdmMultimedia/>} />
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}

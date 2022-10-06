@@ -1,0 +1,12 @@
+.navAndContent{
+    display: flex;
+    width: 100%;
+    .navPages{
+        background-color: bisque;
+    }
+    .content{
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+    }
+}
