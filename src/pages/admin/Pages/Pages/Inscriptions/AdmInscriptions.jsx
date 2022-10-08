@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Adm_inscriptions = () => {
+export const AdmInscriptions = () => {
   return (
     <div>
       <h3>Inscriptions</h3>

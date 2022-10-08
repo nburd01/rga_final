@@ -4,6 +4,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import {db} from '../../firebase.js'
 import {Link, NavLink  } from 'react-router-dom';
 import './MainNav.scss'
+import { BoutiqueUrl } from '../../props/boutiqueUrl.jsx';
 
 export const MainNav = () => {
 
@@ -15,7 +16,6 @@ export const MainNav = () => {
   const boutiquesCollectionRef = collection(db, "boutiques");
 
   useEffect(() => {
-
     const getBoutiques = async () => {
       const data = await getDocs(boutiquesCollectionRef);
       console.log("data",data)
@@ -23,6 +23,7 @@ export const MainNav = () => {
     }
     getBoutiques()
   }, [])
+
 
 
 
@@ -39,7 +40,7 @@ export const MainNav = () => {
         <li><NavLink to="/inscriptions">Inscriptions</NavLink></li>
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
-        <li>{boutiques.map((boutique) => {
+        <li key={boutiques}>{boutiques.map((boutique) => {
           return (
             <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
           )
@@ -56,7 +57,7 @@ export const MainNav = () => {
         <li><Link to="/inscriptions">Inscriptions</Link></li>
         <li><Link to="/seances">Séances</Link></li>
         <li><Link to="/horaires">Planning & Horaires</Link></li>
-        <li>{boutiques.map((boutique) => {
+        <li key={boutiques}>{boutiques.map((boutique) => {
           return (
             <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
           )
