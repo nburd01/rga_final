@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
-export const Adm_home = () => {
+export const AdmHome = () => {
   return (
     <div>
       <h3>Home</h3>

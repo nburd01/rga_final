@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Adm_planning = () => {
+export const AdmPlanning = () => {
   return (
     <div>
       <h3>Planning</h3>

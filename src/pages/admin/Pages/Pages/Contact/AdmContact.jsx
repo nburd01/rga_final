@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Adm_contact = () => {
+export const AdmContact = () => {
   return (
     <div>
       <h3>Contact</h3>

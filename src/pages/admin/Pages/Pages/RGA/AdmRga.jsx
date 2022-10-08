@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Adm_rga = () => {
+export const AdmRga = () => {
   return (
     <div>
       <h3>RGA</h3>

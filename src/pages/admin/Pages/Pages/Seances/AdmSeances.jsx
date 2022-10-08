@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Adm_seances = () => {
+export const AdmSeances = () => {
   return (
     <div>
       <h3>Séances</h3>

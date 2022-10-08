@@ -18,16 +18,15 @@ import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
 import Login from "./pages/admin/login/Login";
 import { Admin } from "./pages/admin/admin/admin";
-import { AdmPages } from "./pages/admin/admNav/Pages/AdmPages";
-import { AdmLinks } from "./pages/admin/admNav/Links/AdmLinks";
-import { AdmMultimedia } from "./pages/admin/admNav/Multimedia/AdmMultimedia";
-import { Adm_home } from "./pages/admin/admNav/Pages/Pages/Adm_home";
-import { Adm_inscriptions } from "./pages/admin/admNav/Pages/Pages/Adm_inscriptions";
-import { Adm_rga } from "./pages/admin/admNav/Pages/Pages/Adm_rga";
-import { Adm_seances } from "./pages/admin/admNav/Pages/Pages/Adm_seances";
-import { Adm_planning } from "./pages/admin/admNav/Pages/Pages/Adm_planning";
-import { Adm_boutique } from "./pages/admin/admNav/Pages/Pages/Adm_boutique";
-import { Adm_contact } from "./pages/admin/admNav/Pages/Pages/Adm_contact";
+import { AdmPages } from "./pages/admin/Pages/AdmPages";
+import { AdmHome } from "./pages/admin/Pages/Pages/Home/AdmHome";
+import { AdmInscriptions } from "./pages/admin/Pages/Pages/Inscriptions/AdmInscriptions";
+import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
+import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
+import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
+import { AdmContact } from "./pages/admin/Pages/Pages/Contact/AdmContact";
+import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
+import { Test } from "./pages/test";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -59,6 +58,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
+            <Route path="test" element={<Test />} />
             <Route path="admin" element={
             <RequireAuth>
               <Admin/>
@@ -69,17 +69,14 @@ function App() {
           <Route path="admin" element={<Admin />}>
             
             <Route path="pages" element={<AdmPages/>}>
-              <Route path="home" element={<Adm_home />} />
-              <Route path="rga" element={<Adm_rga />} />
-              <Route path="inscriptions" element={<Adm_inscriptions />} />
-              <Route path="seances" element={<Adm_seances />} />
-              <Route path="planning" element={<Adm_planning />} />
-              <Route path="boutique" element={<Adm_boutique />} />
-              <Route path="contact" element={<Adm_contact />} />
+              <Route path="home" element={<AdmHome />} />
+              <Route path="rga" element={<AdmRga />} />
+              <Route path="inscriptions" element={<AdmInscriptions />} />
+              <Route path="seances" element={<AdmSeances />} />
+              <Route path="planning" element={<AdmPlanning />} />
+              <Route path="boutique" element={<AdmBoutique/>} />
+              <Route path="contact" element={<AdmContact />} />
             </Route>
-
-            <Route path="liens" element={<AdmLinks />} />
-            <Route path="multimedia" element={< AdmMultimedia/>} />
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}
