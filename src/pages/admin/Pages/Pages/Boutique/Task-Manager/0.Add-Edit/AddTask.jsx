@@ -2,6 +2,8 @@ import Modal from "../3.Modal/Modal"
 import {useState} from 'react'
 import {db} from '../../../../../../../firebase'
 import {collection, addDoc, Timestamp} from 'firebase/firestore'
+import './addTask.scss'
+
 
 function AddTask({onClose, open}) {
 
@@ -28,7 +30,7 @@ function AddTask({onClose, open}) {
                 <input 
                 type='text' 
                 name='url' 
-                onChange={(e) => setUrl(e.target.value.toUpperCase())} 
+                onChange={(e) => setUrl(e.target.value)} 
                 value={url}
                 placeholder='Enter url'/>
                 <button type='submit'>Done</button>
