@@ -3,8 +3,9 @@ import { doc, updateDoc, deleteDoc} from "firebase/firestore";
 import { db } from "../../../../../../../firebase";
 import TaskItem from '../0.Add-Edit/TaskItem'
 import EditTask from '../0.Add-Edit/EditTask'
+import './task.scss'
 
-function Task({id, title, description, completed}) {
+function Task({id, url, completed}) {
 
     const [checked, setChecked] = useState(completed)
     const [open, setOpen] = useState({edit:false, view:false})
@@ -15,7 +16,7 @@ function Task({id, title, description, completed}) {
   
     /* function to update firestore */
     const handleChange = async () => {
-      const taskDocRef = doc(db, 'tasks', id)
+      const taskDocRef = doc(db, 'boutiques', id)
       try{
         await updateDoc(taskDocRef, {
           completed: checked
@@ -27,7 +28,7 @@ function Task({id, title, description, completed}) {
   
     /* function to delete a document from firstore */ 
     const handleDelete = async () => {
-      const taskDocRef = doc(db, 'tasks', id)
+      const taskDocRef = doc(db, 'boutiques', id)
       try{
         await deleteDoc(taskDocRef)
       } catch (err) {
@@ -51,20 +52,19 @@ function Task({id, title, description, completed}) {
             onClick={() => setChecked(!checked)} ></label>
         </div>
         <div className='task__body'>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <h2>{url}</h2>
           <div className='task__buttons'>
             <div className='task__deleteNedit'>
               <button 
                 className='task__editButton' 
                 onClick={() => setOpen({...open, edit : true})}>
-                Edit
+                Modifier
               </button>
-              <button className='task__deleteButton' onClick={handleDelete}>Delete</button>
+              <button className='task__deleteButton' onClick={handleDelete}>Supprimer</button>
             </div>
             <button 
               onClick={() => setOpen({...open, view: true})}>
-              View
+              Voir
             </button>
           </div>
         </div>
@@ -72,16 +72,14 @@ function Task({id, title, description, completed}) {
         {open.view &&
           <TaskItem 
             onClose={handleClose} 
-            title={title} 
-            description={description} 
+            url={url} 
             open={open.view} />
         }
   
         {open.edit &&
           <EditTask 
             onClose={handleClose} 
-            toEditTitle={title} 
-            toEditDescription={description} 
+            toEditUrl={url} 
             open={open.edit}
             id={id} />
         }

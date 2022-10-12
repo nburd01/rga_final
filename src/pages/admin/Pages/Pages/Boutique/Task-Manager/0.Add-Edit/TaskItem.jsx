@@ -1,13 +1,12 @@
 import Modal from "../3.Modal/Modal"
-// import './taskItem.css'
+import './taskItem.scss'
 
-function TaskItem({onClose, open, url, description}) {
+function TaskItem({onClose, open, url}) {
 
   return (
     <Modal modalLable='Task Item' onClose={onClose} open={open}>
       <div className='taskItem'>
         <h2>{url}</h2>
-        <p>{description}</p>
       </div>
     </Modal>
   )

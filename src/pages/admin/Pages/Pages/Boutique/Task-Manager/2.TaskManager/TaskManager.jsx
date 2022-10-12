@@ -7,13 +7,13 @@ import Task from "../1.Task/Task";
 function TaskManager() {
 
     const [openAddModal, setOpenAddModal] = useState(false)
-    const [tasks, setTasks] = useState([])
+    const [boutiques, setBoutiques] = useState([])
   
     /* function to get all tasks from firestore in realtime */ 
     useEffect(() => {
       const taskColRef = query(collection(db, 'boutiques'), orderBy('created', 'desc'))
       onSnapshot(taskColRef, (snapshot) => {
-        setTasks(snapshot.docs.map(doc => ({
+        setBoutiques(snapshot.docs.map(doc => ({
           id: doc.id,
           data: doc.data()
         })))
@@ -26,17 +26,16 @@ function TaskManager() {
         <div className='taskManager__container'>
           <button 
             onClick={() => setOpenAddModal(true)}>
-            Add task +
+            Ajouter un élément +
           </button>
           <div className='taskManager__tasks'>
   
-            {tasks.map((task) => (
+            {boutiques.map((task) => (
               <Task
                 id={task.id}
                 key={task.id}
                 completed={task.data.completed}
-                title={task.data.title} 
-                description={task.data.description}
+                url={task.data.url} 
               />
             ))}
   

@@ -15,6 +15,22 @@ export const MainNav = () => {
   const [boutiques, setBoutiques] = useState([]);
   const boutiquesCollectionRef = collection(db, "boutiques");
 
+
+  function UrlFirstChild() {
+    console.log("Hello World",boutiques);
+    return (
+      <>
+      {boutiques.map((boutique) => {
+        return (
+          <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
+        )
+        })}
+        </>
+    );
+  };
+  
+
+
   useEffect(() => {
     const getBoutiques = async () => {
       const data = await getDocs(boutiquesCollectionRef);
@@ -40,12 +56,14 @@ export const MainNav = () => {
         <li><NavLink to="/inscriptions">Inscriptions</NavLink></li>
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
-        <li key={boutiques}>{boutiques.map((boutique) => {
+        {/* <li>
+          {boutiques.map((boutique) => {
           return (
             <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
           )
-        })}
-        </li>
+          })}
+        </li> */}
+        <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li>
         {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
