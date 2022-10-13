@@ -4,19 +4,32 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AuthModeContextProvider } from "./context/AuthContext";
 import { hydrate, render } from "react-dom";
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import urlReducer from "./features/url";
+
+const store = configureStore({
+  reducer: {
+    url: urlReducer,
+  },
+})
 
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
   hydrate(
-    <AuthModeContextProvider>
+    <Provider store={store}>
+      <AuthModeContextProvider>
         <App /> 
-    </AuthModeContextProvider>, rootElement);
+      </AuthModeContextProvider>
+    </Provider>, rootElement);
 } else {
   render(
-    <AuthModeContextProvider>
-     <App /> 
-    </AuthModeContextProvider>, rootElement);
+    <Provider store={store}>
+      <AuthModeContextProvider>
+        <App /> 
+      </AuthModeContextProvider>
+    </Provider>, rootElement);
 }
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));

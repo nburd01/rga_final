@@ -27,6 +27,7 @@ import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
 import { AdmContact } from "./pages/admin/Pages/Pages/Contact/AdmContact";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
 import { Test } from "./pages/test";
+import UrlTest from "./urlTest";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -59,6 +60,7 @@ function App() {
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
             <Route path="test" element={<Test />} />
+            <Route path="testing" element={<UrlTest />} />
             <Route path="admin" element={
             <RequireAuth>
               <Admin/>
