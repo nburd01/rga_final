@@ -1,7 +1,7 @@
-import React from 'react'
+// import React from 'react'
 
-export const UrlDataService = () => {
-  return (
-    <div>UrlDataService</div>
-  )
-}
+// export const UrlDataService = () => {
+//   return (
+//     <div>UrlDataService</div>
+//   )
+// }

@@ -8,6 +8,8 @@ import './addTask.scss'
 function AddTask({onClose, open}) {
 
     const [url, setUrl] = useState('')
+    console.log("AddTask url", url)
+
 
       /* function to add new task to firestore */
     const handleSubmit = async (e) => {
