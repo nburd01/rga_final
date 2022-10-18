@@ -10,7 +10,11 @@
 .photo{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    img {
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+      }
     // background-color: rgb(30, 0, 255);
     align-items: center;
     justify-content: center;

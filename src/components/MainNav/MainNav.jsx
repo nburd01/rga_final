@@ -19,9 +19,9 @@ export const MainNav = () => {
     console.log("Hello World",boutiques);
     return (
       <>
-      {boutiques.map((boutique) => {
+      {boutiques.map((boutique, index) => {
         return (
-          <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
+          <a key={index} href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
         )
         })}
         </>

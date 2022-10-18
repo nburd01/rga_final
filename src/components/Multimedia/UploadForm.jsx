@@ -10,12 +10,15 @@ import {
 import { storage } from "../../firebase";
 import {v4} from 'uuid';
 import { useEffect } from 'react';
+// import {useDispatch} from 'react-redux'
+import url, {NavUrl} from '../../features/url'
 
 
 export default function UploadForm() {
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
+  const [ url, setUrl] = useState(false)
 
     const imageListRef = ref(storage, `images/`);
 
@@ -40,7 +43,8 @@ export default function UploadForm() {
 
   return(
     <div>
-
+      {url ?
+      <div>
       <input
         type="file"
         onChange={(event) => {
@@ -48,6 +52,8 @@ export default function UploadForm() {
         }}
       />
       <button onClick={uploadImage}>Upload Image</button>
+      </div>
+    : <div></div> }
 
       <div className="cont">
       {imageList.map((url) => {
