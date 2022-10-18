@@ -9,6 +9,36 @@
         margin: 10px;
       }
   }
+
+  @media screen and (max-width: 990px) {
+    .cont { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media screen and (max-width: 700px) {
+    .cont { 
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        img {
+            height: 25em;
+            object-fit: contain;
+          } 
+        }
+  }
+  @media screen and (max-width: 555px) {
+    .cont { 
+display: flex;
+width: auto;
+flex-direction: column;
+
+img { 
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+  }
+        }
+  }
   
 
   

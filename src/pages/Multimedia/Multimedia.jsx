@@ -12,7 +12,7 @@ export const Multimedia = () => {
       <div className="PicTitle">
       <div className="_TitleSubTitle" data-aos="fade-up">
         <h1>Le coin multimédia</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
+        <h3>Découvrez les photos, vidéos de la Roazhon Goal Academy et bien plus encore. </h3>
       </div>
       <div className="HeroImage">
         <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_explications.jpg')} className="_HeroImage" alt="img" loading="lazy"/>
@@ -23,12 +23,12 @@ export const Multimedia = () => {
     <div >
       <Photos/>
     </div>
-    <div >
+    {/* <div >
       <Videos/>
     </div>
     <div >
       <Presse/>
-    </div>
+    </div> */}
   </div>
   )
 }

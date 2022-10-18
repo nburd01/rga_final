@@ -42,7 +42,7 @@ export default function UploadForm() {
   })}, []);
 
   return(
-    <div>
+    <>
       {url ?
       <div>
       <input
@@ -53,14 +53,14 @@ export default function UploadForm() {
       />
       <button onClick={uploadImage}>Upload Image</button>
       </div>
-    : <div></div> }
+    : <> </> }
 
       <div className="cont">
       {imageList.map((url) => {
         return <img src={url} alt='some value'/>;
       })}
       </div>
-    </div>
+    </>
   );
 
 }
