@@ -1,11 +1,11 @@
 .cont {
     // width: 100vw;
     // height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     img {
-        width: 300px;
+        height: 300px;
         margin: 10px;
       }
   }

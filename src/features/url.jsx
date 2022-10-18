@@ -10,5 +10,5 @@ export const UrlSlice = createSlice({
     },
 });
 
-// export const { NavUrl } = UrlSlice.action;
+export const { NavUrl } = UrlSlice.actions;
 export default UrlSlice.reducer

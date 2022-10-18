@@ -4,7 +4,6 @@ import { collection, getDocs } from 'firebase/firestore';
 import {db} from '../../firebase.js'
 import {Link, NavLink  } from 'react-router-dom';
 import './MainNav.scss'
-import { BoutiqueUrl } from '../../props/boutiqueUrl.jsx';
 
 export const MainNav = () => {
 
@@ -20,9 +19,9 @@ export const MainNav = () => {
     console.log("Hello World",boutiques);
     return (
       <>
-      {boutiques.map((boutique) => {
+      {boutiques.map((boutique, index) => {
         return (
-          <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
+          <a key={index} href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
         )
         })}
         </>
@@ -56,15 +55,8 @@ export const MainNav = () => {
         <li><NavLink to="/inscriptions">Inscriptions</NavLink></li>
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
-        {/* <li>
-          {boutiques.map((boutique) => {
-          return (
-            <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
-          )
-          })}
-        </li> */}
         <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li>
-        {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
+        <li><Link to="/multimedia">Multimédia</Link></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
       
@@ -81,7 +73,7 @@ export const MainNav = () => {
           )
         })}
         </li>
-        {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
+        <li><Link to="/multimedia">Multimédia</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>

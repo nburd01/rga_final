@@ -1,0 +1,23 @@
+.photos{
+    display: inline-block;
+    flex-direction: column;
+    // background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+    
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    img {
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+      }
+    // background-color: rgb(30, 0, 255);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: fill;
+}
