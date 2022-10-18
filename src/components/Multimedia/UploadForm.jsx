@@ -9,14 +9,19 @@ import {
 } from "firebase/storage";
 import { storage } from "../../firebase";
 import {v4} from 'uuid';
-import { useEffect } from 'react';
+import { AuthModeContext } from '../../context/AuthContext';
+import { useContext, useEffect } from "react";
 
 
 export default function UploadForm() {
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
-  const [ newUrl, setNewUrl] = useState(false)
+  const [ newUrl, setNewUrl] = useState(false);
+  const {currentUser} = useContext(AuthModeContext);
+
+  console.log("currentUserAgain",currentUser);
+
 
   const imageListRef = ref(storage, `images/`);
 
@@ -39,9 +44,10 @@ export default function UploadForm() {
       });
   })}, []);
 
+
   return(
     <>
-      {newUrl 
+      {currentUser == !null 
 
       ?
 

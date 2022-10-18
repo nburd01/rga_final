@@ -56,7 +56,7 @@ export const MainNav = () => {
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
         <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li>
-        <li><Link to="/multimedia">Multimédia</Link></li>
+        {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
       
@@ -73,7 +73,7 @@ export const MainNav = () => {
           )
         })}
         </li>
-        <li><Link to="/multimedia">Multimédia</Link></li>
+        {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
