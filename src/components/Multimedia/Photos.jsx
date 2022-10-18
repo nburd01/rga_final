@@ -5,7 +5,7 @@ import './photos.scss'
 
 export const Photos = () => {
   return (
-  <div className="container photos">
+  <div className="container Photogallery">
     <div>
 
     <div className="_TitleSubTitle" data-aos="fade-up">
