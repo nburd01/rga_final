@@ -45,21 +45,26 @@ export default function UploadForm() {
     <>
       {url ?
       <div>
-      <input
-        type="file"
-        onChange={(event) => {
-          setImageUpload(event.target.files[0]);
-        }}
-      />
-      <button onClick={uploadImage}>Upload Image</button>
-      </div>
-    : <> </> }
-
-      <div className="cont">
+        <input
+          type="file"
+          onChange={(event) => {
+            setImageUpload(event.target.files[0]);
+          }}
+        />
+        <button onClick={uploadImage}>Upload Image</button>
+        <div className="cont">
       {imageList.map((url) => {
         return <img src={url} alt='some value'/>;
       })}
       </div>
+      </div>
+      
+    : 
+    <div className="cont">
+    {imageList.map((url) => {
+      return <img src={url} alt='some value'/>;
+    })}
+    </div> }
     </>
   );
 
