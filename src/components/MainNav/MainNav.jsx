@@ -55,7 +55,9 @@ export const MainNav = () => {
         <li><NavLink to="/inscriptions">Inscriptions</NavLink></li>
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
-        <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li>
+        {/* <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li> */}
+        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li>
+
         {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
@@ -67,12 +69,9 @@ export const MainNav = () => {
         <li><Link to="/inscriptions">Inscriptions</Link></li>
         <li><Link to="/seances">Séances</Link></li>
         <li><Link to="/horaires">Planning & Horaires</Link></li>
-        <li key={boutiques}>{boutiques.map((boutique) => {
-          return (
-            <a href={boutique.url} target="_blank" rel="noreferrer">Boutique</a>
-          )
-        })}
-        </li>
+        {/* <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li> */}
+        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li>
+
         {/* <li><Link to="/multimedia">Multimédia</Link></li> */}
         <li><Link to="/contact">Contact</Link></li>
       </ul>
