@@ -61,7 +61,7 @@ export default function UploadForm() {
         <button onClick={uploadImage}>Upload Image</button>
         <div className="cont">
           {imageList.map((url) => {
-            return <div> <img src="{url}" alt='some value'/> <p>test</p> </div>;
+            return <div> <img src="{url}" alt='Roazhon Goal Academy'/> <p>test</p> </div>;
           })}
           <image></image>
         </div>
