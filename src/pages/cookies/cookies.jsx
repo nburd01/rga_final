@@ -1,10 +1,21 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
+
 
 export default function CookiesPage() {
     return (
 
 
         <div class="container Center" role="main">
+
+        <Helmet>
+            <title>Roazhon Goal Academy</title>
+            <meta 
+            name='Roazhon Goal Academy Contact' 
+            content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+            />
+            <meta name='keywords' content='Cookies, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
+        </Helmet>
             <h2 class="element-invisible">Cookies</h2>         
 
         <div class="panel-pane pane-news-social-single">
