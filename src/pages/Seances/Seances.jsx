@@ -11,7 +11,7 @@ export const Seances = () => {
         <title>Roazhon Goal Academy</title>
         <meta 
         name='Roazhon Goal Academy Contact' 
-        content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+        content="Découvrez les séances de la Roazhon Goal Academy !"
         />
         <meta name='keywords' content='Séances, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>

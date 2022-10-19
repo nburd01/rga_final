@@ -29,7 +29,7 @@ export const Contact = () => {
         <title>Roazhon Goal Academy</title>
         <meta 
         name='Roazhon Goal Academy Contact' 
-        content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+        content='La Roazhon Goal Academy reste en contact avec ses stagiaires'
         />
         <meta name='keywords' content='Contact, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>

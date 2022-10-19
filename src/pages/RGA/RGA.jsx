@@ -13,7 +13,7 @@ export const RGA = () => {
         <title>Roazhon Goal Academy</title>
         <meta 
         name='Roazhon Goal Academy Contact' 
-        content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+        content="Qu'est que la Roazhon Goal Academy? Situés au Rheu près de Rennes, nous mettons à disposition des séances d'entraînements spécifiques gardiens pour les 10 - 13 ans !"
         />
         <meta name='keywords' content='à propos de nous, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>
