@@ -7,10 +7,19 @@ import '../../index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Temoignage } from '../../components/Temoignage/Temoignage'
 import GoalKeeperSave from '../../assets/Illustrations/result.svg'
+import { Helmet } from 'react-helmet';
 
 export const Home = () => {
   return (
   <div className='homepage'>
+      <Helmet>
+        <title>Roazhon Goal Academy</title>
+        <meta 
+        name='Roazhon Goal Academy Contact' 
+        content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+        />
+        <meta name='keywords' content='Accueil, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
+      </Helmet>
     <section className='home'>
       <div className="container">
         <div className="__intro">

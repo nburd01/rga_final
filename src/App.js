@@ -28,6 +28,7 @@ import { AdmContact } from "./pages/admin/Pages/Pages/Contact/AdmContact";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
 import { Test } from "./pages/test";
 import UrlTest from "./urlTest";
+import { Helmet } from "react-helmet";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -47,6 +48,15 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
+      <Helmet>
+        <title>Roazhon Goal Academy</title>
+        <meta 
+        name='Roazhon Goal Academy' 
+        content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+        />
+        <meta name='keywords' content='Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
+
+      </Helmet>
       <MainNav/>
         <Routes>
           <Route path="/">
