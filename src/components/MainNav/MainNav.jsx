@@ -46,7 +46,7 @@ export const MainNav = () => {
     <div className="MainNav">
       <div className='container'>
         <Link to="/" className="logoDiv"> 
-          <img className="logo" src={require('../../assets/img/logo/roazhon_goal_academy_logo.gif')} alt="logo" loading="lazy" />
+          <img className="logo" src={require('../../assets/img/logo/roazhon_goal_academy_logo.gif')} alt="logo de la Roazhon Goal Academy" loading="lazy" />
         </Link>
 
       <ul className="desktop">

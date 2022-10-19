@@ -29,12 +29,12 @@ export const Home = () => {
               <h3>Entraînements spécifiques de gardiens de but au travers des séances techniques et ludiques basées au Rheu pour les 10 - 13 ans.</h3>
             </div>
             <ButtonCTA/>
-            <img className="_right" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
+            <img className="_right" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="Roazhon Goal Academy Jérémy Sauffisseau" loading="lazy" ></img>
         </div>
         </div>
       </div>
       <div className="separatorHome">
-        <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="photoCoach" loading="lazy" ></img>
+        <img className="_rightmob" src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="Roazhon Goal Academy Jérémy Sauffisseau" loading="lazy" ></img>
         <div className='numbers'>
           <div className='num_card'>
             <h4>22</h4>
@@ -73,7 +73,7 @@ export const Home = () => {
       </div>
           <div className="container">
             <div className="illustration">
-              <img src={GoalKeeperSave} alt="GoalKeeperSave" width="600" height="400" loading="lazy"/>
+              <img src={GoalKeeperSave} alt="Roazhon Goal Academy Gardien de but" width="600" height="400" loading="lazy"/>
             </div>
           </div>
           {/* <Temoignage/> */}

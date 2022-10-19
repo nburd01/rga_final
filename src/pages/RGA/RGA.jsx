@@ -25,7 +25,7 @@ export const RGA = () => {
             <h3>Tout savoir à propos des objectifs, des informations concernant les stagiaires, le staff et les infrastructures.</h3>
             </div>
           <div className="HeroImage">
-            <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__coach_entraineur.jpg')} className="_HeroImage" alt="img"/>
+            <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__coach_entraineur.jpg')} className="Roazhon Goal Academy entraîneur" alt="img"/>
           </div>
       </section>
       </div>
@@ -35,7 +35,7 @@ export const RGA = () => {
           <Objectifs/>
           <div className="container">
             <div className="illustration">
-              <img src={SoccerPlayer} alt="GoalKeeperSave" width="600" height="400" loading="lazy"/>
+              <img src={SoccerPlayer} alt="Roazhon Goal Academy ilustration gardien de but plongeon" width="600" height="400" loading="lazy"/>
             </div>
           </div>
           <Stagiaires/>
