@@ -11,16 +11,19 @@ import { storage } from "../../firebase";
 import {v4} from 'uuid';
 import { AuthModeContext } from '../../context/AuthContext';
 import { useContext, useEffect } from "react";
+import { Navigate } from 'react-router-dom';
 
 
 export default function UploadForm() {
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
-  const [ newUrl, setNewUrl] = useState(false);
   const {currentUser} = useContext(AuthModeContext);
+  const RequireAuth= ({children}) => {
+    return currentUser ? (children) : <Navigate to="/login"/>
+  };
+  console.log("currentUser_Again", currentUser);
 
-  console.log("currentUserAgain",currentUser);
 
 
   const imageListRef = ref(storage, `images/`);
@@ -47,12 +50,12 @@ export default function UploadForm() {
 
   return(
     <>
-      {currentUser == !null 
+      {currentUser == null
 
       ?
 
       <div>
-        <input
+        {/* <input
           type="file"
           onChange={(event) => {
             setImageUpload(event.target.files[0]);
@@ -60,20 +63,25 @@ export default function UploadForm() {
         />
         <button onClick={uploadImage}>Upload Image</button>
         <div className="cont">
-          {imageList.map((url) => {
-            return <div> <img src="{url}" alt='Roazhon Goal Academy'/> <p>test</p> </div>;
+          {imageList.map((url, index) => {
+            return <div> <img key={index} src="{url}" alt='Roazhon Goal Academy'/> <p>test</p> </div>;
           })}
           <image></image>
-        </div>
+        </div> */}
+        <h1>LOGGEDOUT</h1>
       </div>
         
       : 
 
-      <div className="cont">
-        {imageList.map((url) => {
-          return <img src={url} alt={url}/>;
-        })}
-      </div> }
+      // <div className="cont">
+      //     {imageList.map((url, index) => {
+      //     return <img key={index}  src={url} alt={url}/>;
+      //   })}
+      // </div> }
+      <div>
+        <h1>LOGGEDIN</h1>
+        
+      </div>}
     </>
   );
 

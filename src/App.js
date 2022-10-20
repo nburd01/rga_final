@@ -26,7 +26,7 @@ import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
 import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
 import { AdmContact } from "./pages/admin/Pages/Pages/Contact/AdmContact";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
-import { Test } from "./pages/test";
+// import { Test } from "./pages/test";
 import UrlTest from "./urlTest";
 import { Helmet } from "react-helmet";
 
@@ -69,7 +69,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
-            <Route path="test" element={<Test />} />
+            {/* <Route path="test" element={<Test />} /> */}
             <Route path="testing" element={<UrlTest />} />
             <Route path="admin" element={
             <RequireAuth>
