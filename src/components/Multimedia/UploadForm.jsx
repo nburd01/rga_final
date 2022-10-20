@@ -55,33 +55,26 @@ export default function UploadForm() {
       ?
 
       <div>
-        {/* <input
-          type="file"
-          onChange={(event) => {
-            setImageUpload(event.target.files[0]);
-          }}
-        />
-        <button onClick={uploadImage}>Upload Image</button>
-        <div className="cont">
-          {imageList.map((url, index) => {
-            return <div> <img key={index} src="{url}" alt='Roazhon Goal Academy'/> <p>test</p> </div>;
-          })}
-          <image></image>
-        </div> */}
-        <h1>LOGGEDOUT</h1>
       </div>
         
       : 
 
-      // <div className="cont">
-      //     {imageList.map((url, index) => {
-      //     return <img key={index}  src={url} alt={url}/>;
-      //   })}
-      // </div> }
       <div>
         <h1>LOGGEDIN</h1>
-        
+        <input
+        type="file"
+        onChange={(event) => {
+          setImageUpload(event.target.files[0]);
+        }}
+        />
+        <button onClick={uploadImage}>Upload Image</button>
       </div>}
+
+      <div className="cont">
+            {imageList.map((url, index) => {
+            return <img key={index}  src={url} alt={url}/>;
+          })}
+        </div> 
     </>
   );
 
