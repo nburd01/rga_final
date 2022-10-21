@@ -2,24 +2,30 @@ import React, { useContext } from 'react'
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import {db} from '../../firebase.js'
-import {Link, Navigate, NavLink  } from 'react-router-dom';
+import {Link, Navigate, NavLink, useNavigate  } from 'react-router-dom';
 import './MainNav.scss'
 import { AuthModeContext } from '../../context/AuthContext.js';
 import '../../components/btn/NavBtn.scss'
+import { auth } from "../../firebase";
+
+
 export const MainNav = () => {
 
   const [toggleNav, setToggleNav] = useState(false)
-
+  const { dispatch } = useContext(AuthModeContext);
   const toggleClick = () => setToggleNav(!toggleNav)
-
+  const navigate = useNavigate();
   const [boutiques, setBoutiques] = useState([]);
   const boutiquesCollectionRef = collection(db, "boutiques");
   const {currentUser} = useContext(AuthModeContext);
   const RequireAuth = ({children}) => {
     return currentUser ? (children) : <Navigate to="/multimedia"/>
   };
+  console.log("currentUser MainNav",currentUser)
+
   const signOut = () => {
-    localStorage.removeItem("user");
+    localStorage.clear();
+    console.log("User or not ?", currentUser)
   }
 
   function UrlFirstChild() {
@@ -34,8 +40,6 @@ export const MainNav = () => {
         </>
     );
   };
-  
-
 
   useEffect(() => {
     const getBoutiques = async () => {
@@ -45,9 +49,6 @@ export const MainNav = () => {
     }
     getBoutiques()
   }, [])
-
-
-
 
   return (
     <div className="MainNav">
@@ -63,17 +64,15 @@ export const MainNav = () => {
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
         {/* <li><a href={UrlFirstChild}>Boutique</a></li> */}
-        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li>
+        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy" target="_blank" rel="noreferrer">Boutique</a></li>
         <li><Link to="/multimedia">Multimédia</Link></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       <>
-      {currentUser == null
+      {currentUser
         ?
-        <></>
-        :
         <div className="btnContainer">
-        <a onClick={signOut} className="btn">
+        <a   onClick={() => dispatch({ type: "LOGOUT" })}className="btn">
           <svg width="fill-content" height="5em">
             <defs>
                 <linearGradient id="grad1">
@@ -87,6 +86,9 @@ export const MainNav = () => {
           <p>Se déconnecter</p>
         </a>
       </div>
+        :
+        <></>
+       
       }
       </>
 
@@ -99,7 +101,7 @@ export const MainNav = () => {
         <li><Link to="/seances">Séances</Link></li>
         <li><Link to="/horaires">Planning & Horaires</Link></li>
         {/* <li><a href={UrlFirstChild}>Boutique</a></li> */}
-        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li>
+        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy" target="_blank" rel="noreferrer">Boutique</a></li>
         <li><Link to="/multimedia">Multimédia</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
