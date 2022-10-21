@@ -1,0 +1,76 @@
+    .btnContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 5em;
+            height: fit-content;
+            width: auto;
+            // background-color: beige;
+            a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: fit-content;
+              height: fit-content;
+            }
+      }
+      .btn {
+          display: flex;
+          align-items: center;
+          position: relative;
+          display: inline-block;
+          width: fit-content;
+          height: fit-content;
+          font-size: 1em;
+          font-weight: bold;
+          line-height: 0;
+          text-align: center;
+        //   text-transform: uppercase;
+          background-color: transparent;
+          cursor: pointer;
+          text-decoration:none;
+          h5 {
+            font-size: 1.25em;
+            color: var(--third);
+            line-height: 1.1em;
+            padding: 0 1em;
+            margin: 0 1em;
+          }
+      }
+      
+      .btn svg {
+        position: absolute;
+        top:-2em;
+          // background-color: aqua;
+          justify-content: center;
+          align-items: center;
+          p{
+            display: flex;
+          }
+      }
+      
+      .btn svg rect {
+          position: absolute;
+          top:2em;
+          left:1em;
+          stroke-width: 4;
+          stroke-dasharray: 353, 0;
+          stroke-dashoffset: 0;
+          -webkit-transition: all 600ms ease;
+          transition: all 600ms ease;
+          box-shadow:0.3em 0.3em 0px 5px var(--secondary);
+      }
+      
+      .btn p{
+        position: absolute;
+        // top: -3em;
+        right: -4em;
+        min-width: 10em;
+      }
+      
+      .btn:hover svg rect {
+          stroke-width: 4;
+          stroke-dasharray: 196, 543;
+          stroke-dashoffset: 437;
+      }
