@@ -18,6 +18,9 @@ export const MainNav = () => {
   const RequireAuth = ({children}) => {
     return currentUser ? (children) : <Navigate to="/multimedia"/>
   };
+  const signOut = () => {
+    localStorage.removeItem("user");
+  }
 
   function UrlFirstChild() {
     console.log("Hello World",boutiques);
@@ -69,8 +72,8 @@ export const MainNav = () => {
         ?
         <></>
         :
-        <div class="btnContainer">
-        <a href="http://marcel-pirnay.be/" className="btn">
+        <div className="btnContainer">
+        <a onClick={signOut} className="btn">
           <svg width="fill-content" height="5em">
             <defs>
                 <linearGradient id="grad1">
