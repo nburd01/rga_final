@@ -13,7 +13,6 @@ export const Contact = () => {
   const boutiquesCollectionRef = collection(db, "boutiques");
 
   useEffect(() => {
-
     const getBoutiques = async () => {
       const data = await getDocs(boutiquesCollectionRef);
       console.log("data",data)
