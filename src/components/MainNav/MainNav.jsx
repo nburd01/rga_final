@@ -79,7 +79,7 @@ export const MainNav = () => {
                     <stop offset="100%" stop-color="#ff7e00" />
                 </linearGradient>
             </defs>
-            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"/> 
+            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="150" height="50"/> 
           </svg>
           <p>Se déconnecter</p>
         </a>
