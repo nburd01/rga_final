@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import {db} from '../../firebase.js'
-import {Link, NavLink  } from 'react-router-dom';
+import {Link, Navigate, NavLink  } from 'react-router-dom';
 import './MainNav.scss'
-
+import { AuthModeContext } from '../../context/AuthContext.js';
+import '../../components/btn/NavBtn.scss'
 export const MainNav = () => {
 
   const [toggleNav, setToggleNav] = useState(false)
@@ -13,7 +14,10 @@ export const MainNav = () => {
 
   const [boutiques, setBoutiques] = useState([]);
   const boutiquesCollectionRef = collection(db, "boutiques");
-
+  const {currentUser} = useContext(AuthModeContext);
+  const RequireAuth = ({children}) => {
+    return currentUser ? (children) : <Navigate to="/multimedia"/>
+  };
 
   function UrlFirstChild() {
     console.log("Hello World",boutiques);
@@ -55,11 +59,34 @@ export const MainNav = () => {
         <li><NavLink to="/inscriptions">Inscriptions</NavLink></li>
         <li><NavLink to="/seances">Séances</NavLink></li>
         <li><NavLink to="/horaires">Planning & Horaires</NavLink></li>
-        <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li>
-        {/* <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li> */}
+        {/* <li><a href={UrlFirstChild}>Boutique</a></li> */}
+        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li>
         <li><Link to="/multimedia">Multimédia</Link></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
-      </ul>
+        </ul>
+      <>
+      {currentUser == null
+        ?
+        <></>
+        :
+        <div class="btnContainer">
+        <a href="http://marcel-pirnay.be/" className="btn">
+          <svg width="fill-content" height="5em">
+            <defs>
+                <linearGradient id="grad1">
+                    <stop offset="0%" stop-color="#242b2e"/>
+                    <stop offset="50%" stop-color="#242b2e"/>
+                    <stop offset="100%" stop-color="#ff7e00" />
+                </linearGradient>
+            </defs>
+            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"/> 
+          </svg>
+          <p>Se déconnecter</p>
+        </a>
+      </div>
+      }
+      </>
+
       
     <div className={`navbar-links ${toggleNav ? "active" : ""}`}>
       <ul onClick={toggleClick}>
@@ -68,11 +95,14 @@ export const MainNav = () => {
         <li><Link to="/inscriptions">Inscriptions</Link></li>
         <li><Link to="/seances">Séances</Link></li>
         <li><Link to="/horaires">Planning & Horaires</Link></li>
-        <li><NavLink to={UrlFirstChild}>Boutique</NavLink></li>
-        {/* <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li> */}
+        {/* <li><a href={UrlFirstChild}>Boutique</a></li> */}
+        <li><a href="https://www.clickandsport.fr/content/131-roazhon-goal-academy">Boutique</a></li>
         <li><Link to="/multimedia">Multimédia</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
+      <div>
+        
+      </div>
     </div>
 
       <span className="toggleBtn" onClick={toggleClick} >

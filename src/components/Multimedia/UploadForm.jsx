@@ -19,12 +19,9 @@ export default function UploadForm() {
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
   const {currentUser} = useContext(AuthModeContext);
-  const RequireAuth= ({children}) => {
-    return currentUser ? (children) : <Navigate to="/login"/>
+  const RequireAuth = ({children}) => {
+    return currentUser ? (children) : <Navigate to="/multimedia"/>
   };
-  console.log("currentUser_Again", currentUser);
-
-
 
   const imageListRef = ref(storage, `images/`);
 
