@@ -6,7 +6,6 @@ import {Link, Navigate, NavLink, useNavigate  } from 'react-router-dom';
 import './MainNav.scss'
 import { AuthModeContext } from '../../context/AuthContext.js';
 import '../../components/btn/NavBtn.scss'
-import { auth } from "../../firebase";
 
 
 export const MainNav = () => {
@@ -23,10 +22,6 @@ export const MainNav = () => {
   };
   console.log("currentUser MainNav",currentUser)
 
-  const signOut = () => {
-    localStorage.clear();
-    console.log("User or not ?", currentUser)
-  }
 
   function UrlFirstChild() {
     console.log("Hello World",boutiques);
@@ -72,7 +67,7 @@ export const MainNav = () => {
       {currentUser
         ?
         <div className="btnContainer">
-        <a   onClick={() => dispatch({ type: "LOGOUT" })}className="btn">
+        <a onClick={() => dispatch({ type: "LOGOUT" })}className="btn">
           <svg width="fill-content" height="5em">
             <defs>
                 <linearGradient id="grad1">
