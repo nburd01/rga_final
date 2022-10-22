@@ -2,12 +2,19 @@ import React from 'react'
 import { Abonnements } from '../../components/Abonnements/Abonnements'
 import SoccerPlayer from '../../assets/Illustrations/Fans.svg'
 import PDF from '../../components/Download/pdf'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+import SEO from '../../seo/SEO';
 
 
 export const Inscriptions = () => {
   return (
     <div className='inscriptions'>
+            <SEO
+              title="Bienvenue à la Roazhon Goal Academy"
+              description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
+              name="Bienvenue à la Roazhon Goal Academy"
+              type="accueil"
+            />
             <Helmet>
               <title>Roazhon Goal Academy</title>
               <meta 

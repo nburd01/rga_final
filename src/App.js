@@ -28,27 +28,25 @@ import { AdmContact } from "./pages/admin/Pages/Pages/Contact/AdmContact";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
 // import { Test } from "./pages/test";
 import UrlTest from "./urlTest";
-import { Helmet } from "react-helmet";
+import { HelmetProvider } from 'react-helmet-async';
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
 
 function App() {
 
-
-  // const {currentUser} = false;
   const {currentUser} = useContext(AuthModeContext);
-
   const RequireAuth= ({children}) => {
     return currentUser ? (children) : <Navigate to="/login"/>
   };
+  const helmetContext = {};
 
   console.log("currentUser",currentUser);
 
   return (
+    <HelmetProvider context={helmetContext}>
     <div className="app">
       <BrowserRouter>
-      <Helmet>
         <title>Roazhon Goal Academy</title>
         <meta 
         name='Roazhon Goal Academy' 
@@ -56,7 +54,6 @@ function App() {
         />
         <meta name='keywords' content='Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
 
-      </Helmet>
       <MainNav/>
         <Routes>
           <Route path="/">
@@ -108,8 +105,9 @@ function App() {
         DeclineButton={{background: "var(--secondary)"}}
         >  
         Sur roazhongoalacademy.fr, nous employons des cookies destinés à améliorer votre expérience de navigation et à vous offrir un service plus personnalisé. En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de ces cookies. Vous pouvez changer votre configuration ou obtenir de plus amples informations en consultant notre <a href="/cookies">politique d'utilisation des cookies</a>.{" "}
-</CookieConsent>
+      </CookieConsent>
     </div>
+    </HelmetProvider>
   );
 }
 
