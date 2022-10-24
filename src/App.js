@@ -24,11 +24,10 @@ import { AdmInscriptions } from "./pages/admin/Pages/Pages/Inscriptions/AdmInscr
 import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
 import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
-import { AdmContact } from "./pages/admin/Pages/Pages/Contact/AdmContact";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
-// import { Test } from "./pages/test";
 import UrlTest from "./urlTest";
 import { HelmetProvider } from 'react-helmet-async';
+import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -84,7 +83,7 @@ function App() {
               <Route path="seances" element={<AdmSeances />} />
               <Route path="planning" element={<AdmPlanning />} />
               <Route path="boutique" element={<AdmBoutique/>} />
-              <Route path="contact" element={<AdmContact />} />
+              <Route path="contact" element={<AdmContacts/>} />
             {/* </Route> */}
           </Route>
 
