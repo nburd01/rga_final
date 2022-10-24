@@ -4,9 +4,9 @@ import './taskItem.scss'
 function TaskItem({onClose, open, url}) {
 
   return (
-    <Modal modalLable='Task Item' onClose={onClose} open={open}>
+    <Modal modalLable="Consulter l'élément" onClose={onClose} open={open}>
       <div className='taskItem'>
-        <h2>{url}</h2>
+        <p>{url}</p>
       </div>
     </Modal>
   )

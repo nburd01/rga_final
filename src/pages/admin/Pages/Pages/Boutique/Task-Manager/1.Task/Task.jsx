@@ -52,7 +52,8 @@ function Task({id, url, completed}) {
             onClick={() => setChecked(!checked)} ></label>
         </div>
         <div className='task__body'>
-          <h2>{url}</h2>
+          <h3>url</h3>
+          <p>{url}</p>
           <div className='task__buttons'>
             <div className='task__deleteNedit'>
               <button 
@@ -61,11 +62,12 @@ function Task({id, url, completed}) {
                 Modifier
               </button>
               <button className='task__deleteButton' onClick={handleDelete}>Supprimer</button>
-            </div>
-            <button 
+
+            <button className='task__seeButton'
               onClick={() => setOpen({...open, view: true})}>
               Voir
             </button>
+          </div>
           </div>
         </div>
   
