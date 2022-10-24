@@ -32,6 +32,7 @@ function TaskManager() {
                 key={task.id}
                 completed={task.data.completed}
                 email={task.data.email} 
+                téléphone={task.data.téléphone} 
               />
             ))}
   
