@@ -18,7 +18,7 @@ const Widget = ({ type }) => {
         //     className="icon"
         //     style={{
         //       color: "crimson",
-        //       backgroundColor: "rgba(255, 0, 0, 0.2)",
+        //       backgroundcolor: "rgba(255, 0, 0, 0.2)",
         //     }}
         //   />
         // ),
@@ -33,7 +33,7 @@ const Widget = ({ type }) => {
         //   <ShoppingCartOutlinedIcon
         //     className="icon"
         //     style={{
-        //       backgroundColor: "rgba(218, 165, 32, 0.2)",
+        //       backgroundcolor: "rgba(218, 165, 32, 0.2)",
         //       color: "goldenrod",
         //     }}
         //   />
@@ -48,7 +48,7 @@ const Widget = ({ type }) => {
         // icon: (
         //   <MonetizationOnOutlinedIcon
         //     className="icon"
-        //     style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
+        //     style={{ backgroundcolor: "rgba(0, 128, 0, 0.2)", color: "green" }}
         //   />
         // ),
       };
@@ -62,7 +62,7 @@ const Widget = ({ type }) => {
         //   <AccountBalanceWalletOutlinedIcon
         //     className="icon"
         //     style={{
-        //       backgroundColor: "rgba(128, 0, 128, 0.2)",
+        //       backgroundcolor: "rgba(128, 0, 128, 0.2)",
         //       color: "purple",
         //     }}
         //   />
