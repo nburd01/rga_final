@@ -9,8 +9,7 @@ function AddTask({onClose, open}) {
 
     const [email, setEmail] = useState('')
     const [téléphone, setTéléphone] = useState('')
-    console.log("AddTask email", email)
-    console.log("AddTask téléphone", téléphone)
+
 
 
       /* function to add new task to firestore */
