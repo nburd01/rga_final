@@ -23,10 +23,10 @@ function TaskManager() {
     return (
       <div className='taskManager'>
         <div className='taskManager__container'>
-          <button 
-            onClick={() => setOpenAddModal(true)}>
-            Ajouter un élément +
-          </button>
+        <button className="task__deleteNedit"
+          onClick={() => setOpenAddModal(true)}>
+          Ajouter un élément +
+        </button>
           <div className='taskManager__tasks'>
   
             {boutiques.map((task) => (
@@ -44,7 +44,6 @@ function TaskManager() {
         {openAddModal &&
           <AddTask onClose={() => setOpenAddModal(false)} open={openAddModal}/>
         }
-  
       </div>
     )
   }

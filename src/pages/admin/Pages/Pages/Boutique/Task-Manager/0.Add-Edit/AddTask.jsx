@@ -27,7 +27,7 @@ function AddTask({onClose, open}) {
     }
 
     return (
-        <Modal modalLable='Add Task' onClose={onClose} open={open}>
+        <Modal modalLable='Nouvel élément' onClose={onClose} open={open}>
             <form onSubmit={handleSubmit} className='addUrl' name='addUrl'>
                 <input 
                 type='text' 
@@ -35,7 +35,7 @@ function AddTask({onClose, open}) {
                 onChange={(e) => setUrl(e.target.value)} 
                 value={url}
                 placeholder='Enter url'/>
-                <button type='submit'>Done</button>
+                <button type='submit'>Soumettre</button>
             </form> 
       </Modal>
     )

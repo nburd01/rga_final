@@ -24,10 +24,10 @@ function EditTask({open, onClose, toEditUrl, id}) {
   }
 
   return (
-    <Modal modalLable='Edit Task' onClose={onClose} open={open}>
+    <Modal modalLable='Modifier' onClose={onClose} open={open}>
       <form onSubmit={handleUpdate} className='editTask'>
         <input type='text' name='url' onChange={(e) => setUrl(e.target.value)} value={url}/>
-        <button type='submit'>Edit</button>
+        <button type='submit'>Soumettre</button>
       </form> 
     </Modal>
   )
