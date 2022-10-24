@@ -6,11 +6,10 @@ function MyMap() {
   return (
     <div className="map">
       <Map
-        mapboxAccessToken="pk.eyJ1IjoibmJ1cmQwMSIsImEiOiJjbDllZW42aWMxMmtrM3ZvMHQ5MnR0ZGFtIn0.qCmn0N_6o2U5edvSpvUtEA"
+        mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         initialViewState={{
           longitude: -1.804300514694114,
           latitude:  48.103001973670374,
-          
           zoom: 11.5,
         }}
         mapStyle="mapbox://styles/nburd01/cl9mj3zhl00dy14mq5lbzivih"
