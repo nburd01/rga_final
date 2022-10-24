@@ -12,20 +12,20 @@
 }
 
 .taskManager{
-  background-color: bisque;
+  // background-color: bisque;
 }
 .taskManager__container{
-  background-color: pink;
+  // background-color: pink;
   margin: 1em;
 }
 .taskManager__tasks{
-  background-color: blueviolet;
+  margin: 1em;
+  // background-color: blueviolet;
 }
 
 .task--borderColor{
   border-color: green;
   background-color: gray;
-  margin: 1em;
   box-shadow: 0 6px 18px -9px hsl(210, 15%, 65%);
 }
 
