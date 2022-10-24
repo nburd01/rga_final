@@ -77,7 +77,7 @@ function App() {
 
           <Route path="admin" element={<Admin />}>
             
-            <Route path="pages" element={<AdmPages/>}>
+            {/* <Route path="pages" element={<AdmPages/>}> */}
               <Route path="home" element={<AdmHome />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
@@ -85,7 +85,7 @@ function App() {
               <Route path="planning" element={<AdmPlanning />} />
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContact />} />
-            </Route>
+            {/* </Route> */}
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}

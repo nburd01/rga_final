@@ -8,25 +8,25 @@ export const AdmPages = () => {
       <div className='navPages'>
         <ul>
           <li>
-            <Link to="/admin/pages/home"> Home </Link>
+            <Link to="/admin/home"> Home </Link>
           </li>
           <li>
-            <Link to="/admin/pages/rga"> La RGA </Link>
+            <Link to="/admin/rga"> La RGA </Link>
           </li>
           <li>
-            <Link to="/admin/pages/inscriptions"> Inscriptions </Link>
+            <Link to="/admin/inscriptions"> Inscriptions </Link>
           </li>
           <li>
-            <Link to="/admin/pages/seances"> Séances </Link>
+            <Link to="/admin/seances"> Séances </Link>
           </li>
           <li>
-            <Link to="/admin/pages/planning"> Planning </Link>
+            <Link to="/admin/planning"> Planning </Link>
           </li>
           <li>
-            <Link to="/admin/pages/boutique"> Boutique </Link>
+            <Link to="/admin/boutique"> Boutique </Link>
           </li>
           <li>
-            <Link to="/admin/pages/contact"> Contact </Link>
+            <Link to="/admin/contact"> Contact </Link>
           </li>
         </ul>
       </div>
