@@ -1,6 +1,5 @@
 import React from 'react'
 import { ButtonCTA } from '../../components/btn/Btn'
-import { Carte } from '../../components/Carte/Carte'
 import { Lieu } from '../../components/Lieu/Lieu'
 import { Presentation } from '../../components/Presentation/Presentation'
 import '../../index.scss'
@@ -8,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import GoalKeeperSave from '../../assets/Illustrations/result.svg'
 import { Helmet } from 'react-helmet-async';
 import SEO from '../../seo/SEO'
+import MyMap from '../../components/Carte/Carte'
 
 export const Home = () => {
   return (
@@ -83,9 +83,8 @@ export const Home = () => {
               <img src={GoalKeeperSave} alt="Roazhon Goal Academy Gardien de but" width="600" height="400" loading="lazy"/>
             </div>
           </div>
-          {/* <Temoignage/> */}
           <Lieu/>
-          <Carte/>  
+          <MyMap/>  
     </section>
   </div>
   )
