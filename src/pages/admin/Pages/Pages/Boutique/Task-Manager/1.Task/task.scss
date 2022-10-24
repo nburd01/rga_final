@@ -25,16 +25,16 @@
 
 .task--borderColor{
   border-color: green;
-  background-color: gray;
-  box-shadow: 0 6px 18px -9px hsl(210, 15%, 65%);
 }
 
 .task__body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: aquamarine;
   padding: 1em;
+  border: 2px solid var(--secondary);
+  border-radius: 1em;
+  box-shadow:5px 5px 0px 5px var(--secondary);
 }
 
 .checkbox-custom {
