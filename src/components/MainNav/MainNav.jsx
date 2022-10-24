@@ -73,7 +73,7 @@ export const MainNav = () => {
         ?
         <div className="btnContainer">
         <a   onClick={() => dispatch({ type: "LOGOUT" })}className="btn">
-          <svg width="fill-content" height="5em">
+          <svg width="fill-content" height="5em" display="flex" justifyContent="center" alignItems="center" alignSelf="center" backgroundColor="blue">
             <defs>
                 <linearGradient id="grad1">
                     <stop offset="0%" stop-color="#242b2e"/>

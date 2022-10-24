@@ -10,6 +10,29 @@
       }
   }
 
+  button{
+    background:linear-gradient(to bottom, var(--primary) 5%, var(--primary) 100%);
+    background-color:var(--primary);
+    border-radius: 1em;
+    padding:1em;
+  }
+
+  button:hover{
+    background-color: #FFB500;
+  }
+  .adminPanel{
+    height: auto;
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+    background-image: linear-gradient(111deg, var(--gradient-admin));
+    border-radius: 1em;
+    box-shadow:0.3em 0.3em 0px 5px var(--secondary);
+    h1{
+      color: #FFF;
+    }
+  }
+
   @media screen and (max-width: 990px) {
     .cont { grid-template-columns: repeat(2, 1fr); }
   }

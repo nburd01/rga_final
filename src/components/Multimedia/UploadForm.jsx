@@ -56,15 +56,15 @@ export default function UploadForm() {
         
       : 
 
-      <div>
-        <h1>LOGGEDIN</h1>
+      <div className='adminPanel'>
+        <h1>Administrateur</h1>
         <input
         type="file"
         onChange={(event) => {
           setImageUpload(event.target.files[0]);
         }}
         />
-        <button onClick={uploadImage}>Upload Image</button>
+        <button onClick={uploadImage}>Télécharger des images</button>
       </div>}
 
       <div className="cont">

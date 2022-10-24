@@ -16,6 +16,7 @@ html{
     --error: #FC1A14;
     --gradient-colors: #FFD401,#FFDA25,#FFE049;
     --gradient-colors2:  #FF7800,#FF9700, #FFB500, #FFD401, #FFF200;
+    --gradient-admin:  #242b2e,#ff7e00;
     scroll-behavior: smooth;
 
 }
@@ -364,6 +365,10 @@ code {
     .PicTitle{
         display: flex;
         flex-direction: column;
+        h1, h3{
+            margin-left:0;
+            padding-left:0;
+        }
     }
     .PriceCards{
         display:block;
@@ -559,7 +564,11 @@ code {
                 max-width: 100%;
                 position:relative;
                 ._TitleSubTitle{
-                    width:66%;   
+                    width:66%;
+                    h1, h3{
+                        margin-left:0;
+                        padding-left:0;
+                    }
                 }
                 ._right{
                     display: flex;
