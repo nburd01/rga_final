@@ -15,4 +15,4 @@ export const emailSlice = createSlice({
   },
 });
 
-export const emailActions = emailSlice.actions;
+export const dispatchEmail = emailSlice.actions;
