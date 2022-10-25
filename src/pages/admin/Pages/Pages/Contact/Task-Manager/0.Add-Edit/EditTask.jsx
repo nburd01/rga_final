@@ -13,6 +13,8 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   const dispatch = useDispatch();
   console.log("email",email)
 
+  
+
   /* function to update firestore */
   const handleUpdate = async (e) => {
     e.preventDefault()

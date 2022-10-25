@@ -4,11 +4,15 @@ import { db } from "../../../../../../../firebase";
 import TaskItem from '../0.Add-Edit/TaskItem'
 import EditTask from '../0.Add-Edit/EditTask'
 import './task.scss'
+import { useSelector } from 'react-redux';
 
 function Task({id, email, téléphone, completed}) {
 
     const [checked, setChecked] = useState(completed)
     const [open, setOpen] = useState({edit:false, view:false})
+
+    const emailData = useSelector((state) => state.email.data);
+    console.log("emailData",emailData.name)
   
     const handleClose = () => {
       setOpen({edit:false, view:false})
@@ -55,6 +59,7 @@ function Task({id, email, téléphone, completed}) {
           <h3>email & téléphone</h3>
           <p>{email}</p>
           <p>{téléphone}</p>
+          <p>{emailData.name}</p>
           <div className='task__buttons'>
             <div className='task__deleteNedit'>
               <button 
