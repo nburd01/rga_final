@@ -1,8 +1,12 @@
 import React from 'react'
 import './Contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useSelector } from 'react-redux';
 
 export const Email = () => {
+  const emailData = useSelector((state) => state.email.data);
+  console.log("emailData",emailData.name)
+
   return (
 <div className='container Left'>
     <div className="_TitleSubTitle" data-aos="fade-up">
@@ -12,17 +16,17 @@ export const Email = () => {
     <div className="container Left">
     <div className='Card __primary' data-aos="fade-up">
     <p>roazhongoalacademy@gmail.com</p>
+    <p>{emailData.name}</p>
     <div className="quote-wrapper">
       <div className="contactIcon">
-      <a href="mailto:roazhongoalacademy@gmail.com?subject=Demande d'informations RGA">
+      <a href="mailto:{emailData.name}?subject=Demande d'informations RGA">
           <FontAwesomeIcon icon="fa-solid fa-envelope" />
       </a>
       </div>
     </div>
-    <a href="mailto:roazhongoalacademy@gmail.com?subject=Demande d'informations RGA">Contactez-nous</a>  
+    <a href="mailto:`${emailData.name}`?subject=Demande d'informations RGA">Contactez-nous</a>  
      </div>
     </div>
-  
 </div>
   )
 }
