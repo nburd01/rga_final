@@ -3,15 +3,14 @@ import { Email } from '../../components/Contact/Email'
 import { Telephone } from '../../components/Contact/telephone'
 import {db} from '../../firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import SEO from '../../seo/SEO';
 
 export const Contact = () => {
-
   const [boutiques, setBoutiques] = useState([]);
   const boutiquesCollectionRef = collection(db, "boutiques");
+
 
   useEffect(() => {
     const getBoutiques = async () => {
