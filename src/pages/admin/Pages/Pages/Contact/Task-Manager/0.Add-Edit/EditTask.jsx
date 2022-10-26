@@ -3,7 +3,7 @@ import {useState} from 'react'
 import './editTask.scss'
 import { doc, updateDoc } from "firebase/firestore";
 import {db} from '../../../../../../../firebase'
-import { dispatchEmail } from "../../../../../../../store/emailSlice";
+import { dispatchContact } from "../../../../../../../store/contactSlice";
 import { useDispatch } from "react-redux";
 
 function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
@@ -19,10 +19,10 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   const handleUpdate = async (e) => {
     e.preventDefault()
     dispatch(
-      dispatchEmail.setEmail({
+      dispatchContact.setEmail({
         email: email,
       })
-      );
+    );
     const taskDocRef = doc(db, 'contacts', id)
     try{
       await updateDoc(taskDocRef, {

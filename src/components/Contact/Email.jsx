@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useSelector } from 'react-redux';
 
 export const Email = () => {
-  const emailData = useSelector((state) => state.email.data);
-  console.log("emailData",emailData.name)
+  const emailData = useSelector((state) => state.contact.data);
+  console.log("emailData",emailData.email)
 
   return (
 <div className='container Left'>
@@ -16,7 +16,7 @@ export const Email = () => {
     <div className="container Left">
     <div className='Card __primary' data-aos="fade-up">
     <p>roazhongoalacademy@gmail.com</p>
-    <p>{emailData.name}</p>
+    <p>{emailData.email}</p>
     <div className="quote-wrapper">
       <div className="contactIcon">
       <a href="mailto:{emailData.name}?subject=Demande d'informations RGA">
