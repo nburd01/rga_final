@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 export const Telephone = () => {
   const emailData = useSelector((state) => state.contact.data);
-  console.log("emailData",emailData.téléphone)
+  console.log("telephoneData",emailData.téléphone)
   return (
 <div className='container Right'>
     <div className="_TitleSubTitle" data-aos="fade-up">

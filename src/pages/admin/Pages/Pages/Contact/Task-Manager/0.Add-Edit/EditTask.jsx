@@ -13,6 +13,7 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   const dispatch = useDispatch();
   console.log("email",email)
 
+  const [newEmail, setNewEmail] = useState("")
   
 
   /* function to update firestore */
@@ -20,7 +21,7 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
     e.preventDefault()
     dispatch(
       setReduxEmail({
-        email: setEmail,
+        email: newEmail,
       })
     );
     const taskDocRef = doc(db, 'contacts', id)
@@ -38,7 +39,7 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   return (
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
       <form onSubmit={handleUpdate} className='editTask'>
-        <input type='text' name='email' onChange={(e) => setEmail(e.target.value)} />
+        <input type='text' name='email' onChange={(e) => setNewEmail(e.target.value)} value={newEmail} />
         <input type='text' name='téléphone' onChange={(e) => setTéléphone(e.target.value)} value={téléphone}/>
         <button type='submit'>Soumettre</button>
       </form>
