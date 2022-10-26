@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const contactSlice = createSlice({
   name:"contact",
   initialState: {
-    data: { email:"abc", téléphone:"0712345678"}
+    data: { email:"roazhongoalacademy@gmail.com", téléphone:"0688350498"}
   },
   reducers: {
     clear(state) {
