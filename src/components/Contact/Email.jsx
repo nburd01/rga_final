@@ -15,7 +15,6 @@ export const Email = () => {
     </div>
     <div className="container Left">
     <div className='Card __primary' data-aos="fade-up">
-    <p>roazhongoalacademy@gmail.com</p>
     <p>{emailData.email}</p>
     <div className="quote-wrapper">
       <div className="contactIcon">

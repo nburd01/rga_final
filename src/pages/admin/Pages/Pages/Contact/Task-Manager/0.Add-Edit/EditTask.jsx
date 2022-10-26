@@ -4,7 +4,7 @@ import './editTask.scss'
 import { doc, updateDoc } from "firebase/firestore";
 import {db} from '../../../../../../../firebase'
 import { useDispatch } from "react-redux";
-import { setReduxEmail } from "../../../../../../../store/contactSlice";
+import { setReduxContact } from "../../../../../../../store/contactSlice";
 
 function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
 
@@ -14,21 +14,25 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   console.log("email",email)
 
   const [newEmail, setNewEmail] = useState("")
+  const [newTelephone, setNewTelephone] = useState("")
   
 
   /* function to update firestore */
   const handleUpdate = async (e) => {
     e.preventDefault()
     dispatch(
-      setReduxEmail({
+      setReduxContact({
         email: newEmail,
-      })
+        téléphone: newTelephone,
+      }),
+      // setReduxTelephone({
+      // })
     );
     const taskDocRef = doc(db, 'contacts', id)
     try{
       await updateDoc(taskDocRef, {
-        email: email,
-        téléphone: téléphone,
+        email: newEmail,
+        téléphone: newTelephone,
       })
       onClose()
     } catch (err) {
@@ -40,7 +44,7 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
       <form onSubmit={handleUpdate} className='editTask'>
         <input type='text' name='email' onChange={(e) => setNewEmail(e.target.value)} value={newEmail} />
-        <input type='text' name='téléphone' onChange={(e) => setTéléphone(e.target.value)} value={téléphone}/>
+        <input type='text' name='téléphone' onChange={(e) => setNewTelephone(e.target.value)} value={newTelephone}/>
         <button type='submit'>Soumettre</button>
       </form>
     </Modal>
