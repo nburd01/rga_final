@@ -4,7 +4,7 @@ import contactSlice from "./contactSlice";
 
 const store = configureStore({
     reducer: {
-        contact: contactSlice.reducer,
+        contact: contactSlice,
     }
 });
 

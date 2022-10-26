@@ -3,8 +3,8 @@ import {useState} from 'react'
 import './editTask.scss'
 import { doc, updateDoc } from "firebase/firestore";
 import {db} from '../../../../../../../firebase'
-import { dispatchContact } from "../../../../../../../store/contactSlice";
 import { useDispatch } from "react-redux";
+import { setReduxEmail } from "../../../../../../../store/contactSlice";
 
 function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
 
@@ -19,8 +19,8 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   const handleUpdate = async (e) => {
     e.preventDefault()
     dispatch(
-      dispatchContact.setEmail({
-        email: email,
+      setReduxEmail({
+        email: setEmail,
       })
     );
     const taskDocRef = doc(db, 'contacts', id)
@@ -38,7 +38,7 @@ function EditTask({open, onClose, toEditEmail, toEditTéléphone, id}) {
   return (
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
       <form onSubmit={handleUpdate} className='editTask'>
-        <input type='text' name='email' onChange={(e) => setEmail(e.target.value)} value={email}/>
+        <input type='text' name='email' onChange={(e) => setEmail(e.target.value)} />
         <input type='text' name='téléphone' onChange={(e) => setTéléphone(e.target.value)} value={téléphone}/>
         <button type='submit'>Soumettre</button>
       </form>
