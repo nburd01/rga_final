@@ -10,15 +10,15 @@ const contactSlice = createSlice({
       state.data.email = "";
       state.data.téléphone = "";
     },
-    setEmail(state,action) {
+    setReduxEmail(state,action) {
       state.data.email = action.payload.email;
     },
-    setTelephone(state,action) {
+    setReduxTelephone(state,action) {
       state.data.téléphone = action.payload.téléphone;
     },
   },
 });
 
-export const {dispatchContact} = contactSlice.actions;
+export const {setReduxEmail, setReduxTelephone } = contactSlice.actions;
 
-export default contactSlice;
+export default contactSlice.reducer;
