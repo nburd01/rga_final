@@ -18,12 +18,12 @@ export const Email = () => {
     <p>{emailData.email}</p>
     <div className="quote-wrapper">
       <div className="contactIcon">
-      <a href="mailto:{emailData.name}?subject=Demande d'informations RGA">
+      <a href={`mailto:${emailData.email}?subject=Demande d'informations RGA`}>
           <FontAwesomeIcon icon="fa-solid fa-envelope" />
       </a>
       </div>
     </div>
-    <a href="mailto:`${emailData.name}`?subject=Demande d'informations RGA">Contactez-nous</a>  
+    <a href={`mailto:${emailData.email}?subject=Demande d'informations RGA`}>Contactez-nous</a>  
      </div>
     </div>
 </div>

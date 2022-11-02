@@ -77,7 +77,7 @@ function App() {
           <Route path="admin" element={<Admin />}>
             
             {/* <Route path="pages" element={<AdmPages/>}> */}
-              <Route path="home" element={<AdmHome />} />
+              <Route path="home" index  element={<AdmHome />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
