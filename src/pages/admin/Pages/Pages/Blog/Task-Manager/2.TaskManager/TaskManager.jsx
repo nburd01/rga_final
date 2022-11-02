@@ -32,6 +32,9 @@ function TaskManager() {
                 key={task.id}
                 completed={task.data.completed}
                 blogTitle={task.data.blogTitle} 
+                blogImg={task.data.blogImg} 
+                blogDescription={task.data.blogDescription} 
+                blogBody={task.data.blogBody} 
               />
             ))}
   
