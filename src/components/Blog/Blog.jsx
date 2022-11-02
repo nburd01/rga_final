@@ -1,7 +1,24 @@
 import React from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 import './Blog.scss'
+import {db} from '../../firebase'
+import {collection, getDocs} from 'firebase/firestore'
 
 export const Blog = () => {
+  const [blogs, setBlogs] = useState([]);
+  const blogsCollectionRef = collection(db, "blogs");
+
+    useEffect(() => {
+      const getBlogPosts = async () => {
+        const data = await  getDocs(blogsCollectionRef);
+        setBlogs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+        console.log("blogs", data)
+        // console.  log("blogPost", blogs[0].blogBody)
+      } 
+      getBlogPosts()
+    }, [])
+
     return (
         <div className="container Right">
         <div className="_TitleSubTitle" data-aos="fade-up">
@@ -10,18 +27,21 @@ export const Blog = () => {
           </div>
           <div className="container Right">
             <div className='Card __primary' data-aos="fade-up">
-                  <ul>
-                  <h4>À propos de la RGA</h4>
-                  <img src={require('../../assets/img/Jerem/jerem_cut.webp')} alt="Jérémy Sauffisseau Roazhon Goal Academy" loading="lazy" ></img>
-                <li>La Roazhon Goal Academy est la <span>première structure spécifique</span> dédiée
-        aux gardiennes et gardiens de but d'Ille et Vilaine.</li>
-                <li>Créée en septembre 2019 par Christophe REVEL, elle <span>répond à une problématique d'entrainement</span> rencontrée dans les clubs du district et par les goals du 35.</li>
-              <li>La Roazhon Goal Academy est <span>au service des passionnés</span> du poste et
-        des clubs qui lui font confiance... L’année dernière 22 gardiens de but de 14
-        clubs différents !</li>
-                  </ul>
-                  <button>Accéder</button>
-            </div>
+            {blogs.map((blog) => { 
+              return(
+              <div>
+                {" "}
+                <h3>{blog.blogTitle}</h3>
+                <p>{blog.blogImg}</p>
+                <p>{blog.blogDescription}</p>
+                <button>Accéder</button>
+
+              </div>
+              );
+              }
+              )
+            }
+        </div>
         </div>
       </div>
       )
