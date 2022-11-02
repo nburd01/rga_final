@@ -5,7 +5,7 @@ import TaskItem from '../0.Add-Edit/TaskItem'
 import EditTask from '../0.Add-Edit/EditTask'
 import './task.scss'
 
-function Task({id, blogTitle, completed}) {
+function Task({id, blogTitle, blogImg, blogDescription, blogBody, completed}) {
 
     const [checked, setChecked] = useState(completed)
     const [open, setOpen] = useState({edit:false, view:false})
@@ -54,6 +54,12 @@ function Task({id, blogTitle, completed}) {
         <div className='task__body'>
           <h3>blogTitle</h3>
           <p>{blogTitle}</p>
+          <h3>blogImg</h3>
+          <p>{blogImg}</p>
+          <h3>blogDescription</h3>
+          <p>{blogDescription}</p>
+          <h3>blogBody</h3>
+          <p>{blogBody}</p>
           <div className='task__buttons'>
             <div className='task__deleteNedit'>
               <button 
@@ -75,13 +81,19 @@ function Task({id, blogTitle, completed}) {
           <TaskItem 
             onClose={handleClose} 
             blogTitle={blogTitle} 
+            blogImg={blogImg} 
+            blogDescription={blogDescription} 
+            blogBody={blogBody} 
             open={open.view} />
         }
   
         {open.edit &&
           <EditTask 
             onClose={handleClose} 
-            toEditUrl={blogTitle} 
+            blogTitle={blogTitle} 
+            blogImg={blogImg} 
+            blogDescription={blogDescription} 
+            blogBody={blogBody} 
             open={open.edit}
             id={id} />
         }
