@@ -26,9 +26,9 @@ export const Blog = () => {
           <h3 className="_BgSubTitle Right">Actualités</h3>
           </div>
           <div className="container Right">
-            <div className='Card __primary' data-aos="fade-up">
             {blogs.map((blog) => { 
               return(
+                <div className='Card __primary' data-aos="fade-up">
               <div>
                 {" "}
                 <h3>{blog.blogTitle}</h3>
@@ -37,12 +37,14 @@ export const Blog = () => {
                 <button>Accéder</button>
 
               </div>
+              </div>
               );
+              
               }
               )
             }
         </div>
-        </div>
+       
       </div>
       )
     }
