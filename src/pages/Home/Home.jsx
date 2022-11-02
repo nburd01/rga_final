@@ -8,6 +8,7 @@ import GoalKeeperSave from '../../assets/Illustrations/result.svg'
 import { Helmet } from 'react-helmet-async';
 import SEO from '../../seo/SEO'
 import MyMap from '../../components/Carte/Carte'
+import { Blog } from '../../components/Blog/Blog'
 
 export const Home = () => {
   return (
@@ -74,6 +75,9 @@ export const Home = () => {
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="xl" className="iconsFontAwesome"/>
             </a>
           </div>
+      </div>
+      <div className="container">
+          <Blog/>
       </div>
       <div className="container">
           <Presentation/>

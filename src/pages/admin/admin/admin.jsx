@@ -29,6 +29,9 @@ export const Admin = () => {
           <li>
             <Link to="/admin/contact"> Contact </Link>
           </li>
+          <li>
+            <Link to="/admin/blog"> Blog </Link>
+          </li>
         </ul>
       </div>
       <div className='content'>
