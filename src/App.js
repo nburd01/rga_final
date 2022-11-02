@@ -28,6 +28,7 @@ import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
 import UrlTest from "./urlTest";
 import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
+import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -84,6 +85,7 @@ function App() {
               <Route path="planning" element={<AdmPlanning />} />
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContacts/>} />
+              <Route path="blog" element={<AdmBlog/>} />
             {/* </Route> */}
           </Route>
 
