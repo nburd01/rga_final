@@ -14,7 +14,6 @@ export const Blog = () => {
         const data = await  getDocs(blogsCollectionRef);
         setBlogs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
         console.log("blogs", data)
-        // console.  log("blogPost", blogs[0].blogBody)
       } 
       getBlogPosts()
     }, [])
@@ -25,26 +24,24 @@ export const Blog = () => {
           <h6 className="_BgTitle Right">Actualités</h6>
           <h3 className="_BgSubTitle Right">Actualités</h3>
           </div>
-          <div className="container Right">
+          <div className="container Right blogs">
             {blogs.map((blog) => { 
               return(
-                <div className='Card __primary' data-aos="fade-up">
-              <div>
-                {" "}
-                <h3>{blog.blogTitle}</h3>
-                <p>{blog.blogImg}</p>
-                <p>{blog.blogDescription}</p>
-                <button>Accéder</button>
-
-              </div>
-              </div>
+                <div className='Card __primary blog' data-aos="fade-up">
+                    <>
+                      {" "}
+                      <h3>{blog.blogTitle}</h3>
+                      <p>{blog.blogImg}</p>
+                      <p>{blog.blogDescription}</p>
+                      <button>Accéder</button>
+                    </>
+                </div>
               );
               
               }
               )
             }
         </div>
-       
       </div>
       )
     }
