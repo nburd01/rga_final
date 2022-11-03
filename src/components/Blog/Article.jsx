@@ -33,7 +33,8 @@ export default function BlogArticle() {
             {/* <h5>Author: {article.createdBy}</h5> */}
             {/* <div> Posted on: {article.createdAt.toDate().toDateString()}</div> */}
             <hr />
-            <h4>{article.description}</h4>
+            <p>{article.blogBody}</p>
+            <button src={article.linkUrl}>accéder à l'article</button>
 
             {/* <div className="d-flex flex-row-reverse">
               {user && <LikeArticle id={id} likes={article.likes} />}
