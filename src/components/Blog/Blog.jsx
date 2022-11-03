@@ -41,16 +41,16 @@ export default function Blogs() {
             blogDescription
           }) => (
           <div className='Card __primary blog' data-aos="fade-up" key={id}>
-            <h3>{blogTitle}</h3>
-            <Link to={`/blogs/${id}`}>
+            <Link to={`/blog/${id}`}>
               <img
                 src={blogImg}
                 alt="title"
-                style={{ height: 180, width: 180 }}
-              />
+                style={{ height: 180 }}
+                />
             </Link>
+            <h3>{blogTitle}</h3>
             <p>{blogDescription}</p>
-            <button Link to={`/blogs/${id}`}>Accéder</button>
+            <Link to={`/blog/${id}`}>Accéder</Link>
           </div>
           )
         )
