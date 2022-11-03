@@ -300,7 +300,7 @@ code {
         justify-content: center;
         transition: 0.5s ease-in-out;
         width: auto;
-        z-index: 1;
+        z-index: 2;
     }
     ._HeroImage{
         border: none;
@@ -387,7 +387,7 @@ code {
     .HeroImage{
     display: flex;
     transition: 0.5s ease-in-out;
-    z-index: 1;
+    z-index: 2;
     }
     ._HeroImage{
         border: none;
