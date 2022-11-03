@@ -1,48 +1,64 @@
-import React from 'react'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import './Blog.scss'
-import {db} from '../../firebase'
-import {collection, getDocs} from 'firebase/firestore'
+import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
+import React, { useState, useEffect } from "react";
+import { db } from "../../firebase";
+import { Link } from "react-router-dom";
 
-export const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
-  const blogsCollectionRef = collection(db, "blogs");
+export default function Blogs() {
+  const [articles, setArticles] = useState([]);
 
-    useEffect(() => {
-      const getBlogPosts = async () => {
-        const data = await  getDocs(blogsCollectionRef);
-        setBlogs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-        console.log("blogs", data)
-      } 
-      getBlogPosts()
-    }, [])
+  useEffect(() => {
+    const articleRef = collection(db, "blogs");
+    // const q = query(articleRef, orderBy("createdAt"));
+    onSnapshot(articleRef, (snapshot) => {
+      const articles = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setArticles(articles);
+      console.log("articles",articles);
+    });
+  }, []);
 
-    return (
-        <div className="container Right">
-        <div className="_TitleSubTitle" data-aos="fade-up">
-          <h6 className="_BgTitle Right">Actualités</h6>
-          <h3 className="_BgSubTitle Right">Actualités</h3>
-          </div>
-          <div className="container Right blogs">
-            {blogs.map((blog) => { 
-              return(
-                <div className='Card __primary blog' data-aos="fade-up">
-                    <>
-                      {" "}
-                      <h3>{blog.blogTitle}</h3>
-                      <p>{blog.blogImg}</p>
-                      <p>{blog.blogDescription}</p>
-                      <button>Accéder</button>
-                    </>
+
+  return (
+    <div>
+      {articles.length === 0 ? (
+        <p>No articles found!</p>
+      ) : (
+        articles.map(
+          ({
+            id,
+            blogTitle, 
+            blogImg,
+            blogDescription
+          }) => (
+            <div className="border mt-3 p-3 bg-light" key={id}>
+              <div className="row">
+                <div className="col-3">
+                  <Link to={`/article/${id}`}>
+                    <img
+                      src={blogImg}
+                      alt="title"
+                      style={{ height: 180, width: 180 }}
+                    />
+                  </Link>
                 </div>
-              );
-              
-              }
-              )
-            }
-        </div>
-      </div>
-      )
-    }
-    
+                <div className="col-9 ps-3">
+                  <div className="row">
+                    
+                   
+                  </div>
+                  <h3>{blogTitle}</h3>
+
+                  <img src={blogImg}></img>
+                  <h5>{blogDescription}</h5>
+
+                </div>
+              </div>
+            </div>
+          )
+        )
+      )}
+    </div>
+  );
+}
