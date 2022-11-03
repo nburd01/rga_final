@@ -1,7 +1,7 @@
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
-import { db } from "../../firebase";
 import { Link } from "react-router-dom";
+import { db } from "../../firebase";
 import './Blog.scss'
 
 export default function Blogs() {
@@ -42,12 +42,15 @@ export default function Blogs() {
           }) => (
           <div className='Card __primary blog' data-aos="fade-up" key={id}>
             <h3>{blogTitle}</h3>
-            <img
-              src={blogImg}
-              alt="title"
-              style={{ height: 180, width: 180 }}
-            />
+            <Link to={`/blogs/${id}`}>
+              <img
+                src={blogImg}
+                alt="title"
+                style={{ height: 180, width: 180 }}
+              />
+            </Link>
             <p>{blogDescription}</p>
+            <button Link to={`/blogs/${id}`}>Accéder</button>
           </div>
           )
         )
