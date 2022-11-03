@@ -11,6 +11,7 @@ function AddTask({onClose, open}) {
     const [blogImg, setBlogImg] = useState('');
     const [blogDescription, setBlogDescription] = useState('');
     const [blogBody, setBlogBody] = useState('');
+    const [linkUrl, setLinkUrl] = useState('');
 
 
 
@@ -24,6 +25,7 @@ function AddTask({onClose, open}) {
             blogImg: blogImg,
             blogDescription: blogDescription,
             blogBody: blogBody,
+            linkUrl: linkUrl,
             completed: false,
             created: Timestamp.now()
         })
@@ -45,24 +47,31 @@ function AddTask({onClose, open}) {
                 />
                 <input 
                 type='text' 
-                name='title' 
+                name='blogImg' 
                 onChange={(e) => setBlogImg(e.target.value)} 
                 value={blogImg}
                 placeholder='Enter image url'
                 />
                 <input 
                 type='text' 
-                name='title' 
+                name='blogDescription' 
                 onChange={(e) => setBlogDescription(e.target.value)} 
                 value={blogDescription}
                 placeholder='Enter description'
                 />
                 <input 
                 type='text' 
-                name='title' 
+                name='blogBody' 
                 onChange={(e) => setBlogBody(e.target.value)} 
                 value={blogBody}
                 placeholder='Enter body'
+                />
+                <input 
+                type='text' 
+                name='linkUrl' 
+                onChange={(e) => setLinkUrl(e.target.value)} 
+                value={linkUrl}
+                placeholder='Enter link'
                 />
                 <button type='submit'>Soumettre</button>
             </form> 

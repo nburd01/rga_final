@@ -29,6 +29,7 @@ import UrlTest from "./urlTest";
 import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
+import Blogs from "./components/Blog/Blog";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -66,6 +67,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
+            <Route path="blog/:id" element={<Blogs />} />
             {/* <Route path="test" element={<Test />} /> */}
             <Route path="testing" element={<UrlTest />} />
             <Route path="admin" element={

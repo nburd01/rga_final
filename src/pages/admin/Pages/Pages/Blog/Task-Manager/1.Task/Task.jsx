@@ -5,7 +5,7 @@ import TaskItem from '../0.Add-Edit/TaskItem'
 import EditTask from '../0.Add-Edit/EditTask'
 import './task.scss'
 
-function Task({id, blogTitle, blogImg, blogDescription, blogBody, completed}) {
+function Task({id, blogTitle, blogImg, blogDescription, blogBody, linkUrl, completed}) {
 
     const [checked, setChecked] = useState(completed)
     const [open, setOpen] = useState({edit:false, view:false})
@@ -52,14 +52,11 @@ function Task({id, blogTitle, blogImg, blogDescription, blogBody, completed}) {
             onClick={() => setChecked(!checked)} ></label>
         </div>
         <div className='task__body'>
-          <h3>blogTitle</h3>
-          <p>{blogTitle}</p>
-          <h3>blogImg</h3>
+          <h3>{blogTitle}</h3>
           <p>{blogImg}</p>
-          <h3>blogDescription</h3>
           <p>{blogDescription}</p>
-          <h3>blogBody</h3>
           <p>{blogBody}</p>
+          <p>{linkUrl}</p>
           <div className='task__buttons'>
             <div className='task__deleteNedit'>
               <button 
