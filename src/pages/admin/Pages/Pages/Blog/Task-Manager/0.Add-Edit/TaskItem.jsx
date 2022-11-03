@@ -1,7 +1,7 @@
 import Modal from "../3.Modal/Modal"
 import './taskItem.scss'
 
-function TaskItem({onClose, open, blogTitle, blogImg, blogDescription, blogBody}) {
+function TaskItem({onClose, open, blogTitle, blogImg, blogDescription, blogBody, linkUrl}) {
 
   return (
     <Modal modalLable="Consulter l'élément" onClose={onClose} open={open}>
@@ -10,6 +10,7 @@ function TaskItem({onClose, open, blogTitle, blogImg, blogDescription, blogBody}
         <p>{blogImg}</p>
         <p>{blogDescription}</p>
         <p>{blogBody}</p>
+        <p>{linkUrl}</p>
       </div>
     </Modal>
   )
