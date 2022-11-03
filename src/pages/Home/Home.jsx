@@ -8,7 +8,7 @@ import GoalKeeperSave from '../../assets/Illustrations/result.svg'
 import { Helmet } from 'react-helmet-async';
 import SEO from '../../seo/SEO'
 import MyMap from '../../components/Carte/Carte'
-import Blogs, { Blog } from '../../components/Blog/Blog'
+import Blogs, { Blog } from '../../components/Blog/Articles'
 
 export const Home = () => {
   return (
