@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { db } from "../../firebase";
 import './Blog.scss'
 
-export default function Blogs() {
+export default function Articles() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
