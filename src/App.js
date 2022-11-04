@@ -74,6 +74,7 @@ function App() {
             <Route path="blog/:id" element={<BlogArticle/>} />
             {/* <Route path="test" element={<Test />} /> */}
             <Route path="testing" element={<UrlTest />} />
+          <Route path="/*" element={<Home />} /> 
             <Route path="admin" element={
             <RequireAuth>
               <Admin/>
