@@ -24,6 +24,13 @@
   justify-content: center;
   box-sizing: border-box;
   z-index: 3;
+  input[type=text] {
+    width: 100%;
+    height: fit-content;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
 }
 
 .modal__head{
