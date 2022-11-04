@@ -32,7 +32,7 @@ export default function Articles() {
       {articles.length === 0 ? (
         <>
         <LoadingSpinner/>
-        <p>Pas d'articles trouvés.</p>
+        {/* <p>Pas d'articles trouvés.</p> */}
         </>
       ) 
       :
