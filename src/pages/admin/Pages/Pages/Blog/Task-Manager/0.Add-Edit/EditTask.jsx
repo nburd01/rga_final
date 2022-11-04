@@ -94,11 +94,13 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, blogBody,
   return (
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
     <>
-        <input type='text' name='blogTitle' onChange={(e) => setNewBlogTitle(e.target.value)} defaultValue={blogTitle}/>
-        <button onClick={handleUpdateTitle}>Mettre à jour</button>
-
-        <input type='text' name='blogImg' onChange={(e) => setNewBlogImg(e.target.value)} defaultValue={blogImg}/>
-        <button onClick={handleUpdateImg}>Mettre à jour</button>
+      <p>titre</p>
+        <input type='text' name='blogTitle' onChange={(e) => setNewBlogTitle(e.target.value)} placeholder='Titre' defaultValue={blogTitle}/>
+        <button onClick={handleUpdateTitle}>Mettre à jour le titre</button>
+        
+        <p>Image</p>
+        <input type='text' name='blogImg' onChange={(e) => setNewBlogImg(e.target.value)} placeholder="Url de l'image" defaultValue={blogImg}/>
+        <button onClick={handleUpdateImg}>Mettre à jour l'image</button>
 
         {/* <input 
           type='file'
@@ -106,12 +108,12 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, blogBody,
           name='blogImg'/>
         <img src={blogImg}></img>
         <button onClick={uploadImage}>Télécharger l'image</button> */}
-
-        <input type='text' name='blogDescription' onChange={(e) => setNewBlogDescription(e.target.value)} defaultValue={blogDescription}/>
-        <button onClick={handleUpdateDescription}>Mettre à jour</button>
-
-        <input type='text' name='blogBody' onChange={(e) => setNewBlogBody(e.target.value)} defaultValue={blogBody}/>
-        <button onClick={handleUpdateBody}>Mettre à jour</button>
+        <p>Description</p>
+        <input type='text' name='blogDescription' onChange={(e) => setNewBlogDescription(e.target.value)} placeholder='Description' defaultValue={blogDescription} maxlength="150" />
+        <button onClick={handleUpdateDescription}>Mettre à jour la description</button>
+        <p>Corps</p>
+        <input type='text' name='blogBody' onChange={(e) => setNewBlogBody(e.target.value)} placeholder='Corps' defaultValue={blogBody}/>
+        <button onClick={handleUpdateBody}>Mettre à jour le corps</button>
     </>
     </Modal>
   )
