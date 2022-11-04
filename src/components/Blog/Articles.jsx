@@ -2,11 +2,12 @@ import { collection, onSnapshot} from "firebase/firestore";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { db } from "../../firebase";
+import LoadingSpinner from "../Loading/Loading";
 import './Articles.scss'
 
 export default function Articles() {
   const [articles, setArticles] = useState([]);
-
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const articleRef = collection(db, "blogs");
     // const q = query(articleRef, orderBy("createdAt"));
@@ -29,7 +30,10 @@ export default function Articles() {
       </div>
       <div className="container Right blogs">
       {articles.length === 0 ? (
-        <p>No articles found!</p>
+        <>
+        <LoadingSpinner/>
+        <p>Pas d'articles trouvés.</p>
+        </>
       ) 
       :
       (
