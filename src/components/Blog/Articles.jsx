@@ -50,7 +50,7 @@ export default function Articles() {
             </Link>
             <h3>{blogTitle.substring(0, 100)}</h3>
             <p>{blogDescription.substring(0, 150)}</p>
-            <Link to={`/blog/${id}`}>Accéder</Link>
+            <Link to={`/blog/${id}`} className="blogBtn">Accéder</Link>
           </div>
           )
         )

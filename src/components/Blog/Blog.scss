@@ -10,5 +10,17 @@
         justify-content: center;
         align-items: flex-start;
         grid-template-rows: [row1-start] 40% [row1-end] 30% [third-line] 25% [last-line];
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blogBtn{
+            background-image: linear-gradient(45deg, var(--gradient-colors2));
+            border: 2px solid var(--secondary);
+            padding: 1px;
+            width: 40%;
+            border-radius: 1em;
+        }
     }
 }
