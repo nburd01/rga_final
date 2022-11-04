@@ -1,6 +1,5 @@
 import { doc, onSnapshot } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
-import { useAuthState } from "../../firebase";
 import { useParams } from "react-router-dom";
 import { db } from "../../firebase";
 import './Article.scss'
