@@ -6,7 +6,7 @@
   // z-index: 100;
 }
 
-.addTask input{
+.addTask textarea{
   height: 40px;
   border: unset;
   font-size: 18px;
@@ -17,7 +17,7 @@
   padding-left: 5px;
 }
 
-.addTask input:focus{
+.addTask textarea:focus{
   outline: none;
 }
 
