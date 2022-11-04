@@ -21,6 +21,10 @@
             padding: 1px;
             width: 40%;
             border-radius: 1em;
+            grid-column: 1 / span 1;
+            justify-self: center;
+            align-items: center;
+            
         }
     }
 }
