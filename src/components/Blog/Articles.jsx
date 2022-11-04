@@ -48,8 +48,8 @@ export default function Articles() {
                 style={{ height: 180 }}
                 />
             </Link>
-            <h3>{blogTitle}</h3>
-            <p>{blogDescription}</p>
+            <h3>{blogTitle.substring(0, 100)}</h3>
+            <p>{blogDescription.substring(0, 150)}</p>
             <Link to={`/blog/${id}`}>Accéder</Link>
           </div>
           )

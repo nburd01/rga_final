@@ -43,35 +43,37 @@ function AddTask({onClose, open}) {
                 name='title' 
                 onChange={(e) => setBlogTitle(e.target.value)} 
                 value={blogTitle}
-                placeholder='Enter title'
+                placeholder='Titre (max 100 caractères)'
+                maxlength="100"
                 />
                 <input 
                 type='text' 
                 name='blogImg' 
                 onChange={(e) => setBlogImg(e.target.value)} 
                 value={blogImg}
-                placeholder='Enter image url'
+                placeholder="Url de l'image"
                 />
                 <input 
                 type='text' 
                 name='blogDescription' 
                 onChange={(e) => setBlogDescription(e.target.value)} 
                 value={blogDescription}
-                placeholder='Enter description'
+                placeholder='Description (max 150 caractères)'
+                maxlength="150"
                 />
                 <input 
                 type='text' 
                 name='blogBody' 
                 onChange={(e) => setBlogBody(e.target.value)} 
                 value={blogBody}
-                placeholder='Enter body'
+                placeholder='Corps'
                 />
                 <input 
                 type='text' 
                 name='linkUrl' 
                 onChange={(e) => setLinkUrl(e.target.value)} 
                 value={linkUrl}
-                placeholder='Enter link'
+                placeholder='Lien externe'
                 />
                 <button type='submit'>Soumettre</button>
             </form> 

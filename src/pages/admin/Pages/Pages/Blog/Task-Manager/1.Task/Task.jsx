@@ -53,7 +53,7 @@ function Task({id, blogTitle, blogImg, blogDescription, blogBody, linkUrl, compl
         </div>
         <div className='task__body'>
           <h3>{blogTitle}</h3>
-          <p>{blogImg}</p>
+          <img src={blogImg} style={{ width:300,}}></img>
           <p>{blogDescription}</p>
           <p>{blogBody}</p>
           <p>{linkUrl}</p>
