@@ -19,7 +19,7 @@ export default function BlogArticle() {
 
   
   return (
-    <div className="container border bg-light" style={{ marginTop: 70,marginBottom: 70 }}>
+    <div className="container border bg-light" style={{ marginTop: 70, marginBottom: 70 }}>
       {article && (
         <div className="row">
           <div className="col-3">
