@@ -32,8 +32,14 @@ export default function BlogArticle() {
             <h2>{article.blogTitle}</h2>
             <hr />
             <p>{article.blogBody}</p>
-            <a href={article.linkUrl} target="_blank" rel="noreferrer" className="blogButton">accéder à l'article</a>
-
+            {article.linkUrl === undefined ? (
+              <></>
+            ) 
+            :
+            (
+              <a href={article.linkUrl} target="_blank" rel="noreferrer" className="blogButton">accéder à l'article</a>
+            )
+            }
           </div>
         </div>
       )}
