@@ -9,7 +9,7 @@
         display: grid;
         justify-content: center;
         align-items: flex-start;
-        grid-template-rows: [row1-start] 40% [row1-end] 30% [third-line] 25% [last-line];
+        grid-template-rows: [row1-start] 40% [row1-end] 25% [third-line] 25% [last-line];
         a{
             display: flex;
             justify-content: center;
@@ -19,6 +19,11 @@
         h3{
             align-self: center;
         }
+        p{
+            justify-self: center;
+            align-self: start;
+
+        }
         .blogBtn{
             background-image: linear-gradient(45deg, var(--gradient-colors2));
             border: 2px solid var(--secondary);
@@ -27,7 +32,8 @@
             border-radius: 1em;
             grid-column: 1 / span 1;
             justify-self: center;
-            align-items: center;
+            align-self: center;
+
         }
     }
 }

@@ -2,7 +2,7 @@ import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { db } from "../../firebase";
-import './Blog.scss'
+import './Articles.scss'
 
 export default function Articles() {
   const [articles, setArticles] = useState([]);
