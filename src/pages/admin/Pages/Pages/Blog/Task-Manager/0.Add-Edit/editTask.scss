@@ -6,7 +6,7 @@
   z-index: 2;
 }
 
-.editTask input{
+.editTask textarea{
   height: fit-content;
   border: unset;
   font-size: 18px;
@@ -18,7 +18,7 @@
   margin: 8px 0;
 }
 
-.editTask input:focus{
+.editTask textarea:focus{
   outline: none;
   margin: 8px 0;
 

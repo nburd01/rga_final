@@ -38,7 +38,7 @@ function AddTask({onClose, open}) {
     return (
         <Modal modalLable='Nouvel élément' onClose={onClose} open={open}>
             <form onSubmit={handleSubmit} className='addUrl' name='addUrl'>
-                <input 
+                <textarea 
                 type='text' 
                 name='title' 
                 onChange={(e) => setBlogTitle(e.target.value)} 
@@ -46,14 +46,14 @@ function AddTask({onClose, open}) {
                 placeholder='Titre (max 100 caractères)'
                 maxlength="100"
                 />
-                <input 
+                <input
                 type='text' 
                 name='blogImg' 
                 onChange={(e) => setBlogImg(e.target.value)} 
                 value={blogImg}
                 placeholder="Url de l'image"
                 />
-                <input 
+                <textarea 
                 type='text' 
                 name='blogDescription' 
                 onChange={(e) => setBlogDescription(e.target.value)} 
@@ -61,14 +61,14 @@ function AddTask({onClose, open}) {
                 placeholder='Description (max 150 caractères)'
                 maxlength="150"
                 />
-                <input 
+                <textarea 
                 type='text' 
                 name='blogBody' 
                 onChange={(e) => setBlogBody(e.target.value)} 
                 value={blogBody}
                 placeholder='Corps'
                 />
-                <input 
+                <textarea 
                 type='text' 
                 name='linkUrl' 
                 onChange={(e) => setLinkUrl(e.target.value)} 
