@@ -4,10 +4,10 @@ import './taskItem.scss'
 function TaskItem({onClose, open, blogTitle, blogImg, blogDescription, blogBody, linkUrl}) {
 
   return (
-    <Modal modalLable="Consulter l'élément" onClose={onClose} open={open}>
+    <Modal modalLable="Article" onClose={onClose} open={open}>
       <div className='taskItem'>
-        <p>{blogTitle}</p>
-        <p>{blogImg}</p>
+        <h3>{blogTitle}</h3>
+        <img src={blogImg}></img>
         <p>{blogDescription}</p>
         <p>{blogBody}</p>
         <p>{linkUrl}</p>

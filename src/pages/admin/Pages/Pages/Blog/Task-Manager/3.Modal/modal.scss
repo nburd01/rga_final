@@ -14,14 +14,14 @@
 }
 
 .modal{
-  width: 90%;
-  max-width: 500px;
+  width: 900px;
   border: 5px;
   padding: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-content: center;
+  justify-content: center;
   box-sizing: border-box;
   z-index: 3;
 }

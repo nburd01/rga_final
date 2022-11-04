@@ -95,7 +95,7 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, blogBody,
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
     <>
       <p>titre</p>
-        <input type='text' name='blogTitle' onChange={(e) => setNewBlogTitle(e.target.value)} placeholder='Titre' defaultValue={blogTitle}/>
+        <input type='text' name='blogTitle' onChange={(e) => setNewBlogTitle(e.target.value)} placeholder='Titre' defaultValue={blogTitle} maxlength="100"/>
         <button onClick={handleUpdateTitle}>Mettre à jour le titre</button>
         
         <p>Image</p>
