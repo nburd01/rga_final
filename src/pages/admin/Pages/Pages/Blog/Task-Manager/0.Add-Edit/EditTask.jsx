@@ -6,12 +6,13 @@ import {db, storage} from '../../../../../../../firebase'
 import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
 
-function EditTask({open, onClose, blogTitle, blogImg, blogDescription, blogBody, toBlogTitle, toBlogImg, toBlogDescription, toBlogBody, id}) {
+function EditTask({open, onClose, blogTitle, blogImg, blogDescription, linkUrl, blogBody, toBlogTitle, toBlogImg, toBlogDescription, toBlogBody, id}) {
 
   const [newBlogTitle, setNewBlogTitle] = useState(toBlogTitle)
   const [newBlogDescription, setNewBlogDescription] = useState(toBlogDescription)
   const [newBlogBody, setNewBlogBody] = useState(toBlogBody)
   const [newBlogImg, setNewBlogImg] = useState(toBlogImg)
+  const [newLinkUrl, setNewLinkUrl] = useState(toBlogImg)
 
   const [imageUpload, setImageUpload] = useState(null);
   const [blogImage, setBlogImage] = useState([]);
@@ -91,6 +92,19 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, blogBody,
     }
   }
 
+  const handleUpdateUrl = async (e) => {
+    e.preventDefault()
+    const taskDocRef = doc(db, 'blogs', id)
+    try{
+      await updateDoc(taskDocRef, {
+        linkUrl: newLinkUrl,        
+      })
+      onClose()
+    } catch (err) {
+      alert(err)
+    }
+  }
+
   return (
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
     <>
@@ -102,18 +116,16 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, blogBody,
         <input type='text' name='blogImg' onChange={(e) => setNewBlogImg(e.target.value)} placeholder="Url de l'image" defaultValue={blogImg}/>
         <button onClick={handleUpdateImg}>Mettre à jour l'image</button>
 
-        {/* <input 
-          type='file'
-          onChange={(event) => {setImageUpload(event.target.files[0])}}
-          name='blogImg'/>
-        <img src={blogImg}></img>
-        <button onClick={uploadImage}>Télécharger l'image</button> */}
         <p>Description</p>
         <textarea type='text' name='blogDescription' onChange={(e) => setNewBlogDescription(e.target.value)} placeholder='Description' defaultValue={blogDescription} maxlength="150" />
         <button onClick={handleUpdateDescription}>Mettre à jour la description</button>
         <p>Corps</p>
         <textarea type='text' name='blogBody' onChange={(e) => setNewBlogBody(e.target.value)} placeholder='Corps' defaultValue={blogBody}/>
         <button onClick={handleUpdateBody}>Mettre à jour le corps</button>
+
+        <p>Lien</p>
+        <textarea type='link' name='linkUrl' onChange={(e) => setNewLinkUrl(e.target.value)} placeholder='Url du lien' defaultValue={linkUrl}/>
+        <button onClick={handleUpdateUrl}>Mettre à jour le corps</button>
     </>
     </Modal>
   )
