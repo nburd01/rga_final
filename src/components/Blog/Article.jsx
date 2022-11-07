@@ -37,7 +37,9 @@ export default function BlogArticle() {
             ) 
             :
             (
-              <a href={article.linkUrl} target="_blank" rel="noreferrer" className="blogButton">accéder à l'article</a>
+              <div className="blogBtnDiv">
+                <a href={article.linkUrl} target="_blank" rel="noreferrer" className="blogButton">accéder à l'article</a>
+              </div>
             )
             }
           </div>
