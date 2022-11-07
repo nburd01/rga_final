@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet-async';
 import SEO from '../../seo/SEO'
 import MyMap from '../../components/Carte/Carte'
 import Blogs from '../../components/Blog/Articles'
+import SimpleSlider from '../../components/Blog/SimpleSlider'
 
 export const Home = () => {
   return (
@@ -87,6 +88,7 @@ export const Home = () => {
               <img src={GoalKeeperSave} alt="Roazhon Goal Academy Gardien de but" width="600" height="400" loading="lazy"/>
             </div>
           </div>
+          <SimpleSlider/>
           <Lieu/>
           <MyMap/>  
     </section>
