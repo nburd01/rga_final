@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import LoadingSpinner from "../Loading/Loading";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import "./slick.scss"; 
+import "./slick-theme.scss";
 
 
 import 'slick-carousel/slick/slick.css'
@@ -48,6 +48,7 @@ export default function SimpleSlider() {
           forward
         </button>
       </div>
+      <div className="sliderContainer">
       <Slider ref={setSliderRef} {...sliderSettings}>   
       {articles.length === 0 ? (
         <>
@@ -80,6 +81,7 @@ export default function SimpleSlider() {
         )
       )}
       </Slider>
+      </div>
     </div>
   )
 }
