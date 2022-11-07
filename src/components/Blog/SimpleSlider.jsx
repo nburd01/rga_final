@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState, useRef } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import LoadingSpinner from "../Loading/Loading";
@@ -7,41 +7,79 @@ import { db } from "../../firebase";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 export default function SimpleSlider() {
-    const [nav1, setNav1] = useState();
-    const [nav2, setNav2] = useState();
+  const [sliderRef, setSliderRef] = useState(null)
+  console.log("sliderRef",sliderRef)
+
+  const sliderSettings = {
+    arrows: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: false,
   
-    return (
-      <div>
-        <h2>Slider Syncing (AsNavFor)</h2>
-        <h4>First Slider</h4>
-        <Slider         
-          asNavFor={nav1}
-          ref={(slider2) => setNav2(slider2)}
-          slidesToShow={3}
-          swipeToSlide={true}
-          focusOnSelect={true}
-        >
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+  };
+
+  const [articles, setArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const articleRef = collection(db, "blogs");
+    // const q = query(articleRef, orderBy("createdAt"));
+    onSnapshot(articleRef, (snapshot) => {
+      const articles = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setArticles(articles);
+      console.log("articles",articles);
+    });
+  }, []);
+
+  return (
+    <div className='content'>
+      <div className='controls'>
+      <button onClick={sliderRef?.slickPrev}>
+          prev
+        </button>
+        <button onClick={sliderRef?.slickNext}>
+          forward
+        </button>
       </div>
-    );
-  }
-  
+      <Slider ref={setSliderRef} {...sliderSettings}>   
+      {articles.length === 0 ? (
+        <>
+        <LoadingSpinner/>
+        {/* <p>Pas d'articles trouvés.</p> */}
+        </>
+      ) 
+      :
+      (
+        articles.map(
+          ({
+            id,
+            blogTitle, 
+            blogImg,
+            blogDescription
+          }) => (
+          <div className='Card __primary blog' data-aos="fade-up" key={id}>
+            <Link to={`/blog/${id}`}>
+              <img
+                src={blogImg}
+                alt="title"
+                style={{ height: 180 }}
+                />
+            </Link>
+            <h3>{blogTitle.substring(0, 100)}</h3>
+            <p>{blogDescription.substring(0, 150)}</p>
+            <Link to={`/blog/${id}`} className="blogBtn"><span>Accéder</span></Link>
+          </div>
+          )
+        )
+      )}
+      </Slider>
+    </div>
+  )
+}
