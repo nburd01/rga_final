@@ -48,7 +48,7 @@ function App() {
     <HelmetProvider context={helmetContext}>
     <div className="app">
       <BrowserRouter>
-        <title>Roazhon Goal Academy</title>
+        <title>Roazhon Goal Academy : fier d'être gardien</title>
         <meta 
         name='Roazhon Goal Academy' 
         content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
