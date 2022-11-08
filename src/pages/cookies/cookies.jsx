@@ -9,7 +9,7 @@ export default function CookiesPage() {
 
         <div class="container Center" role="main">
             <SEO
-            title="Bienvenue à la Roazhon Goal Academy"
+            title="Les cookies de la Roazhon Goal Academy"
             description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
             name="Bienvenue à la Roazhon Goal Academy"
             type="accueil"
@@ -17,7 +17,8 @@ export default function CookiesPage() {
 
         <Helmet>
             <title>Roazhon Goal Academy</title>
-            <meta 
+            <meta
+            title="Les cookies de la Roazhon Goal Academy" 
             name='Roazhon Goal Academy Contact' 
             content='La Roazhon Goal Academy a une page cookies.'
             />

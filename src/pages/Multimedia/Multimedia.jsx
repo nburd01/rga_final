@@ -18,6 +18,7 @@ export const Multimedia = () => {
       <Helmet>
         <title>Roazhon Goal Academy</title>
         <meta 
+        title="Espace multimédia de la Roazhon Goal Academy"
         name='Roazhon Goal Academy Contact' 
         content="Accédez à la page multimédia de la Roazhon Goal Academy et découvrez les photos, les vidéos et les articles à propos de nous !"
       />
