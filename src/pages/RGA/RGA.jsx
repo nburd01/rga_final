@@ -12,6 +12,7 @@ export const RGA = () => {
     <div className='RGA'>
       <Helmet>
           <meta charSet="utf-8" />
+          <meta name="title" content="Default Title" data-react-helmet="true"/>
           <title>My Title</title>
           <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
