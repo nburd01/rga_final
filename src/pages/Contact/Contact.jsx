@@ -5,7 +5,7 @@ import {db} from '../../firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import SEO from '../../seo/SEO';
+// import SEO from '../../seo/SEO';
 
 export const Contact = () => {
   const [boutiques, setBoutiques] = useState([]);
@@ -24,12 +24,12 @@ export const Contact = () => {
 
   return (
     <div className='contact'>
-      <SEO
+      {/* <SEO
       title="Page contact de la Roazhon Goal Academy"
       description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
       name="Bienvenue à la Roazhon Goal Academy"
       type="accueil"
-      />
+      /> */}
        <Helmet>
         <title>Contacter la Roazhon Goal Academy</title>
         <meta 
