@@ -88,7 +88,6 @@ export const Home = () => {
               <img src={GoalKeeperSave} alt="Roazhon Goal Academy Gardien de but" width="600" height="400" loading="lazy"/>
             </div>
           </div>
-          <SimpleSlider/>
           <Lieu/>
           <MyMap/>  
     </section>

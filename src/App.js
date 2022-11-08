@@ -33,6 +33,7 @@ import Blogs from "./components/Blog/Articles";
 import Articless, { Article } from "./components/Blog/Article";
 import Aritcle from "./components/Blog/Article";
 import BlogArticle from "./components/Blog/Article";
+import { AllArticles } from "./components/Blog/AllArticles";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -70,10 +71,8 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
-            {/* <Route path="blog/:id" element={<Article />} /> */}
             <Route path="blog/:id" element={<BlogArticle/>} />
-            {/* <Route path="test" element={<Test />} /> */}
-            <Route path="testing" element={<UrlTest />} />
+            <Route path="articles" element={<AllArticles/>} />
           <Route path="/*" element={<Home />} /> 
             <Route path="admin" element={
             <RequireAuth>

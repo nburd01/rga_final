@@ -14,10 +14,12 @@
     .blogs{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+
     
         .blog{        
             width: 400px;
-            height: 600px;
+            height: 200px;
             margin: 1em;
             display: grid;
             justify-content: center;

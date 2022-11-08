@@ -59,7 +59,10 @@ export default function Articles() {
           )
         )
       )}
-    </div>
+      </div>
+    <div className="container articleBtn">
+        <Link to="/articles">Voir plus d'articles</Link>
+      </div>
     </div>
   );
 }
