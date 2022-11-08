@@ -17,7 +17,7 @@ export const Lieu = () => {
             <ul>
             <h4>Où nous trouver</h4>
               <li>Retrouvez-nous au Complexe de football du S.C. Le Rheu Football, accessible depuis la Route de LORIENT à la sortie Le Rheu.</li>
-              <li> <a href="http://maps.google.com/?q= Avenue du stade, 35650, Le Rheu">Avenue du stade, 35650, Le Rheu</a></li>
+              <li> <a href="https://maps.google.com/?q= Avenue du stade, 35650, Le Rheu">Avenue du stade, 35650, Le Rheu</a></li>
             </ul>
           {/* </div> */}
         </div>
