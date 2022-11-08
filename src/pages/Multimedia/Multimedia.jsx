@@ -10,15 +10,14 @@ export const Multimedia = () => {
     <div className='multimedia'>
       <SEO
         title="Bienvenue à la Roazhon Goal Academy"
-        description=""
+        description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
         name="Bienvenue à la Roazhon Goal Academy"
         type="accueil"
       />
 
       <Helmet>
-        <title>Espace multimédia de la Roazhon Goal Academy</title>
+        <title>Roazhon Goal Academy</title>
         <meta 
-        title="Espace multimédia de la Roazhon Goal Academy"
         name='Roazhon Goal Academy Contact' 
         content="Accédez à la page multimédia de la Roazhon Goal Academy et découvrez les photos, les vidéos et les articles à propos de nous !"
       />
