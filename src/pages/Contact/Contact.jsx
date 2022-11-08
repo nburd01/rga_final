@@ -55,7 +55,7 @@ export const Contact = () => {
 
       <section className="pageBody">
       <Email/>
-      {/* <Telephone/> */}
+      <Telephone/>
       </section>
     </div>
   )
