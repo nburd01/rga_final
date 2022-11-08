@@ -37,7 +37,7 @@ export default function Articles() {
       ) 
       :
       (
-        articles.map(
+        articles.slice(0, 3).map(
           ({
             id,
             blogTitle, 
@@ -61,7 +61,7 @@ export default function Articles() {
       )}
       </div>
     <div className="container articleBtn">
-        <Link to="/articles">Voir plus d'articles</Link>
+        <Link to="/articles" data-aos="fade-up">Voir plus d'articles</Link>
       </div>
     </div>
   );

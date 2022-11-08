@@ -6,9 +6,9 @@ import LoadingSpinner from '../Loading/Loading';
 import './AllArticles.module.scss'
 
 export const AllArticles = () => {
-
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
       const articleRef = collection(db, "blogs");
       // const q = query(articleRef, orderBy("createdAt"));
@@ -18,11 +18,12 @@ export const AllArticles = () => {
           ...doc.data(),
         }));
         setArticles(articles);
-        console.log("articles",articles);
+        console.log("articles", articles);
       });
     }, []);
 
-  return  <div className="container Right">
+  return  (
+  <div className="container Right">
   <div className="_TitleSubTitle" data-aos="fade-up">
     <h6 className="_BgTitle Right">Actualités</h6>
     <h3 className="_BgSubTitle Right">Actualités</h3>
@@ -41,7 +42,7 @@ export const AllArticles = () => {
                 id,
                 blogTitle, 
                 blogImg,
-                blogDescription
+                blogDescription, 
             }) => (
             <div className='Card __primary blog' data-aos="fade-up" key={id}>
                 <Link to={`/blog/${id}`}>
@@ -59,6 +60,6 @@ export const AllArticles = () => {
             )
         )}
   </div>
-</div>
-
+  </div>
+  )
 }
