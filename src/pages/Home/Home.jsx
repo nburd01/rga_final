@@ -21,7 +21,7 @@ export const Home = () => {
       type="accueil"
       />
       <Helmet>
-        <title>Roazhon Goal Academy</title>
+        <title>Bienvenue à la Roazhon Goal Academy</title>
         <meta 
         title='Bienvenue à la Roazhon Goal Academy'
         name='Roazhon Goal Academy Contact' 

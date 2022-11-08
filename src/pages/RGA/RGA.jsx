@@ -17,7 +17,7 @@ export const RGA = () => {
         type="accueil"
       />
       <Helmet>
-        <title>Roazhon Goal Academy</title>
+        <title>La page contact de la Roazhon Goal Academy</title>
         <meta 
         title="La page contact de la Roazhon Goal Academy"
         name='Roazhon Goal Academy Contact' 

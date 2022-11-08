@@ -16,7 +16,7 @@ export default function CookiesPage() {
             />
 
         <Helmet>
-            <title>Roazhon Goal Academy</title>
+            <title>Les cookies de la Roazhon Goal Academy</title>
             <meta
             title="Les cookies de la Roazhon Goal Academy" 
             name='Roazhon Goal Academy Contact' 

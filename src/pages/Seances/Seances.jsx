@@ -15,7 +15,7 @@ export const Seances = () => {
         type="accueil"
       />
       <Helmet>
-        <title>Roazhon Goal Academy</title>
+        <title>Retrouvez toutes les séances de la Roazhon Goal Academy</title>
         <meta 
         title="Retrouvez toutes les séances de la Roazhon Goal Academy"
         name='Roazhon Goal Academy Contact' 
@@ -29,7 +29,7 @@ export const Seances = () => {
         <div className="PicTitle">
         <div className="_TitleSubTitle" data-aos="fade-up">
           <h1>Les séances</h1>
-          <title>Les séances</title>
+          <title>Retrouvez toutes les séances de la Roazhon Goal Academy</title>
           <h3>Tout savoir à propos des séances d'entraînement, du matériel ainsi que des règles de vie de l'Academy.</h3>
         </div>
         <div className="HeroImage">
