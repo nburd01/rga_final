@@ -31,7 +31,7 @@ export const Contact = () => {
       type="accueil"
       /> */}
        <Helmet>
-        <title>Contacter la Roazhon Goal Academy</title>
+        <title>Contact</title>
         <description>La Roazhon Goal Academy reste en contact avec ses stagiaires</description>
         <meta 
         title="Page contact de la Roazhon Goal Academy"
