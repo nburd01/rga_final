@@ -18,8 +18,8 @@ export const HorairesPage = () => {
                 <title>Les horaires de la Roazhon Goal Academy</title>
                 <meta 
                 title='Les horaires de la Roazhon Goal Academy'
-                name='Roazhon Goal Academy Contact' 
-                content="Les horaires de la Roazhon Goal Academy. Nous proposons des séances d'entraînements spécifiques pour les gardiens de but à Le Rheu !"
+                name='title' 
+                content="Roazhon Goal Academy Horaires"
                 />
                 <meta name='keywords' content='Horaires, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
               </Helmet>
