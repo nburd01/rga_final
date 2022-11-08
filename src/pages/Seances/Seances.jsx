@@ -17,6 +17,7 @@ export const Seances = () => {
       <Helmet>
         <title>Roazhon Goal Academy</title>
         <meta 
+        title="Retrouvez toutes les séances de la Roazhon Goal Academy"
         name='Roazhon Goal Academy Contact' 
         content="Découvrez les séances de la Roazhon Goal Academy !"
         />

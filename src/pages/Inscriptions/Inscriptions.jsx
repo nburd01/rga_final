@@ -18,6 +18,7 @@ export const Inscriptions = () => {
             <Helmet>
               <title>S'inscrire à la Roazhon Goal Academy</title>
               <meta 
+              title="S'inscrire à la Roazhon Goal Academy"
               name='Roazhon Goal Academy Contact' 
               content="Inscrivez-vous à la Roazhon Goal Academy et bénéficiez de séances d'entraînement spécifiques pour les gardiens de but !"
               />
