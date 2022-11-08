@@ -15,7 +15,7 @@ export const HorairesPage = () => {
                 type="accueil"
               />
               <Helmet>
-                <title>Roazhon Goal Academy</title>
+                <title>Les horaires de la Roazhon Goal Academy</title>
                 <meta 
                 title='Les horaires de la Roazhon Goal Academy'
                 name='Roazhon Goal Academy Contact' 
