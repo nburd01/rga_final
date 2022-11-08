@@ -9,7 +9,7 @@ export const InscriptionsComp = () => {
       <div className='Card __primary' data-aos="fade-up">
         <div className='_Title'>
         <h4>Premier abonnement</h4>
-          <h5>70 €</h5>     
+          <a href="#linkAnchor">70 €</a>     
         </div>
           <p>+ 5€ par séance.</p>
           <table className='abonnements'>
@@ -36,7 +36,7 @@ export const InscriptionsComp = () => {
       <div className='Card __primary' data-aos="fade-up">
         <div className='_Title'>
         <h4>Ré-abonnement</h4>
-          <h5>50 €</h5>     
+          <a href="#linkAnchor">50 €</a>     
         </div>
           <p>+ 5€ par séance.</p>
           <table className='abonnements'>
