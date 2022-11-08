@@ -19,7 +19,7 @@ export default function CookiesPage() {
             <title>Les cookies de la Roazhon Goal Academy</title>
             <meta
             title="Les cookies de la Roazhon Goal Academy" 
-            name='Roazhon Goal Academy Contact' 
+            name='Roazhon Goal Academy Cookies' 
             content='La Roazhon Goal Academy a une page cookies.'
             />
             <meta name='keywords' content='Cookies, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />

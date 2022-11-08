@@ -17,7 +17,7 @@ export const Seances = () => {
       <Helmet>
         <title>Roazhon Goal Academy</title>
         <meta 
-        name='Roazhon Goal Academy Contact' 
+        name='Roazhon Goal Academy Séances' 
         content="Découvrez les séances de la Roazhon Goal Academy !"
         />
         <meta name='keywords' content='Séances, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />

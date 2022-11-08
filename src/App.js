@@ -45,7 +45,7 @@ function App() {
   console.log("currentUser",currentUser);
 
   return (
-    <HelmetProvider context={helmetContext}>
+    <HelmetProvider>
     <div className="app">
       <BrowserRouter>
         <title>Roazhon Goal Academy : fier d'être gardien</title>
