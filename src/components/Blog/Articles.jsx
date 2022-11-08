@@ -37,7 +37,7 @@ export default function Articles() {
       ) 
       :
       (
-        articles.map(
+        articles.slice(0, 3).map(
           ({
             id,
             blogTitle, 
