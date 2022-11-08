@@ -43,7 +43,7 @@ export const RGA = () => {
           <Objectifs/>
           <div className="container">
             <div className="illustration">
-              <img src={SoccerPlayer} alt="Roazhon Goal Academy ilustration gardien de but plongeon" width="600" height="400" loading="lazy"/>
+              <img src={SoccerPlayer} alt="Roazhon Goal Academy illustration gardien de but plongeon" width="600" height="400" loading="lazy"/>
             </div>
           </div>
           <Stagiaires/>
