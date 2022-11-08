@@ -10,13 +10,13 @@ export const Inscriptions = () => {
   return (
     <div className='inscriptions'>
             <SEO
-              title="Bienvenue à la Roazhon Goal Academy"
+              title="S'inscrire à la Roazhon Goal Academy"
               description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
               name="Bienvenue à la Roazhon Goal Academy"
               type="accueil"
             />
             <Helmet>
-              <title>Roazhon Goal Academy</title>
+              <title>S'inscrire à la Roazhon Goal Academy</title>
               <meta 
               name='Roazhon Goal Academy Contact' 
               content="Inscrivez-vous à la Roazhon Goal Academy et bénéficiez de séances d'entraînement spécifiques pour les gardiens de but !"
