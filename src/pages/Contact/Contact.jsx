@@ -26,7 +26,7 @@ export const Contact = () => {
     <div className='contact'>
       {/* <SEO
       title="Page contact de la Roazhon Goal Academy"
-      description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
+      description=""
       name="Bienvenue à la Roazhon Goal Academy"
       type="accueil"
       /> */}
