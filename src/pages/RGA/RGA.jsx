@@ -10,16 +10,10 @@ import { Helmet } from 'react-helmet';
 export const RGA = () => {
   return (
     <div className='RGA'>
-      {/* <SEO
-        title="Bienvenue à la Roazhon Goal Academy"
-        description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
-        name="Bienvenue à la Roazhon Goal Academy"
-        type="accueil"
-      /> */}
       <Helmet>
-        <title>A propos</title>
-        <meta name="title" content="Ceci est la RGA !"/>
-        <meta name='keywords' content='à propos de nous, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
+          <meta charSet="utf-8" />
+          <title>My Title</title>
+          <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <div className="container-large">
      <div className="__intro">

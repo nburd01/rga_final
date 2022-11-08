@@ -45,7 +45,7 @@ function App() {
   console.log("currentUser",currentUser);
 
   return (
-    <HelmetProvider context={helmetContext}>
+    // <HelmetProvider context={helmetContext}>
     <div className="app">
       <BrowserRouter>
         <title>Roazhon Goal Academy : fier d'être gardien</title>
@@ -110,7 +110,7 @@ function App() {
         Sur roazhongoalacademy.fr, nous employons des cookies destinés à améliorer votre expérience de navigation et à vous offrir un service plus personnalisé. En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de ces cookies. Vous pouvez changer votre configuration ou obtenir de plus amples informations en consultant notre <a href="/cookies">politique d'utilisation des cookies</a>.{" "}
       </CookieConsent>
     </div>
-    </HelmetProvider>
+    // </HelmetProvider>
   );
 }
 
