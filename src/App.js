@@ -53,6 +53,10 @@ function App() {
         name='Roazhon Goal Academy' 
         content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
         />
+         <meta 
+        name='title' 
+        content='Bienvenue à la Roazhon Goal Academy'
+        />
         <meta name='keywords' content='Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
 
       <MainNav/>
