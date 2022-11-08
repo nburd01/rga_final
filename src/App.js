@@ -25,13 +25,9 @@ import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
 import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
-import UrlTest from "./urlTest";
 import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
-import Blogs from "./components/Blog/Articles";
-import Articless, { Article } from "./components/Blog/Article";
-import Aritcle from "./components/Blog/Article";
 import BlogArticle from "./components/Blog/Article";
 import { AllArticles } from "./components/Blog/AllArticles";
 
