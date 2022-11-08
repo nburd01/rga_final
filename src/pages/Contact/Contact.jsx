@@ -5,7 +5,7 @@ import {db} from '../../firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-// import SEO from '../../seo/SEO';
+import { Helmet } from 'react-helmet';
 
 export const Contact = () => {
   const [boutiques, setBoutiques] = useState([]);
