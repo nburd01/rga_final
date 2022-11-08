@@ -8,17 +8,20 @@ import SEO from '../../seo/SEO';
 export const HorairesPage = () => {
     return (
       <div className='horaires'>
-              <SEO
+              {/* <SEO
                 title='Les horaires de la Roazhon Goal Academy'
                 description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
                 name="Bienvenue à la Roazhon Goal Academy"
                 type="accueil"
-              />
+              /> */}
               <Helmet>
                 <title>Les horaires de la Roazhon Goal Academy</title>
                 <meta 
-                title='Les horaires de la Roazhon Goal Academy'
                 name='title' 
+                content="Roazhon Goal Academy Horaires"
+                />
+                <meta 
+                name='description' 
                 content="Roazhon Goal Academy Horaires"
                 />
                 <meta name='keywords' content='Horaires, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />

@@ -10,16 +10,15 @@ import SEO from '../../seo/SEO'
 export const RGA = () => {
   return (
     <div className='RGA'>
-      <SEO
+      {/* <SEO
         title="Bienvenue à la Roazhon Goal Academy"
         description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
         name="Bienvenue à la Roazhon Goal Academy"
         type="accueil"
-      />
+      /> */}
       <Helmet>
         <title>Roazhon Goal Academy</title>
         <meta 
-        title='Contact page'
         name='Roazhon Goal Academy A propos' 
         content="Qu'est que la Roazhon Goal Academy? Situés au Rheu près de Rennes, nous mettons à disposition des séances d'entraînements spécifiques gardiens pour les 10 - 13 ans !"
         data-react-helmet="true"
