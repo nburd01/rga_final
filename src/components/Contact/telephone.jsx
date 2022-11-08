@@ -1,11 +1,11 @@
 import React from 'react'
 import './Contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 export const Telephone = () => {
-  const emailData = useSelector((state) => state.contact.data);
-  console.log("telephoneData",emailData.téléphone)
+  // const emailData = useSelector((state) => state.contact.data);
+  // console.log("telephoneData",emailData.téléphone)
   return (
 <div className='container Right'>
     <div className="_TitleSubTitle" data-aos="fade-up">
@@ -19,7 +19,8 @@ export const Telephone = () => {
           <FontAwesomeIcon icon="fa-solid fa-phone" />
       </div>
     </div>
-     <a href="tel:{emailData.téléphone}">{emailData.téléphone}</a>
+     {/* <a href="tel:{emailData.téléphone}">{emailData.téléphone}</a> */}
+     <a href="tel:0688350498">0688350498</a>
      </div>
     </div>
   </div>
