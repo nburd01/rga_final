@@ -11,7 +11,11 @@ export const RGA = () => {
   return (
     <div className='RGA'>
       <Helmet>
-        <title>Entertainement hub</title>
+        <title>A propos</title>
+        <meta 
+          name='description' 
+          content='this is the description'
+        />
       </Helmet>
       <div className="container-large">
      <div className="__intro">
