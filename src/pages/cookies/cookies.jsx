@@ -10,7 +10,7 @@ export default function CookiesPage() {
         <div class="container Center" role="main">
             <SEO
             title="Les cookies de la Roazhon Goal Academy"
-            description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
+            description=""
             name="Bienvenue à la Roazhon Goal Academy"
             type="accueil"
             />

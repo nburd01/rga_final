@@ -15,7 +15,7 @@ export const Home = () => {
   <div className='homepage'>
       {/* <SEO
       title="Bienvenue à la Roazhon Goal Academy"
-      description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
+      description=""
       name="Bienvenue à la Roazhon Goal Academy"
       type="accueil"
       /> */}
@@ -24,7 +24,7 @@ export const Home = () => {
         <meta 
         title='Bienvenue à la Roazhon Goal Academy'
         name='Roazhon Goal Academy Contact' 
-        content='Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
+        content=''
         />
         <meta name='keywords' content='Accueil, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>
