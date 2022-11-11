@@ -1,10 +1,9 @@
 import Modal from "../3.Modal/Modal"
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import './editTask.scss'
 import { doc, updateDoc } from "firebase/firestore";
-import {db, storage} from '../../../../../../../firebase'
-import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
-import { v4 } from "uuid";
+import {db} from '../../../../../../../firebase'
+
 
 function EditTask({open, onClose, blogTitle, blogImg, blogDescription, linkUrl, blogBody, toBlogTitle, toBlogImg, toBlogDescription, toBlogBody, id}) {
 
@@ -13,30 +12,6 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, linkUrl, 
   const [newBlogBody, setNewBlogBody] = useState(toBlogBody)
   const [newBlogImg, setNewBlogImg] = useState(toBlogImg)
   const [newLinkUrl, setNewLinkUrl] = useState(toBlogImg)
-
-  const [imageUpload, setImageUpload] = useState(null);
-  const [blogImage, setBlogImage] = useState([]);
-
-
-  // const uploadImage = () => {
-  //   if (imageUpload == null) return;
-  //   handleUpdateImg();
-  //   const imageRef = ref(storage, `blog/${imageUpload.name + v4()}`);
-    
-  //   uploadBytes(imageRef, imageUpload).then(() => {
-  //     console.log("blogImg_upload", blogImg)
-  //     // console.log("toBlogImg_upload", toBlogImg)
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   listAll(imageListRef).then((response) => {
-  //     response.items.forEach((item) => {
-  //       getDownloadURL(item).then((url) => {
-  //         setImageList((prev) => [...prev, url]);
-  //       });
-  //     });
-  // })}, []);
 
 
   /* function to update firestore */
@@ -108,7 +83,7 @@ function EditTask({open, onClose, blogTitle, blogImg, blogDescription, linkUrl, 
   return (
     <Modal modalLable='Modifier' onClose={onClose} open={open}>
     <>
-      <p>titre</p>
+        <p>titre</p>
         <textarea type='text' name='blogTitle' onChange={(e) => setNewBlogTitle(e.target.value)} placeholder='Titre' defaultValue={blogTitle} maxlength="100"/>
         <button onClick={handleUpdateTitle}>Mettre à jour le titre</button>
         

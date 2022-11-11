@@ -4,7 +4,6 @@ import { db } from "../../../../../../../firebase";
 import TaskItem from '../0.Add-Edit/TaskItem'
 import EditTask from '../0.Add-Edit/EditTask'
 import './task.scss'
-import { useSelector } from 'react-redux';
 
 function Task({id, email, téléphone, completed}) {
 
@@ -85,8 +84,8 @@ function Task({id, email, téléphone, completed}) {
         {open.edit &&
           <EditTask 
             onClose={handleClose} 
-            toEditEmail={email} 
-            toEditTéléphone={téléphone} 
+            email={email} 
+            téléphone={téléphone} 
             open={open.edit}
             id={id} />
         }
