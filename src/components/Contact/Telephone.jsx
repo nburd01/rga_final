@@ -2,7 +2,7 @@ import { collection, onSnapshot} from "firebase/firestore";
 import React, { useState, useEffect } from "react";
 import { db } from "../../firebase";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from "react-router-dom";
+import './Contact.scss'
 import LoadingSpinner from "../Loading/Loading";
 
 export const Telephone = () => {
@@ -43,9 +43,11 @@ export const Telephone = () => {
             <div className="quote-wrapper">
               <div className="contactIcon">
                 <div key={id}>
-                    <div className="quote-wrapper">
+                  <div className="quote-wrapper">
+                    <div className="icon">
                       <FontAwesomeIcon icon="fa-solid fa-phone" />
-                      <a>{téléphone}</a>
+                    </div>
+                    <a>{téléphone}</a>
                   </div>
                 </div>
               </div>
