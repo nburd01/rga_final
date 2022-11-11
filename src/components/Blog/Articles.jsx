@@ -46,11 +46,12 @@ export default function Articles() {
           }) => (
           <div className='Card __primary blog' data-aos="fade-up" key={id}>
             <Link to={`/blog/${id}`}>
+              <div className="imgContainer">
               <img
                 src={blogImg}
                 alt="title"
-                style={{ height: 180 }}
                 />
+              </div>
             </Link>
             <h3>{blogTitle.substring(0, 100)}</h3>
             <p>{blogDescription.substring(0, 150)}</p>

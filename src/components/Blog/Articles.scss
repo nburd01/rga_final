@@ -9,6 +9,17 @@
     justify-self: center;
     align-self: center;
 }
+.imgContainer{
+    width: auto;
+    height: auto;
+    margin: auto;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 @media only screen and (min-width: 996px) {
     .blogs{
@@ -35,7 +46,17 @@
             p{
                 justify-self: center;
                 align-self: start;
-    
+            }
+            .imgContainer{
+                width: auto;
+                height: 500px;
+                margin: auto;
+            
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
         }

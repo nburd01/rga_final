@@ -8,6 +8,11 @@
     grid-column: 1 / span 1;
     justify-self: center;
     align-self: center;
+    span{
+        justify-self: center;
+        align-self: center;
+        width: 2em;
+    }
 }
 
 @media only screen and (min-width: 996px) {
@@ -29,7 +34,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                align-self: start;
+                align-self: center;
             }
             h3{
                 align-self: center;
@@ -37,11 +42,14 @@
             p{
                 justify-self: center;
                 align-self: start;
-    
+            }
+            img{
+                width: fit-content;
             }
 
         }
     }
+    
     .articleBtn{
         display: flex;
         justify-content: end;
