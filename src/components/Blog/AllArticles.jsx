@@ -45,11 +45,10 @@ export const AllArticles = () => {
                 blogDescription, 
             }) => (
             <div className='Card __primary blog' data-aos="fade-up" key={id}>
-                <Link to={`/blog/${id}`}>
+                <Link to={`/blog/${id}`} >
                 <img
                     src={blogImg}
-                    alt="title"
-                    style={{ height: 180 }}
+                    alt="blog image"
                     />
                 </Link>
                 <h3>{blogTitle.substring(0, 100)}</h3>
