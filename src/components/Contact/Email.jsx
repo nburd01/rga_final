@@ -43,9 +43,11 @@ export const Email = () => {
             <div className="quote-wrapper">
               <div className="contactIcon">
                 <div key={id}>
-                    <div className="quote-wrapper">
+                  <div className="quote-wrapper">
+                    <div className="icon">
                       <FontAwesomeIcon icon="fa-solid fa-envelope" />
-                      <a>{email}</a>
+                    </div>
+                    <a>{email}</a>
                   </div>
                 </div>
               </div>
