@@ -8,7 +8,7 @@ export const Admin = () => {
     <div className='navAndContent'>
       <div className='navPages'>
         <ul>
-          <li>
+          {/* <li>
             <Link to="/admin/home"> Home </Link>
           </li>
           <li>
@@ -22,6 +22,9 @@ export const Admin = () => {
           </li>
           <li>
             <Link to="/admin/planning"> Planning </Link>
+          </li> */}
+          <li>
+            <Link to="/admin/blog"> Blog </Link>
           </li>
           <li>
             <Link to="/admin/boutique"> Boutique </Link>
@@ -29,9 +32,7 @@ export const Admin = () => {
           <li>
             <Link to="/admin/contact"> Contact </Link>
           </li>
-          <li>
-            <Link to="/admin/blog"> Blog </Link>
-          </li>
+
         </ul>
       </div>
       <div className='content'>
