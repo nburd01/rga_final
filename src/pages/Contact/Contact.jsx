@@ -1,6 +1,6 @@
 import React from 'react'
 import { Email } from '../../components/Contact/Email'
-import { Telephone } from '../../components/Contact/telephone'
+import { Telephone } from '../../components/Contact/Telephone'
 import {db} from '../../firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';

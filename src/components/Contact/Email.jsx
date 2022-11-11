@@ -1,34 +1,58 @@
-import React from 'react'
-import './Contact.scss'
+import { collection, onSnapshot} from "firebase/firestore";
+import React, { useState, useEffect } from "react";
+import { db } from "../../firebase";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { useSelector } from 'react-redux';
+import { Link } from "react-router-dom";
+import LoadingSpinner from "../Loading/Loading";
 
 export const Email = () => {
-  // const emailData = useSelector((state) => state.contact.data);
-  // console.log("emailData",emailData.email)
+  const [emails, setEmails] = useState([]);
+
+  useEffect(() => {
+    const articleRef = collection(db, "contacts");
+    onSnapshot(articleRef, (snapshot) => {
+      const emails = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setEmails(emails);
+      console.log("email",emails[0].email);
+    });
+  }, []);
 
   return (
-<div className='container Left'>
-    <div className="_TitleSubTitle" data-aos="fade-up">
-      <h6 className="_BgTitle Left">Email</h6>
-      <h3 className="_BgSubTitle Left">Email</h3>
-    </div>
-    <div className="container Left">
-    <div className='Card __primary' data-aos="fade-up">
-    {/* <p>{emailData.email}</p> */}
-    <p>roazhongoalacademy@gmail.com</p>
-    <div className="quote-wrapper">
-      <div className="contactIcon">
-      {/* <a href={`mailto:${emailData.email}?subject=Demande d'informations RGA`}> */}
-      <a href={`mailto:roazhongoalacademy@gmail.com?subject=Demande d'informations RGA`}>
-          <FontAwesomeIcon icon="fa-solid fa-envelope" />
-      </a>
+    <div className='container Left'>
+        <div className="_TitleSubTitle" data-aos="fade-up">
+          <h6 className="_BgTitle Left">Email</h6>
+          <h3 className="_BgSubTitle Left">Email</h3>
+        </div>
+        <div className="container Left">
+        <div className='Card __primary' data-aos="fade-up">
+        {emails.length === 0 ? (
+          <>
+          <LoadingSpinner/>
+          </>
+        ) 
+        :
+        (
+          emails.slice(0, 1).map(
+            ({
+              id,
+              email, 
+            }) => (
+              <div className="quote-wrapper">
+              <div className="contactIcon">
+              <div key={id}>
+                <a>{email}</a>
+                <FontAwesomeIcon icon="fa-solid fa-envelope" />
+              </div>
+              </div>
+              </div>
+            )
+          )
+        )}
+        </div>
       </div>
     </div>
-    {/* <a href={`mailto:${emailData.email}?subject=Demande d'informations RGA`}>Contactez-nous</a>   */}
-    <a href={`mailto:roazhongoalacademy@gmail.com?subject=Demande d'informations RGA`}>Contactez-nous</a>  
-     </div>
-    </div>
-</div>
   )
 }
