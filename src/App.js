@@ -84,14 +84,14 @@ function App() {
           <Route path="admin" element={<Admin />}>
             
             {/* <Route path="pages" element={<AdmPages/>}> */}
-              <Route index  element={<AdmHome />} />
+              <Route index  element={<AdmBlog />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
               <Route path="planning" element={<AdmPlanning />} />
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContacts/>} />
-              <Route path="blog" element={<AdmBlog/>} />
+              {/* <Route path="blog" element={<AdmBlog/>} /> */}
             {/* </Route> */}
           </Route>
 
