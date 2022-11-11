@@ -16,7 +16,7 @@ function EditTask({open, email, téléphone, onClose, toEditEmail, toEditTélép
   /* function to update firestore */
     const handleUpdateEmail = async (e) => {
       e.preventDefault()
-      const taskDocRef = doc(db, 'blogs', id)
+      const taskDocRef = doc(db, 'contacts', id)
       try{
         await updateDoc(taskDocRef, {
           email: newEmail, 
@@ -29,7 +29,7 @@ function EditTask({open, email, téléphone, onClose, toEditEmail, toEditTélép
 
     const handleUpdateTelephone = async (e) => {
       e.preventDefault()
-      const taskDocRef = doc(db, 'blogs', id)
+      const taskDocRef = doc(db, 'contacts', id)
       try{
         await updateDoc(taskDocRef, {
           téléphone: newTéléphone,   
