@@ -18,7 +18,6 @@ import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
 import Login from "./pages/admin/login/Login";
 import { Admin } from "./pages/admin/admin/Admin";
-import { AdmPages } from "./pages/admin/Pages/AdmPages";
 import { AdmInscriptions } from "./pages/admin/Pages/Pages/Inscriptions/AdmInscriptions";
 import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
@@ -75,21 +74,14 @@ function App() {
           </Route>
 
           <Route path="admin" element={<Admin />}>
-            {/* <Route path="pages" element={<AdmPages/>}> */}
-              {/* <Route index element={<AdmBlog />} /> */}
+              <Route path="blog" element={<AdmBlog />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
               <Route path="planning" element={<AdmPlanning />} />
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContacts/>} />
-              <Route path="blog" element={<AdmBlog/>} />
-            {/* </Route> */}
           </Route>
-          
-
-            {/* <Route path="login" element={<Login />} /> */}
-           
 
         </Routes>
       {/* <BackToTop/> */}

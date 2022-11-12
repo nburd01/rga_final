@@ -1,36 +1,23 @@
 import React from 'react'
 import './admin.scss'
-import { Link, Outlet } from "react-router-dom";
+import './AdmPages.scss'
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 
 export const Admin = () => {
+  console.log("Outlet", Outlet.length)
   return (
     <div className='navAndContent'>
       <div className='navPages'>
         <ul>
-          {/* <li>
-            <Link to="/admin/home"> Home </Link>
+          <li>
+            <NavLink to="/admin/blog"> Blog </NavLink>
           </li>
           <li>
-            <Link to="/admin/rga"> La RGA </Link>
+            <NavLink to="/admin/boutique"> Boutique </NavLink>
           </li>
           <li>
-            <Link to="/admin/inscriptions"> Inscriptions </Link>
-          </li>
-          <li>
-            <Link to="/admin/seances"> Séances </Link>
-          </li>
-          <li>
-            <Link to="/admin/planning"> Planning </Link>
-          </li> */}
-          <li>
-            <Link to="/admin/blog"> Blog </Link>
-          </li>
-          <li>
-            <Link to="/admin/boutique"> Boutique </Link>
-          </li>
-          <li>
-            <Link to="/admin/contact"> Contact </Link>
+            <NavLink to="/admin/contact"> Contact </NavLink>
           </li>
 
         </ul>
