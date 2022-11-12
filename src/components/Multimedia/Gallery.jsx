@@ -1,5 +1,5 @@
 import React from 'react'
-import './uploadForm.scss'
+import './UploadImages.scss'
 
 export default function Gallery ({imageList, imageListRef}) {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Gallery } from './Gallery'
-import UploadForm from './UploadForm'
+import UploadImages from './UploadImages'
 import './photos.scss'
 
 export const Photos = () => {
@@ -14,7 +14,7 @@ export const Photos = () => {
      <h3 className="_BgSubTitle Left">Photos</h3>
     </div>
     <div className='photo'>
-      <UploadForm/>
+      <UploadImages/>
       {/* <Gallery/> */}
     </div>
   </div>

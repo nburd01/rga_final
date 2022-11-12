@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";  
-import "./uploadForm.scss"
+import "./UploadImages.scss"
 import {
   ref,
   uploadBytes,
@@ -14,7 +14,7 @@ import { useContext, useEffect } from "react";
 import { Navigate } from 'react-router-dom';
 
 
-export default function UploadForm() {
+export default function UploadImages() {
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
