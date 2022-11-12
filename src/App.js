@@ -25,7 +25,6 @@ import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
 import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
-// import UrlTest from "./urlTest";
 import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
@@ -73,7 +72,6 @@ function App() {
             {/* <Route path="blog/:id" element={<Article />} /> */}
             <Route path="blog/:id" element={<BlogArticle/>} />
             {/* <Route path="test" element={<Test />} /> */}
-            {/* <Route path="testing" element={<UrlTest />} /> */}
           <Route path="/*" element={<Home />} /> 
             <Route path="admin" element={
             <RequireAuth>
@@ -83,9 +81,8 @@ function App() {
           </Route>
 
           <Route path="admin" element={<Admin />}>
-            
-            {/* <Route path="pages" element={<AdmPages/>}> */}
-              <Route index  element={<AdmBlog />} />
+            <Route path="pages" element={<AdmPages/>}>
+              <Route index element={<AdmBlog />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
@@ -93,7 +90,7 @@ function App() {
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContacts/>} />
               <Route path="blog" element={<AdmBlog/>} />
-            {/* </Route> */}
+            </Route>
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}
