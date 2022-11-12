@@ -17,9 +17,8 @@ import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
 import Login from "./pages/admin/login/Login";
-import { Admin } from "./pages/admin/admin/admin";
+import { Admin } from "./pages/admin/admin/Admin";
 import { AdmPages } from "./pages/admin/Pages/AdmPages";
-import { AdmHome } from "./pages/admin/Pages/Pages/Home/AdmHome";
 import { AdmInscriptions } from "./pages/admin/Pages/Pages/Inscriptions/AdmInscriptions";
 import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
@@ -28,9 +27,6 @@ import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
 import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
-import Blogs from "./components/Blog/Articles";
-import Articless, { Article } from "./components/Blog/Article";
-import Aritcle from "./components/Blog/Article";
 import BlogArticle from "./components/Blog/Article";
 
 
@@ -69,10 +65,8 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
-            {/* <Route path="blog/:id" element={<Article />} /> */}
             <Route path="blog/:id" element={<BlogArticle/>} />
-            {/* <Route path="test" element={<Test />} /> */}
-          <Route path="/*" element={<Home />} /> 
+            <Route path="/*" element={<Home />} /> 
             <Route path="admin" element={
             <RequireAuth>
               <Admin/>
@@ -81,8 +75,8 @@ function App() {
           </Route>
 
           <Route path="admin" element={<Admin />}>
-            <Route path="pages" element={<AdmPages/>}>
-              <Route index element={<AdmBlog />} />
+            {/* <Route path="pages" element={<AdmPages/>}> */}
+              {/* <Route index element={<AdmBlog />} /> */}
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
@@ -90,8 +84,9 @@ function App() {
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContacts/>} />
               <Route path="blog" element={<AdmBlog/>} />
-            </Route>
+            {/* </Route> */}
           </Route>
+          
 
             {/* <Route path="login" element={<Login />} /> */}
            
