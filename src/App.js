@@ -28,8 +28,10 @@ import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
 import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
+import Blogs from "./components/Blog/Articles";
+import Articless, { Article } from "./components/Blog/Article";
+import Aritcle from "./components/Blog/Article";
 import BlogArticle from "./components/Blog/Article";
-import { AllArticles } from "./components/Blog/AllArticles";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -45,17 +47,13 @@ function App() {
   console.log("currentUser",currentUser);
 
   return (
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
     <div className="app">
       <BrowserRouter>
-        <title>Roazhon Goal Academy : fier d'être gardien</title>
+        <title>Roazhon Goal Academy</title>
         <meta 
         name='Roazhon Goal Academy' 
         content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
-        />
-         <meta 
-        name='title' 
-        content='Bienvenue à la Roazhon Goal Academy'
         />
         <meta name='keywords' content='Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
 
@@ -72,7 +70,6 @@ function App() {
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
             <Route path="blog/:id" element={<BlogArticle/>} />
-            <Route path="articles" element={<AllArticles/>} />
           <Route path="/*" element={<Home />} /> 
             <Route path="admin" element={
             <RequireAuth>
@@ -83,16 +80,16 @@ function App() {
 
           <Route path="admin" element={<Admin />}>
             
-            {/* <Route path="pages" element={<AdmPages/>}> */}
-              <Route index  element={<AdmBlog />} />
+            <Route path="pages" element={<AdmPages/>}>
+              <Route index  element={<AdmHome />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
               <Route path="planning" element={<AdmPlanning />} />
               <Route path="boutique" element={<AdmBoutique/>} />
               <Route path="contact" element={<AdmContacts/>} />
-              {/* <Route path="blog" element={<AdmBlog/>} /> */}
-            {/* </Route> */}
+              <Route path="blog" element={<AdmBlog/>} />
+            </Route>
           </Route>
 
             {/* <Route path="login" element={<Login />} /> */}
