@@ -17,7 +17,7 @@ import { HorairesPage } from "./pages/Horaires/HorairesPage";
 import CookieConsent from "react-cookie-consent";
 import CookiesPage from "./pages/cookies/cookies";
 import Login from "./pages/admin/login/Login";
-import { Admin } from "./pages/admin/admin/Admin";
+import { AdminRouting } from "./pages/admin/adminRouting/Admin";
 import { AdmInscriptions } from "./pages/admin/Pages/Pages/Inscriptions/AdmInscriptions";
 import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
@@ -27,6 +27,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
 import BlogArticle from "./components/Blog/Article";
+import { AdmDocument } from "./pages/admin/Pages/Pages/Document/AdmDocument";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -66,21 +67,21 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="blog/:id" element={<BlogArticle/>} />
             <Route path="/*" element={<Home />} /> 
-            <Route path="admin" element={
-            <RequireAuth>
-              <Admin/>
-            </RequireAuth>
-            } />
           </Route>
 
-          <Route path="admin" element={<Admin />}>
+          <Route path="admin" element={
+            <RequireAuth>
+              <AdminRouting/>
+            </RequireAuth>
+            } >
               <Route path="blog" element={<AdmBlog />} />
               <Route path="rga" element={<AdmRga />} />
               <Route path="inscriptions" element={<AdmInscriptions />} />
               <Route path="seances" element={<AdmSeances />} />
               <Route path="planning" element={<AdmPlanning />} />
-              <Route path="boutique" element={<AdmBoutique/>} />
-              <Route path="contact" element={<AdmContacts/>} />
+              <Route path="boutique" element={<AdmBoutique />} />
+              <Route path="contact" element={<AdmContacts />} />
+              <Route path="document" element={<AdmDocument />} />
           </Route>
 
         </Routes>

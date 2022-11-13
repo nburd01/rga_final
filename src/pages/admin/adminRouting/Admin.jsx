@@ -4,7 +4,7 @@ import './AdmPages.scss'
 import { Link, NavLink, Outlet } from "react-router-dom";
 
 
-export const Admin = () => {
+export const AdminRouting = () => {
   console.log("Outlet", Outlet.length)
   return (
     <div className='navAndContent'>
@@ -18,6 +18,9 @@ export const Admin = () => {
           </li>
           <li>
             <NavLink to="/admin/contact"> Contact </NavLink>
+          </li>
+          <li>
+            <NavLink to="/admin/document"> Document </NavLink>
           </li>
 
         </ul>
