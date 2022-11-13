@@ -1,78 +1,80 @@
-// import { collection } from "firebase/firestore";
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import { db } from "../../firebase";
-
-  
-// export default function PDF () {
-
-//     const [subscribeFiles, setSubscribeFiles] = useState([])
-
-//     useEffect(() => {
-//         const subscribeFilesRef = collection(db,  )
-//     })
-
-//     return (
-//         <section className=''>
-//             {
-//                 subscribeFiles.length === 0 ? (
-//                     <p>no files</p>
-//                 )
-//                 : 
-//                 (
-//                     subscribeFiles.map((subscribeFile, index) =>
-//                     <div>
-
-//                     </div>
-//                     )
-//                     // <div>div</div>
-//                 )
-//             }
-//         </section>
-//     );
-// };
-  
+import React from 'react'
+import { useState } from "react";  
+// import "./UploadImages.scss"
+import {
+  ref,
+  uploadBytes,
+  listAll,
+  getDownloadURL,
+} from "firebase/storage";
+import { storage } from "../../firebase";
+import {v4} from 'uuid';
+import { AuthModeContext } from '../../context/AuthContext';
+import { useContext, useEffect } from "react";
+import { Navigate } from 'react-router-dom';
 
 
+export default function PDF() {
+
+  const [imageUpload, setImageUpload] = useState(null);
+  const [imageList, setImageList] = useState([]);
+  const {currentUser} = useContext(AuthModeContext);
+  const RequireAuth = ({children}) => {
+    return currentUser ? (children) : <Navigate to="/multimedia"/>
+  };
+
+  const imageListRef = ref(storage, `images/`);
+//   console.log("imageListRef",imageListRef)
+//   console.log("storage",storage)
+
+  const uploadImage = () => {
+    if (imageUpload == null) return;
+    const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
+    uploadBytes(imageRef, imageUpload).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((url) => {
+        setImageList((prev) => [...prev, url])
+      })
+    });
+  };
+
+  useEffect(() => {
+    listAll(imageListRef).then((response) => {
+      response.items.forEach((item) => {
+        getDownloadURL(item).then((url) => {
+          setImageList((prev) => [...prev, url]);
+        });
+      });
+  })}, []);
 
 
+  return(
+    <>
+      {currentUser == null
 
-  
-const PDF = () => {
-    // Function will execute on click of button
-    const onButtonClick = () => {
-        // using Java Script method to get PDF file
-        fetch('Dossier_inscription__RGA 22-23.pdf').then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'Dossier_inscription__RGA 22-23.pdf';
-                alink.click();
-            })
-        })
-    }
-    return (
-        <section className=''>
-            <div className="container">
-                <div className="pdf ">
-                    <div className="block">
-                <div className="_TitleSubTitle" data-aos="fade-up">
-                    <h1>Le dossier d'inscription à nous renvoyer</h1>
-                    <h3>Téléchargez les documents en cliquant sur le bouton ci-dessous :</h3>
-                </div>
-                        <div id="linkAnchor" className="btnContainer">
-                            <button onClick={onButtonClick}>
-                                <span>Télécharger le dossier</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-};
-  
-export default PDF;
+      ?
+
+      <>
+      </>
+        
+      : 
+
+      <div className='adminPanel'>
+        <h1>Administrateur</h1>
+        <input
+        type="file"
+        onChange={(event) => {
+          setImageUpload(event.target.files[0]);
+        }}
+        />
+        <button onClick={uploadImage}>Télécharger des images</button>
+      </div>}
+
+      <div className="cont">
+            {imageList.map((url, index) => {
+            return <img key={index}  src={url} alt={url}/>;
+          })}
+        </div> 
+    </>
+  );
+
+}
