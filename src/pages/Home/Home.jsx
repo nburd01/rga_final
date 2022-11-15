@@ -6,26 +6,19 @@ import '../../index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import GoalKeeperSave from '../../assets/Illustrations/result.svg'
 import { Helmet } from 'react-helmet-async';
-// import SEO from '../../seo/SEO'
 import MyMap from '../../components/Carte/Carte'
 import Blogs from '../../components/Blog/Articles'
-import SimpleSlider from '../../components/Blog/SimpleSlider'
 
 export const Home = () => {
   return (
   <div className='homepage'>
-      {/* <SEO
-      title="Bienvenue à la Roazhon Goal Academy"
-      description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
-      name="Bienvenue à la Roazhon Goal Academy"
-      type="accueil"
-      /> */}
       <Helmet>
-        <title>Roazhon Goal Academy</title>
+        <title>Bienvenue à la Roazhon Goal Academy</title>
         <meta 
         name='description' 
         content='Bienvenue à la Roazhon Goal Academy'
         />
+        <link rel='canonical' href=""/>
         <meta 
         name='title' 
         content='Bienvenue à la Roazhon Goal Academy'

@@ -3,24 +3,17 @@ import { Photos } from '../../components/Multimedia/Photos'
 import { Presse } from '../../components/Multimedia/Presse'
 import { Videos } from '../../components/Multimedia/Videos'
 import { Helmet } from 'react-helmet-async';
-import SEO from '../../seo/SEO';
 
 export const Multimedia = () => {
   return (
     <div className='multimedia'>
-      {/* <SEO
-        title="Bienvenue à la Roazhon Goal Academy"
-        description="Bienvenue à la Roazhon Goal Academy. Nous proposons des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !"
-        name="Bienvenue à la Roazhon Goal Academy"
-        type="accueil"
-      /> */}
-
       <Helmet>
-        <title>Roazhon Goal Academy</title>
+        <title>Roazhon Goal Academy : photos et vidéos</title>
         <meta 
-        name='Roazhon Goal Academy Multimédia' 
+        name='description' 
         content="Accédez à la page multimédia de la Roazhon Goal Academy et découvrez les photos, les vidéos et les articles à propos de nous !"
       />
+        <link rel='canonical' href="/multimedia"/>
         <meta name='keywords' content='Multimedia, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>
       <div className="container-large">
