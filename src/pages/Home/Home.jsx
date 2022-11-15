@@ -18,7 +18,7 @@ export const Home = () => {
         name='description' 
         content='Bienvenue à la Roazhon Goal Academy'
         />
-        <link rel='canonical' href="/"/>
+        <link rel='canonical' href="https://roazhongoalacademy.fr"/>
         <meta 
         name='title' 
         content='Bienvenue à la Roazhon Goal Academy'
