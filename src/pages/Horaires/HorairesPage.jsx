@@ -18,7 +18,6 @@ export const HorairesPage = () => {
                 content="Roazhon Goal Academy Horaires"
                 />
                 <link rel='canonical' href="/horaires"/>
-                <meta name='keywords' content='Horaires, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
               </Helmet>
         <div className="container-large">
         <div className="__intro">

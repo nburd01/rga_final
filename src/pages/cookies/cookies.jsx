@@ -14,7 +14,6 @@ export default function CookiesPage() {
             content='Page cookies de la Roazhon Goal Academy.'
             />
             <link rel='canonical' href="/cookies"/>
-            <meta name='keywords' content='Cookies, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
         </Helmet>
             <h2 class="element-invisible">Cookies</h2>         
 
