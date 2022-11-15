@@ -5,23 +5,15 @@ import SEO from '../../seo/SEO';
 
 export default function CookiesPage() {
     return (
-
-
         <div class="container Center" role="main">
-            <SEO
-            title="Les cookies de la Roazhon Goal Academy"
-            description=""
-            name="Bienvenue à la Roazhon Goal Academy"
-            type="accueil"
-            />
-
+          
         <Helmet>
             <title>Les cookies de la Roazhon Goal Academy</title>
             <meta
-            title="Les cookies de la Roazhon Goal Academy" 
-            name='Roazhon Goal Academy Cookies' 
-            content='La Roazhon Goal Academy a une page cookies.'
+            name='description' 
+            content='Page cookies de la Roazhon Goal Academy.'
             />
+            <link rel='canonical' href="/cookies"/>
             <meta name='keywords' content='Cookies, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
         </Helmet>
             <h2 class="element-invisible">Cookies</h2>         
