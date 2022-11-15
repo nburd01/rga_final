@@ -77,7 +77,7 @@ function App() {
               <Route path="document" element={<AdmDocument />} />
           </Route>
 
-          <Route path='/*' element={<PageNotFound/>} />
+          <Route path='/*' element={<PageNotFound/>} status={404}/>
 
         </Routes>
 
