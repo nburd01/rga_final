@@ -75,8 +75,6 @@ function App() {
               <Route path="boutique" element={<AdmBoutique />} />
               <Route path="contact" element={<AdmContacts />} />
               <Route path="document" element={<AdmDocument />} />
-              <Route component={PageNotFound} />
-
           </Route>
 
           <Route path='/*' element={<PageNotFound/>} />
