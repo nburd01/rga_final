@@ -23,11 +23,11 @@ import { AdmRga } from "./pages/admin/Pages/Pages/RGA/AdmRga";
 import { AdmSeances } from "./pages/admin/Pages/Pages/Seances/AdmSeances";
 import { AdmPlanning } from "./pages/admin/Pages/Pages/Planning/AdmPlanning";
 import { AdmBoutique } from "./pages/admin/Pages/Pages/Boutique/AdmBoutique";
-import { HelmetProvider } from 'react-helmet-async';
 import { AdmContacts } from "./pages/admin/Pages/Pages/Contact/AdmBoutique";
 import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
 import BlogArticle from "./components/Blog/Article";
 import { AdmDocument } from "./pages/admin/Pages/Pages/Document/AdmDocument";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -38,23 +38,15 @@ function App() {
   const RequireAuth= ({children}) => {
     return currentUser ? (children) : <Navigate to="/login"/>
   };
-  const helmetContext = {};
-
   console.log("currentUser",currentUser);
 
   return (
-
     <div className="app">
       <BrowserRouter>
-        <title>Roazhon Goal Academy</title>
-        <meta 
-        name='Roazhon Goal Academy' 
-        content='La Roazhon Goal Academy propose des entraînements spécifiques de gardiens de but au travers de séances techniques et ludiques pour les 10 - 13 ans à proximité de Rennes !'
-        />
-        <meta name='keywords' content='Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
+        <MainNav/>
 
-      <MainNav/>
         <Routes>
+
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="rga" element={<RGA />} />
@@ -66,9 +58,10 @@ function App() {
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
             <Route path="blog/:id" element={<BlogArticle/>} />
-            <Route path="/*" element={<Home />} /> 
-          </Route>
+            {/* <Route path="/*" element={<Home />} />  */}
 
+          </Route>
+          
           <Route path="admin" element={
             <RequireAuth>
               <AdminRouting/>
@@ -82,10 +75,14 @@ function App() {
               <Route path="boutique" element={<AdmBoutique />} />
               <Route path="contact" element={<AdmContacts />} />
               <Route path="document" element={<AdmDocument />} />
+              <Route component={PageNotFound} />
+
           </Route>
 
+          <Route path='/*' element={<PageNotFound/>} />
+
         </Routes>
-      {/* <BackToTop/> */}
+
       <Footer/>
       </BrowserRouter>
       <CookieConsent
