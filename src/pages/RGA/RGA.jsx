@@ -16,7 +16,6 @@ export const RGA = () => {
         content="Qu'est que la Roazhon Goal Academy? Situés au Rheu près de Rennes, nous mettons à disposition des séances d'entraînements spécifiques gardiens pour les 10 - 13 ans !"
         />
         <link rel='canonical' href="/rga"/>
-        <meta name='keywords' content='à propos de nous, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>
       <div className="container-large">
      <div className="__intro">

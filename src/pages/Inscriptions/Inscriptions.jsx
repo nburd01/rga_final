@@ -14,8 +14,6 @@ export const Inscriptions = () => {
                 content="Inscrivez-vous à la Roazhon Goal Academy et bénéficiez de séances d'entraînement spécifiques pour les gardiens de but !"
               />
               <link rel='canonical' href="/inscriptions"/>
-
-              <meta name='keywords' content='Inscriptions, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
             </Helmet>
       <div className="container-large">
         <div className="__intro">

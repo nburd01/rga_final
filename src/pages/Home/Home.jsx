@@ -12,6 +12,7 @@ import Blogs from '../../components/Blog/Articles'
 export const Home = () => {
   return (
   <div className='homepage'>
+    
       <Helmet>
         <title>Bienvenue à la Roazhon Goal Academy</title>
         <meta 
@@ -23,9 +24,8 @@ export const Home = () => {
         name='title' 
         content='Bienvenue à la Roazhon Goal Academy'
         />
-
-        <meta name='keywords' content='Accueil, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
       </Helmet>
+
     <section className='home'>
       <div className="container">
         <div className="__intro">

@@ -31,7 +31,7 @@ export const Contact = () => {
         content='La Roazhon Goal Academy reste en contact avec ses stagiaires'
         />
         <link rel='canonical' href="/contact"/>
-        <meta name='keywords' content='Contact, Football, Academy, Roazhon Goal Academy, Le Rheu, Rennes, Gardiens de but, spécifiques, jeunes, formation' />
+  
       </Helmet>
       <div className="container-large">
       <div className="__intro">
