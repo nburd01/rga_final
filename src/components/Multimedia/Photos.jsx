@@ -16,12 +16,12 @@ export const Photos = () => {
     </div>
      <h3 className="_BgSubTitle Left">Photos</h3>
     </div>
-    <div className='photo'>
+    <>
       <UploadImages setSelectedImg={setSelectedImg}/>
       {selectedImg && 
         <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>
       }
-    </div>
+    </>
   </div>
   )
 }

@@ -1,15 +1,59 @@
-.cont {
-    // width: 100vw;
-    // height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    img {
-        height: 300px;
-        margin: 10px;
-      }
+  
+  
+.img-grid{
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: fill;
+}
+.img-wrap{
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    padding: 1em 0;
   }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-fit: fill;
+}
 
+.Photogallery{
+
+  flex-direction: column;
+  // width: 100%;
+}
+  @media screen and (min-width: 990px) {
+    .img-grid{
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+      background-image: linear-gradient(45deg, var(--gradient-colors2));
+      box-shadow: 0 10px 40px -2px var(--secondary);
+    }
+
+    .img-wrap{
+      overflow: hidden;
+      height: 0;
+      padding: 50% 0;
+      /* padding controls height, will always be perfectly square regardless of width */
+      position: relative;
+      opacity: 0.8;
+    }
+    .img-wrap img{
+      min-width: 100%;
+      min-height: 100%;
+      max-width: 150%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   button{
     background:linear-gradient(to bottom, var(--primary) 5%, var(--primary) 100%);
     background-color:var(--primary);
