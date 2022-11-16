@@ -58,7 +58,6 @@ function App() {
             <Route path="cookies" element={<CookiesPage/>} />
             <Route path="login" element={<Login />} />
             <Route path="blog/:id" element={<BlogArticle/>} />
-            {/* <Route path="/*" element={<Home />} />  */}
 
           </Route>
           

@@ -1,7 +1,5 @@
 import React from 'react'
 import { Photos } from '../../components/Multimedia/Photos'
-import { Presse } from '../../components/Multimedia/Presse'
-import { Videos } from '../../components/Multimedia/Videos'
 import { Helmet } from 'react-helmet-async';
 
 export const Multimedia = () => {
@@ -32,12 +30,6 @@ export const Multimedia = () => {
     <div >
       <Photos/>
     </div>
-    {/* <div >
-      <Videos/>
-    </div>
-    <div >
-      <Presse/>
-    </div> */}
   </div>
   )
 }
