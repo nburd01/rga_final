@@ -12,6 +12,8 @@ import {v4} from 'uuid';
 import { AuthModeContext } from '../../../context/AuthContext';
 import { useContext, useEffect } from "react";
 import { Navigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 
 export default function UploadImages({ setSelectedImg }) {
@@ -67,12 +69,19 @@ export default function UploadImages({ setSelectedImg }) {
         <button onClick={uploadImage}>Télécharger des images</button>
       </div>}
 
-      <div className="cont">
+      <div className="container img-grid">
             {imageList.map((url, index) => {
-              return <img key={index}  src={url} alt={url} onClick={() => setSelectedImg(url) }/>;
+              return(
+                <motion.div  className="img-wrap" key={index} whileHover={{ opacity: 1 }}>
+                  <motion.img key={index} src={url} alt={url} onClick={() => setSelectedImg(url) }
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ delay: 1 }}
+                  />
+                </motion.div>
+              ) 
           })}
         </div> 
     </>
   );
-
 }
