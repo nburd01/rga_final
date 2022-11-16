@@ -19,8 +19,8 @@ export const Photos = () => {
     <div className='photo'>
       <UploadImages setSelectedImg={setSelectedImg}/>
       {selectedImg && 
-        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}
-        />}
+        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>
+      }
     </div>
   </div>
   )
