@@ -69,8 +69,7 @@ export default function UploadImages({ setSelectedImg }) {
 
       <div className="cont">
             {imageList.map((url, index) => {
-              
-            return <img key={index}  src={url} alt={url} onClick={() => setSelectedImg(url) }/>;
+              return <img key={index}  src={url} alt={url} onClick={() => setSelectedImg(url) }/>;
           })}
         </div> 
     </>
