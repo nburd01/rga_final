@@ -7,14 +7,14 @@ import {
   listAll,
   getDownloadURL,
 } from "firebase/storage";
-import { storage } from "../../firebase";
+import { storage } from "../../../firebase";
 import {v4} from 'uuid';
-import { AuthModeContext } from '../../context/AuthContext';
+import { AuthModeContext } from '../../../context/AuthContext';
 import { useContext, useEffect } from "react";
 import { Navigate } from 'react-router-dom';
 
 
-export default function UploadImages() {
+export default function UploadImages({ setSelectedImg }) {
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
@@ -69,7 +69,8 @@ export default function UploadImages() {
 
       <div className="cont">
             {imageList.map((url, index) => {
-            return <img key={index}  src={url} alt={url}/>;
+              
+            return <img key={index}  src={url} alt={url} onClick={() => setSelectedImg(url) }/>;
           })}
         </div> 
     </>
