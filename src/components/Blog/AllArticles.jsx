@@ -53,7 +53,9 @@ export const AllArticles = () => {
                 </Link>
                 <h3>{blogTitle.substring(0, 100)}</h3>
                 <p>{blogDescription.substring(0, 150)}</p>
-                <Link to={`/blog/${id}`} className=""><span>Accéder</span></Link>
+                <Link to={`/blog/${id}`} className="blogBtn">
+                  <span >Accéder</span>
+                </Link>
             </div>
             )
             )

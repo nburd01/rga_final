@@ -8,11 +8,7 @@
     grid-column: 1 / span 1;
     justify-self: center;
     align-self: center;
-    span{
-        justify-self: center;
-        align-self: center;
-        width: 2em;
-    }
+    display: grid;
 }
 
 @media only screen and (min-width: 996px) {
@@ -20,8 +16,6 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
-    
         .blog{        
             width: 400px;
             height: 200px;
