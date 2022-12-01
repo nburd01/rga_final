@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { db } from "../../firebase";
 import LoadingSpinner from "../Loading/Loading";
 import './Articles.scss'
+import './AllArticles.module.scss'
 
 export default function Articles() {
   const [articles, setArticles] = useState([]);
