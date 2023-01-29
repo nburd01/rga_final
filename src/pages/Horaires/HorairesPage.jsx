@@ -2,6 +2,7 @@ import React from 'react'
 import { HorairesComp } from '../../components/Horaires/HorairesComp'
 import { Planification } from '../../components/Planification/Planification'
 import { Helmet } from 'react-helmet-async';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 export const HorairesPage = () => {

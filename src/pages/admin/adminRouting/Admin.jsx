@@ -1,7 +1,7 @@
 import React from 'react'
 import './admin.scss'
 import './AdmPages.scss'
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 
 export const AdminRouting = () => {
@@ -21,6 +21,9 @@ export const AdminRouting = () => {
           </li>
           <li>
             <NavLink to="/admin/document"> Document </NavLink>
+          </li>
+          <li>
+            <NavLink to="/admin/photos"> Photos </NavLink>
           </li>
 
         </ul>

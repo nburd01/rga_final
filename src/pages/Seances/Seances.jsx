@@ -2,6 +2,7 @@ import React from 'react'
 import { Materiel } from '../../components/Materiel/Materiel'
 import { ReglesDeVie } from '../../components/ReglesDeVie/ReglesDeVie'
 import { Helmet } from 'react-helmet-async';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 export const Seances = () => {
@@ -28,7 +29,7 @@ export const Seances = () => {
           <h3>Tout savoir à propos des séances d'entraînement, du matériel ainsi que des règles de vie de l'Academy.</h3>
         </div>
         <div className="HeroImage">
-          <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but__beach_soccer.jpg')} className="Roazhon Goal Academy séance d'entraînement" alt="img" loading="lazy"/>
+          <LazyLoadImage src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but__beach_soccer.jpg')} className="_HeroImage" alt="img" loading="lazy"/>
         </div>
         </div>
       </div>

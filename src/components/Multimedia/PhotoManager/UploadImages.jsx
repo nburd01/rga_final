@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";  
-import "./UploadImages.scss"
+// import "./UploadImages.scss"
 import {
   ref,
   uploadBytes,
@@ -13,7 +13,7 @@ import { AuthModeContext } from '../../../context/AuthContext';
 import { useContext, useEffect } from "react";
 import { Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 export default function UploadImages({ setSelectedImg }) {
@@ -49,26 +49,6 @@ export default function UploadImages({ setSelectedImg }) {
 
   return(
     <>
-      {currentUser == null
-
-      ?
-
-      <>
-      </>
-        
-      : 
-
-      <div className='adminPanel'>
-        <h1>Administrateur</h1>
-        <input
-        type="file"
-        onChange={(event) => {
-          setImageUpload(event.target.files[0]);
-        }}
-        />
-        <button onClick={uploadImage}>Télécharger des images</button>
-      </div>}
-
       <div className="container img-grid">
             {imageList.map((url, index) => {
               return(
@@ -77,11 +57,12 @@ export default function UploadImages({ setSelectedImg }) {
                               initial={{ opacity: 0 }}
                               animate={{ opacity: 1 }}
                               transition={{ delay: 1 }}
+                              effect="blur"
                   />
                 </motion.div>
               ) 
           })}
-        </div> 
+      </div> 
     </>
   );
 }
