@@ -1,6 +1,7 @@
 import React from 'react'
 import { Photos } from '../../components/Multimedia/Photos'
 import { Helmet } from 'react-helmet-async';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Multimedia = () => {
   return (
@@ -22,7 +23,7 @@ export const Multimedia = () => {
         <h3>Découvrez les photos, vidéos de la Roazhon Goal Academy et bien plus encore. </h3>
       </div>
       <div className="HeroImage">
-        <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_explications.jpg')} className="_HeroImage" alt="Roazhon Goal Academy coaching" loading="lazy"/>
+        <LazyLoadImage src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_explications.jpg')} className="_HeroImage" alt="Roazhon Goal Academy coaching" loading="lazy"/>
       </div>
       </div>
     </div>

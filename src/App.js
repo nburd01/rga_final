@@ -28,6 +28,7 @@ import { AdmBlog } from "./pages/admin/Pages/Pages/Blog/AdmBlog";
 import BlogArticle from "./components/Blog/Article";
 import { AdmDocument } from "./pages/admin/Pages/Pages/Document/AdmDocument";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import { AdmPhotos } from "./pages/admin/Pages/Pages/Photos/AdmPhotos";
 
 
 library.add(fas, faComment,faMagnifyingGlass,faTwitter, faFacebook, faLinkedin, faInstagram , faFontAwesome, faCheck, faXmark, faLocationDot, faCaretRight, faEnvelope, faPhone, faMap )
@@ -74,6 +75,7 @@ function App() {
               <Route path="boutique" element={<AdmBoutique />} />
               <Route path="contact" element={<AdmContacts />} />
               <Route path="document" element={<AdmDocument />} />
+              <Route path="photos" element={<AdmPhotos />} />
           </Route>
 
           <Route path='/*' element={<PageNotFound/>} status={404}/>

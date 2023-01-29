@@ -5,7 +5,7 @@ import {db} from '../../firebase.js'
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Contact = () => {
   const [boutiques, setBoutiques] = useState([]);
@@ -42,7 +42,7 @@ export const Contact = () => {
             <h3>Pour tout renseignement, merci de nous contacter par e-mail ou bien par téléphone.</h3>
           </div>
           <div className="HeroImage">
-            <img src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_proprioception.jpg')} className="_HeroImage" alt="Roazhon Goal Academy proprioception" loading="lazy"/>
+            <LazyLoadImage src={require('../../assets/img/galerie/webp/roazhon_goal_academy__gardien_de_but_proprioception.jpg')} className="_HeroImage" alt="Roazhon Goal Academy proprioception" loading="lazy"/>
           </div>
         </div>
       </div>
